@@ -1,2 +1,2 @@
 # Metaprogramming
-Materials for Metaprogramming course in NRU HSE, fall 2020
+Homeworks and libraries for Metaprogramming course in NRU HSE, fall 2020
