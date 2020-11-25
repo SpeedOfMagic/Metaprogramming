@@ -139,7 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="type_list.h" />
+    <ClInclude Include="TL\add.h" />
+    <ClInclude Include="TL\contains.h" />
+    <ClInclude Include="TL\find_type_list_by_class.h" />
+    <ClInclude Include="TL\index_of.h" />
+    <ClInclude Include="TL\inheritance.h" />
+    <ClInclude Include="TL\no_duplicates.h" />
+    <ClInclude Include="TL\remove.h" />
+    <ClInclude Include="TL\size.h" />
+    <ClInclude Include="TL\type_at.h" />
+    <ClInclude Include="TL\type_list.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
