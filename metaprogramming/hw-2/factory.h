@@ -1,26 +1,50 @@
 #pragma once
 
+#include "../library/TL/find_parent_type_list.h"
 #include "../library/TL/find_type_list_by_class.h"
-#include "../library/TL/inheritance.h"
+#include "../library/TL/is_base_of.h"
+#include "../library/TL/most_derived_and_constructible.h"
+#include "../library/TL/most_derived_typelist.h"
 #include "../library/TL/type_list.h"
+#include "../library/TL/contains_constructible_parent.h"
+#include "../library/TL/contains_parent.h"
+#include "../library/TL/has_derived_and_constructible.h"
 
-template<class type_list>
+template<class type_list, class ...type_lists>
 struct Factory {
 	template<class T>
 	T* Get() {
-		return new typename TL::MostDerived<type_list, T>::result();
+		using obj_class = typename TL::MostDerivedAndConstructible<type_list, T>::result;
+		return GetObject<T, obj_class, TL::HasDerivedAndConstructible<type_list, T>::result>::Get();
 	}
+
+	template<typename parent, typename T, bool found_class>
+	struct GetObject;
+
+	template<typename parent, typename T>
+	struct GetObject<parent, T, true> {
+		static parent* Get() { return new T();  }
+	};
+
+	template<typename parent, typename T>
+	struct GetObject<parent, T, false> {
+		using parent_type_list = typename TL::MostDerivedTypeList<TypeList<type_lists...>, type_list>::result;
+		using new_factory = Factory<parent_type_list, type_lists...>;
+
+		static parent* Get() {
+			return new_factory().Get<parent>();
+		}
+	};
 };
 
 
-template<typename T, class type_list, class ...type_lists>
-struct FindAbstractFactory;
-
+// Get required factory by class name
 template<size_t, size_t, class type_list, class ...type_lists>
 struct GetAbstractFactory {
 	template<typename T>
 	struct GetConcreteFactory {
 		using needed_typelist = typename TL::FindTypeListByClass<T, type_list, type_lists...>::result;
-		using result = Factory<needed_typelist>;
+		using result = Factory<needed_typelist, type_list, type_lists...>;
 	};
 };
+

@@ -1,0 +1,40 @@
+#pragma once
+
+#include <type_traits>
+
+#include "type_list.h"
+
+namespace TL {
+	template<class type_list, typename T>
+	struct MostDerivedAndConstructible;
+}
+
+template<class type_list, typename T, bool is_head_parent_of_T>
+struct CheckMostDerivedAndConstructible {};
+
+template<class type_list, typename T>
+struct CheckMostDerivedAndConstructible<type_list, T, true> {
+	using result = typename TL::MostDerivedAndConstructible<typename type_list::Tail, typename type_list::Head>::result;
+};
+
+template<class type_list, typename T>
+struct CheckMostDerivedAndConstructible<type_list, T, false> {
+	using result = typename TL::MostDerivedAndConstructible<typename type_list::Tail, T>::result;
+};
+
+namespace TL {
+	template<class type_list, typename T>
+	struct MostDerivedAndConstructible {
+		using result = typename CheckMostDerivedAndConstructible<
+			type_list,
+			T,
+			std::is_base_of<T, typename type_list::Head>::value &&
+			std::is_constructible<typename type_list::Head>::value
+		>::result;
+	};
+
+	template<typename T>
+	struct MostDerivedAndConstructible<EmptyTypeList, T> {
+		using result = T;
+	};
+};

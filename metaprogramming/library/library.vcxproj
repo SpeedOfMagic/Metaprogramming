@@ -29,7 +29,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>ClangCL</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -140,10 +140,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="TL\add.h" />
+    <ClInclude Include="TL\contains_constructible_parent.h" />
     <ClInclude Include="TL\contains.h" />
+    <ClInclude Include="TL\contains_parent.h" />
+    <ClInclude Include="TL\find_parent_type_list.h" />
     <ClInclude Include="TL\find_type_list_by_class.h" />
+    <ClInclude Include="TL\has_derived_and_constructible.h" />
     <ClInclude Include="TL\index_of.h" />
-    <ClInclude Include="TL\inheritance.h" />
+    <ClInclude Include="TL\is_base_of.h" />
+    <ClInclude Include="TL\most_derived.h" />
+    <ClInclude Include="TL\most_derived_and_constructible.h" />
+    <ClInclude Include="TL\most_derived_typelist.h" />
     <ClInclude Include="TL\no_duplicates.h" />
     <ClInclude Include="TL\remove.h" />
     <ClInclude Include="TL\size.h" />
