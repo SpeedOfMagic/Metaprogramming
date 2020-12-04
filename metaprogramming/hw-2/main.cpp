@@ -19,7 +19,7 @@ int main() {
 
 	Factory MyFactory2 = MyFactoryHierarchy::GetConcreteFactory<Chair>::result();
 	Chair* another_chair = MyFactory2.Get<Chair>();
-	WoodenTable* another_table = MyFactory2.Get<WoodenTable>();
+	//WoodenTable* another_table = MyFactory2.Get<WoodenTable>();
 
 	return 0;
 }
