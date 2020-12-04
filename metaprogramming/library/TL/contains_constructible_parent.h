@@ -1,8 +1,10 @@
+#pragma once
+
 #include <type_traits>
 #include "type_list.h"
 
 namespace TL {
-	/* Checks if TypeList contains parent of T */
+	/* Checks if TypeList contains constructible parent of T */
 
 	template<class type_list, typename T>
 	struct ContainsConstructibleParent;

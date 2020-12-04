@@ -26,5 +26,8 @@
     <ClInclude Include="furniture.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="..\library\TL\find_required_type_list.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

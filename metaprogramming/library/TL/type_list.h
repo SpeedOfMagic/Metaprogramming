@@ -24,11 +24,3 @@ struct TypeList<H, T...> {
 
 template<typename ...Args>
 using Typelist = TypeList<Args...>;
-
-/*
-template<typename H, typename ...T>
-struct TypeList<H, TypeList<T...>> {
-	using Head = H;
-	using Tail = TypeList<T...>;
-};
-*/

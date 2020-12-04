@@ -25,7 +25,7 @@ namespace TL {
 	struct RemoveAll {
 		using result = TypeList<typename type_list::Head,
 			typename RemoveAll<
-			typename type_list::Tail, T
+				typename type_list::Tail, T
 			>::result
 		>;
 	};

@@ -1,3 +1,5 @@
+#pragma once
+
 #include "index_of.h"
 #include "type_list.h"
 

@@ -1,14 +1,31 @@
+#pragma once
+
+#include "type_list.h"
+
 namespace TL {
 	/* Add class to specific position in TypeList */
 
-	template<class type_list, class T, size_t ind>
-	struct Add {
-		using result = TypeList<typename type_list::Head,
-			typename Add<typename type_list::Tail, T, ind - 1>::result>;
+	template<typename T, size_t ind, class Arg, class ...Args>
+	struct Add {};
+
+	template<typename T, size_t ind, class Arg, class ...Args>
+	struct Add<T, ind, TypeList<Arg, Args...>> {
+		using end = typename Add<
+			T,
+			ind - 1,
+			TypeList<Args...>
+		>::result;
+
+		using result = typename Add<Arg, 0, end>::result;
 	};
 
-	template<class type_list, class T>
-	struct Add<type_list, T, 0> {
-		using result = TypeList<T, type_list>;
+	template<typename T, class Arg, class ...Args>
+	struct Add<T, 0, TypeList<Arg, Args...>> {
+		using result = TypeList<T, Arg, Args...>;
+	};
+
+	template<typename T, class ...Args>
+	struct Add<T, 0, TypeList<Args...>> {
+		using result = TypeList<T, Args...>;
 	};
 }

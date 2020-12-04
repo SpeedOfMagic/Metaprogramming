@@ -150,7 +150,6 @@
     <ClInclude Include="TL\is_base_of.h" />
     <ClInclude Include="TL\most_derived.h" />
     <ClInclude Include="TL\most_derived_and_constructible.h" />
-    <ClInclude Include="TL\most_derived_typelist.h" />
     <ClInclude Include="TL\no_duplicates.h" />
     <ClInclude Include="TL\remove.h" />
     <ClInclude Include="TL\size.h" />

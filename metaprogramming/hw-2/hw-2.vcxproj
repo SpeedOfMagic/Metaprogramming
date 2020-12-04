@@ -143,6 +143,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\library\TL\find_required_type_list.h" />
     <ClInclude Include="factory.h" />
     <ClInclude Include="furniture.h" />
   </ItemGroup>

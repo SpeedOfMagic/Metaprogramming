@@ -12,24 +12,24 @@ namespace TL {
 }
 
 template<class type_list, typename T, bool is_head_parent_of_T>
-struct CheckDerived {
+struct CheckMostDerived {
 	using result = NullType;
 };
 
 template<class type_list, typename T>
-struct CheckDerived<type_list, T, true> {
+struct CheckMostDerived<type_list, T, true> {
 	using result = typename TL::MostDerived<typename type_list::Tail, typename type_list::Head>::result;
 };
 
 template<class type_list, typename T>
-struct CheckDerived<type_list, T, false> {
+struct CheckMostDerived<type_list, T, false> {
 	using result = typename TL::MostDerived<typename type_list::Tail, T>::result;
 };
 
 namespace TL {
 	template<class type_list, typename T>
 	struct MostDerived {
-		using result = typename CheckDerived<
+		using result = typename CheckMostDerived<
 			type_list,
 			T,
 			std::is_base_of<T, typename type_list::Head>::value

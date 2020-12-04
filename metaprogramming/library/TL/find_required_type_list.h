@@ -7,15 +7,15 @@ namespace TL {
 	/* Finds most derived typelist */
 
 	template<class type_lists, class derived_typelist, class found_type_list = derived_typelist>
-	struct MostDerivedTypeList;
+	struct FindRequiredTypeList;
 }
 
 template<class type_lists, typename derived_typelist, class found_type_list, bool is_head_parent_of_derived_type_list>
-struct CheckMostDerivedTypeList {};
+struct CheckFindRequiredTypeList {};
 
 template<class type_lists, typename derived_typelist, class found_type_list>
-struct CheckMostDerivedTypeList<type_lists, derived_typelist, found_type_list, true> {
-	using result = typename TL::MostDerivedTypeList<
+struct CheckFindRequiredTypeList<type_lists, derived_typelist, found_type_list, true> {
+	using result = typename TL::FindRequiredTypeList<
 		typename type_lists::Tail,
 		derived_typelist,
 		typename type_lists::Head
@@ -23,8 +23,8 @@ struct CheckMostDerivedTypeList<type_lists, derived_typelist, found_type_list, t
 };
 
 template<class type_lists, typename derived_typelist, class found_type_list>
-struct CheckMostDerivedTypeList<type_lists, derived_typelist, found_type_list, false> {
-	using result = typename TL::MostDerivedTypeList<
+struct CheckFindRequiredTypeList<type_lists, derived_typelist, found_type_list, false> {
+	using result = typename TL::FindRequiredTypeList<
 		typename type_lists::Tail,
 		derived_typelist,
 		found_type_list
@@ -33,8 +33,8 @@ struct CheckMostDerivedTypeList<type_lists, derived_typelist, found_type_list, f
 
 namespace TL {
 	template<class type_lists, class derived_typelist, class found_type_list>
-	struct MostDerivedTypeList {
-		using result = typename CheckMostDerivedTypeList<
+	struct FindRequiredTypeList {
+		using result = typename CheckFindRequiredTypeList<
 			type_lists,
 			derived_typelist,
 			found_type_list,
@@ -47,7 +47,7 @@ namespace TL {
 	};\
 
 	template<class derived_typelist, class found_type_list>
-	struct MostDerivedTypeList<EmptyTypeList, derived_typelist, found_type_list> {
+	struct FindRequiredTypeList<EmptyTypeList, derived_typelist, found_type_list> {
 		using result = found_type_list;
 	};
 };

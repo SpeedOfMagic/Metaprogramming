@@ -1,14 +1,9 @@
 #pragma once
 
-#include "../library/TL/find_parent_type_list.h"
-#include "../library/TL/find_type_list_by_class.h"
-#include "../library/TL/is_base_of.h"
-#include "../library/TL/most_derived_and_constructible.h"
-#include "../library/TL/most_derived_typelist.h"
-#include "../library/TL/type_list.h"
-#include "../library/TL/contains_constructible_parent.h"
-#include "../library/TL/contains_parent.h"
 #include "../library/TL/has_derived_and_constructible.h"
+#include "../library/TL/most_derived_and_constructible.h"
+#include "../library/TL/find_required_type_list.h"
+#include "../library/TL/find_type_list_by_class.h"
 
 template<class type_list, class ...type_lists>
 struct Factory {
@@ -28,7 +23,7 @@ struct Factory {
 
 	template<typename parent, typename T>
 	struct GetObject<parent, T, false> {
-		using parent_type_list = typename TL::MostDerivedTypeList<TypeList<type_lists...>, type_list>::result;
+		using parent_type_list = typename TL::FindRequiredTypeList<TypeList<type_lists...>, type_list>::result;
 		using new_factory = Factory<parent_type_list, type_lists...>;
 
 		static parent* Get() {
@@ -47,4 +42,3 @@ struct GetAbstractFactory {
 		using result = Factory<needed_typelist, type_list, type_lists...>;
 	};
 };
-
