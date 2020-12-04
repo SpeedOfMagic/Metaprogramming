@@ -1,10 +1,10 @@
 #pragma once
 
-#include "is_base_of.h"
-#include "type_list.h"
+#include "../library/TL/is_base_of.h"
+#include "../library/TL/type_list.h"
 
 namespace TL {
-	/* Finds most derived typelist */
+	/* Finds typelist, that is most derived, parent of derived_typelist and is not derived_typelist */
 
 	template<class type_lists, class derived_typelist, class found_type_list = derived_typelist>
 	struct FindRequiredTypeList;

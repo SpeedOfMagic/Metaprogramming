@@ -42,7 +42,7 @@ struct MetalRichSofa  : public MetalSofa  { MetalRichSofa()  { std::cout << "Met
 
 struct MetalPoorChair : public MetalChair { MetalPoorChair() { std::cout << "MetalPoorChair" << std::endl; } };
 
-struct MetalPoorTable : public MetalTable { MetalPoorTable() { std::cout << "MetalPoorTable" << std::endl; } };
+struct MetalPoorTable : public MetalTable { MetalPoorTable() = delete; };
 
 struct MetalPoorSofa : public MetalSofa { MetalPoorSofa() { std::cout << "MetalPoorSofa" << std::endl; } };
 

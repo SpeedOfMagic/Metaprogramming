@@ -1,3 +1,5 @@
+#include <cassert>
+
 #include "furniture.h"
 #include "factory.h"
 
@@ -11,6 +13,13 @@ using MyFactoryHierarchy = GetAbstractFactory<3, 5,
 
 int main() {
 	Factory MyFactory = MyFactoryHierarchy::GetConcreteFactory<MetalPoorChair>::result();
-	Sofa* a = MyFactory.Get<Sofa>();
+	Sofa* sofa = MyFactory.Get<Sofa>();
+	Table* table = MyFactory.Get<Table>();
+	Chair* chair = MyFactory.Get<Chair>();
+
+	Factory MyFactory2 = MyFactoryHierarchy::GetConcreteFactory<Chair>::result();
+	Chair* another_chair = MyFactory2.Get<Chair>();
+	WoodenTable* another_table = MyFactory2.Get<WoodenTable>();
+
 	return 0;
 }

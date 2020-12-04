@@ -1,3 +1,5 @@
+#include <cstdint>
+
 #include "type_list.h"
 
 namespace TL {

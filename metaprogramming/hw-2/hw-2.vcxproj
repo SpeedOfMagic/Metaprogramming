@@ -145,6 +145,7 @@
   <ItemGroup>
     <ClInclude Include="..\library\TL\find_required_type_list.h" />
     <ClInclude Include="factory.h" />
+    <ClInclude Include="find_required_type_list.h" />
     <ClInclude Include="furniture.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

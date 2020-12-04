@@ -2,8 +2,9 @@
 
 #include "../library/TL/has_derived_and_constructible.h"
 #include "../library/TL/most_derived_and_constructible.h"
-#include "../library/TL/find_required_type_list.h"
 #include "../library/TL/find_type_list_by_class.h"
+
+#include "find_required_type_list.h"
 
 template<class type_list, class ...type_lists>
 struct Factory {
@@ -24,7 +25,10 @@ struct Factory {
 	template<typename parent, typename T>
 	struct GetObject<parent, T, false> {
 		using parent_type_list = typename TL::FindRequiredTypeList<TypeList<type_lists...>, type_list>::result;
+		static_assert(!std::is_same<parent_type_list, type_list>::value, "Assertion failed: It's impossible to build passed object");
+
 		using new_factory = Factory<parent_type_list, type_lists...>;
+
 
 		static parent* Get() {
 			return new_factory().Get<parent>();
