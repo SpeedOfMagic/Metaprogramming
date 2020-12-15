@@ -12,15 +12,6 @@ int main() {
 		TypeList<char, short>, TypeList<short, int>, TypeList<int, long>, TypeList<long, long long>,
 		TypeList<short, float>, TypeList<float, double>, TypeList<int, double>
 	>;
-	using adjacency_list = TypeList<
-		TypeList<short>,
-		TypeList<int, float>,
-		TypeList<long, double>,
-		TypeList<long long>,
-		TypeList<>,
-		TypeList<double>,
-		TypeList<>
-	>;
 	using graph = MakeGraph::From<EDGE_LIST, vertexes, edges>::result;
 	std::cout << graph().VertexCount() << std::endl;
 	std::cout << graph().HasEdge<short, float>() << std::endl;
@@ -33,10 +24,11 @@ int main() {
 		TypeList<
 			TypeList<Boolean<false>, Boolean<true>, Boolean<false>>,
 			TypeList<Boolean<false>, Boolean<false>, Boolean<true>>,
-			TypeList<Boolean<true>, Boolean<false>, Boolean<false>>,
+			TypeList<Boolean<true>, Boolean<false>, Boolean<false>>
 		>
-	>;
-	std::cout << 1 + g2().HasEdge<Integer<2>, Integer<4>>() << std::endl;
+	>::result;
+	std::cout << g2().HasEdge<Integer<2>, Integer<4>>() << std::endl;
+	std::cout << g2().HasEdge<Integer<4>, Integer<2>>() << std::endl;
 
 	return 0;
 }
