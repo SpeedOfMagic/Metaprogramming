@@ -27,6 +27,7 @@ int main() {
 			TypeList<Boolean<true>, Boolean<false>, Boolean<false>>
 		>
 	>::result;
+	g2 gg = g2();
 	std::cout << g2().HasEdge<Integer<2>, Integer<4>>() << std::endl;
 	std::cout << g2().HasEdge<Integer<4>, Integer<2>>() << std::endl;
 

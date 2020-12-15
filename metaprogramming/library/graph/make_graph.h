@@ -50,7 +50,7 @@ namespace MakeGraph {
 		constexpr static size_t vertex_size = TL::Size<vertexes>::size;
 		static_assert(TL::Size<vertexes>::size == TL::Size<adjacency_matrix>::size,
 			 "Rows of adjacency matrix don't match with amount of vertexes");
-		using result = typename IterateThroughAdjacencyMatrix<vertexes, adjacency_matrix, vertex_size>::result;
+		using result = typename IterateThroughAdjacencyMatrix<vertexes, adjacency_matrix, vertex_size * vertex_size - 1>::result;
 	};
 
 	template<class vertexes, class adjacency_matrix, int ind>
