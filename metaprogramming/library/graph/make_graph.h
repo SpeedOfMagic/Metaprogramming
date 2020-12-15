@@ -29,9 +29,7 @@ namespace MakeGraph {
 	struct From<EDGE_LIST, vertexes, EmptyTypeList> {
 		using result = Graph<
 			vertexes,
-			typename TL::GenerateTypeLists<
-			TL::Size<vertexes>::size
-			>::result
+			typename TL::GenerateTypeLists<TL::Size<vertexes>::size>::result
 		>;
 	};
 
@@ -44,56 +42,42 @@ namespace MakeGraph {
 
 	/* Adjacency matrix */
 
-	template<class vertexes, class adjacency_matrix, size_t row, size_t col, bool has_edge>
+	template<class vertexes, class adjacency_matrix, int ind>
 	struct IterateThroughAdjacencyMatrix;
 
 	template<class vertexes, class adjacency_matrix>
 	struct From<ADJACENCY_MATRIX, vertexes, adjacency_matrix> {
-		using result = typename IterateThroughAdjacencyMatrix<
-			vertexes, adjacency_matrix,
-			0, 0,
-			typename TL::TypeAt<
-				typename TL::TypeAt<adjacency_matrix, 0>::value, 
-				0
-			>::value
-		>::result;
-		static_assert(std::is_same<result, Graph>);
+		constexpr static size_t vertex_size = TL::Size<vertexes>::size;
+		static_assert(TL::Size<vertexes>::size == TL::Size<adjacency_matrix>::size,
+			 "Rows of adjacency matrix don't match with amount of vertexes");
+		using result = typename IterateThroughAdjacencyMatrix<vertexes, adjacency_matrix, vertex_size>::result;
 	};
 
-	template<class vertexes, class adjacency_matrix, size_t row, size_t col>
-	struct IterateThroughAdjacencyMatrix<vertexes, adjacency_matrix, row, col, true> {
-		using result = typename GLib::MakeEdge<
-			typename IterateThroughAdjacencyMatrix<
-				vertexes, adjacency_matrix,
-				row + (col + 1) / TL::Size<vertexes>::size, (col + 1) % TL::Size<vertexes>::size,
-				typename TL::TypeAt<
-					typename TL::TypeAt<adjacency_matrix, row>::value, 
-					column + 1
-				>::value
+	template<class vertexes, class adjacency_matrix, int ind>
+	struct IterateThroughAdjacencyMatrix {
+		constexpr static size_t vertex_size = TL::Size<vertexes>::size;
+		constexpr static size_t row = ind / vertex_size, col = ind % vertex_size;
+		static_assert(row < vertex_size, "Index of a row is out of bounds");
+		constexpr static bool has_edge = TL::TypeAt<
+			typename TL::TypeAt<adjacency_matrix, row>::value,
+			col
+		>::value::value;
+
+		using next_result = typename IterateThroughAdjacencyMatrix<vertexes, adjacency_matrix, ind - 1>::result;
+
+		using result = std::conditional_t<has_edge,
+			typename GLib::MakeEdge<
+				next_result,
+				typename TL::TypeAt<vertexes, row>::value,
+				typename TL::TypeAt<vertexes, col>::value
 			>::result,
-			typename TL::TypeAt<vertexes, row>::value,
-			typename TL::TypeAt<vertexes, col>::value
-		>::result;
+			next_result
+		>;
 	};
 
-	template<class vertexes, class adjacency_matrix, size_t row, size_t col>
-	struct IterateThroughAdjacencyMatrix<vertexes, adjacency_matrix, row, col, false> {
-		using result = typename IterateThroughAdjacencyMatrix<
-			vertexes,
-			adjacency_matrix,
-			row + (col + 1) / TL::Size<vertexes>::size, (col + 1) % TL::Size<vertexes>::size,
-			typename TL::TypeAt<
-				typename TL::TypeAt<
-					adjacency_matrix, 
-					row + (col + 1) / TL::Size<vertexes>::size
-				>::value,
-				(col + 1) % TL::Size<vertexes>::size
-			>::value
-		>::result;
-	};
-
-	template<class vertexes, class adjacency_matrix, size_t col, bool has_edge>
-	struct IterateThroughAdjacencyMatrix<vertexes, adjacency_matrix, TL::Size<vertexes>::size, col, has_edge> {
-		using result = Graph<vertexes, TL::GenerateTypeLists<TL::Size<vertexes>::size>>;
+	template<class vertexes, class adjacency_matrix>
+	struct IterateThroughAdjacencyMatrix<vertexes, adjacency_matrix, -1> {
+		using result = Graph<vertexes, typename TL::GenerateTypeLists<TL::Size<vertexes>::size>::result>;
 	};
 }
+

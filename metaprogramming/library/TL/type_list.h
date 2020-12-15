@@ -5,7 +5,7 @@ struct NullType {};
 template<typename ...Args>
 struct TypeList {
 	using Head = NullType;
-	using Tail = NullType;
+	using Tail = NullType; 
 };
 
 using EmptyTypeList = TypeList<>;
@@ -24,3 +24,4 @@ struct TypeList<H, T...> {
 
 template<typename ...Args>
 using Typelist = TypeList<Args...>;
+

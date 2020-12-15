@@ -2,10 +2,10 @@
 
 template<int integer>
 struct Integer {
-	constexpr int value = integer;
+	constexpr static int value = integer;
 };
 
 template<bool boolean>
 struct Boolean {
-	constexpr bool value = boolean;
+	constexpr static bool value = boolean;
 };

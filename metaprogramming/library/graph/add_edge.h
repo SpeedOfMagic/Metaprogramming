@@ -14,7 +14,7 @@ namespace GLib {
 
 		using new_adjacent_vertexes = typename TL::Add<to, 0, adjacent_vertexes>::result;
 		using new_adjacency_list = typename TL::Replace<new_adjacent_vertexes, vertex_num, typename graph::adjacency_list>::result;
-		using result = typename Graph<typename graph::vertexes, new_adjacency_list>;
+		using result = Graph<typename graph::vertexes, new_adjacency_list>;
 	};
 
 	template<class graph, class edge>
