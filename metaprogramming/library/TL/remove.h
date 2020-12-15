@@ -2,7 +2,6 @@
 
 namespace TL {
 	/* Remove first ocurrence of class from TypeList */
-
 	template<class type_list, typename T>
 	struct Remove {
 		using result = TypeList<typename type_list::Head,
@@ -20,7 +19,6 @@ namespace TL {
 	};
 
 	/* Remove all ocurrences of class from TypeList */
-
 	template<class type_list, class T>
 	struct RemoveAll {
 		using result = TypeList<typename type_list::Head,

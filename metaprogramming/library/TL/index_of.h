@@ -1,10 +1,11 @@
+#pragma once
+
 #include <cstdint>
 
 #include "type_list.h"
 
 namespace TL {
 	/* Get index of first ocurrence of class in TypeList */
-
 	template<class type_list, typename T>
 	struct IndexOf {
 		constexpr static int value = 1 + IndexOf<typename type_list::Tail, T>::value;

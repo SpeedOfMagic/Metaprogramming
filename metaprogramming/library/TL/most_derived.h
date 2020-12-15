@@ -6,7 +6,6 @@
 
 namespace TL {
 	/* Finds the latest child of T */
-
 	template<class type_list, typename T>
 	struct MostDerived;
 }

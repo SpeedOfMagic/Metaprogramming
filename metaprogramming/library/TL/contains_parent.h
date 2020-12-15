@@ -6,7 +6,6 @@
 
 namespace TL {
 	/* Checks if TypeList contains parent of T */
-
 	template<class type_list, typename T>
 	struct ContainsParent;
 }

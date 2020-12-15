@@ -5,7 +5,6 @@
 
 namespace TL {
 	/* Finds and returns TypeList that contains T among all other TypeLists */
-
 	template<typename T, class type_list, class ...type_lists>
 	struct FindTypeListByClass;
 }

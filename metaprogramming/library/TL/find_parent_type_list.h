@@ -5,7 +5,6 @@
 
 namespace TL {
 	/* Finds and returns TypeList that is the parent of T */
-
 	template<typename T, class type_list, class ...type_lists>
 	struct FindParentTypeList;
 }

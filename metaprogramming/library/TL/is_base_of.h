@@ -8,7 +8,6 @@
 namespace TL {
 	/* Checks if type list is parent of another type list */
 	/* t1 is parent of t2 if and only if for every class C in t2, t1 has parent of C */
-	
 	template<class parent, class derived>
 	struct IsBaseOf;
 }

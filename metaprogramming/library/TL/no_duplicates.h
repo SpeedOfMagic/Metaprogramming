@@ -3,7 +3,6 @@
 
 namespace TL {
 	/* Remove duplicates from TypeList */
-
 	template<class type_list>
 	struct NoDuplicates {
 		using result = TypeList<
