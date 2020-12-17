@@ -5,6 +5,8 @@
 #include "../library/graph/graph_type.h"
 #include "../library/graph/make_graph.h"
 #include "../library/graph/objects.h"
+#include "calculate_vertex_count.h"
+#include "../library/graph/vertex_stream.h"
 
 int main() {
 	using vertexes = TypeList<char, short, int, long, long long, float, double>;
@@ -30,6 +32,11 @@ int main() {
 	g2 gg = g2();
 	std::cout << g2().HasEdge<Integer<2>, Integer<4>>() << std::endl;
 	std::cout << g2().HasEdge<Integer<4>, Integer<2>>() << std::endl;
+
+	using calc = CalculateVertexCount;
+	VertexStream<g2::vertexes, g2>::ForEach<calc>;
+
+	std::cout << calc::result << std::endl;
 
 	return 0;
 }
