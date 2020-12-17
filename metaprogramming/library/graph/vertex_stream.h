@@ -9,14 +9,14 @@ struct VertexStream {
 	/* Executes VertexCallable on every vertex in stream */
 	template<class callable>
 	struct ForEach {
-		callable::execute<stream::Head>();
-		typename VertexStream<stream::Tail, graph>::ForEach<typename stream::Head>;
+		callable::typename execute<stream::Head>();
+		typename VertexStream<typename stream::Tail, graph>::ForEach<typename stream::Head>;
 	};
 };
 
 template<class graph>
 struct VertexStream<EmptyTypeList, graph> {
-	using vertexes = EmptyTypeList;
+	using stream = EmptyTypeList;
 
 	template<class callable>
 	struct ForEach {};
