@@ -41,10 +41,6 @@ private:
 		virtual ~FunctionHolder() {}
 		virtual ResultType Invoke(ArgTypes...) = 0;
 		virtual Invoker Clone() = 0;
-
-	private:
-		FunctionHolder(const FunctionHolder&);
-		FunctionHolder operator=(const FunctionHolder&);
 	};
 
 	template<typename Function>

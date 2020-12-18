@@ -9,8 +9,8 @@ struct VertexStream {
 
 	template<class Functor>
 	void ForEach(const Functor& functor) {
-		functor(Class<stream::Head>(), Class<graph>());
-		VertexStream<stream::Tail, graph>(functor);
+		functor(Class<typename stream::Head>(), Class<graph>());
+		VertexStream<typename stream::Tail, graph>()(functor);
 	}
 };
 
