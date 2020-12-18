@@ -11,7 +11,7 @@
 
 template<class Gr>
 void print(Gr g, size_t ind) {
-	std::cout << '1' << std::endl;
+	std::cout << ind << std::endl;
 }
 
 int main() {
@@ -40,7 +40,7 @@ int main() {
 	std::cout << g2().HasEdge<Integer<4>, Integer<2>>() << std::endl;
 
 
-	Functor<Class<g2>, size_t> f(print<Class<g2>>);
+	Functor<void(Class<g2>, size_t)> f(print<Class<g2>>);
 
 	return 0;
 }
