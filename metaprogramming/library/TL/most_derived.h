@@ -5,7 +5,12 @@
 #include "type_list.h"
 
 namespace TL {
-	/* Finds the latest child of T */
+	/**
+	 * Finds the most derived child of T in type_list
+	 * @param type_list Template parameter
+	 * @param T Template parameter
+	 * @returns Parameter result, the most derived child of T in type_list
+	 */
 	template<class type_list, typename T>
 	struct MostDerived;
 }

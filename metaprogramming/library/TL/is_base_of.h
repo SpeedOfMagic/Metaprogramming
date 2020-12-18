@@ -6,8 +6,13 @@
 #include "type_list.h"
 
 namespace TL {
-	/* Checks if type list is parent of another type list */
-	/* t1 is parent of t2 if and only if for every class C in t2, t1 has parent of C */
+	/**
+	 * Checks if TypeList "parent" is in fact parent of another TypeList "derived"
+	 * "parent" is parent of "derived" if and only if for every class C in "derived", "parent" has parent of C
+	 * @param parent Template parameter
+	 * @param derived Template parameter
+	 * @returns true if TypeList "parent" is in fact parent of another TypeList "derived", false otherwise
+	 */
 	template<class parent, class derived>
 	struct IsBaseOf;
 }

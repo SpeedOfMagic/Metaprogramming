@@ -4,7 +4,13 @@
 #include "type_list.h"
 
 namespace TL {
-	/* Finds and returns TypeList that contains T among all other TypeLists */
+	/**
+	 * Finds and returns TypeList that has T
+	 * @param T Template parameter
+	 * @param type_list Template parameter, first TypeList among other TypeLists
+	 * @param ...type_lists Template parameter, other TypeLists to check
+	 * @returns Parameter result, first TypeList that contains T, compilation error otherwise
+	 */
 	template<typename T, class type_list, class ...type_lists>
 	struct FindTypeListByClass;
 }

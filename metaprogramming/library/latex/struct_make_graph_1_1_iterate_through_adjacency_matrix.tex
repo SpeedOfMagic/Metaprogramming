@@ -1,0 +1,48 @@
+\hypertarget{struct_make_graph_1_1_iterate_through_adjacency_matrix}{}\doxysection{Make\+Graph\+::Iterate\+Through\+Adjacency\+Matrix$<$ vertexes, adjacency\+\_\+matrix, ind $>$ Struct Template Reference}
+\label{struct_make_graph_1_1_iterate_through_adjacency_matrix}\index{MakeGraph::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$@{MakeGraph::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_make_graph_1_1_iterate_through_adjacency_matrix_a83c7c9269fd9f4908cbcc938c0c9ae81}\label{struct_make_graph_1_1_iterate_through_adjacency_matrix_a83c7c9269fd9f4908cbcc938c0c9ae81}} 
+using {\bfseries next\+\_\+result} = typename \mbox{\hyperlink{struct_make_graph_1_1_iterate_through_adjacency_matrix}{Iterate\+Through\+Adjacency\+Matrix}}$<$ vertexes, adjacency\+\_\+matrix, ind -\/ 1 $>$\+::result
+\item 
+\mbox{\Hypertarget{struct_make_graph_1_1_iterate_through_adjacency_matrix_a1f9beef797a57d3d5ada5d381cd9f902}\label{struct_make_graph_1_1_iterate_through_adjacency_matrix_a1f9beef797a57d3d5ada5d381cd9f902}} 
+using {\bfseries result} = std\+::conditional\+\_\+t$<$ has\+\_\+edge, typename \mbox{\hyperlink{struct_g_lib_1_1_add_edge}{G\+Lib\+::\+Add\+Edge}}$<$ next\+\_\+result, \mbox{\hyperlink{struct_edge}{Edge}}$<$ typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$ vertexes, row $>$\+::value, typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$ vertexes, col $>$\+::value $>$ $>$\+::result, next\+\_\+result $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_make_graph_1_1_iterate_through_adjacency_matrix_a0793eb91abed8e49447c21a9ac49c832}\label{struct_make_graph_1_1_iterate_through_adjacency_matrix_a0793eb91abed8e49447c21a9ac49c832}} 
+constexpr static size\+\_\+t {\bfseries vertex\+\_\+size} = \mbox{\hyperlink{struct_t_l_1_1_size}{T\+L\+::\+Size}}$<$vertexes$>$\+::size
+\item 
+\mbox{\Hypertarget{struct_make_graph_1_1_iterate_through_adjacency_matrix_ad5b26d152e4dda297193825239b2d1c0}\label{struct_make_graph_1_1_iterate_through_adjacency_matrix_ad5b26d152e4dda297193825239b2d1c0}} 
+constexpr static size\+\_\+t {\bfseries row} = ind / vertex\+\_\+size
+\item 
+\mbox{\Hypertarget{struct_make_graph_1_1_iterate_through_adjacency_matrix_a59c8689e89d86a585121ee2c65ae454f}\label{struct_make_graph_1_1_iterate_through_adjacency_matrix_a59c8689e89d86a585121ee2c65ae454f}} 
+constexpr static size\+\_\+t {\bfseries col} = ind \% vertex\+\_\+size
+\item 
+constexpr static bool {\bfseries has\+\_\+edge}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_make_graph_1_1_iterate_through_adjacency_matrix_afa19d58835c94d01006b27edc0622607}\label{struct_make_graph_1_1_iterate_through_adjacency_matrix_afa19d58835c94d01006b27edc0622607}} 
+\index{MakeGraph::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$@{MakeGraph::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$}!has\_edge@{has\_edge}}
+\index{has\_edge@{has\_edge}!MakeGraph::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$@{MakeGraph::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$}}
+\doxysubsubsection{\texorpdfstring{has\_edge}{has\_edge}}
+{\footnotesize\ttfamily template$<$class vertexes , class adjacency\+\_\+matrix , int ind$>$ \\
+constexpr static bool \mbox{\hyperlink{struct_make_graph_1_1_iterate_through_adjacency_matrix}{Make\+Graph\+::\+Iterate\+Through\+Adjacency\+Matrix}}$<$ vertexes, adjacency\+\_\+matrix, ind $>$\+::has\+\_\+edge\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{struct_t_l_1_1_type_at}{TL::TypeAt}}<}
+\DoxyCodeLine{            \textcolor{keyword}{typename} TL::TypeAt<adjacency\_matrix, row>::value,}
+\DoxyCodeLine{            col}
+\DoxyCodeLine{        >::value::value}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/make\+\_\+graph.\+h\end{DoxyCompactItemize}

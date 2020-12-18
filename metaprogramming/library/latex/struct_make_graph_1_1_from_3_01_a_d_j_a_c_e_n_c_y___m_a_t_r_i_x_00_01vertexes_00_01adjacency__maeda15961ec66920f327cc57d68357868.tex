@@ -1,0 +1,49 @@
+\hypertarget{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868}{}\doxysection{Make\+Graph\+::From$<$ A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX, vertexes, adjacency\+\_\+matrix $>$\+::Iterate\+Through\+Adjacency\+Matrix$<$ vertexes, adjacency\+\_\+matrix, ind $>$ Struct Template Reference}
+\label{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868}\index{MakeGraph::From$<$ ADJACENCY\_MATRIX, vertexes, adjacency\_matrix $>$::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$@{MakeGraph::From$<$ ADJACENCY\_MATRIX, vertexes, adjacency\_matrix $>$::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_a6b235ea5b487de40d0b90d9a7b3d5cab}\label{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_a6b235ea5b487de40d0b90d9a7b3d5cab}} 
+using {\bfseries next\+\_\+result} = typename Iterate\+Through\+Adjacency\+Matrix$<$ vertexes, adjacency\+\_\+matrix, ind -\/ 1 $>$\+::result
+\item 
+\mbox{\Hypertarget{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_a95c8c991c0c0a2b0f58b122540a7d438}\label{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_a95c8c991c0c0a2b0f58b122540a7d438}} 
+using {\bfseries result} = std\+::conditional\+\_\+t$<$ has\+\_\+edge, typename \mbox{\hyperlink{struct_g_lib_1_1_add_edge}{G\+Lib\+::\+Add\+Edge}}$<$ next\+\_\+result, \mbox{\hyperlink{struct_edge}{Edge}}$<$ typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$ vertexes, row $>$\+::value, typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$ vertexes, col $>$\+::value $>$ $>$\+::result, next\+\_\+result $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_a8cede68758b3a3493b0d51a6b489a82c}\label{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_a8cede68758b3a3493b0d51a6b489a82c}} 
+constexpr static size\+\_\+t {\bfseries vertex\+\_\+size} = \mbox{\hyperlink{struct_t_l_1_1_size}{T\+L\+::\+Size}}$<$vertexes$>$\+::size
+\item 
+\mbox{\Hypertarget{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_a1277d898341d4105da42d24be949019b}\label{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_a1277d898341d4105da42d24be949019b}} 
+constexpr static size\+\_\+t {\bfseries row} = ind / vertex\+\_\+size
+\item 
+\mbox{\Hypertarget{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_a98015fddced1f39b42e2c1967af04906}\label{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_a98015fddced1f39b42e2c1967af04906}} 
+constexpr static size\+\_\+t {\bfseries col} = ind \% vertex\+\_\+size
+\item 
+constexpr static bool {\bfseries has\+\_\+edge}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_af4c4e34422bd6e743a4b2472bca663ad}\label{struct_make_graph_1_1_from_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01vertexes_00_01adjacency__maeda15961ec66920f327cc57d68357868_af4c4e34422bd6e743a4b2472bca663ad}} 
+\index{MakeGraph::From$<$ ADJACENCY\_MATRIX, vertexes, adjacency\_matrix $>$::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$@{MakeGraph::From$<$ ADJACENCY\_MATRIX, vertexes, adjacency\_matrix $>$::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$}!has\_edge@{has\_edge}}
+\index{has\_edge@{has\_edge}!MakeGraph::From$<$ ADJACENCY\_MATRIX, vertexes, adjacency\_matrix $>$::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$@{MakeGraph::From$<$ ADJACENCY\_MATRIX, vertexes, adjacency\_matrix $>$::IterateThroughAdjacencyMatrix$<$ vertexes, adjacency\_matrix, ind $>$}}
+\doxysubsubsection{\texorpdfstring{has\_edge}{has\_edge}}
+{\footnotesize\ttfamily template$<$class vertexes , class adjacency\+\_\+matrix $>$ \\
+template$<$class vertexes , class adjacency\+\_\+matrix , int ind$>$ \\
+constexpr static bool \mbox{\hyperlink{struct_make_graph_1_1_from}{Make\+Graph\+::\+From}}$<$ A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX, vertexes, adjacency\+\_\+matrix $>$\+::Iterate\+Through\+Adjacency\+Matrix$<$ vertexes, adjacency\+\_\+matrix, ind $>$\+::has\+\_\+edge\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{struct_t_l_1_1_type_at}{TL::TypeAt}}<}
+\DoxyCodeLine{                \textcolor{keyword}{typename} TL::TypeAt<adjacency\_matrix, row>::value,}
+\DoxyCodeLine{                col}
+\DoxyCodeLine{            >::value::value}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/make\+\_\+graph.\+h\end{DoxyCompactItemize}

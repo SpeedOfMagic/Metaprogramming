@@ -5,6 +5,12 @@
 #include "type_list.h"
 
 namespace TL {
+	/**
+	 * Finds the most derived and constructible child of T in type_list
+	 * @param type_list Template parameter
+	 * @param T Template parameter
+	 * @returns Parameter result, the most derived and constructible child of T in type_list
+	 */
 	template<class type_list, typename T>
 	struct MostDerivedAndConstructible;
 }

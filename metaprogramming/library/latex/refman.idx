@@ -1,0 +1,107 @@
+\indexentry{FunctorType@{FunctorType}|hyperpage}{5}
+\indexentry{MakeGraph@{MakeGraph}|hyperpage}{5}
+\indexentry{Objects@{Objects}|hyperpage}{6}
+\indexentry{TL@{TL}|hyperpage}{6}
+\indexentry{TL::Add$<$ T, ind, Arg, Args $>$@{TL::Add$<$ T, ind, Arg, Args $>$}|hyperpage}{9}
+\indexentry{TL::Add$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$@{TL::Add$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}|hyperpage}{9}
+\indexentry{TL::Add$<$ T, 0, TypeList$<$ Args... $>$ $>$@{TL::Add$<$ T, 0, TypeList$<$ Args... $>$ $>$}|hyperpage}{10}
+\indexentry{TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$@{TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}|hyperpage}{10}
+\indexentry{GLib::AddEdge$<$ graph, edge $>$@{GLib::AddEdge$<$ graph, edge $>$}|hyperpage}{10}
+\indexentry{Objects::Boolean$<$ boolean $>$@{Objects::Boolean$<$ boolean $>$}|hyperpage}{11}
+\indexentry{CheckContainsConstructibleParent$<$ type\_list, T, is\_parent $>$@{CheckContainsConstructibleParent$<$ type\_list, T, is\_parent $>$}|hyperpage}{11}
+\indexentry{CheckContainsConstructibleParent$<$ type\_list, T, false $>$@{CheckContainsConstructibleParent$<$ type\_list, T, false $>$}|hyperpage}{11}
+\indexentry{CheckContainsConstructibleParent$<$ type\_list, T, false $>$@{CheckContainsConstructibleParent$<$ type\_list, T, false $>$}!result@{result}|hyperpage}{11}
+\indexentry{result@{result}!CheckContainsConstructibleParent$<$ type\_list, T, false $>$@{CheckContainsConstructibleParent$<$ type\_list, T, false $>$}|hyperpage}{11}
+\indexentry{CheckContainsConstructibleParent$<$ type\_list, T, true $>$@{CheckContainsConstructibleParent$<$ type\_list, T, true $>$}|hyperpage}{12}
+\indexentry{CheckContainsParent$<$ type\_list, T, is\_parent $>$@{CheckContainsParent$<$ type\_list, T, is\_parent $>$}|hyperpage}{12}
+\indexentry{CheckContainsParent$<$ type\_list, T, false $>$@{CheckContainsParent$<$ type\_list, T, false $>$}|hyperpage}{12}
+\indexentry{CheckContainsParent$<$ type\_list, T, false $>$@{CheckContainsParent$<$ type\_list, T, false $>$}!result@{result}|hyperpage}{12}
+\indexentry{result@{result}!CheckContainsParent$<$ type\_list, T, false $>$@{CheckContainsParent$<$ type\_list, T, false $>$}|hyperpage}{12}
+\indexentry{CheckContainsParent$<$ type\_list, T, true $>$@{CheckContainsParent$<$ type\_list, T, true $>$}|hyperpage}{13}
+\indexentry{CheckFindParentTypeList$<$ contains\_class, T, type\_list, type\_lists $>$@{CheckFindParentTypeList$<$ contains\_class, T, type\_list, type\_lists $>$}|hyperpage}{13}
+\indexentry{CheckFindParentTypeList$<$ false, T, type\_list, type\_lists... $>$@{CheckFindParentTypeList$<$ false, T, type\_list, type\_lists... $>$}|hyperpage}{13}
+\indexentry{CheckFindParentTypeList$<$ true, T, type\_list, type\_lists... $>$@{CheckFindParentTypeList$<$ true, T, type\_list, type\_lists... $>$}|hyperpage}{14}
+\indexentry{CheckFindTypeListByClass$<$ contains\_class, T, type\_list, type\_lists $>$@{CheckFindTypeListByClass$<$ contains\_class, T, type\_list, type\_lists $>$}|hyperpage}{14}
+\indexentry{CheckFindTypeListByClass$<$ false, T, type\_list, type\_lists... $>$@{CheckFindTypeListByClass$<$ false, T, type\_list, type\_lists... $>$}|hyperpage}{14}
+\indexentry{CheckFindTypeListByClass$<$ true, T, type\_list, type\_lists... $>$@{CheckFindTypeListByClass$<$ true, T, type\_list, type\_lists... $>$}|hyperpage}{14}
+\indexentry{CheckHasDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$@{CheckHasDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$}|hyperpage}{15}
+\indexentry{CheckHasDerivedAndConstructible$<$ type\_list, T, false $>$@{CheckHasDerivedAndConstructible$<$ type\_list, T, false $>$}|hyperpage}{15}
+\indexentry{CheckHasDerivedAndConstructible$<$ type\_list, T, true $>$@{CheckHasDerivedAndConstructible$<$ type\_list, T, true $>$}|hyperpage}{15}
+\indexentry{CheckIsBaseOf$<$ has\_parent, parent, derived $>$@{CheckIsBaseOf$<$ has\_parent, parent, derived $>$}|hyperpage}{15}
+\indexentry{CheckIsBaseOf$<$ false, parent, derived $>$@{CheckIsBaseOf$<$ false, parent, derived $>$}|hyperpage}{16}
+\indexentry{CheckIsBaseOf$<$ true, parent, derived $>$@{CheckIsBaseOf$<$ true, parent, derived $>$}|hyperpage}{16}
+\indexentry{CheckIsBaseOf$<$ true, parent, derived $>$@{CheckIsBaseOf$<$ true, parent, derived $>$}!result@{result}|hyperpage}{16}
+\indexentry{result@{result}!CheckIsBaseOf$<$ true, parent, derived $>$@{CheckIsBaseOf$<$ true, parent, derived $>$}|hyperpage}{16}
+\indexentry{CheckMostDerived$<$ type\_list, T, is\_head\_parent\_of\_T $>$@{CheckMostDerived$<$ type\_list, T, is\_head\_parent\_of\_T $>$}|hyperpage}{16}
+\indexentry{CheckMostDerived$<$ type\_list, T, false $>$@{CheckMostDerived$<$ type\_list, T, false $>$}|hyperpage}{17}
+\indexentry{CheckMostDerived$<$ type\_list, T, true $>$@{CheckMostDerived$<$ type\_list, T, true $>$}|hyperpage}{17}
+\indexentry{CheckMostDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$@{CheckMostDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$}|hyperpage}{17}
+\indexentry{CheckMostDerivedAndConstructible$<$ type\_list, T, false $>$@{CheckMostDerivedAndConstructible$<$ type\_list, T, false $>$}|hyperpage}{17}
+\indexentry{CheckMostDerivedAndConstructible$<$ type\_list, T, true $>$@{CheckMostDerivedAndConstructible$<$ type\_list, T, true $>$}|hyperpage}{18}
+\indexentry{Class$<$ T $>$@{Class$<$ T $>$}|hyperpage}{18}
+\indexentry{TL::Contains$<$ type\_list, T $>$@{TL::Contains$<$ type\_list, T $>$}|hyperpage}{18}
+\indexentry{TL::ContainsConstructibleParent$<$ type\_list, T $>$@{TL::ContainsConstructibleParent$<$ type\_list, T $>$}|hyperpage}{19}
+\indexentry{TL::ContainsConstructibleParent$<$ type\_list, T $>$@{TL::ContainsConstructibleParent$<$ type\_list, T $>$}!result@{result}|hyperpage}{19}
+\indexentry{result@{result}!TL::ContainsConstructibleParent$<$ type\_list, T $>$@{TL::ContainsConstructibleParent$<$ type\_list, T $>$}|hyperpage}{19}
+\indexentry{TL::ContainsConstructibleParent$<$ EmptyTypeList, T $>$@{TL::ContainsConstructibleParent$<$ EmptyTypeList, T $>$}|hyperpage}{20}
+\indexentry{TL::ContainsParent$<$ type\_list, T $>$@{TL::ContainsParent$<$ type\_list, T $>$}|hyperpage}{20}
+\indexentry{TL::ContainsParent$<$ type\_list, T $>$@{TL::ContainsParent$<$ type\_list, T $>$}!result@{result}|hyperpage}{21}
+\indexentry{result@{result}!TL::ContainsParent$<$ type\_list, T $>$@{TL::ContainsParent$<$ type\_list, T $>$}|hyperpage}{21}
+\indexentry{TL::ContainsParent$<$ EmptyTypeList, T $>$@{TL::ContainsParent$<$ EmptyTypeList, T $>$}|hyperpage}{21}
+\indexentry{Edge$<$ from\_, to\_, weight\_ $>$@{Edge$<$ from\_, to\_, weight\_ $>$}|hyperpage}{21}
+\indexentry{TL::FindParentTypeList$<$ T, type\_list, type\_lists $>$@{TL::FindParentTypeList$<$ T, type\_list, type\_lists $>$}|hyperpage}{22}
+\indexentry{TL::FindTypeListByClass$<$ T, type\_list, type\_lists $>$@{TL::FindTypeListByClass$<$ T, type\_list, type\_lists $>$}|hyperpage}{22}
+\indexentry{MakeGraph::From$<$ graph\_type, vertexes, edges $>$@{MakeGraph::From$<$ graph\_type, vertexes, edges $>$}|hyperpage}{23}
+\indexentry{MakeGraph::From$<$ ADJACENCY\_LIST, vertexes, adjacency\_list $>$@{MakeGraph::From$<$ ADJACENCY\_LIST, vertexes, adjacency\_list $>$}|hyperpage}{24}
+\indexentry{MakeGraph::From$<$ ADJACENCY\_MATRIX, vertexes, adjacency\_matrix $>$@{MakeGraph::From$<$ ADJACENCY\_MATRIX, vertexes, adjacency\_matrix $>$}|hyperpage}{24}
+\indexentry{MakeGraph::From$<$ EDGE\_LIST, vertexes, edge\_list $>$@{MakeGraph::From$<$ EDGE\_LIST, vertexes, edge\_list $>$}|hyperpage}{25}
+\indexentry{MakeGraph::From$<$ EDGE\_LIST, vertexes, EmptyTypeList $>$@{MakeGraph::From$<$ EDGE\_LIST, vertexes, EmptyTypeList $>$}|hyperpage}{26}
+\indexentry{Functor$<$ ResultType, ArgTypes $>$@{Functor$<$ ResultType, ArgTypes $>$}|hyperpage}{26}
+\indexentry{Functor$<$ ResultType(ArgTypes...)$>$@{Functor$<$ ResultType(ArgTypes...)$>$}|hyperpage}{26}
+\indexentry{Functor$<$ ResultType(ArgTypes...)$>$@{Functor$<$ ResultType(ArgTypes...)$>$}!operator()@{operator()}|hyperpage}{27}
+\indexentry{operator()@{operator()}!Functor$<$ ResultType(ArgTypes...)$>$@{Functor$<$ ResultType(ArgTypes...)$>$}|hyperpage}{27}
+\indexentry{TL::GenerateTypeLists$<$ n $>$@{TL::GenerateTypeLists$<$ n $>$}|hyperpage}{28}
+\indexentry{TL::GenerateTypeLists$<$ 0 $>$@{TL::GenerateTypeLists$<$ 0 $>$}|hyperpage}{28}
+\indexentry{Graph$<$ vertexes, adjacency\_list $>$@{Graph$<$ vertexes, adjacency\_list $>$}|hyperpage}{28}
+\indexentry{Graph$<$ vertexes, adjacency\_list $>$@{Graph$<$ vertexes, adjacency\_list $>$}!HasEdge@{HasEdge}|hyperpage}{29}
+\indexentry{HasEdge@{HasEdge}!Graph$<$ vertexes, adjacency\_list $>$@{Graph$<$ vertexes, adjacency\_list $>$}|hyperpage}{29}
+\indexentry{TL::HasDerivedAndConstructible$<$ type\_list, T $>$@{TL::HasDerivedAndConstructible$<$ type\_list, T $>$}|hyperpage}{30}
+\indexentry{TL::HasDerivedAndConstructible$<$ type\_list, T $>$@{TL::HasDerivedAndConstructible$<$ type\_list, T $>$}!result@{result}|hyperpage}{30}
+\indexentry{result@{result}!TL::HasDerivedAndConstructible$<$ type\_list, T $>$@{TL::HasDerivedAndConstructible$<$ type\_list, T $>$}|hyperpage}{30}
+\indexentry{TL::HasDerivedAndConstructible$<$ EmptyTypeList, T $>$@{TL::HasDerivedAndConstructible$<$ EmptyTypeList, T $>$}|hyperpage}{31}
+\indexentry{TL::IndexOf$<$ type\_list, T $>$@{TL::IndexOf$<$ type\_list, T $>$}|hyperpage}{31}
+\indexentry{TL::IndexOf$<$ EmptyTypeList, T $>$@{TL::IndexOf$<$ EmptyTypeList, T $>$}|hyperpage}{32}
+\indexentry{TL::IndexOf$<$ type\_list, typename type\_list::Head $>$@{TL::IndexOf$<$ type\_list, typename type\_list::Head $>$}|hyperpage}{32}
+\indexentry{Objects::Integer$<$ integer $>$@{Objects::Integer$<$ integer $>$}|hyperpage}{33}
+\indexentry{TL::IsBaseOf$<$ parent, derived $>$@{TL::IsBaseOf$<$ parent, derived $>$}|hyperpage}{33}
+\indexentry{TL::IsBaseOf$<$ parent, derived $>$@{TL::IsBaseOf$<$ parent, derived $>$}!result@{result}|hyperpage}{33}
+\indexentry{result@{result}!TL::IsBaseOf$<$ parent, derived $>$@{TL::IsBaseOf$<$ parent, derived $>$}|hyperpage}{33}
+\indexentry{TL::IsBaseOf$<$ EmptyTypeList, derived $>$@{TL::IsBaseOf$<$ EmptyTypeList, derived $>$}|hyperpage}{34}
+\indexentry{TL::IsBaseOf$<$ EmptyTypeList, EmptyTypeList $>$@{TL::IsBaseOf$<$ EmptyTypeList, EmptyTypeList $>$}|hyperpage}{34}
+\indexentry{TL::IsBaseOf$<$ parent, EmptyTypeList $>$@{TL::IsBaseOf$<$ parent, EmptyTypeList $>$}|hyperpage}{34}
+\indexentry{TL::MostDerived$<$ type\_list, T $>$@{TL::MostDerived$<$ type\_list, T $>$}|hyperpage}{34}
+\indexentry{TL::MostDerived$<$ EmptyTypeList, T $>$@{TL::MostDerived$<$ EmptyTypeList, T $>$}|hyperpage}{35}
+\indexentry{TL::MostDerivedAndConstructible$<$ type\_list, T $>$@{TL::MostDerivedAndConstructible$<$ type\_list, T $>$}|hyperpage}{35}
+\indexentry{TL::MostDerivedAndConstructible$<$ EmptyTypeList, T $>$@{TL::MostDerivedAndConstructible$<$ EmptyTypeList, T $>$}|hyperpage}{36}
+\indexentry{TL::NoDuplicates$<$ type\_list $>$@{TL::NoDuplicates$<$ type\_list $>$}|hyperpage}{36}
+\indexentry{TL::NoDuplicates$<$ EmptyTypeList $>$@{TL::NoDuplicates$<$ EmptyTypeList $>$}|hyperpage}{37}
+\indexentry{NullType@{NullType}|hyperpage}{37}
+\indexentry{TL::Remove$<$ type\_list, T $>$@{TL::Remove$<$ type\_list, T $>$}|hyperpage}{37}
+\indexentry{TL::Remove$<$ EmptyTypeList, T $>$@{TL::Remove$<$ EmptyTypeList, T $>$}|hyperpage}{38}
+\indexentry{TL::Remove$<$ type\_list, typename type\_list::Head $>$@{TL::Remove$<$ type\_list, typename type\_list::Head $>$}|hyperpage}{38}
+\indexentry{TL::RemoveAll$<$ type\_list, T $>$@{TL::RemoveAll$<$ type\_list, T $>$}|hyperpage}{39}
+\indexentry{TL::RemoveAll$<$ type\_list, typename type\_list::Head $>$@{TL::RemoveAll$<$ type\_list, typename type\_list::Head $>$}|hyperpage}{39}
+\indexentry{TL::Replace$<$ T, ind, Arg, Args $>$@{TL::Replace$<$ T, ind, Arg, Args $>$}|hyperpage}{40}
+\indexentry{TL::Replace$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$@{TL::Replace$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}|hyperpage}{40}
+\indexentry{TL::Replace$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$@{TL::Replace$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}|hyperpage}{41}
+\indexentry{TL::Size$<$ TypeList $>$@{TL::Size$<$ TypeList $>$}|hyperpage}{41}
+\indexentry{TL::Size$<$ EmptyTypeList $>$@{TL::Size$<$ EmptyTypeList $>$}|hyperpage}{42}
+\indexentry{TL::TypeAt$<$ type\_list, ind $>$@{TL::TypeAt$<$ type\_list, ind $>$}|hyperpage}{42}
+\indexentry{TL::TypeAt$<$ type\_list, 0 $>$@{TL::TypeAt$<$ type\_list, 0 $>$}|hyperpage}{43}
+\indexentry{TypeList$<$ Args $>$@{TypeList$<$ Args $>$}|hyperpage}{43}
+\indexentry{TypeList$<$ H, T... $>$@{TypeList$<$ H, T... $>$}|hyperpage}{44}
+\indexentry{TypeList$<$ T $>$@{TypeList$<$ T $>$}|hyperpage}{44}
+\indexentry{VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}|hyperpage}{45}
+\indexentry{VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}!ForEach@{ForEach}|hyperpage}{46}
+\indexentry{ForEach@{ForEach}!VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}|hyperpage}{46}
+\indexentry{VertexStream$<$ EmptyTypeList, graph $>$@{VertexStream$<$ EmptyTypeList, graph $>$}|hyperpage}{46}

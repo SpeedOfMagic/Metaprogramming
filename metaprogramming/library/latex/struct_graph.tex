@@ -1,0 +1,57 @@
+\hypertarget{struct_graph}{}\doxysection{Graph$<$ vertexes, adjacency\+\_\+list $>$ Struct Template Reference}
+\label{struct_graph}\index{Graph$<$ vertexes, adjacency\_list $>$@{Graph$<$ vertexes, adjacency\_list $>$}}
+
+
+{\ttfamily \#include $<$graph.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_graph_a3e7533c364389fa8dddea81b9a5d2624}\label{struct_graph_a3e7533c364389fa8dddea81b9a5d2624}} 
+using \mbox{\hyperlink{struct_graph_a3e7533c364389fa8dddea81b9a5d2624}{vertexes\+\_\+}} = vertexes
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_type_list}{Type\+List}} of vertexes in graph. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_graph_a25d4350577bcb9215847c02139dc18e9}\label{struct_graph_a25d4350577bcb9215847c02139dc18e9}} 
+using \mbox{\hyperlink{struct_graph_a25d4350577bcb9215847c02139dc18e9}{adjacency\+\_\+list\+\_\+}} = adjacency\+\_\+list
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_type_list}{Type\+List}} of Type\+Lists of edges, which are grouped by starting vertex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class edge $>$ }\\constexpr bool \mbox{\hyperlink{struct_graph_a68e2be76058c7ae589bd81251efc353a}{Has\+Edge}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class vertexes, class adjacency\+\_\+list$>$\newline
+struct Graph$<$ vertexes, adjacency\+\_\+list $>$}
+
+Represents graph vertexes defined in vertexes\+\_\+, and edges, which are derived from adjacency\+\_\+list\+\_\+ Size of an adjacency list must be equal to amount of vertexes 
+\begin{DoxyParams}{Parameters}
+{\em vertexes\+\_\+} & \mbox{\hyperlink{struct_type_list}{Type\+List}} of vertexes in graph. \\
+\hline
+{\em adjacency\+\_\+list\+\_\+} & -\/ \mbox{\hyperlink{struct_type_list}{Type\+List}} of Type\+Lists of edges, which are grouped by starting vertex i.\+e. edge (from, to, weight) goes to adjacency\+\_\+list\+\_\+\mbox{[}from\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_graph_a68e2be76058c7ae589bd81251efc353a}\label{struct_graph_a68e2be76058c7ae589bd81251efc353a}} 
+\index{Graph$<$ vertexes, adjacency\_list $>$@{Graph$<$ vertexes, adjacency\_list $>$}!HasEdge@{HasEdge}}
+\index{HasEdge@{HasEdge}!Graph$<$ vertexes, adjacency\_list $>$@{Graph$<$ vertexes, adjacency\_list $>$}}
+\doxysubsubsection{\texorpdfstring{HasEdge()}{HasEdge()}}
+{\footnotesize\ttfamily template$<$class vertexes , class adjacency\+\_\+list $>$ \\
+template$<$class edge $>$ \\
+constexpr bool \mbox{\hyperlink{struct_graph}{Graph}}$<$ vertexes, adjacency\+\_\+list $>$\+::Has\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+Checks if edge, passed as a template, is located in this graph 
+\begin{DoxyParams}{Parameters}
+{\em edge} & Template parameter, represents an edge to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this edge in the graph, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/graph.\+h\end{DoxyCompactItemize}

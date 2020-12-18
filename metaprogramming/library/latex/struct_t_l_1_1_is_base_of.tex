@@ -1,0 +1,47 @@
+\hypertarget{struct_t_l_1_1_is_base_of}{}\doxysection{TL\+::Is\+Base\+Of$<$ parent, derived $>$ Struct Template Reference}
+\label{struct_t_l_1_1_is_base_of}\index{TL::IsBaseOf$<$ parent, derived $>$@{TL::IsBaseOf$<$ parent, derived $>$}}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+constexpr static bool {\bfseries result}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class parent, class derived$>$\newline
+struct T\+L\+::\+Is\+Base\+Of$<$ parent, derived $>$}
+
+Checks if \mbox{\hyperlink{struct_type_list}{Type\+List}} \char`\"{}parent\char`\"{} is in fact parent of another \mbox{\hyperlink{struct_type_list}{Type\+List}} \char`\"{}derived\char`\"{} \char`\"{}parent\char`\"{} is parent of \char`\"{}derived\char`\"{} if and only if for every class C in \char`\"{}derived\char`\"{}, \char`\"{}parent\char`\"{} has parent of C 
+\begin{DoxyParams}{Parameters}
+{\em parent} & Template parameter \\
+\hline
+{\em derived} & Template parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if \mbox{\hyperlink{struct_type_list}{Type\+List}} \char`\"{}parent\char`\"{} is in fact parent of another \mbox{\hyperlink{struct_type_list}{Type\+List}} \char`\"{}derived\char`\"{}, false otherwise 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_t_l_1_1_is_base_of_ad1c6bf4ac39722126847ce0740c442cf}\label{struct_t_l_1_1_is_base_of_ad1c6bf4ac39722126847ce0740c442cf}} 
+\index{TL::IsBaseOf$<$ parent, derived $>$@{TL::IsBaseOf$<$ parent, derived $>$}!result@{result}}
+\index{result@{result}!TL::IsBaseOf$<$ parent, derived $>$@{TL::IsBaseOf$<$ parent, derived $>$}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily template$<$class parent , class derived $>$ \\
+constexpr static bool \mbox{\hyperlink{struct_t_l_1_1_is_base_of}{T\+L\+::\+Is\+Base\+Of}}$<$ parent, derived $>$\+::result\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{struct_check_is_base_of}{CheckIsBaseOf}}<}
+\DoxyCodeLine{            ContainsParent<parent, typename derived::Head>::result,}
+\DoxyCodeLine{            parent,}
+\DoxyCodeLine{            derived}
+\DoxyCodeLine{        >::result}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+L/is\+\_\+base\+\_\+of.\+h\end{DoxyCompactItemize}

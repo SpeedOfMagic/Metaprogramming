@@ -5,6 +5,12 @@
 #include "type_list.h"
 
 namespace TL {
+	/**
+	 * Checks if type_list contains derived and constructible child of T
+	 * @param type_list Template parameter
+	 * @param T Template parameter
+	 * @returns Parameter result, true if type_list ccontains derived and constructible child of T, false otherwise
+	 */
 	template<class type_list, typename T>
 	struct HasDerivedAndConstructible;
 }
@@ -33,6 +39,9 @@ namespace TL {
 		>::result;
 	};
 
+	/**
+	 * @see HasDerivedAndConstructible
+	 */
 	template<typename T>
 	struct HasDerivedAndConstructible<EmptyTypeList, T> {
 		constexpr static bool result = false;

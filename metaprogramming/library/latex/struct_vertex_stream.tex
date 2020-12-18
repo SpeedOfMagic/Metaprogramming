@@ -1,0 +1,56 @@
+\hypertarget{struct_vertex_stream}{}\doxysection{Vertex\+Stream$<$ stream, graph $>$ Struct Template Reference}
+\label{struct_vertex_stream}\index{VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}}
+
+
+{\ttfamily \#include $<$vertex\+\_\+stream.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_vertex_stream_ae2d1c7fbe69dc23445acf39514ee1ddf}\label{struct_vertex_stream_ae2d1c7fbe69dc23445acf39514ee1ddf}} 
+using \mbox{\hyperlink{struct_vertex_stream_ae2d1c7fbe69dc23445acf39514ee1ddf}{stream\+\_\+}} = stream
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_type_list}{Type\+List}} of vertexes of a graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Consumer $>$ }\\void \mbox{\hyperlink{struct_vertex_stream_a584aba69154de8dbbdf10b7606cca3b7}{For\+Each}} (Consumer consumer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class stream, class graph$>$\newline
+struct Vertex\+Stream$<$ stream, graph $>$}
+
+Represents a stream of vertexes of a graph 
+\begin{DoxyParams}{Parameters}
+{\em stream} & Template parameter, \mbox{\hyperlink{struct_type_list}{Type\+List}} of vertexes of a graph \\
+\hline
+{\em graph} & Template parameter \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_vertex_stream_a584aba69154de8dbbdf10b7606cca3b7}\label{struct_vertex_stream_a584aba69154de8dbbdf10b7606cca3b7}} 
+\index{VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}!ForEach@{ForEach}}
+\index{ForEach@{ForEach}!VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}}
+\doxysubsubsection{\texorpdfstring{ForEach()}{ForEach()}}
+{\footnotesize\ttfamily template$<$class stream , class graph $>$ \\
+template$<$class Consumer $>$ \\
+void \mbox{\hyperlink{struct_vertex_stream}{Vertex\+Stream}}$<$ stream, graph $>$\+::For\+Each (\begin{DoxyParamCaption}\item[{Consumer}]{consumer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calls consumer on every vertex in a stream It\textquotesingle{}s recommended that this object must be of type Functor\+Types\+::\+Consumer Also it\textquotesingle{}s based on a variation of \char`\"{}\+Chain of a responsibility\char`\"{} pattern 
+\begin{DoxyParams}{Parameters}
+{\em consumer} & Consumer, that accepts \mbox{\hyperlink{struct_class}{Class}} object of a graph and index of a current vertex \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Functor\+Type\+::\+Consumer 
+
+\mbox{\hyperlink{struct_class}{Class}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/vertex\+\_\+stream.\+h\end{DoxyCompactItemize}

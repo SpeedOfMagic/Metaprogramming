@@ -4,7 +4,13 @@
 #include "type_list.h"
 
 namespace TL {
-	/* Generates TypeList of n EmptyTypeLists */
+	/**
+	 * Generates TypeList of n EmptyTypeLists
+	 * @see EmptyTypeList
+	 * @param n Template parameter, a number of EmptyTypeLists to generate
+	 * @returns Parameter result, TypeList of n EmptyTypeList
+	 */
+	/*  */
 	template<int n>
 	struct GenerateTypeLists {
 		using result = typename Add<

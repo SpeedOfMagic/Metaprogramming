@@ -1,0 +1,47 @@
+\hypertarget{struct_t_l_1_1_contains_parent}{}\doxysection{TL\+::Contains\+Parent$<$ type\+\_\+list, T $>$ Struct Template Reference}
+\label{struct_t_l_1_1_contains_parent}\index{TL::ContainsParent$<$ type\_list, T $>$@{TL::ContainsParent$<$ type\_list, T $>$}}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+constexpr static bool {\bfseries result}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class type\+\_\+list, typename T$>$\newline
+struct T\+L\+::\+Contains\+Parent$<$ type\+\_\+list, T $>$}
+
+Checks if type\+\_\+list contains parent of T 
+\begin{DoxyParams}{Parameters}
+{\em type\+\_\+list} & Template parameter \\
+\hline
+{\em T} & Template parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parameter result, true if type\+\_\+list contains parent of T, false otherwise 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_t_l_1_1_contains_parent_aefa5a66d957fdcc3d7d0aba4f9988ee4}\label{struct_t_l_1_1_contains_parent_aefa5a66d957fdcc3d7d0aba4f9988ee4}} 
+\index{TL::ContainsParent$<$ type\_list, T $>$@{TL::ContainsParent$<$ type\_list, T $>$}!result@{result}}
+\index{result@{result}!TL::ContainsParent$<$ type\_list, T $>$@{TL::ContainsParent$<$ type\_list, T $>$}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily template$<$class type\+\_\+list , typename T $>$ \\
+constexpr static bool \mbox{\hyperlink{struct_t_l_1_1_contains_parent}{T\+L\+::\+Contains\+Parent}}$<$ type\+\_\+list, T $>$\+::result\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{struct_check_contains_parent}{CheckContainsParent}}<}
+\DoxyCodeLine{            type\_list,}
+\DoxyCodeLine{            T,}
+\DoxyCodeLine{            std::is\_base\_of<typename type\_list::Head, T>::value}
+\DoxyCodeLine{        >::result}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+T\+L/contains\+\_\+parent.\+h\end{DoxyCompactItemize}

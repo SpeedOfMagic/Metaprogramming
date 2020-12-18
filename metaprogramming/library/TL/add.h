@@ -3,7 +3,12 @@
 #include "type_list.h"
 
 namespace TL {
-	/* Add class to specific position in TypeList */
+	/** Adds typename to a specific position in TypeList 
+	 * @param T Typename to add to a specific position in TypeList
+	 * @param ind Number of this position
+	 * @param TypeList<Arg, Args...> This TypeList
+	 * @result Parameter result, new type list with typename added to position ind
+	 */
 	template<typename T, size_t ind, class Arg, class ...Args>
 	struct Add;
 

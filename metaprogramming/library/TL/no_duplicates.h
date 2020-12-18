@@ -2,7 +2,11 @@
 #include "type_list.h"
 
 namespace TL {
-	/* Remove duplicates from TypeList */
+	/**
+	 * Removes duplicated from TypeList type_list
+	 * @param type_list Template parameter
+	 * @returns Parameter result, new TypeList without any duplicates
+	 */
 	template<class type_list>
 	struct NoDuplicates {
 		using result = TypeList<
@@ -15,6 +19,9 @@ namespace TL {
 		>;
 	};
 
+	/**
+	 * @see NoDuplicates
+	 */
 	template<>
 	struct NoDuplicates<EmptyTypeList> {
 		using result = EmptyTypeList;

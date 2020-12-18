@@ -4,7 +4,12 @@
 #include "type_list.h"
 
 namespace TL {
-	/* Checks if TypeList contains T */
+	/**
+	 * Checks if type_list contains typename T
+	 * @param type_list Template parameter
+	 * @param T Template parameter
+	 * @returns Parameter result, true if type_list contains typename T, false otherwise
+	 */
 	template<class type_list, typename T>
 	struct Contains {
 		constexpr static bool result = IndexOf<type_list, T>::value >= 0;

@@ -5,7 +5,12 @@
 #include "type_list.h"
 
 namespace TL {
-	/* Checks if TypeList contains parent of T */
+	/**
+	 * Checks if type_list contains parent of T
+	 * @param type_list Template parameter
+	 * @param T Template parameter
+	 * @returns Parameter result, true if type_list contains parent of T, false otherwise
+	 */
 	template<class type_list, typename T>
 	struct ContainsParent;
 }

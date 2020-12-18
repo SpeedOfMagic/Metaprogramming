@@ -6,6 +6,11 @@
 template<typename ResultType, typename ...ArgTypes>
 class Functor;
 
+/**
+ * Provides an object that contains a function
+ * @param ResultType Template parameter, type of an object function returns
+ * @param ArgTypes Template parameters, types of an object function accepts
+ */
 template<typename ResultType, typename ...ArgTypes>
 class Functor<ResultType(ArgTypes...)> {
 public:
@@ -23,6 +28,11 @@ public:
 		this->invoker_ = other.invoker_->Clone();
 	}
 
+	/**
+	 * Invokes function
+	 * @param args Arguments for a function
+	 * @return Result of a function with passed args as arguments
+	 */
 	ResultType operator()(ArgTypes... args) {
 		assert(invoker_ != nullptr);
 		return invoker_->Invoke(args...);

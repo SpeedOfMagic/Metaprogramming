@@ -1,0 +1,59 @@
+\hypertarget{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4}{}\doxysection{Functor$<$ Result\+Type(Arg\+Types...)$>$ Class Template Reference}
+\label{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4}\index{Functor$<$ ResultType(ArgTypes...)$>$@{Functor$<$ ResultType(ArgTypes...)$>$}}
+
+
+{\ttfamily \#include $<$functor.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_ace10e4ebe0785fb30b86af23e83f8050}\label{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_ace10e4ebe0785fb30b86af23e83f8050}} 
+{\footnotesize template$<$typename Function $>$ }\\{\bfseries Functor} (Function function)
+\item 
+\mbox{\Hypertarget{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_acf20bd01c55bcc56c97417dc378d4752}\label{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_acf20bd01c55bcc56c97417dc378d4752}} 
+{\footnotesize template$<$typename Function , class Class $>$ }\\{\bfseries Functor} (Function Class\+::$\ast$function)
+\item 
+\mbox{\Hypertarget{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_ae1030a1c0da270a9987f7ea95f1fb431}\label{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_ae1030a1c0da270a9987f7ea95f1fb431}} 
+{\bfseries Functor} (const \mbox{\hyperlink{class_functor}{Functor}} \&other)
+\item 
+\mbox{\Hypertarget{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_a4e47b93d0f26d5c55c3a67d9458ca307}\label{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_a4e47b93d0f26d5c55c3a67d9458ca307}} 
+\mbox{\hyperlink{class_functor}{Functor}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_functor}{Functor}} \&other)
+\item 
+Result\+Type \mbox{\hyperlink{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_aefb052ae92eb2d5a31dd5eb5e65a353e}{operator()}} (Arg\+Types... args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename Result\+Type, typename ... Arg\+Types$>$\newline
+class Functor$<$ Result\+Type(\+Arg\+Types...)$>$}
+
+Provides an object that contains a function 
+\begin{DoxyParams}{Parameters}
+{\em Result\+Type} & Template parameter, type of an object function returns \\
+\hline
+{\em Arg\+Types} & Template parameters, types of an object function accepts \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_aefb052ae92eb2d5a31dd5eb5e65a353e}\label{class_functor_3_01_result_type_07_arg_types_8_8_8_08_4_aefb052ae92eb2d5a31dd5eb5e65a353e}} 
+\index{Functor$<$ ResultType(ArgTypes...)$>$@{Functor$<$ ResultType(ArgTypes...)$>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Functor$<$ ResultType(ArgTypes...)$>$@{Functor$<$ ResultType(ArgTypes...)$>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename Result\+Type , typename ... Arg\+Types$>$ \\
+Result\+Type \mbox{\hyperlink{class_functor}{Functor}}$<$ Result\+Type(Arg\+Types...)$>$\+::operator() (\begin{DoxyParamCaption}\item[{Arg\+Types...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Invokes function 
+\begin{DoxyParams}{Parameters}
+{\em args} & Arguments for a function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Result of a function with passed args as arguments 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+functor.\+h\end{DoxyCompactItemize}

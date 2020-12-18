@@ -1,11 +1,16 @@
 #pragma once
 
-template<int integer>
-struct Integer {
-	constexpr static int value = integer;
-};
+/**
+ * Represents class holders of different objects
+*/
+namespace Objects {
+	template<int integer>
+	struct Integer {
+		constexpr static int value = integer;
+	};
 
-template<bool boolean>
-struct Boolean {
-	constexpr static bool value = boolean;
-};
+	template<bool boolean>
+	struct Boolean {
+		constexpr static bool value = boolean;
+	};
+}
