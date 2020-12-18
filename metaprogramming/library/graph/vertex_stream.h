@@ -1,12 +1,12 @@
 #pragma once
 
 #include "../TL/type_list.h"
-
+/*
 template<class stream_, class graph>
 struct VertexStream {
 	using stream = stream_;
 
-	/* Executes VertexCallable on every vertex in stream */
+	
 	template<class callable>
 	struct ForEach {
 		callable::typename execute<stream::Head>();
@@ -21,3 +21,4 @@ struct VertexStream<EmptyTypeList, graph> {
 	template<class callable>
 	struct ForEach {};
 };
+*//* Executes VertexCallable on every vertex in stream */

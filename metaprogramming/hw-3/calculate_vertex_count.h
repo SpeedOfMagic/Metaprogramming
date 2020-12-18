@@ -1,10 +1,8 @@
 #pragma once
 
+size_t size = 0;
 struct CalculateVertexCount {
-	constexpr static size_t result = 0;
-
-	template<typename vertex>
-	constexpr static void execute() {
-		++result;
+	static void execute() {
+		++size;
 	}
 };

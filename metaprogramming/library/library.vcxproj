@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="functor.h" />
     <ClInclude Include="graph\add_edge.h" />
     <ClInclude Include="graph\graph.h" />
     <ClInclude Include="graph\graph_processor.h" />

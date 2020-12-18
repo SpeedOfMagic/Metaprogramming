@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cassert>
 #include <memory>
 
 template<typename ResultType, typename ...ArgTypes>
@@ -11,18 +12,39 @@ public:
 	Functor() = default;
 
 	template<typename Function>
-	Functor(Function function) : function_holder_(new FreeFunctionHolder<Function>(function)) {}
+	Functor(Function function) : invoker_(new FreeFunctionHolder<Function>(function)) {}
+
+	template<typename Function, class Class>
+	Functor(Function Class::* function) : invoker_(new MemberFunctionHolder<Function, ArgTypes...>(function)) {}
+
+	Functor(const Functor& other) : invoker_(other.invoker_->Clone()) {}
+
+	Functor& operator=(const Functor& other) {
+		this->invoker_ = other.invoker_->Clone();
+	}
 
 	ResultType operator()(ArgTypes... args) {
-		return function_holder_->Invoke(args...);
+		assert(invoker_ != nullptr);
+		return invoker_->Invoke(args...);
 	}
 
 private:
+	class FunctionHolder;
+	using Invoker = std::shared_ptr<FunctionHolder>;
+
+	Invoker invoker_;
+
 	class FunctionHolder {
 	public:
 		FunctionHolder() = default;
+
 		virtual ~FunctionHolder() {}
 		virtual ResultType Invoke(ArgTypes...) = 0;
+		virtual Invoker Clone() = 0;
+
+	private:
+		FunctionHolder(const FunctionHolder&);
+		FunctionHolder operator=(const FunctionHolder&);
 	};
 
 	template<typename Function>
@@ -33,10 +55,35 @@ private:
 		virtual ResultType Invoke(ArgTypes... args) override {
 			return function_(args...);
 		}
+
+		virtual Invoker Clone() override {
+			return Invoker(new FreeFunctionHolder<Function>(function_));
+		}
 	
 	private:
 		Function function_;	
 	};
 
-	std::shared_ptr<FunctionHolder> function_holder_;
+	template<typename Function, class Class, typename ...OtherArgs>
+	class MemberFunctionHolder : public FunctionHolder {
+	public:
+		using MemberFunction = Function Class::*;
+
+		MemberFunctionHolder(MemberFunction member_function) : member_function_(member_function) {}
+
+		virtual ResultType Invoke(Class object, OtherArgs... args) override {
+			return (object.*member_function_)(args...);
+		}
+
+		ResultType Invoke(Class* object, OtherArgs... args) {
+			return (object->*member_function_)(args...);
+		}
+
+		virtual Invoker Clone() override {
+			return Invoker(new MemberFunctionHolder<Function, Class>(member_function_));
+		}
+
+	private:
+		MemberFunction member_function_;
+	};
 };
