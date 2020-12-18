@@ -75,7 +75,7 @@ private:
 			return (object.*member_function_)(args...);
 		}
 
-		ResultType Invoke(Class* object, OtherArgs... args) {
+		virtual ResultType Invoke(Class* object, OtherArgs... args) {
 			return (object->*member_function_)(args...);
 		}
 
