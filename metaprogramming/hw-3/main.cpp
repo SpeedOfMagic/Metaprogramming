@@ -41,6 +41,8 @@ int main() {
 
 
 	Functor<void(Class<g2>, size_t)> f(print<Class<g2>>);
+	VertexStream<g2::vertexes, g2> str;
+	str.ForEach(f);
 
 	return 0;
 }
