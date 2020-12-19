@@ -1,5 +1,6 @@
 #pragma once
 
+#include "is_type_list.h"
 #include "type_list.h"
 
 namespace TL {
@@ -7,9 +8,10 @@ namespace TL {
 	 * @param TypeList Template parameter
 	 * @returns Parameter size, amount of elements in TypeList
 	 */
-	template<class TypeList>
+	template<class type_list>
 	struct Size {
-		constexpr static size_t size = 1 + Size<typename TypeList::Tail>::size;
+		static_assert(IsTypeList<type_list>::value, "Passed template argument is not a TypeList");
+		constexpr static size_t size = 1 + Size<typename type_list::Tail>::size;
 	};
 
 	/**

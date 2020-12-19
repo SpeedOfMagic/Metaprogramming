@@ -1,9 +1,8 @@
 #pragma once
 
+#include "is_type_list.h"
 #include "size.h"
 #include "type_list.h"
-
-#include <type_traits>
 
 namespace TL {
 	/**
@@ -14,6 +13,7 @@ namespace TL {
 	 */
 	template<class type_list, size_t ind>
 	struct TypeAt {
+		static_assert(IsTypeList<type_list>::value, "First passed argument is not a TypeList");
 		static_assert(ind < TL::Size<type_list>::size, "Index reached out of bounds");
 		using value = typename TypeAt<typename type_list::Tail, ind - 1>::value;
 	};

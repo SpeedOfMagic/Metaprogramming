@@ -47,4 +47,4 @@ using Typelist = TypeList<Args...>;
 /**
  * Represents functions (as structs) for working with TypeList
  */
-namespace TL {};
+namespace TL {}

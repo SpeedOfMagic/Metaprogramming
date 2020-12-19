@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['adjacency_5flist_5f_188',['adjacency_list_',['../struct_graph.html#a25d4350577bcb9215847c02139dc18e9',1,'Graph']]]
+  ['value_11',['value',['../struct_class.html#a9a374895ce7f031cc358736b66fdf45c',1,'Class']]]
 ];
