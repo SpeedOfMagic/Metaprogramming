@@ -26,10 +26,10 @@ struct ConvertGraph<EDGE_LIST, ADJACENCY_LIST, graph> {
 	template<>
 	struct IterateThroughEdges<EmptyTypeList> {
 		using result = AdjacencyListGraph<
-			typename graph::vertexes,
-			typename TL::GenerateTypeLists<TL::Size<typename graph::vertexes>::size>::result
+			typename graph::vertexes_,
+			typename TL::GenerateTypeLists<TL::Size<typename graph::vertexes_>::size>::result
 		>;
 	};
 
-	using result = typename IterateThroughEdges<typename graph::edge_list>::result;
+	using result = typename IterateThroughEdges<typename graph::edge_list_>::result;
 };

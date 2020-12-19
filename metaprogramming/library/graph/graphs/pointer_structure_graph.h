@@ -15,12 +15,4 @@ struct PointerStructureGraph : public Graph {
 		using vertex = vertex_;
 		using children = children_;
 	};
-
-	template<GraphType>
-	struct ConvertTo; 
-	
-	template<>
-	struct ConvertTo<ADJACENCY_MATRIX> {
-
-	};
 };

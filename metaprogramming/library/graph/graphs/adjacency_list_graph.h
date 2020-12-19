@@ -50,11 +50,7 @@ struct AdjacencyListGraph : public Graph {
 		return TL::IndexOf<vertexes_, vertex>::value;
 	}
 
-	template<GraphType>
-	struct ConvertTo;
-
-	template<>
-	struct ConvertTo<GraphType::POINTER_STRUCTURE> {
+	struct ConvertToPointerStructure {
 		using result = typename ConvertGraph<ADJACENCY_LIST, POINTER_STRUCTURE, AdjacencyListGraph<vertexes, adjacency_list>>::result;
 	};
 };

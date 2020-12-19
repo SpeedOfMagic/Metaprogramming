@@ -10,7 +10,7 @@
 #include "../library/graph/vertex_stream.h"
 #include "../library/functor.h"
 #include "../library/graph/graphs/graph_type.h"
-
+#include "../library/graph/graphs/convert_from_edge_list.h"
 #include "../library/graph/edge.h"
 
 template<class Gr>
@@ -25,7 +25,7 @@ using Objects::Boolean;
 int main() {
 	using vertexes = TypeList<char, short, int, long, long long, float, double>;
 	using edges = TypeList<
-		Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
+	//	Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
 		Edge<short, float>, Edge<float, double>, Edge<int, double>
 	>;
 
@@ -33,8 +33,8 @@ int main() {
 	//std::cout << graph().HasEdge<Edge<short, float>>() << std::endl;
 
 	using graph2 = EdgeListGraph<vertexes, edges>
-		::ConvertTo<ADJACENCY_LIST>::result
-		::ConvertTo<POINTER_STRUCTURE>::result;
+		::ConvertToAdjacencyList::result;
+		//::ConvertTo<POINTER_STRUCTURE>::result;
 		//::ConvertTo<ADJACENCY_MATRIX>::result
 		//::ConvertTo<EDGE_LIST>::result;
 

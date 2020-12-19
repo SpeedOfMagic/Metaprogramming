@@ -10,7 +10,7 @@
 
 namespace GLib {
 	/** Returns new graph with added edge
-	 * @param type Template parameter, type of a graph
+	 * @param GraphType Template parameter, type of a graph
 	 * @param graph Template parameter, initial graph
 	 * @param edge Template parameter, edge to add
 	 * @returns Parameter result, new graph with added edge

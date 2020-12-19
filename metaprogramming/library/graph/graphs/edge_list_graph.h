@@ -23,11 +23,11 @@ struct EdgeListGraph {
 	using vertexes_ = vertexes;  //!< TypeList of vertexes in graph.
 	using edge_list_ = edge_list;  //!< TypeList of edges
 	
-	template<GraphType>
-	struct ConvertTo;
-
-	template<>
-	struct ConvertTo<ADJACENCY_LIST> {
-		using result = typename ConvertGraph<EDGE_LIST, ADJACENCY_LIST, EdgeListGraph<vertexes, edge_list>>::result;
+	struct ConvertToAdjacencyList {
+		using result = typename ConvertGraph<
+			EDGE_LIST,
+			ADJACENCY_LIST,
+			EdgeListGraph<vertexes_, edge_list_>
+		>::result;
 	};
 };
