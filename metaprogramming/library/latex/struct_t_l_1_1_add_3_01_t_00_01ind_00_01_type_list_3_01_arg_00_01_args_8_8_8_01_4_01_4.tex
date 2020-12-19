@@ -1,5 +1,9 @@
 \hypertarget{struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4}{}\doxysection{TL\+::Add$<$ T, ind, Type\+List$<$ Arg, Args... $>$ $>$ Struct Template Reference}
 \label{struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4}\index{TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$@{TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}}
+
+
+{\ttfamily \#include $<$add.\+h$>$}
+
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -9,6 +13,24 @@ using {\bfseries end} = typename \mbox{\hyperlink{struct_t_l_1_1_add}{Add}}$<$ T
 \mbox{\Hypertarget{struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4_a2850748a1c8975c4363f01a9f7ea5ad4}\label{struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4_a2850748a1c8975c4363f01a9f7ea5ad4}} 
 using {\bfseries result} = typename \mbox{\hyperlink{struct_t_l_1_1_add}{Add}}$<$ Arg, 0, end $>$\+::result
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T, size\+\_\+t ind, class Arg, class ... Args$>$\newline
+struct T\+L\+::\+Add$<$ T, ind, Type\+List$<$ Arg, Args... $>$ $>$}
+
+Adds typename to a specific position in \mbox{\hyperlink{struct_type_list}{Type\+List}} 
+\begin{DoxyParams}{Parameters}
+{\em T} & Typename to add to a specific position in \mbox{\hyperlink{struct_type_list}{Type\+List}} \\
+\hline
+{\em ind} & Number of this position \\
+\hline
+{\em Type\+List$<$\+Arg,Args...$>$} & This \mbox{\hyperlink{struct_type_list}{Type\+List}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parameter result, new type list with typename added to position ind 
+\end{DoxyReturn}
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}

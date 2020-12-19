@@ -1,0 +1,91 @@
+\hypertarget{struct_adjacency_list_graph}{}\doxysection{Adjacency\+List\+Graph$<$ vertexes, adjacency\+\_\+list $>$ Struct Template Reference}
+\label{struct_adjacency_list_graph}\index{AdjacencyListGraph$<$ vertexes, adjacency\_list $>$@{AdjacencyListGraph$<$ vertexes, adjacency\_list $>$}}
+
+
+{\ttfamily \#include $<$adjacency\+\_\+list\+\_\+graph.\+h$>$}
+
+Inheritance diagram for Adjacency\+List\+Graph$<$ vertexes, adjacency\+\_\+list $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_adjacency_list_graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_adjacency_list_graph_1_1_convert_to}{Convert\+To}}
+\item 
+struct \mbox{\hyperlink{struct_adjacency_list_graph_1_1_convert_to_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_01_4}{Convert\+To$<$ P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+R\+E $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_adjacency_list_graph_a79d0d03a86c0cf36799571934b319d20}\label{struct_adjacency_list_graph_a79d0d03a86c0cf36799571934b319d20}} 
+using \mbox{\hyperlink{struct_adjacency_list_graph_a79d0d03a86c0cf36799571934b319d20}{vertexes\+\_\+}} = vertexes
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_type_list}{Type\+List}} of vertexes in graph. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_adjacency_list_graph_afcfa398be1579aad816f4b2ca657813f}\label{struct_adjacency_list_graph_afcfa398be1579aad816f4b2ca657813f}} 
+using \mbox{\hyperlink{struct_adjacency_list_graph_afcfa398be1579aad816f4b2ca657813f}{adjacency\+\_\+list\+\_\+}} = adjacency\+\_\+list
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_type_list}{Type\+List}} of Type\+Lists of edges, which are grouped by starting vertex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class edge $>$ }\\constexpr bool \mbox{\hyperlink{struct_adjacency_list_graph_a4cc706bef046232d189b681549012a08}{Has\+Edge}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename vertex $>$ }\\constexpr static size\+\_\+t \mbox{\hyperlink{struct_adjacency_list_graph_a8819cb8f8a23c6bf3d25ae1d942beb85}{Get\+Vertex\+Index}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class vertexes, class adjacency\+\_\+list$>$\newline
+struct Adjacency\+List\+Graph$<$ vertexes, adjacency\+\_\+list $>$}
+
+Represents graph vertexes defined in vertexes\+\_\+, and edges, which are derived from adjacency\+\_\+list\+\_\+ Size of an adjacency list must be equal to amount of vertexes 
+\begin{DoxyParams}{Parameters}
+{\em vertexes\+\_\+} & \mbox{\hyperlink{struct_type_list}{Type\+List}} of vertexes in graph. \\
+\hline
+{\em adjacency\+\_\+list\+\_\+} & -\/ \mbox{\hyperlink{struct_type_list}{Type\+List}} of Type\+Lists of edges, which are grouped by starting vertex i.\+e. edge (from, to, weight) goes to adjacency\+\_\+list\+\_\+\mbox{[}from\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_adjacency_list_graph_a8819cb8f8a23c6bf3d25ae1d942beb85}\label{struct_adjacency_list_graph_a8819cb8f8a23c6bf3d25ae1d942beb85}} 
+\index{AdjacencyListGraph$<$ vertexes, adjacency\_list $>$@{AdjacencyListGraph$<$ vertexes, adjacency\_list $>$}!GetVertexIndex@{GetVertexIndex}}
+\index{GetVertexIndex@{GetVertexIndex}!AdjacencyListGraph$<$ vertexes, adjacency\_list $>$@{AdjacencyListGraph$<$ vertexes, adjacency\_list $>$}}
+\doxysubsubsection{\texorpdfstring{GetVertexIndex()}{GetVertexIndex()}}
+{\footnotesize\ttfamily template$<$class vertexes , class adjacency\+\_\+list $>$ \\
+template$<$typename vertex $>$ \\
+constexpr static size\+\_\+t \mbox{\hyperlink{struct_adjacency_list_graph}{Adjacency\+List\+Graph}}$<$ vertexes, adjacency\+\_\+list $>$\+::Get\+Vertex\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+Gets index of a passed vertex, throws assert if there is no such vertex 
+\begin{DoxyParams}{Parameters}
+{\em vertex} & Template parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Position of this vertex in vertexes\+\_\+ \mbox{\hyperlink{struct_type_list}{Type\+List}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_adjacency_list_graph_a4cc706bef046232d189b681549012a08}\label{struct_adjacency_list_graph_a4cc706bef046232d189b681549012a08}} 
+\index{AdjacencyListGraph$<$ vertexes, adjacency\_list $>$@{AdjacencyListGraph$<$ vertexes, adjacency\_list $>$}!HasEdge@{HasEdge}}
+\index{HasEdge@{HasEdge}!AdjacencyListGraph$<$ vertexes, adjacency\_list $>$@{AdjacencyListGraph$<$ vertexes, adjacency\_list $>$}}
+\doxysubsubsection{\texorpdfstring{HasEdge()}{HasEdge()}}
+{\footnotesize\ttfamily template$<$class vertexes , class adjacency\+\_\+list $>$ \\
+template$<$class edge $>$ \\
+constexpr bool \mbox{\hyperlink{struct_adjacency_list_graph}{Adjacency\+List\+Graph}}$<$ vertexes, adjacency\+\_\+list $>$\+::Has\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+Checks if edge, passed as a template, is located in this graph 
+\begin{DoxyParams}{Parameters}
+{\em edge} & Template parameter, represents an edge to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this edge in the graph, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/graphs/adjacency\+\_\+list\+\_\+graph.\+h\end{DoxyCompactItemize}

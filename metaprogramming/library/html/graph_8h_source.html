@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: graph/graph.h Source File</title>
+<title>Compile-Time Graph Library: graph/graphs/graph.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Compile-Time Graph Library
    </div>
+   <div id="projectbrief">Graph library that is based on metaprogramming</div>
   </td>
  </tr>
  </tbody>
@@ -61,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_12552d7fa429bf94a2e32e5cf39f7e69.html">graph</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_12552d7fa429bf94a2e32e5cf39f7e69.html">graph</a></li><li class="navelem"><a class="el" href="dir_412d48fcc1192713611991db15f01461.html">graphs</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,33 +72,11 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../TL/contains.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../TL/index_of.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../TL/size.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../TL/type_at.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../TL/type_list.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> vertexes, <span class="keyword">class</span> adjacency_list&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_graph.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_graph.html">Graph</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_graph.html#a3e7533c364389fa8dddea81b9a5d2624">   18</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_graph.html#a3e7533c364389fa8dddea81b9a5d2624">vertexes_</a> = vertexes;  </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_graph.html#a25d4350577bcb9215847c02139dc18e9">   19</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_graph.html#a25d4350577bcb9215847c02139dc18e9">adjacency_list_</a> = adjacency_list;  </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    static_assert(<a class="code" href="struct_t_l_1_1_size.html">TL::Size&lt;vertexes_&gt;::size</a> == <a class="code" href="struct_t_l_1_1_size.html">TL::Size&lt;adjacency_list_&gt;::size</a>, <span class="stringliteral">&quot;Amount of vertexes and adjacency lists differ&quot;</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> edge&gt;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_graph.html#a68e2be76058c7ae589bd81251efc353a">   28</a></span>&#160;    constexpr <span class="keywordtype">bool</span> <a class="code" href="struct_graph.html#a68e2be76058c7ae589bd81251efc353a">HasEdge</a>() {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        constexpr <span class="keywordtype">int</span> vertex_num = <a class="code" href="struct_t_l_1_1_index_of.html">TL::IndexOf&lt;vertexes_, typename edge::from&gt;::value</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">using</span> adjacent_vertexes = <span class="keyword">typename</span> TL::TypeAt&lt;adjacency_list_, vertex_num&gt;::value;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="struct_t_l_1_1_contains.html">TL::Contains&lt;adjacent_vertexes, edge&gt;::result</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;graph_type.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_graph.html">   11</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_graph.html">Graph</a> {};</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astruct_t_l_1_1_size_html"><div class="ttname"><a href="struct_t_l_1_1_size.html">TL::Size</a></div><div class="ttdef"><b>Definition:</b> size.h:11</div></div>
-<div class="ttc" id="astruct_graph_html_a68e2be76058c7ae589bd81251efc353a"><div class="ttname"><a href="struct_graph.html#a68e2be76058c7ae589bd81251efc353a">Graph::HasEdge</a></div><div class="ttdeci">constexpr bool HasEdge()</div><div class="ttdef"><b>Definition:</b> graph.h:28</div></div>
-<div class="ttc" id="astruct_graph_html_a3e7533c364389fa8dddea81b9a5d2624"><div class="ttname"><a href="struct_graph.html#a3e7533c364389fa8dddea81b9a5d2624">Graph::vertexes_</a></div><div class="ttdeci">vertexes vertexes_</div><div class="ttdoc">TypeList of vertexes in graph.</div><div class="ttdef"><b>Definition:</b> graph.h:18</div></div>
-<div class="ttc" id="astruct_t_l_1_1_index_of_html"><div class="ttname"><a href="struct_t_l_1_1_index_of.html">TL::IndexOf</a></div><div class="ttdef"><b>Definition:</b> index_of.h:15</div></div>
-<div class="ttc" id="astruct_graph_html_a25d4350577bcb9215847c02139dc18e9"><div class="ttname"><a href="struct_graph.html#a25d4350577bcb9215847c02139dc18e9">Graph::adjacency_list_</a></div><div class="ttdeci">adjacency_list adjacency_list_</div><div class="ttdoc">TypeList of TypeLists of edges, which are grouped by starting vertex.</div><div class="ttdef"><b>Definition:</b> graph.h:19</div></div>
-<div class="ttc" id="astruct_t_l_1_1_contains_html"><div class="ttname"><a href="struct_t_l_1_1_contains.html">TL::Contains</a></div><div class="ttdef"><b>Definition:</b> contains.h:14</div></div>
-<div class="ttc" id="astruct_graph_html"><div class="ttname"><a href="struct_graph.html">Graph</a></div><div class="ttdef"><b>Definition:</b> graph.h:17</div></div>
+<div class="ttc" id="astruct_graph_html"><div class="ttname"><a href="struct_graph.html">Graph</a></div><div class="ttdef"><b>Definition:</b> graph.h:11</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

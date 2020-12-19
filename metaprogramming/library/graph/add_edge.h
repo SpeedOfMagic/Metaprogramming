@@ -13,11 +13,16 @@ namespace GLib {
 	 * @param GraphType Template parameter, type of a graph
 	 * @param graph Template parameter, initial graph
 	 * @param edge Template parameter, edge to add
+	 * @see Edge
+	 * @see GraphType
 	 * @returns Parameter result, new graph with added edge
-	*/
+	 */
 	template<GraphType, class graph, class edge>
 	struct AddEdge;
 
+	/**
+	 * @see AddEdge
+	 */
 	template<class graph, class edge>
 	struct AddEdge<ADJACENCY_LIST, graph, edge> {
 		constexpr static size_t vertex_num = graph::template GetVertexIndex<typename edge::from>();

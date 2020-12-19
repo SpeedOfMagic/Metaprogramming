@@ -11,6 +11,8 @@
 #include "../library/functor.h"
 #include "../library/graph/graphs/graph_type.h"
 #include "../library/graph/graphs/convert_from_edge_list.h"
+#include "../library/graph/graphs/convert_from_adjacency_list.h"
+#include "../library/graph/graphs/convert_from_pointer_structure.h"
 #include "../library/graph/edge.h"
 
 template<class Gr>
@@ -19,8 +21,12 @@ void print(Gr g, size_t ind) {
 }
 
 
+
 using Objects::Integer;
 using Objects::Boolean;
+
+using std::cout;
+using std::endl;
 
 int main() {
 	using vertexes = TypeList<char, short, int, long, long long, float, double>;
@@ -33,10 +39,13 @@ int main() {
 	//std::cout << graph().HasEdge<Edge<short, float>>() << std::endl;
 
 	using graph2 = EdgeListGraph<vertexes, edges>
-		::ConvertToAdjacencyList::result;
-		//::ConvertTo<POINTER_STRUCTURE>::result;
+		::ConvertTo<ADJACENCY_LIST>::result
+		::ConvertTo<POINTER_STRUCTURE>::result;
 		//::ConvertTo<ADJACENCY_MATRIX>::result
-		//::ConvertTo<EDGE_LIST>::result;
+		//::ConvertTo<EDGE_LIST>::result
+		//::ConvertTo<ADJACENCY_LIST>::result;
+
+	//std::cout << graph2().HasEdge<Edge<float, double>>() << std::endl;
 
 	return 0;
 }

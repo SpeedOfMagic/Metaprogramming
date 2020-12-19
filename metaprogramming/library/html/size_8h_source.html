@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: TL/size.h Source File</title>
+<title>Compile-Time Graph Library: TL/size.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Compile-Time Graph Library
    </div>
+   <div id="projectbrief">Graph library that is based on metaprogramming</div>
   </td>
  </tr>
  </tbody>
@@ -71,22 +72,25 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;type_list.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_t_l.html">TL</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> TypeList&gt;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_size.html">   11</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_size.html">Size</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        constexpr <span class="keyword">static</span> <span class="keywordtype">size_t</span> size = 1 + <a class="code" href="struct_t_l_1_1_size.html">Size&lt;typename TypeList::Tail&gt;::size</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    };</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_size_3_01_empty_type_list_01_4.html">   19</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_size.html">Size</a>&lt;<a class="code" href="struct_type_list.html">EmptyTypeList</a>&gt; {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        constexpr <span class="keyword">static</span> <span class="keywordtype">size_t</span> size = 0;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    };</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;is_type_list.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;type_list.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_t_l.html">TL</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> type_list&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_size.html">   12</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_size.html">Size</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        static_assert(<a class="code" href="struct_t_l_1_1_is_type_list.html">IsTypeList&lt;type_list&gt;::value</a>, <span class="stringliteral">&quot;Passed template argument is not a TypeList&quot;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        constexpr <span class="keyword">static</span> <span class="keywordtype">size_t</span> size = 1 + <a class="code" href="struct_t_l_1_1_size.html">Size&lt;typename type_list::Tail&gt;::size</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    };</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_size_3_01_empty_type_list_01_4.html">   21</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_size.html">Size</a>&lt;<a class="code" href="struct_type_list.html">EmptyTypeList</a>&gt; {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        constexpr <span class="keyword">static</span> <span class="keywordtype">size_t</span> size = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct_t_l_1_1_is_type_list_html"><div class="ttname"><a href="struct_t_l_1_1_is_type_list.html">TL::IsTypeList</a></div><div class="ttdef"><b>Definition:</b> is_type_list.h:14</div></div>
 <div class="ttc" id="anamespace_t_l_html"><div class="ttname"><a href="namespace_t_l.html">TL</a></div><div class="ttdef"><b>Definition:</b> add.h:5</div></div>
-<div class="ttc" id="astruct_t_l_1_1_size_html"><div class="ttname"><a href="struct_t_l_1_1_size.html">TL::Size</a></div><div class="ttdef"><b>Definition:</b> size.h:11</div></div>
+<div class="ttc" id="astruct_t_l_1_1_size_html"><div class="ttname"><a href="struct_t_l_1_1_size.html">TL::Size</a></div><div class="ttdef"><b>Definition:</b> size.h:12</div></div>
 <div class="ttc" id="astruct_type_list_html"><div class="ttname"><a href="struct_type_list.html">TypeList</a></div><div class="ttdef"><b>Definition:</b> type_list.h:9</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

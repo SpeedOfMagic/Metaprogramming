@@ -1,0 +1,41 @@
+\hypertarget{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4}{}\doxysection{G\+Lib\+::Add\+Edge$<$ A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+L\+I\+ST, graph, edge $>$ Struct Template Reference}
+\label{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4}\index{GLib::AddEdge$<$ ADJACENCY\_LIST, graph, edge $>$@{GLib::AddEdge$<$ ADJACENCY\_LIST, graph, edge $>$}}
+
+
+{\ttfamily \#include $<$add\+\_\+edge.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_a812817db07554def6703a9777d09298d}\label{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_a812817db07554def6703a9777d09298d}} 
+using {\bfseries adjacent\+\_\+vertexes} = typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$ typename graph\+::adjacency\+\_\+list\+\_\+, vertex\+\_\+num $>$\+::value
+\item 
+\mbox{\Hypertarget{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_a3c1d226c22a17e4710ad4070513d3782}\label{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_a3c1d226c22a17e4710ad4070513d3782}} 
+using {\bfseries new\+\_\+adjacent\+\_\+vertexes} = typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ edge, 0, adjacent\+\_\+vertexes $>$\+::\mbox{\hyperlink{struct_adjacency_list_graph}{result}}
+\item 
+\mbox{\Hypertarget{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_aacd2435de358fb5a936c740304b48145}\label{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_aacd2435de358fb5a936c740304b48145}} 
+using {\bfseries new\+\_\+adjacency\+\_\+list} = typename \mbox{\hyperlink{struct_t_l_1_1_replace}{T\+L\+::\+Replace}}$<$ new\+\_\+adjacent\+\_\+vertexes, vertex\+\_\+num, typename graph\+::adjacency\+\_\+list\+\_\+ $>$\+::\mbox{\hyperlink{struct_adjacency_list_graph}{result}}
+\item 
+\mbox{\Hypertarget{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_af2aac87468e637b96da83fe3fb637c77}\label{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_af2aac87468e637b96da83fe3fb637c77}} 
+using {\bfseries result} = \mbox{\hyperlink{struct_adjacency_list_graph}{Adjacency\+List\+Graph}}$<$ typename graph\+::vertexes\+\_\+, new\+\_\+adjacency\+\_\+list $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_a429c3334dafcac0fc019ff2a509f5027}\label{struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_a429c3334dafcac0fc019ff2a509f5027}} 
+constexpr static size\+\_\+t {\bfseries vertex\+\_\+num} = graph\+::template Get\+Vertex\+Index$<$typename edge\+::from$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class graph, class edge$>$\newline
+struct G\+Lib\+::\+Add\+Edge$<$ A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+L\+I\+S\+T, graph, edge $>$}
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_g_lib_1_1_add_edge}{Add\+Edge}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/add\+\_\+edge.\+h\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_28_29_10',['operator()',['../class_functor_3_01_result_type_07_arg_types_8_8_8_08_4.html#aefb052ae92eb2d5a31dd5eb5e65a353e',1,'Functor&lt; ResultType(ArgTypes...)&gt;']]]
+  ['foreach_227',['ForEach',['../struct_vertex_stream.html#a584aba69154de8dbbdf10b7606cca3b7',1,'VertexStream']]]
 ];

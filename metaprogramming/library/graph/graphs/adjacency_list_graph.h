@@ -50,7 +50,21 @@ struct AdjacencyListGraph : public Graph {
 		return TL::IndexOf<vertexes_, vertex>::value;
 	}
 
-	struct ConvertToPointerStructure {
-		using result = typename ConvertGraph<ADJACENCY_LIST, POINTER_STRUCTURE, AdjacencyListGraph<vertexes, adjacency_list>>::result;
+	/**
+	* Represents an adapter, which converts one type of a graph into another.
+	* Is used as an element in Visitor pattern.
+	* @param GraphType Template parameter, type of a resulting graph
+	* @returns Parameter result, resulting graph
+	*/
+	template<GraphType>
+	struct ConvertTo;
+
+	template<>
+	struct ConvertTo<POINTER_STRUCTURE> {
+		using result = typename ConvertGraph<
+			ADJACENCY_LIST, 
+			POINTER_STRUCTURE, 
+			AdjacencyListGraph<vertexes, adjacency_list>
+		>::result;
 	};
 };

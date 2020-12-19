@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['value_194',['value',['../struct_class.html#a9a374895ce7f031cc358736b66fdf45c',1,'Class']]],
-  ['vertexes_5f_195',['vertexes_',['../struct_graph.html#a3e7533c364389fa8dddea81b9a5d2624',1,'Graph']]]
+  ['stream_5f_236',['stream_',['../struct_vertex_stream.html#ae2d1c7fbe69dc23445acf39514ee1ddf',1,'VertexStream']]]
 ];

@@ -1,0 +1,42 @@
+\hypertarget{struct_pointer_structure_graph_1_1_d_f_s}{}\doxysection{Pointer\+Structure\+Graph$<$ vertexes $>$\+::D\+FS$<$ current\+\_\+vertex, unvisited\+\_\+vertexes $>$ Struct Template Reference}
+\label{struct_pointer_structure_graph_1_1_d_f_s}\index{PointerStructureGraph$<$ vertexes $>$::DFS$<$ current\_vertex, unvisited\_vertexes $>$@{PointerStructureGraph$<$ vertexes $>$::DFS$<$ current\_vertex, unvisited\_vertexes $>$}}
+
+
+{\ttfamily \#include $<$pointer\+\_\+structure\+\_\+graph.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_pointer_structure_graph_1_1_d_f_s_1_1_iterate_through_children}{Iterate\+Through\+Children}}
+\item 
+struct \mbox{\hyperlink{struct_pointer_structure_graph_1_1_d_f_s_1_1_iterate_through_children_3_01_empty_type_list_01_4}{Iterate\+Through\+Children$<$ Empty\+Type\+List $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_pointer_structure_graph_1_1_d_f_s_af6e2a2fc5aba13933b65591cd0fb0166}\label{struct_pointer_structure_graph_1_1_d_f_s_af6e2a2fc5aba13933b65591cd0fb0166}} 
+using {\bfseries vertexes\+\_\+to\+\_\+visit} = typename \mbox{\hyperlink{struct_t_l_1_1_remove}{T\+L\+::\+Remove}}$<$ unvisited\+\_\+vertexes, current\+\_\+vertex $>$\+::result
+\item 
+\mbox{\Hypertarget{struct_pointer_structure_graph_1_1_d_f_s_af50d260d7548bf05fc42373403b96415}\label{struct_pointer_structure_graph_1_1_d_f_s_af50d260d7548bf05fc42373403b96415}} 
+using {\bfseries result} = typename \mbox{\hyperlink{struct_pointer_structure_graph_1_1_d_f_s_1_1_iterate_through_children}{Iterate\+Through\+Children}}$<$ typename current\+\_\+vertex\+::children $>$\+::result
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class vertexes$>$\newline
+template$<$class current\+\_\+vertex, class unvisited\+\_\+vertexes = vertexes\+\_\+$>$\newline
+struct Pointer\+Structure\+Graph$<$ vertexes $>$\+::\+D\+F\+S$<$ current\+\_\+vertex, unvisited\+\_\+vertexes $>$}
+
+Performs Depth-\/\+First Search, starting from passed vertex. It doesn\textquotesingle{}t visit vertexes that have been visited already. It returns visited edges in chronological order, from which it\textquotesingle{}s easy to deduce \mbox{\hyperlink{struct_pointer_structure_graph_1_1_d_f_s}{D\+FS}}. It\textquotesingle{}s more versatile than one may think) Also a variation of Composite pattern. 
+\begin{DoxyParams}{Parameters}
+{\em starting\+\_\+vertex} & Template parameter, starting vertex of \mbox{\hyperlink{struct_pointer_structure_graph_1_1_d_f_s}{D\+FS}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parameter result, \mbox{\hyperlink{struct_type_list}{Type\+List}} of visited edges in chronological order. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/graphs/pointer\+\_\+structure\+\_\+graph.\+h\end{DoxyCompactItemize}

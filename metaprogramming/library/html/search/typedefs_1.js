@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['from_189',['from',['../struct_edge.html#a9a142fc427a66c9c3b857760a0a0ab7b',1,'Edge']]]
+  ['edge_5flist_5f_232',['edge_list_',['../struct_edge_list_graph.html#aa6109991c90966fccc8ec78d46d074ad',1,'EdgeListGraph']]]
 ];

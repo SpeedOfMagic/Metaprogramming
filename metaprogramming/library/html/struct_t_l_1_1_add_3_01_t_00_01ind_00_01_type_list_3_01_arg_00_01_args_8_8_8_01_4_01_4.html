@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: TL::Add&lt; T, ind, TypeList&lt; Arg, Args... &gt; &gt; Struct Template Reference</title>
+<title>Compile-Time Graph Library: TL::Add&lt; T, ind, TypeList&lt; Arg, Args... &gt; &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Compile-Time Graph Library
    </div>
+   <div id="projectbrief">Graph library that is based on metaprogramming</div>
   </td>
  </tr>
  </tbody>
@@ -72,6 +73,8 @@ $(function() {
 <div class="title">TL::Add&lt; T, ind, TypeList&lt; Arg, Args... &gt; &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="add_8h_source.html">add.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -82,7 +85,20 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> = typename <
 using&#160;</td><td class="memItemRight" valign="bottom"><b>result</b> = typename <a class="el" href="struct_t_l_1_1_add.html">Add</a>&lt; Arg, 0, end &gt;::result</td></tr>
 <tr class="separator:a2850748a1c8975c4363f01a9f7ea5ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T, size_t ind, class Arg, class ... Args&gt;<br />
+struct TL::Add&lt; T, ind, TypeList&lt; Arg, Args... &gt; &gt;</h3>
+
+<p>Adds typename to a specific position in <a class="el" href="struct_type_list.html">TypeList</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>Typename to add to a specific position in <a class="el" href="struct_type_list.html">TypeList</a> </td></tr>
+    <tr><td class="paramname">ind</td><td>Number of this position </td></tr>
+    <tr><td class="paramname">TypeList&lt;Arg,Args...&gt;</td><td>This <a class="el" href="struct_type_list.html">TypeList</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Parameter result, new type list with typename added to position ind </dd></dl>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>TL/<a class="el" href="add_8h_source.html">add.h</a></li>
 </ul>
 </div><!-- contents -->

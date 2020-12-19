@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: TL/type_at.h Source File</title>
+<title>Compile-Time Graph Library: TL/type_at.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Compile-Time Graph Library
    </div>
+   <div id="projectbrief">Graph library that is based on metaprogramming</div>
   </td>
  </tr>
  </tbody>
@@ -71,14 +72,14 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;size.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;type_list.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_t_l.html">TL</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> type_list, <span class="keywordtype">size_t</span> ind&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_type_at.html">   16</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_type_at.html">TypeAt</a> {</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;is_type_list.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;size.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;type_list.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_t_l.html">TL</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> type_list, <span class="keywordtype">size_t</span> ind&gt;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_type_at.html">   15</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_type_at.html">TypeAt</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        static_assert(<a class="code" href="struct_t_l_1_1_is_type_list.html">IsTypeList&lt;type_list&gt;::value</a>, <span class="stringliteral">&quot;First passed argument is not a TypeList&quot;</span>);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        static_assert(ind &lt; <a class="code" href="struct_t_l_1_1_size.html">TL::Size&lt;type_list&gt;::size</a>, <span class="stringliteral">&quot;Index reached out of bounds&quot;</span>);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">using</span> value = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_type_at.html">TypeAt</a>&lt;<span class="keyword">typename</span> type_list::Tail, ind - 1&gt;::value;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    };</div>
@@ -89,9 +90,10 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astruct_t_l_1_1_type_at_html"><div class="ttname"><a href="struct_t_l_1_1_type_at.html">TL::TypeAt</a></div><div class="ttdef"><b>Definition:</b> type_at.h:16</div></div>
+<div class="ttc" id="astruct_t_l_1_1_is_type_list_html"><div class="ttname"><a href="struct_t_l_1_1_is_type_list.html">TL::IsTypeList</a></div><div class="ttdef"><b>Definition:</b> is_type_list.h:14</div></div>
+<div class="ttc" id="astruct_t_l_1_1_type_at_html"><div class="ttname"><a href="struct_t_l_1_1_type_at.html">TL::TypeAt</a></div><div class="ttdef"><b>Definition:</b> type_at.h:15</div></div>
 <div class="ttc" id="anamespace_t_l_html"><div class="ttname"><a href="namespace_t_l.html">TL</a></div><div class="ttdef"><b>Definition:</b> add.h:5</div></div>
-<div class="ttc" id="astruct_t_l_1_1_size_html"><div class="ttname"><a href="struct_t_l_1_1_size.html">TL::Size</a></div><div class="ttdef"><b>Definition:</b> size.h:11</div></div>
+<div class="ttc" id="astruct_t_l_1_1_size_html"><div class="ttname"><a href="struct_t_l_1_1_size.html">TL::Size</a></div><div class="ttdef"><b>Definition:</b> size.h:12</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

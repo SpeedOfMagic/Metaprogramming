@@ -1,191 +1,234 @@
 \begin{theindex}
 
-  \item {CheckContainsConstructibleParent$<$ type\_list, T, false $>$}, 
-		\hyperpage{11}
-    \subitem {result}, \hyperpage{11}
-  \item {CheckContainsConstructibleParent$<$ type\_list, T, is\_parent $>$}, 
-		\hyperpage{11}
-  \item {CheckContainsConstructibleParent$<$ type\_list, T, true $>$}, 
-		\hyperpage{12}
-  \item {CheckContainsParent$<$ type\_list, T, false $>$}, 
-		\hyperpage{12}
-    \subitem {result}, \hyperpage{12}
-  \item {CheckContainsParent$<$ type\_list, T, is\_parent $>$}, 
-		\hyperpage{12}
-  \item {CheckContainsParent$<$ type\_list, T, true $>$}, 
-		\hyperpage{13}
-  \item {CheckFindParentTypeList$<$ contains\_class, T, type\_list, type\_lists $>$}, 
-		\hyperpage{13}
-  \item {CheckFindParentTypeList$<$ false, T, type\_list, type\_lists... $>$}, 
-		\hyperpage{13}
-  \item {CheckFindParentTypeList$<$ true, T, type\_list, type\_lists... $>$}, 
-		\hyperpage{14}
-  \item {CheckFindTypeListByClass$<$ contains\_class, T, type\_list, type\_lists $>$}, 
-		\hyperpage{14}
-  \item {CheckFindTypeListByClass$<$ false, T, type\_list, type\_lists... $>$}, 
-		\hyperpage{14}
-  \item {CheckFindTypeListByClass$<$ true, T, type\_list, type\_lists... $>$}, 
-		\hyperpage{14}
-  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, false $>$}, 
-		\hyperpage{15}
-  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
-		\hyperpage{15}
-  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, true $>$}, 
-		\hyperpage{15}
-  \item {CheckIsBaseOf$<$ false, parent, derived $>$}, \hyperpage{16}
-  \item {CheckIsBaseOf$<$ has\_parent, parent, derived $>$}, 
-		\hyperpage{15}
-  \item {CheckIsBaseOf$<$ true, parent, derived $>$}, \hyperpage{16}
-    \subitem {result}, \hyperpage{16}
-  \item {CheckMostDerived$<$ type\_list, T, false $>$}, \hyperpage{17}
-  \item {CheckMostDerived$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
+  \item {AdjacencyListGraph$<$ vertexes, adjacency\_list $>$}, 
 		\hyperpage{16}
-  \item {CheckMostDerived$<$ type\_list, T, true $>$}, \hyperpage{17}
-  \item {CheckMostDerivedAndConstructible$<$ type\_list, T, false $>$}, 
-		\hyperpage{17}
-  \item {CheckMostDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
-		\hyperpage{17}
-  \item {CheckMostDerivedAndConstructible$<$ type\_list, T, true $>$}, 
-		\hyperpage{18}
-  \item {Class$<$ T $>$}, \hyperpage{18}
+    \subitem {GetVertexIndex}, \hyperpage{17}
+    \subitem {HasEdge}, \hyperpage{17}
+  \item {AdjacencyListGraph$<$ vertexes, adjacency\_list $>$::ConvertTo$<$ GraphType $>$}, 
+		\hyperpage{33}
+  \item {AdjacencyListGraph$<$ vertexes, adjacency\_list $>$::ConvertTo$<$ POINTER\_STRUCTURE $>$}, 
+		\hyperpage{36}
+  \item {AdjacencyMatrixGraph$<$ vertexes, matrix $>$}, \hyperpage{18}
+  \item {AdjacencyMatrixGraph$<$ vertexes, matrix $>$::ConvertTo$<$ EDGE\_LIST $>$}, 
+		\hyperpage{35}
+  \item {AdjacencyMatrixGraph$<$ vertexes, matrix $>$::ConvertTo$<$ GraphType $>$}, 
+		\hyperpage{34}
 
   \indexspace
 
-  \item {Edge$<$ from\_, to\_, weight\_ $>$}, \hyperpage{21}
+  \item {CheckContainsConstructibleParent$<$ type\_list, T, false $>$}, 
+		\hyperpage{19}
+    \subitem {result}, \hyperpage{19}
+  \item {CheckContainsConstructibleParent$<$ type\_list, T, is\_parent $>$}, 
+		\hyperpage{19}
+  \item {CheckContainsConstructibleParent$<$ type\_list, T, true $>$}, 
+		\hyperpage{20}
+  \item {CheckContainsParent$<$ type\_list, T, false $>$}, 
+		\hyperpage{20}
+    \subitem {result}, \hyperpage{20}
+  \item {CheckContainsParent$<$ type\_list, T, is\_parent $>$}, 
+		\hyperpage{20}
+  \item {CheckContainsParent$<$ type\_list, T, true $>$}, 
+		\hyperpage{21}
+  \item {CheckFindParentTypeList$<$ contains\_class, T, type\_list, type\_lists $>$}, 
+		\hyperpage{21}
+  \item {CheckFindParentTypeList$<$ false, T, type\_list, type\_lists... $>$}, 
+		\hyperpage{21}
+  \item {CheckFindParentTypeList$<$ true, T, type\_list, type\_lists... $>$}, 
+		\hyperpage{22}
+  \item {CheckFindTypeListByClass$<$ contains\_class, T, type\_list, type\_lists $>$}, 
+		\hyperpage{22}
+  \item {CheckFindTypeListByClass$<$ false, T, type\_list, type\_lists... $>$}, 
+		\hyperpage{22}
+  \item {CheckFindTypeListByClass$<$ true, T, type\_list, type\_lists... $>$}, 
+		\hyperpage{22}
+  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, false $>$}, 
+		\hyperpage{23}
+  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
+		\hyperpage{23}
+  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, true $>$}, 
+		\hyperpage{23}
+  \item {CheckIsBaseOf$<$ false, parent, derived $>$}, \hyperpage{24}
+  \item {CheckIsBaseOf$<$ has\_parent, parent, derived $>$}, 
+		\hyperpage{23}
+  \item {CheckIsBaseOf$<$ true, parent, derived $>$}, \hyperpage{24}
+    \subitem {result}, \hyperpage{24}
+  \item {CheckMostDerived$<$ type\_list, T, false $>$}, \hyperpage{25}
+  \item {CheckMostDerived$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
+		\hyperpage{24}
+  \item {CheckMostDerived$<$ type\_list, T, true $>$}, \hyperpage{25}
+  \item {CheckMostDerivedAndConstructible$<$ type\_list, T, false $>$}, 
+		\hyperpage{25}
+  \item {CheckMostDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
+		\hyperpage{25}
+  \item {CheckMostDerivedAndConstructible$<$ type\_list, T, true $>$}, 
+		\hyperpage{26}
+  \item {Class$<$ T $>$}, \hyperpage{26}
+  \item {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$}, 
+		\hyperpage{31}
+  \item {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$::MakePointerStructureGraph$<$ current\_vertexes, current\_adjacency\_list $>$}, 
+		\hyperpage{49}
+  \item {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$::MakePointerStructureGraph$<$ EmptyTypeList, EmptyTypeList $>$}, 
+		\hyperpage{49}
+  \item {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$}, 
+		\hyperpage{32}
+  \item {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$::IterateThroughEdges$<$ edge\_list $>$}, 
+		\hyperpage{48}
+  \item {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$::IterateThroughEdges$<$ EmptyTypeList $>$}, 
+		\hyperpage{49}
+  \item {ConvertGraph$<$ From, To, graph $>$}, \hyperpage{30}
+  \item {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$}, 
+		\hyperpage{32}
+
+  \indexspace
+
+  \item {Edge$<$ from\_, to\_, weight\_ $>$}, \hyperpage{37}
+  \item {EdgeListGraph$<$ vertexes, edge\_list $>$}, \hyperpage{37}
+  \item {EdgeListGraph$<$ vertexes, edge\_list $>$::ConvertTo$<$ ADJACENCY\_LIST $>$}, 
+		\hyperpage{35}
+  \item {EdgeListGraph$<$ vertexes, edge\_list $>$::ConvertTo$<$ GraphType $>$}, 
+		\hyperpage{34}
 
   \indexspace
 
   \item {ForEach}
-    \subitem {VertexStream$<$ stream, graph $>$}, \hyperpage{46}
-  \item {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{26}
-    \subitem {operator()}, \hyperpage{27}
-  \item {Functor$<$ ResultType, ArgTypes $>$}, \hyperpage{26}
-  \item {FunctorType}, \hyperpage{5}
+    \subitem {VertexStream$<$ stream, graph $>$}, \hyperpage{62}
+  \item {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{40}
+    \subitem {operator()}, \hyperpage{40}
+  \item {Functor$<$ ResultType, ArgTypes $>$}, \hyperpage{40}
+  \item {FunctorType}, \hyperpage{11}
 
   \indexspace
 
-  \item {GLib::AddEdge$<$ graph, edge $>$}, \hyperpage{10}
-  \item {Graph$<$ vertexes, adjacency\_list $>$}, \hyperpage{28}
-    \subitem {HasEdge}, \hyperpage{29}
+  \item {GetVertexIndex}
+    \subitem {AdjacencyListGraph$<$ vertexes, adjacency\_list $>$}, 
+		\hyperpage{17}
+  \item {GLib::AddEdge$<$ ADJACENCY\_LIST, graph, edge $>$}, 
+		\hyperpage{15}
+  \item {GLib::AddEdge$<$ GraphType, graph, edge $>$}, \hyperpage{15}
+  \item {Graph}, \hyperpage{42}
 
   \indexspace
 
   \item {HasEdge}
-    \subitem {Graph$<$ vertexes, adjacency\_list $>$}, \hyperpage{29}
+    \subitem {AdjacencyListGraph$<$ vertexes, adjacency\_list $>$}, 
+		\hyperpage{17}
 
   \indexspace
 
-  \item {MakeGraph}, \hyperpage{5}
-  \item {MakeGraph::From$<$ ADJACENCY\_LIST, vertexes, adjacency\_list $>$}, 
-		\hyperpage{24}
-  \item {MakeGraph::From$<$ ADJACENCY\_MATRIX, vertexes, adjacency\_matrix $>$}, 
-		\hyperpage{24}
-  \item {MakeGraph::From$<$ EDGE\_LIST, vertexes, edge\_list $>$}, 
-		\hyperpage{25}
-  \item {MakeGraph::From$<$ EDGE\_LIST, vertexes, EmptyTypeList $>$}, 
-		\hyperpage{26}
-  \item {MakeGraph::From$<$ graph\_type, vertexes, edges $>$}, 
-		\hyperpage{23}
+  \item {NullType}, \hyperpage{53}
 
   \indexspace
 
-  \item {NullType}, \hyperpage{37}
-
-  \indexspace
-
-  \item {Objects}, \hyperpage{6}
-  \item {Objects::Boolean$<$ boolean $>$}, \hyperpage{11}
-  \item {Objects::Integer$<$ integer $>$}, \hyperpage{33}
+  \item {Objects}, \hyperpage{11}
+  \item {Objects::Boolean$<$ boolean $>$}, \hyperpage{19}
+  \item {Objects::Integer$<$ integer $>$}, \hyperpage{45}
   \item {operator()}
-    \subitem {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{27}
+    \subitem {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{40}
+
+  \indexspace
+
+  \item {PointerStructureGraph$<$ vertexes $>$}, \hyperpage{53}
+  \item {PointerStructureGraph$<$ vertexes $>$::DFS$<$ current\_vertex, unvisited\_vertexes $>$}, 
+		\hyperpage{36}
+  \item {PointerStructureGraph$<$ vertexes $>$::DFS$<$ current\_vertex, unvisited\_vertexes $>$::IterateThroughChildren$<$ current\_children $>$}, 
+		\hyperpage{48}
+  \item {PointerStructureGraph$<$ vertexes $>$::DFS$<$ current\_vertex, unvisited\_vertexes $>$::IterateThroughChildren$<$ EmptyTypeList $>$}, 
+		\hyperpage{48}
+  \item {PointerStructureGraph$<$ vertexes $>$::Node$<$ vertex\_, children\_ $>$}, 
+		\hyperpage{51}
 
   \indexspace
 
   \item {result}
     \subitem {CheckContainsConstructibleParent$<$ type\_list, T, false $>$}, 
-		\hyperpage{11}
+		\hyperpage{19}
     \subitem {CheckContainsParent$<$ type\_list, T, false $>$}, 
-		\hyperpage{12}
-    \subitem {CheckIsBaseOf$<$ true, parent, derived $>$}, 
-		\hyperpage{16}
-    \subitem {TL::ContainsConstructibleParent$<$ type\_list, T $>$}, 
-		\hyperpage{19}
-    \subitem {TL::ContainsParent$<$ type\_list, T $>$}, \hyperpage{21}
-    \subitem {TL::HasDerivedAndConstructible$<$ type\_list, T $>$}, 
-		\hyperpage{30}
-    \subitem {TL::IsBaseOf$<$ parent, derived $>$}, \hyperpage{33}
-
-  \indexspace
-
-  \item {TL}, \hyperpage{6}
-  \item {TL::Add$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{9}
-  \item {TL::Add$<$ T, 0, TypeList$<$ Args... $>$ $>$}, \hyperpage{10}
-  \item {TL::Add$<$ T, ind, Arg, Args $>$}, \hyperpage{9}
-  \item {TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{10}
-  \item {TL::Contains$<$ type\_list, T $>$}, \hyperpage{18}
-  \item {TL::ContainsConstructibleParent$<$ EmptyTypeList, T $>$}, 
 		\hyperpage{20}
-  \item {TL::ContainsConstructibleParent$<$ type\_list, T $>$}, 
-		\hyperpage{19}
-    \subitem {result}, \hyperpage{19}
-  \item {TL::ContainsParent$<$ EmptyTypeList, T $>$}, \hyperpage{21}
-  \item {TL::ContainsParent$<$ type\_list, T $>$}, \hyperpage{20}
-    \subitem {result}, \hyperpage{21}
-  \item {TL::FindParentTypeList$<$ T, type\_list, type\_lists $>$}, 
-		\hyperpage{22}
-  \item {TL::FindTypeListByClass$<$ T, type\_list, type\_lists $>$}, 
-		\hyperpage{22}
-  \item {TL::GenerateTypeLists$<$ 0 $>$}, \hyperpage{28}
-  \item {TL::GenerateTypeLists$<$ n $>$}, \hyperpage{28}
-  \item {TL::HasDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
-		\hyperpage{31}
-  \item {TL::HasDerivedAndConstructible$<$ type\_list, T $>$}, 
-		\hyperpage{30}
-    \subitem {result}, \hyperpage{30}
-  \item {TL::IndexOf$<$ EmptyTypeList, T $>$}, \hyperpage{32}
-  \item {TL::IndexOf$<$ type\_list, T $>$}, \hyperpage{31}
-  \item {TL::IndexOf$<$ type\_list, typename type\_list::Head $>$}, 
-		\hyperpage{32}
-  \item {TL::IsBaseOf$<$ EmptyTypeList, derived $>$}, \hyperpage{34}
-  \item {TL::IsBaseOf$<$ EmptyTypeList, EmptyTypeList $>$}, 
-		\hyperpage{34}
-  \item {TL::IsBaseOf$<$ parent, derived $>$}, \hyperpage{33}
-    \subitem {result}, \hyperpage{33}
-  \item {TL::IsBaseOf$<$ parent, EmptyTypeList $>$}, \hyperpage{34}
-  \item {TL::MostDerived$<$ EmptyTypeList, T $>$}, \hyperpage{35}
-  \item {TL::MostDerived$<$ type\_list, T $>$}, \hyperpage{34}
-  \item {TL::MostDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
-		\hyperpage{36}
-  \item {TL::MostDerivedAndConstructible$<$ type\_list, T $>$}, 
-		\hyperpage{35}
-  \item {TL::NoDuplicates$<$ EmptyTypeList $>$}, \hyperpage{37}
-  \item {TL::NoDuplicates$<$ type\_list $>$}, \hyperpage{36}
-  \item {TL::Remove$<$ EmptyTypeList, T $>$}, \hyperpage{38}
-  \item {TL::Remove$<$ type\_list, T $>$}, \hyperpage{37}
-  \item {TL::Remove$<$ type\_list, typename type\_list::Head $>$}, 
-		\hyperpage{38}
-  \item {TL::RemoveAll$<$ type\_list, T $>$}, \hyperpage{39}
-  \item {TL::RemoveAll$<$ type\_list, typename type\_list::Head $>$}, 
-		\hyperpage{39}
-  \item {TL::Replace$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{40}
-  \item {TL::Replace$<$ T, ind, Arg, Args $>$}, \hyperpage{40}
-  \item {TL::Replace$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{41}
-  \item {TL::Size$<$ EmptyTypeList $>$}, \hyperpage{42}
-  \item {TL::Size$<$ TypeList $>$}, \hyperpage{41}
-  \item {TL::TypeAt$<$ type\_list, 0 $>$}, \hyperpage{43}
-  \item {TL::TypeAt$<$ type\_list, ind $>$}, \hyperpage{42}
-  \item {TypeList$<$ Args $>$}, \hyperpage{43}
-  \item {TypeList$<$ H, T... $>$}, \hyperpage{44}
-  \item {TypeList$<$ T $>$}, \hyperpage{44}
+    \subitem {CheckIsBaseOf$<$ true, parent, derived $>$}, 
+		\hyperpage{24}
+    \subitem {TL::ContainsConstructibleParent$<$ type\_list, T $>$}, 
+		\hyperpage{29}
+    \subitem {TL::ContainsParent$<$ type\_list, T $>$}, \hyperpage{30}
+    \subitem {TL::HasDerivedAndConstructible$<$ type\_list, T $>$}, 
+		\hyperpage{43}
+    \subitem {TL::IsBaseOf$<$ parent, derived $>$}, \hyperpage{46}
 
   \indexspace
 
-  \item {VertexStream$<$ EmptyTypeList, graph $>$}, \hyperpage{46}
-  \item {VertexStream$<$ stream, graph $>$}, \hyperpage{45}
-    \subitem {ForEach}, \hyperpage{46}
+  \item {TL}, \hyperpage{12}
+  \item {TL::Add$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{13}
+  \item {TL::Add$<$ T, 0, TypeList$<$ Args... $>$ $>$}, \hyperpage{14}
+  \item {TL::Add$<$ T, ind, Arg, Args $>$}, \hyperpage{13}
+  \item {TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{14}
+  \item {TL::Concatenate$<$ front, back $>$}, \hyperpage{26}
+  \item {TL::Concatenate$<$ front, EmptyTypeList $>$}, \hyperpage{27}
+  \item {TL::Contains$<$ type\_list, T $>$}, \hyperpage{27}
+  \item {TL::ContainsConstructibleParent$<$ EmptyTypeList, T $>$}, 
+		\hyperpage{29}
+  \item {TL::ContainsConstructibleParent$<$ type\_list, T $>$}, 
+		\hyperpage{28}
+    \subitem {result}, \hyperpage{29}
+  \item {TL::ContainsParent$<$ EmptyTypeList, T $>$}, \hyperpage{30}
+  \item {TL::ContainsParent$<$ type\_list, T $>$}, \hyperpage{29}
+    \subitem {result}, \hyperpage{30}
+  \item {TL::FindParentTypeList$<$ T, type\_list, type\_lists $>$}, 
+		\hyperpage{38}
+  \item {TL::FindTypeListByClass$<$ T, type\_list, type\_lists $>$}, 
+		\hyperpage{39}
+  \item {TL::GenerateTypeLists$<$ 0 $>$}, \hyperpage{42}
+  \item {TL::GenerateTypeLists$<$ n $>$}, \hyperpage{41}
+  \item {TL::HasDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
+		\hyperpage{43}
+  \item {TL::HasDerivedAndConstructible$<$ type\_list, T $>$}, 
+		\hyperpage{42}
+    \subitem {result}, \hyperpage{43}
+  \item {TL::IndexOf$<$ EmptyTypeList, T $>$}, \hyperpage{44}
+  \item {TL::IndexOf$<$ type\_list, T $>$}, \hyperpage{44}
+  \item {TL::IndexOf$<$ type\_list, typename type\_list::Head $>$}, 
+		\hyperpage{45}
+  \item {TL::IsBaseOf$<$ EmptyTypeList, derived $>$}, \hyperpage{46}
+  \item {TL::IsBaseOf$<$ EmptyTypeList, EmptyTypeList $>$}, 
+		\hyperpage{46}
+  \item {TL::IsBaseOf$<$ parent, derived $>$}, \hyperpage{45}
+    \subitem {result}, \hyperpage{46}
+  \item {TL::IsBaseOf$<$ parent, EmptyTypeList $>$}, \hyperpage{47}
+  \item {TL::IsTypeList$<$ T $>$}, \hyperpage{47}
+  \item {TL::IsTypeList$<$ TypeList$<$ Args... $>$ $>$}, \hyperpage{47}
+  \item {TL::MostDerived$<$ EmptyTypeList, T $>$}, \hyperpage{50}
+  \item {TL::MostDerived$<$ type\_list, T $>$}, \hyperpage{49}
+  \item {TL::MostDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
+		\hyperpage{51}
+  \item {TL::MostDerivedAndConstructible$<$ type\_list, T $>$}, 
+		\hyperpage{50}
+  \item {TL::NoDuplicates$<$ EmptyTypeList $>$}, \hyperpage{52}
+  \item {TL::NoDuplicates$<$ type\_list $>$}, \hyperpage{52}
+  \item {TL::Remove$<$ EmptyTypeList, T $>$}, \hyperpage{54}
+  \item {TL::Remove$<$ type\_list, T $>$}, \hyperpage{54}
+  \item {TL::Remove$<$ type\_list, typename type\_list::Head $>$}, 
+		\hyperpage{55}
+  \item {TL::RemoveAll$<$ type\_list, T $>$}, \hyperpage{55}
+  \item {TL::RemoveAll$<$ type\_list, typename type\_list::Head $>$}, 
+		\hyperpage{56}
+  \item {TL::Replace$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{57}
+  \item {TL::Replace$<$ T, ind, Arg, Args $>$}, \hyperpage{56}
+  \item {TL::Replace$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{57}
+  \item {TL::Size$<$ EmptyTypeList $>$}, \hyperpage{59}
+  \item {TL::Size$<$ type\_list $>$}, \hyperpage{58}
+  \item {TL::TypeAt$<$ type\_list, 0 $>$}, \hyperpage{60}
+  \item {TL::TypeAt$<$ type\_list, ind $>$}, \hyperpage{59}
+  \item {TypeList$<$ Args $>$}, \hyperpage{60}
+  \item {TypeList$<$ H, T... $>$}, \hyperpage{61}
+  \item {TypeList$<$ T $>$}, \hyperpage{61}
+
+  \indexspace
+
+  \item {VertexStream$<$ EmptyTypeList, graph $>$}, \hyperpage{63}
+  \item {VertexStream$<$ stream, graph $>$}, \hyperpage{62}
+    \subitem {ForEach}, \hyperpage{62}
 
 \end{theindex}
