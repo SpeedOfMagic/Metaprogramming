@@ -25,60 +25,6 @@ struct PointerStructureGraph : public Graph {
 	using nodes_ = nodes;  //!< All accounted vertexes in this graph
 
 	/**
-	 * Performs Depth-First Search, starting from passed vertex.
-	 * It doesn't visit vertexes that have been visited already. 
-	 * It returns visited edges in chronological order, from which it's easy to deduce DFS.
-	 * It's more versatile than one may think)
-	 * Also a variation of Composite pattern.
-	 * @param starting_vertex Template parameter, starting vertex of DFS.
-	 * @returns Parameter result, TypeList of visited edges in chronological order.
-	*/
-	template<class current_vertex, class unvisited_vertexes = nodes_>
-	struct DFS {
-		using vertexes_to_visit = typename TL::Remove<unvisited_vertexes, current_vertex>::result;
-
-		template<class current_children, class cur_unvisited>
-		struct IterateThroughChildren {
-			using cur_edge = typename current_children::Head;
-			using cur_child = typename GLib::FindNodeByVertex<typename cur_edge::to, PointerStructureGraph<nodes>>::result;
-
-			using new_visited = std::conditional_t<
-				TL::Contains<cur_unvisited, cur_child>::result,
-				typename DFS<cur_child, vertexes_to_visit>::new_visited,
-				vertexes_to_visit
-			>;
-
-			using result = std::conditional_t<
-				TL::Contains<cur_unvisited, cur_child>::result,
-				typename TL::Concatenate<
-					typename DFS<cur_child, vertexes_to_visit>::result,
-					typename IterateThroughChildren<
-						typename current_children::Tail,
-						new_visited
-					>::result
-				>::result,
-				typename IterateThroughChildren<
-					typename current_children::Tail,
-					new_visited
-				>::result
-			>;
-		};
-
-		template<class cur_unvisited>
-		struct IterateThroughChildren<EmptyTypeList, cur_unvisited> {
-			using result = EmptyTypeList;
-			using new_visited = vertexes_to_visit;
-		};
-
-		using iterate_through_children = IterateThroughChildren<
-			typename current_vertex::children, 
-			vertexes_to_visit
-		>;
-		using new_visited = typename iterate_through_children::new_visited;
-		using result = typename iterate_through_children::result;
-	};
-
-	/**
 	* Represents an adapter, which converts one type of a graph into another.
 	* Is used as an element in Visitor pattern.
 	* @param GraphType Template parameter, type of a resulting graph

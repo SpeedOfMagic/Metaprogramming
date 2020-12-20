@@ -15,22 +15,22 @@ namespace GLib {
 	struct FindNodeByVertex {
 		static_assert(graph::TYPE == POINTER_STRUCTURE, "Type of a graph is not a POINTER_STRUCTURE");
 
-		template<class current_nodes>
-		struct IterateThroughNode {
-			using current_node = typename current_nodes::Head;
+		template<class cur_nodes>
+		struct IterateThroughNodes {
+			using cur_node = typename cur_nodes::Head;
 			using result = std::conditional_t<
-				std::is_same<vertex, typename current_node::vertex>::value,
-				current_node,
-				typename IterateThroughNode<typename current_nodes::Tail>::result
+				std::is_same<vertex, typename cur_node::vertex>::value,
+				cur_node,
+				typename IterateThroughNodes<typename cur_nodes::Tail>::result
 			>;
 		};
 
 		template<>
-		struct IterateThroughNode<EmptyTypeList> {
+		struct IterateThroughNodes<EmptyTypeList> {
 			using result = NullType;
 		};
 
-		using result = IterateThroughNode<typename graph::nodes_>;
+		using result = typename IterateThroughNodes<typename graph::nodes_>::result;
 	};
 
 	template<typename vertex>
