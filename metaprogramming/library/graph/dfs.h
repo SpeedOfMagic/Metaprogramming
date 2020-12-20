@@ -42,11 +42,15 @@ namespace GLib {
 					typename cur_children::Tail,
 					new_visited
 				>::result,
-				typename TL::Concatenate<
-					typename DFS<cur_child, graph, upd_visited>::result,
-					typename IterateThroughChildren<
-						typename cur_children::Tail,
-						new_visited
+				typename TL::Add<
+					cur_edge,
+					0,
+					typename TL::Concatenate<
+						typename DFS<cur_child, graph, upd_visited>::result,
+						typename IterateThroughChildren<
+							typename cur_children::Tail,
+							new_visited
+						>::result
 					>::result
 				>::result
 			>;

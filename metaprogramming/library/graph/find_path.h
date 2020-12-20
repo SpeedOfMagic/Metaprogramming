@@ -33,43 +33,58 @@ namespace GLib {
 		using dfs_search = typename DFS<start_node, graph>::result;
 		using reversed = typename TL::Reverse<dfs_search>::result;
 
-		template<class cur_edges, class wanted>
+		template<class cur_edges, class wanted_node>
 		struct IterateThroughEdges {
-			constexpr static bool found = std::is_same<typename cur_edges::Head::to, wanted>::value;
+			using cur_edge = typename cur_edges::Head;
+			constexpr static bool found = std::is_same<
+				typename cur_edge::to,
+				typename wanted_node::vertex
+			>::value;
 
 			using path = typename std::conditional_t<found,
 				typename TL::Add<
-				wanted,
-				0,
-				typename IterateThroughEdges<
-				typename cur_edges::Tail,
-				typename cur_edges::Head::From
-				>::path
-				>,
-				typename IterateThroughEdges<typename cur_edges::Tail, wanted>::path
+					typename wanted_node::vertex,
+					0,
+					typename IterateThroughEdges<
+						typename cur_edges::Tail,
+						typename FindNodeByVertex<
+							typename cur_edge::from, graph
+						>::result
+					>::path
+				>::result,
+				typename IterateThroughEdges<typename cur_edges::Tail, wanted_node>::path
 			>;
 
 			using weights = typename std::conditional_t<found,
 				typename TL::Add<
-				wanted,
-				0,
-				typename IterateThroughEdges<
-				typename cur_edges::Tail,
-				typename cur_edges::Head::weight
-				>::weights
-				>,
-				typename IterateThroughEdges<typename cur_edges::Tail, wanted>::weights
+					typename cur_edge::weight,
+					0,
+					typename IterateThroughEdges<
+						typename cur_edges::Tail,
+						typename FindNodeByVertex<
+							typename cur_edge::from, graph
+						>::result
+					>::weights
+				>::result,
+				typename IterateThroughEdges<typename cur_edges::Tail, wanted_node>::weights
 			>;
 		};
 
-		template<class wanted>
-		struct IterateThroughEdges<EmptyTypeList, wanted> {
+		template<class wanted_node>
+		struct IterateThroughEdges<EmptyTypeList, wanted_node> {
 			using path = EmptyTypeList;
 			using weights = EmptyTypeList;
 		};
 
 		using iterate_through_edges = IterateThroughEdges<reversed, finish_node>;
-		using path = typename iterate_through_edges::path;
-		using weights = typename iterate_through_edges::weights;
+		using reversed_path = typename iterate_through_edges::path;
+		using reversed_weights = typename iterate_through_edges::weights;
+
+		using path = typename TL::Add<
+			start,
+			0,
+			typename TL::Reverse<reversed_path>::result
+		>::result;
+		using weights = typename TL::Reverse<reversed_weights>::result;
 	};
 }

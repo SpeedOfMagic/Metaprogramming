@@ -30,9 +30,9 @@ using std::cout;
 using std::endl;
 
 int main() {
-	using vertexes = TypeList<short, float, double>;//TypeList<char, short, int, long, long long, float, double>;
+	using vertexes = TypeList<char, short, int, long, long long, float, double>;
 	using edges = TypeList<
-		//Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
+		Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
 		Edge<short, float>, Edge<float, double>
 	>;
 
@@ -46,7 +46,7 @@ int main() {
 	using g3 = graph2
 		::ConvertTo<POINTER_STRUCTURE>::result;
  
-	using node = typename GLib::FindNodeByVertex<short, g3>::result;
+	using node = typename GLib::FindNodeByVertex<char, g3>::result;
 	int a = 4;
 	g3 g;
 	node n;
@@ -54,6 +54,9 @@ int main() {
 	using r = typename GLib::DFS<node, g3>::result;
 	r z;
 
-	cout << TL::Size<r>::size + 1 << endl;
+	using path = typename GLib::FindPath<g3, char, double>::path;
+	path xzc;
+
+	cout << TL::Size<path>::size << endl;
 	return 0;
 }
