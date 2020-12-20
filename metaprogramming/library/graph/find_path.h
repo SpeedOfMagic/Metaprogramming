@@ -3,6 +3,7 @@
 #include <type_traits>
 
 #include "graphs/convert_graph.h"
+#include "graphs/pointer_structure_graph.h"
 
 #include "../TL/concatenate.h"
 #include "../TL/reverse.h"
@@ -20,8 +21,14 @@ namespace GLib {
 	template<class graph_raw, class start, class finish>
 	struct FindPath {
 		using graph = typename ConvertGraph<graph_raw::TYPE, POINTER_STRUCTURE, graph_raw>::result;
+
+		template<typename T>
+		using find_node_by_vertex = graph::FindNodeByVertex<T>;
+
+		using start_node = typename find_node_by_vertex<start>::result;
+		using finish_node = typename find_node_by_vertex<finish>::result;
 		
-		using dfs_search = typename graph::DFS<start>::result;
+		using dfs_search = typename graph::DFS<start_node>::result;
 		using reversed = typename TL::Reverse<dfs_search>::result;
 		
 		template<class cur_edges, class wanted>
@@ -59,7 +66,8 @@ namespace GLib {
 			using weights = EmptyTypeList;
 		};
 
-		using path = typename IterateThroughEdges<reversed, finish>::path;
-		using weights = typename IterateThroughEdges<reversed, finish>::weights;
+		using iterate_through_edges = IterateThroughEdges<reversed, finish_node>;
+		using path = typename iterate_through_edges::path;
+		using weights = typename iterate_through_edges::weights;
 	};
 }

@@ -20,11 +20,11 @@
  * @param adjacency_list_ - TypeList of TypeLists of edges, which are grouped by starting vertex
  *							i.e. edge (from, to, weight) goes to adjacency_list_[from]
  */
-template<class vertexes, class adjacency_list>
+template<class nodes, class adjacency_list>
 struct AdjacencyListGraph : public Graph {
 	constexpr static GraphType TYPE = ADJACENCY_LIST;
 
-	using vertexes_ = vertexes;  //!< TypeList of vertexes in graph.
+	using vertexes_ = nodes;  //!< TypeList of vertexes in graph.
 	using adjacency_list_ = adjacency_list;  //!< TypeList of TypeLists of edges, which are grouped by starting vertex
 	static_assert(TL::Size<vertexes_>::size == TL::Size<adjacency_list_>::size, "Amount of vertexes and adjacency lists differ");
 	static_assert(TL::IsTypeList<vertexes_>::value, "Vertexes are not in a TypeList");

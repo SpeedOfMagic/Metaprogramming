@@ -32,7 +32,7 @@ struct ConvertGraph<ADJACENCY_LIST, POINTER_STRUCTURE, graph> {
 		>::result;
 
 		using result = typename TL::Add<
-			typename PointerStructureNode<
+			PointerStructureNode<
 				typename current_vertexes::Head,
 				typename current_adjacency_list::Head
 			>,

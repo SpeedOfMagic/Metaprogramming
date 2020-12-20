@@ -14,7 +14,7 @@
 #include "../library/graph/graphs/convert_from_adjacency_list.h"
 #include "../library/graph/graphs/convert_from_pointer_structure.h"
 #include "../library/graph/edge.h"
-//#include "../library/graph/find_path.h"
+#include "../library/graph/find_path.h"
 
 template<class Gr>
 void print(Gr g, size_t ind) {
@@ -30,9 +30,9 @@ using std::cout;
 using std::endl;
 
 int main() {
-	using vertexes = TypeList<short, float, int, double>;//ypeList<char, short, int, long, long long, float, double>;
+	using vertexes = TypeList<char, short, int, long, long long, float, double>;
 	using edges = TypeList<
-		//Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
+		Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
 		Edge<short, float>, Edge<float, double>, Edge<int, double>
 	>;
 

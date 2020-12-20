@@ -8,16 +8,17 @@
 
 /** 
  * Represents graph as a structure with pointers
- * Every vertex must contain TypeList ''children'', 
+ * Every vertex must be contained within node. Node must have a TypeList ''children'', 
  * which is a TypeList of Edges, showing who can be reached from this vertex.
+ * Also node must have a field ''vertex'' ~--- the vertex this node contains.
  * @param vertexes Template parameter, vertexes in this graph
  */
-template<class vertexes>
+template<class nodes>
 struct PointerStructureGraph : public Graph {
 	constexpr static GraphType TYPE = POINTER_STRUCTURE;
 
-	static_assert(TL::IsTypeList<vertexes>::value, "Passed vertexes are not in a TypeList");
-	using vertexes_ = vertexes;  //!< All accounted vertexes in this graph
+	static_assert(TL::IsTypeList<nodes>::value, "Passed vertexes are not in a TypeList");
+	using nodes_ = nodes;  //!< All accounted vertexes in this graph
 
 	/**
 	 * Performs Depth-First Search, starting from passed vertex.
@@ -28,48 +29,59 @@ struct PointerStructureGraph : public Graph {
 	 * @param starting_vertex Template parameter, starting vertex of DFS.
 	 * @returns Parameter result, TypeList of visited edges in chronological order.
 	*/
-	template<class current_vertex, class unvisited_vertexes = vertexes_>
+	template<class current_vertex, class unvisited_vertexes = nodes_>
 	struct DFS {
 		using vertexes_to_visit = typename TL::Remove<unvisited_vertexes, current_vertex>::result;
 
-		template<class current_children>
+		template<class current_children, class cur_unvisited>
 		struct IterateThroughChildren {
+			using cur_edge = typename current_children::Head;
+			using cur_child = typename cur_edge::to;
 
 			template<bool is_visited>
 			struct FilterByVisited;
 
 			template<>
 			struct FilterByVisited<true> {
-				using dfs = DFS<typename current_children::Head, vertexes_to_visit>;
+				using dfs = DFS<cur_child, vertexes_to_visit>;
 				using new_visited = typename dfs::new_visited;
 
 				using result = typename TL::Concatenate<
 					typename dfs::result,
-					typename IterateThroughChildren<typename current_children::Tail>::result
+					typename IterateThroughChildren<
+						typename current_children::Tail,
+						new_visited
+					>::result
 				>::result;
 			};
 
 			template<>
 			struct FilterByVisited<false> {
 				using new_visited = vertexes_to_visit;
-				using result = typename IterateThroughChildren<typename current_children::Tail>::result;
+				using result = typename IterateThroughChildren<
+					typename current_children::Tail,
+					new_visited
+				>::result;
 			};
 
-			using filter_by_visited = typename FilterByVisited<
-				TL::Contains<vertexes_to_visit, typename current_children::Head>::value
+			using filter_by_visited = FilterByVisited<
+				TL::Contains<cur_unvisited, cur_child>::result
 			>;
 			using result = typename filter_by_visited::result;
 			using new_visited = typename filter_by_visited::new_visited;
 		};
 
-		template<>
-		struct IterateThroughChildren<EmptyTypeList> {
+		template<class cur_unvisited>
+		struct IterateThroughChildren<EmptyTypeList, cur_unvisited> {
 			using result = EmptyTypeList;
 			using new_visited = vertexes_to_visit;
 		};
 
-		using iterate_through_children = typename IterateThroughChildren<typename current_vertex::children>;
-		using new_visited = typename iterate_through_children::visited;
+		using iterate_through_children = IterateThroughChildren<
+			typename current_vertex::children, 
+			vertexes_to_visit
+		>;
+		using new_visited = typename iterate_through_children::new_visited;
 		using result = typename iterate_through_children::result;
 	};
 
@@ -84,7 +96,28 @@ struct PointerStructureGraph : public Graph {
 		using result = typename ConvertGraph<
 			TYPE,
 			type,
-			PointerStructureGraph<vertexes>
+			PointerStructureGraph<nodes>
 		>::result;
+	};
+
+	/**
+	 * Finds node corresponding to this vertex.
+	 * @param vertex Template parameter, vertex, node of which to find.
+	 * @param current_nodes Optional template parameter, TypeList of possible nodes. nodes_ by default.
+	 * @returns Parameter result, required node if found, NullType otherwise.
+	 */
+	template<typename vertex, class current_nodes = nodes_>
+	struct FindNodeByVertex {
+		using current_node = typename current_nodes::Head;
+		using result = std::conditional_t<
+			std::is_same<vertex, typename current_node::vertex>::value,
+			current_node,
+			typename FindNodeByVertex<vertex, typename current_nodes::Tail>::result
+		>;
+	};
+
+	template<typename vertex>
+	struct FindNodeByVertex<vertex, EmptyTypeList> {
+		using result = NullType;
 	};
 };

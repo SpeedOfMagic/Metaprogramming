@@ -16,13 +16,13 @@
  * @param edge_list Template parameter, TypeList of Edge
  * @returns Parameter result, resulting graph
 */
-template<class vertexes, class edge_list>
+template<class nodes, class edge_list>
 struct EdgeListGraph {
 	constexpr static GraphType TYPE = EDGE_LIST;
 
-	static_assert(TL::IsTypeList<vertexes>::value, "Vertexes are not in a TypeList");
+	static_assert(TL::IsTypeList<nodes>::value, "Vertexes are not in a TypeList");
 	static_assert(TL::IsTypeList<edge_list>::value, "Edge list is not a TypeList");
-	using vertexes_ = vertexes;  //!< TypeList of vertexes in graph.
+	using vertexes_ = nodes;  //!< TypeList of vertexes in graph.
 	using edge_list_ = edge_list;  //!< TypeList of edges
 
 	/**
