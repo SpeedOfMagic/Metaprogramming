@@ -5,6 +5,7 @@
 /**
 * An adapter to convert graph of type From to type To.
 * Defined separate from its realizations in order to avoid cycle dependency.
+* Before convertion, don't forget to include file of a required implementation.
 * Is used as a visitor in Visitor pattern.
 * @see GraphType
 * @param From Template parameter

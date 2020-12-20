@@ -47,8 +47,8 @@ int main() {
  
 	graph2 g2; g3 gs;
 
-	//using path = typename GLib::FindPath<graph2, char, long>::path;
-	//cout << TL::Size<path>::size << endl;
+	using path = typename GLib::FindPath<graph2, char, long>::path;
+	cout << TL::Size<path>::size << endl;
 	
 		//::ConvertTo<ADJACENCY_MATRIX>::result
 		//::ConvertTo<EDGE_LIST>::result

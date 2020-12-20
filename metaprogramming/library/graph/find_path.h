@@ -59,6 +59,7 @@ namespace GLib {
 			using weights = EmptyTypeList;
 		};
 
-		using result = typename IterateThroughEdges<reversed, finish>::result;
+		using path = typename IterateThroughEdges<reversed, finish>::path;
+		using weights = typename IterateThroughEdges<reversed, finish>::weights;
 	};
 }

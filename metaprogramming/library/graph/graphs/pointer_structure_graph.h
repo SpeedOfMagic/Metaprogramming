@@ -47,22 +47,43 @@ struct PointerStructureGraph : public Graph {
 
 		template<class current_children>
 		struct IterateThroughChildren {
-			using result = typename std::conditional_t<
-				TL::Contains<vertexes_to_visit, typename current_children::Head>::value,
-				TL::Concatenate<
-					typename DFS<typename current_children::Head, vertexes_to_visit>::result,
+
+			template<bool is_visited>
+			struct FilterByVisited;
+
+			template<>
+			struct FilterByVisited<true> {
+				using dfs = DFS<typename current_children::Head, vertexes_to_visit>;
+				using new_visited = typename dfs::new_visited;
+
+				using result = typename TL::Concatenate<
+					typename dfs::result,
 					typename IterateThroughChildren<typename current_children::Tail>::result
-				>,
-				typename IterateThroughChildren<typename current_children::Tail>::result
+				>::result;
+			};
+
+			template<>
+			struct FilterByVisited<false> {
+				using new_visited = vertexes_to_visit;
+				using result = typename IterateThroughChildren<typename current_children::Tail>::result;
+			};
+
+			using filter_by_visited = typename FilterByVisited<
+				TL::Contains<vertexes_to_visit, typename current_children::Head>::value
 			>;
+			using result = typename filter_by_visited::result;
+			using new_visited = typename filter_by_visited::new_visited;
 		};
 
 		template<>
 		struct IterateThroughChildren<EmptyTypeList> {
 			using result = EmptyTypeList;
+			using new_visited = vertexes_to_visit;
 		};
 
-		using result = typename IterateThroughChildren<typename current_vertex::children>::result;
+		using iterate_through_children = typename IterateThroughChildren<typename current_vertex::children>;
+		using new_visited = typename iterate_through_children::visited;
+		using result = typename iterate_through_children::result;
 	};
 
 	/**
