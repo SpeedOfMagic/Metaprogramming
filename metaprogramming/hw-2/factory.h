@@ -19,7 +19,7 @@ struct Factory {
 
 	template<typename parent, typename T>
 	struct GetObject<parent, T, true> {
-		static parent* Get() { return new T();  }
+		static parent* Get() { return new T(); }
 	};
 
 	template<typename parent, typename T>
@@ -29,13 +29,11 @@ struct Factory {
 
 		using new_factory = Factory<parent_type_list, type_lists...>;
 
-
 		static parent* Get() {
 			return new_factory().Get<parent>();
 		}
 	};
 };
-
 
 // Get required factory by class name
 template<size_t, size_t, class type_list, class ...type_lists>

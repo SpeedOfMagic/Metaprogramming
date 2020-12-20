@@ -20,22 +20,25 @@ namespace TL {
 
 		using reversed_front = typename Reverse<front>::result;
 
-		template<class elements>
+		template<class elements, class current>
 		struct IterateThroughReversedFront {
-			using result = typename Add<
+			using added = typename Add<
 				typename elements::Head,
 				0,
-				typename IterateThroughReversedFront<
-					typename elements::Tail
-				>::result
+				current
+			>::result;
+
+			using result = typename IterateThroughReversedFront<
+				typename elements::Tail,
+				added
 			>::result;
 		};
 
-		template<>
-		struct IterateThroughReversedFront<EmptyTypeList> {
-			using result = back;
+		template<class current>
+		struct IterateThroughReversedFront<EmptyTypeList, current> {
+			using result = current;
 		};
 
-		using result = typename IterateThroughReversedFront<reversed_front>::result;
+		using result = typename IterateThroughReversedFront<reversed_front, back>::result;
 	};
 }

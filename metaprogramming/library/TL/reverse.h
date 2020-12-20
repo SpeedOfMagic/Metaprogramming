@@ -12,14 +12,14 @@ namespace TL {
 	struct Reverse {
 		template<class cur_type_list, class cur_result>
 		struct IterateThroughElements {
-			using result = IterateThroughElements <
+			using result = typename IterateThroughElements <
 				typename cur_type_list::Tail,
 				typename TL::Add<
 					typename cur_type_list::Head,
 					0,
 					cur_result
 				>::result
-			>;
+			>::result;
 		};
 
 		template<class cur_result>

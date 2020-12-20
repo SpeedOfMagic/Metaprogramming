@@ -27,23 +27,23 @@ namespace GLib {
 			using cur_edge = typename cur_children::Head;
 			using cur_child = typename GLib::FindNodeByVertex<
 				typename cur_edge::to, 
-				PointerStructureGraph<typename graph::nodes_>
+				graph
 			>::result;
 
 			using new_visited = std::conditional_t<
 				TL::Contains<cur_visited, cur_child>::result,
 				upd_visited,
-				typename DFS<cur_child, upd_visited>::new_visited
+				typename DFS<cur_child, graph, upd_visited>::new_visited
 			>;
 
 			using result = std::conditional_t<
-				TL::Contains<cur_visited, cur_child>::result,
+				TL::Contains<upd_visited, cur_child>::result,
 				typename IterateThroughChildren<
 					typename cur_children::Tail,
 					new_visited
 				>::result,
 				typename TL::Concatenate<
-					typename DFS<cur_child, upd_visited>::result,
+					typename DFS<cur_child, graph, upd_visited>::result,
 					typename IterateThroughChildren<
 						typename cur_children::Tail,
 						new_visited

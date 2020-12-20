@@ -9,7 +9,7 @@ namespace GLib {
 	* Finds node corresponding to this vertex.
 	* @param vertex Template parameter, vertex, node of which to find.
 	* @param graph Template parameter, graph that should be passed.
-    * @returns Parameter result, required node if found, NullType otherwise.
+	* @returns Parameter result, required node if found, NullType otherwise.
 	*/
 	template<typename vertex, class graph>
 	struct FindNodeByVertex {

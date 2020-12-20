@@ -40,13 +40,13 @@ namespace TL {
 			found_type_list,
 			TL::IsBaseOf<typename type_lists::Head, derived_typelist>::result &&
 			(TL::IsBaseOf<found_type_list, typename type_lists::Head>::result
-			 || std::is_same<found_type_list, derived_typelist>::value
-			) &&
+				|| std::is_same<found_type_list, derived_typelist>::value
+				) &&
 			!std::is_same<derived_typelist, typename type_lists::Head>::value
 		>::result;
-	};\
+	}; \
 
-	template<class derived_typelist, class found_type_list>
+		template<class derived_typelist, class found_type_list>
 	struct FindRequiredTypeList<EmptyTypeList, derived_typelist, found_type_list> {
 		using result = found_type_list;
 	};

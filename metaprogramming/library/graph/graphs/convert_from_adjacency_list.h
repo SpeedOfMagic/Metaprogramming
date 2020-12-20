@@ -17,7 +17,7 @@
 
 #include "graph_type.h"
 
-/** 
+/**
  * @see ConvertGraph
  */
 template<class graph>
@@ -48,8 +48,8 @@ struct ConvertGraph<ADJACENCY_LIST, POINTER_STRUCTURE, graph> {
 
 	using result = PointerStructureGraph<
 		typename MakePointerStructureGraph<
-			typename graph::vertexes_, 
-			typename graph::adjacency_list_
+		typename graph::vertexes_,
+		typename graph::adjacency_list_
 		>::result
 	>;
 };

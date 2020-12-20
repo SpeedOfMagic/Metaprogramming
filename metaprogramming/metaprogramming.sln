@@ -8,6 +8,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "library", "library\library.vcxproj", "{7FD44259-C083-481F-8B63-6C349DD5340E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hw-3", "hw-3\hw-3.vcxproj", "{7ED38142-450C-481D-A89F-F773065B2C5D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7FD44259-C083-481F-8B63-6C349DD5340E} = {7FD44259-C083-481F-8B63-6C349DD5340E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

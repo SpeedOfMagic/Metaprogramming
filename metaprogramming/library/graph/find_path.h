@@ -19,7 +19,7 @@ namespace GLib {
 	* @param graph Template parameter
 	* @param start Template parameter
 	* @param finish Template parameter
-	* @returns Two parameters: path and weights. ''path'' is a TypeList of vertexes that make this path. 
+	* @returns Two parameters: path and weights. ''path'' is a TypeList of vertexes that make this path.
 	*		   ''weights'' is a TypeList of weights, that were on the edges in this path.
 	*		   If there's no path, path and weights are EmptyTypeList.
 	*/
@@ -29,34 +29,34 @@ namespace GLib {
 
 		using start_node = typename FindNodeByVertex<start, graph>::result;
 		using finish_node = typename FindNodeByVertex<finish, graph>::result;
-		
+
 		using dfs_search = typename DFS<start_node, graph>::result;
 		using reversed = typename TL::Reverse<dfs_search>::result;
-		
+
 		template<class cur_edges, class wanted>
 		struct IterateThroughEdges {
 			constexpr static bool found = std::is_same<typename cur_edges::Head::to, wanted>::value;
 
 			using path = typename std::conditional_t<found,
 				typename TL::Add<
-					wanted,
-					0,
-					typename IterateThroughEdges<
-						typename cur_edges::Tail, 
-						typename cur_edges::Head::From
-					>::path
+				wanted,
+				0,
+				typename IterateThroughEdges<
+				typename cur_edges::Tail,
+				typename cur_edges::Head::From
+				>::path
 				>,
 				typename IterateThroughEdges<typename cur_edges::Tail, wanted>::path
 			>;
 
 			using weights = typename std::conditional_t<found,
 				typename TL::Add<
-					wanted,
-					0,
-					typename IterateThroughEdges<
-						typename cur_edges::Tail,
-						typename cur_edges::Head::weight
-					>::weights
+				wanted,
+				0,
+				typename IterateThroughEdges<
+				typename cur_edges::Tail,
+				typename cur_edges::Head::weight
+				>::weights
 				>,
 				typename IterateThroughEdges<typename cur_edges::Tail, wanted>::weights
 			>;

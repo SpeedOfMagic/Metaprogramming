@@ -45,7 +45,7 @@ int main() {
 
 	using g3 = graph2
 		::ConvertTo<POINTER_STRUCTURE>::result;
- 
+
 	using node = typename GLib::FindNodeByVertex<short, g3>::result;
 	int a = 4;
 	g3 g;
@@ -54,6 +54,6 @@ int main() {
 	using r = typename GLib::DFS<node, g3>::result;
 	r z;
 
-	cout << TL::Size<r>::size + 1 << endl;
+	cout << TL::Size<r>::size + 2 << endl;
 	return 0;
 }

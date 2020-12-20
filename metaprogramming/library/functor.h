@@ -57,7 +57,7 @@ private:
 	class FreeFunctionHolder : public FunctionHolder {
 	public:
 		FreeFunctionHolder(Function function) : FunctionHolder(), function_(function) {}
-		
+
 		virtual ResultType Invoke(ArgTypes... args) override {
 			return function_(args...);
 		}
@@ -65,9 +65,9 @@ private:
 		virtual Invoker Clone() override {
 			return Invoker(new FreeFunctionHolder<Function>(function_));
 		}
-	
+
 	private:
-		Function function_;	
+		Function function_;
 	};
 
 	template<typename Function, class Class, typename ...OtherArgs>
