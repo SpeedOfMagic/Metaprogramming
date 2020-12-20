@@ -13,6 +13,7 @@
 #include "adjacency_matrix_graph.h"
 #include "edge_list_graph.h"
 #include "pointer_structure_graph.h"
+#include "pointer_structure_node.h"
 
 #include "graph_type.h"
 
@@ -31,7 +32,7 @@ struct ConvertGraph<ADJACENCY_LIST, POINTER_STRUCTURE, graph> {
 		>::result;
 
 		using result = typename TL::Add<
-			typename PointerStructureGraph::Node<
+			typename PointerStructureNode<
 				typename current_vertexes::Head,
 				typename current_adjacency_list::Head
 			>,

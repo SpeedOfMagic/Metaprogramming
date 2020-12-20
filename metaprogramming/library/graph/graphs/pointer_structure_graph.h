@@ -19,19 +19,6 @@ struct PointerStructureGraph : public Graph {
 	static_assert(TL::IsTypeList<vertexes>::value, "Passed vertexes are not in a TypeList");
 	using vertexes_ = vertexes;  //!< All accounted vertexes in this graph
 
-	/** 
-	 * Default version of a suitable class.
-	 * It's not necessary to use this one. In fact, it's encouraged to make your objects suitable to PointerStructureGraph.
-	 * @param vertex_ Template parameter, vertex that this node represents
-	 * @param children_ Template parameter, TypeList of Edges, showing who can be reached from this vertex.
-	 */
-	template<class vertex_, class children_>
-	struct Node {
-		static_assert(TL::IsTypeList<children_>::value, "Passed children are not in a TypeList");
-		using vertex = vertex_;
-		using children = children_;
-	};
-
 	/**
 	 * Performs Depth-First Search, starting from passed vertex.
 	 * It doesn't visit vertexes that have been visited already. 
