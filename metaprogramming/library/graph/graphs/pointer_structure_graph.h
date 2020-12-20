@@ -5,6 +5,9 @@
 #include "../../TL/concatenate.h"
 #include "../../TL/is_type_list.h"
 #include "../../TL/remove.h"
+
+#include "../find_node_by_vertex.h"
+
 #include "pointer_structure_node.h"
 
 /** 
@@ -37,7 +40,7 @@ struct PointerStructureGraph : public Graph {
 		template<class current_children, class cur_unvisited>
 		struct IterateThroughChildren {
 			using cur_edge = typename current_children::Head;
-			using cur_child = typename cur_edge::to;
+			using cur_child = typename GLib::FindNodeByVertex<typename cur_edge::to, PointerStructureGraph<nodes>>::result;
 
 			using new_visited = std::conditional_t<
 				TL::Contains<cur_unvisited, cur_child>::result,
@@ -88,26 +91,5 @@ struct PointerStructureGraph : public Graph {
 			type,
 			PointerStructureGraph<nodes>
 		>::result;
-	};
-
-	/**
-	 * Finds node corresponding to this vertex.
-	 * @param vertex Template parameter, vertex, node of which to find.
-	 * @param current_nodes Optional template parameter, TypeList of possible nodes. nodes_ by default.
-	 * @returns Parameter result, required node if found, NullType otherwise.
-	 */
-	template<typename vertex, class current_nodes = nodes_>
-	struct FindNodeByVertex {
-		using current_node = typename current_nodes::Head;
-		using result = std::conditional_t<
-			std::is_same<vertex, typename current_node::vertex>::value,
-			current_node,
-			typename FindNodeByVertex<vertex, typename current_nodes::Tail>::result
-		>;
-	};
-
-	template<typename vertex>
-	struct FindNodeByVertex<vertex, EmptyTypeList> {
-		using result = NullType;
 	};
 };

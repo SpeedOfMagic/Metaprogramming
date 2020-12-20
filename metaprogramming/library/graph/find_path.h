@@ -2,11 +2,16 @@
 
 #include <type_traits>
 
-#include "graphs/convert_graph.h"
-#include "graphs/pointer_structure_graph.h"
-
 #include "../TL/concatenate.h"
 #include "../TL/reverse.h"
+
+#include "find_node_by_vertex.h"
+#include "dfs.h"
+
+#include "graphs/convert_graph.h"
+#include "graphs/convert_from_adjacency_list.h"
+#include "graphs/convert_from_edge_list.h"
+#include "graphs/convert_from_pointer_structure.h"
 
 namespace GLib {
 	/**
@@ -18,17 +23,14 @@ namespace GLib {
 	*		   ''weights'' is a TypeList of weights, that were on the edges in this path.
 	*		   If there's no path, path and weights are EmptyTypeList.
 	*/
-	template<class graph_raw, class start, class finish>
+	template<class graph_raw, typename start, typename finish>
 	struct FindPath {
 		using graph = typename ConvertGraph<graph_raw::TYPE, POINTER_STRUCTURE, graph_raw>::result;
 
-		using find_start = typename graph::FindNodeByVertex<start>;
-		using start_node = typename find_start::result;
-
-		using find_finish = typename graph::FindNodeByVertex<finish>;
-		using finish_node = typename find_finish::result;
+		using start_node = typename FindNodeByVertex<start, graph>::result;
+		using finish_node = typename FindNodeByVertex<finish, graph>::result;
 		
-		using dfs_search = typename graph::DFS<start_node>::result;
+		using dfs_search = typename DFS<start_node, graph>::result;
 		using reversed = typename TL::Reverse<dfs_search>::result;
 		
 		template<class cur_edges, class wanted>

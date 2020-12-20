@@ -18,5 +18,6 @@ struct ConvertGraph {};
 
 template<GraphType type, class graph>
 struct ConvertGraph<type, type, graph> {
+	static_assert(type == graph::TYPE, "Type of a graph must be equal to passed argument");
 	using result = graph;
 };
