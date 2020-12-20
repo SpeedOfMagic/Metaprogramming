@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../TL/contains.h"
+
 #include "graphs/pointer_structure_graph.h"
 
 namespace GLib {

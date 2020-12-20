@@ -45,16 +45,10 @@ int main() {
 	using g3 = graph2
 		::ConvertTo<POINTER_STRUCTURE>::result;
  
-	graph2 g2; g3 gs;
+	using node = typename GLib::FindNodeByVertex<short, g3>::result;
+	using r = typename GLib::DFS<node, g3>::result;
 
-	using path = typename GLib::FindPath<graph2, char, long>::path;
-	cout << TL::Size<path>::size << endl;
-	
-		//::ConvertTo<ADJACENCY_MATRIX>::result
-		//::ConvertTo<EDGE_LIST>::result
-		//::ConvertTo<ADJACENCY_LIST>::result;
-
-	//std::cout << graph2().HasEdge<Edge<float, double>>() << std::endl;
+	cout << TL::Size<r>::size << endl;
 
 	return 0;
 }

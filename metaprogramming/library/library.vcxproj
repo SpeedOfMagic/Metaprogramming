@@ -141,8 +141,24 @@
   <ItemGroup>
     <ClInclude Include="functor.h" />
     <ClInclude Include="graph\add_edge.h" />
+    <ClInclude Include="graph\dfs.h" />
+    <ClInclude Include="graph\edge.h" />
+    <ClInclude Include="graph\find_node_by_vertex.h" />
+    <ClInclude Include="graph\find_path.h" />
+    <ClInclude Include="graph\graphs\adjacency_list_graph.h" />
+    <ClInclude Include="graph\graphs\adjacency_matrix_graph.h" />
+    <ClInclude Include="graph\graphs\convert_from_adjacency_list.h" />
+    <ClInclude Include="graph\graphs\convert_from_edge_list.h" />
+    <ClInclude Include="graph\graphs\convert_from_pointer_structure.h" />
+    <ClInclude Include="graph\graphs\convert_graph.h" />
+    <ClInclude Include="graph\graphs\edge_list_graph.h" />
+    <ClInclude Include="graph\graphs\graph.h" />
+    <ClInclude Include="graph\graphs\graph_type.h" />
+    <ClInclude Include="graph\graphs\pointer_structure_graph.h" />
+    <ClInclude Include="graph\graphs\pointer_structure_node.h" />
     <ClInclude Include="graph\make_graph.h" />
     <ClInclude Include="graph\objects.h" />
+    <ClInclude Include="graph\vertex_stream.h" />
     <ClInclude Include="TL\add.h" />
     <ClInclude Include="TL\contains_constructible_parent.h" />
     <ClInclude Include="TL\contains.h" />
