@@ -22,18 +22,18 @@ namespace GLib {
 	struct FindPath {
 		using graph = typename ConvertGraph<graph_raw::TYPE, POINTER_STRUCTURE, graph_raw>::result;
 
-		template<typename T>
-		using find_node_by_vertex = graph::FindNodeByVertex<T>;
+		using find_start = typename graph::FindNodeByVertex<start>;
+		using start_node = typename find_start::result;
 
-		using start_node = typename find_node_by_vertex<start>::result;
-		using finish_node = typename find_node_by_vertex<finish>::result;
+		using find_finish = typename graph::FindNodeByVertex<finish>;
+		using finish_node = typename find_finish::result;
 		
 		using dfs_search = typename graph::DFS<start_node>::result;
 		using reversed = typename TL::Reverse<dfs_search>::result;
 		
 		template<class cur_edges, class wanted>
 		struct IterateThroughEdges {
-			constexpr static bool found = std::is_same<typename cur_edges::Head::to, wanted>;
+			constexpr static bool found = std::is_same<typename cur_edges::Head::to, wanted>::value;
 
 			using path = typename std::conditional_t<found,
 				typename TL::Add<

@@ -5,6 +5,7 @@
 #include "../../TL/concatenate.h"
 #include "../../TL/is_type_list.h"
 #include "../../TL/remove.h"
+#include "pointer_structure_node.h"
 
 /** 
  * Represents graph as a structure with pointers
@@ -38,37 +39,26 @@ struct PointerStructureGraph : public Graph {
 			using cur_edge = typename current_children::Head;
 			using cur_child = typename cur_edge::to;
 
-			template<bool is_visited>
-			struct FilterByVisited;
+			using new_visited = std::conditional_t<
+				TL::Contains<cur_unvisited, cur_child>::result,
+				typename DFS<cur_child, vertexes_to_visit>::new_visited,
+				vertexes_to_visit
+			>;
 
-			template<>
-			struct FilterByVisited<true> {
-				using dfs = DFS<cur_child, vertexes_to_visit>;
-				using new_visited = typename dfs::new_visited;
-
-				using result = typename TL::Concatenate<
-					typename dfs::result,
+			using result = std::conditional_t<
+				TL::Contains<cur_unvisited, cur_child>::result,
+				typename TL::Concatenate<
+					typename DFS<cur_child, vertexes_to_visit>::result,
 					typename IterateThroughChildren<
 						typename current_children::Tail,
 						new_visited
 					>::result
-				>::result;
-			};
-
-			template<>
-			struct FilterByVisited<false> {
-				using new_visited = vertexes_to_visit;
-				using result = typename IterateThroughChildren<
+				>::result,
+				typename IterateThroughChildren<
 					typename current_children::Tail,
 					new_visited
-				>::result;
-			};
-
-			using filter_by_visited = FilterByVisited<
-				TL::Contains<cur_unvisited, cur_child>::result
+				>::result
 			>;
-			using result = typename filter_by_visited::result;
-			using new_visited = typename filter_by_visited::new_visited;
 		};
 
 		template<class cur_unvisited>
