@@ -19,6 +19,8 @@
  */
 template<class graph>
 struct ConvertGraph<EDGE_LIST, ADJACENCY_LIST, graph> {
+	static_assert(EDGE_LIST == graph::TYPE, "Type of a graph must be equal to passed argument");
+
 	template<class edge_list>
 	struct IterateThroughEdges {
 		using result = typename GLib::AddEdge<

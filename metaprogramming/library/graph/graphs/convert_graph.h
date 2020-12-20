@@ -15,3 +15,7 @@
 template<GraphType From, GraphType To, class graph>
 struct ConvertGraph {};
 
+template<GraphType type, class graph>
+struct ConvertGraph<type, type, graph> {
+	using result = graph;
+};

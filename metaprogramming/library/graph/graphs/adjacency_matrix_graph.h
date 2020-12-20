@@ -20,6 +20,8 @@
 */
 template<class vertexes, class matrix>
 struct AdjacencyMatrixGraph {
+	constexpr static GraphType TYPE = ADJACENCY_MATRIX;
+
 	static_assert(TL::IsTypeList<vertexes>::value, "Vertexes are not in a TypeList");
 	using vertexes_ = vertexes;  //!< TypeList of vertexes in graph.
 	using matrix_ = matrix;  //!< TypeList of TypeLists of Edges
@@ -30,18 +32,12 @@ struct AdjacencyMatrixGraph {
 	* @param GraphType Template parameter, type of a resulting graph
 	* @returns Parameter result, resulting graph
 	*/
-	template<GraphType>
-	struct ConvertTo;
-
-	/**
-	* @see ConvertTo
-	*/
-	template<>
-	struct ConvertTo<EDGE_LIST> {
+	template<GraphType type>
+	struct ConvertTo {
 		using result = typename ConvertGraph<
-			ADJACENCY_MATRIX,
-			EDGE_LIST,
-			AdjacencyMatrixGraph<vertexes_, matrix_>
+			TYPE,
+			type,
+			AdjacencyMatrixGraph<vertexes, matrix>
 		>::result;
 	};
 };

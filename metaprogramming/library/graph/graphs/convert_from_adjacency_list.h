@@ -21,6 +21,8 @@
  */
 template<class graph>
 struct ConvertGraph<ADJACENCY_LIST, POINTER_STRUCTURE, graph> {
+	static_assert(ADJACENCY_LIST == graph::TYPE, "Type of a graph must be equal to passed argument.");
+
 	template<class current_vertexes, class current_adjacency_list>
 	struct MakePointerStructureGraph {
 		using type_list_without_first = typename MakePointerStructureGraph<
@@ -29,7 +31,7 @@ struct ConvertGraph<ADJACENCY_LIST, POINTER_STRUCTURE, graph> {
 		>::result;
 
 		using result = typename TL::Add<
-			PointerStructureGraph::Node<
+			typename PointerStructureGraph::Node<
 				typename current_vertexes::Head,
 				typename current_adjacency_list::Head
 			>,

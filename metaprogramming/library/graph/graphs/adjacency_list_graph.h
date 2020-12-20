@@ -15,12 +15,15 @@
 /**
  * Represents graph vertexes defined in vertexes_, and edges, which are derived from adjacency_list_
  * Size of an adjacency list must be equal to amount of vertexes
+ * @see Graph
  * @param vertexes_ TypeList of vertexes in graph.
  * @param adjacency_list_ - TypeList of TypeLists of edges, which are grouped by starting vertex
  *							i.e. edge (from, to, weight) goes to adjacency_list_[from]
  */
 template<class vertexes, class adjacency_list>
 struct AdjacencyListGraph : public Graph {
+	constexpr static GraphType TYPE = ADJACENCY_LIST;
+
 	using vertexes_ = vertexes;  //!< TypeList of vertexes in graph.
 	using adjacency_list_ = adjacency_list;  //!< TypeList of TypeLists of edges, which are grouped by starting vertex
 	static_assert(TL::Size<vertexes_>::size == TL::Size<adjacency_list_>::size, "Amount of vertexes and adjacency lists differ");
@@ -56,15 +59,12 @@ struct AdjacencyListGraph : public Graph {
 	* @param GraphType Template parameter, type of a resulting graph
 	* @returns Parameter result, resulting graph
 	*/
-	template<GraphType>
-	struct ConvertTo;
-
-	template<>
-	struct ConvertTo<POINTER_STRUCTURE> {
+	template<GraphType type>
+	struct ConvertTo {
 		using result = typename ConvertGraph<
-			ADJACENCY_LIST, 
-			POINTER_STRUCTURE, 
-			AdjacencyListGraph<vertexes, adjacency_list>
+			TYPE,
+			type,
+			AdjacencyListGraph<vertexes_, adjacency_list_>
 		>::result;
 	};
 };

@@ -141,9 +141,6 @@
   <ItemGroup>
     <ClInclude Include="functor.h" />
     <ClInclude Include="graph\add_edge.h" />
-    <ClInclude Include="graph\graph.h" />
-    <ClInclude Include="graph\graph_processor.h" />
-    <ClInclude Include="graph\graph_type.h" />
     <ClInclude Include="graph\make_graph.h" />
     <ClInclude Include="graph\objects.h" />
     <ClInclude Include="TL\add.h" />

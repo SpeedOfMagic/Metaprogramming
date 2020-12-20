@@ -14,6 +14,7 @@
 #include "../library/graph/graphs/convert_from_adjacency_list.h"
 #include "../library/graph/graphs/convert_from_pointer_structure.h"
 #include "../library/graph/edge.h"
+//#include "../library/graph/find_path.h"
 
 template<class Gr>
 void print(Gr g, size_t ind) {
@@ -29,9 +30,9 @@ using std::cout;
 using std::endl;
 
 int main() {
-	using vertexes = TypeList<char, short, int, long, long long, float, double>;
+	using vertexes = TypeList<short, float, int, double>;//ypeList<char, short, int, long, long long, float, double>;
 	using edges = TypeList<
-	//	Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
+		//Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
 		Edge<short, float>, Edge<float, double>, Edge<int, double>
 	>;
 
@@ -39,8 +40,16 @@ int main() {
 	//std::cout << graph().HasEdge<Edge<short, float>>() << std::endl;
 
 	using graph2 = EdgeListGraph<vertexes, edges>
-		::ConvertTo<ADJACENCY_LIST>::result
+		::ConvertTo<ADJACENCY_LIST>::result;
+
+	using g3 = graph2
 		::ConvertTo<POINTER_STRUCTURE>::result;
+ 
+	graph2 g2; g3 gs;
+
+	//using path = typename GLib::FindPath<graph2, char, long>::path;
+	//cout << TL::Size<path>::size << endl;
+	
 		//::ConvertTo<ADJACENCY_MATRIX>::result
 		//::ConvertTo<EDGE_LIST>::result
 		//::ConvertTo<ADJACENCY_LIST>::result;

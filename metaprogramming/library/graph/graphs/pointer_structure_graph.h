@@ -14,6 +14,8 @@
  */
 template<class vertexes>
 struct PointerStructureGraph : public Graph {
+	constexpr static GraphType TYPE = POINTER_STRUCTURE;
+
 	static_assert(TL::IsTypeList<vertexes>::value, "Passed vertexes are not in a TypeList");
 	using vertexes_ = vertexes;  //!< All accounted vertexes in this graph
 
@@ -45,7 +47,7 @@ struct PointerStructureGraph : public Graph {
 
 		template<class current_children>
 		struct IterateThroughChildren {
-			using result = std::conditional_t<
+			using result = typename std::conditional_t<
 				TL::Contains<vertexes_to_visit, typename current_children::Head>::value,
 				TL::Concatenate<
 					typename DFS<typename current_children::Head, vertexes_to_visit>::result,
@@ -61,5 +63,20 @@ struct PointerStructureGraph : public Graph {
 		};
 
 		using result = typename IterateThroughChildren<typename current_vertex::children>::result;
+	};
+
+	/**
+	* Represents an adapter, which converts one type of a graph into another.
+	* Is used as an element in Visitor pattern.
+	* @param GraphType Template parameter, type of a resulting graph
+	* @returns Parameter result, resulting graph
+	*/
+	template<GraphType type>
+	struct ConvertTo {
+		using result = typename ConvertGraph<
+			TYPE,
+			type,
+			PointerStructureGraph<vertexes>
+		>::result;
 	};
 };
