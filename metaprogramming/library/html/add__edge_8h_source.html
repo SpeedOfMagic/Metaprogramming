@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compile-Time Graph Library: graph/add_edge.h Source File</title>
+<title>Compile-Time Graph Library: graph/GLib/add_edge.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_12552d7fa429bf94a2e32e5cf39f7e69.html">graph</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_12552d7fa429bf94a2e32e5cf39f7e69.html">graph</a></li><li class="navelem"><a class="el" href="dir_3da26f3bc224f9e11ad5685d011e3358.html">GLib</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -70,35 +70,40 @@ $(function() {
 <div class="title">add_edge.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="add__edge_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../TL/add.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../TL/replace.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../TL/type_list.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../TL/type_at.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../TL/index_of.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;graphs/graph_type.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;graphs/adjacency_list_graph.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>GLib {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">template</span>&lt;GraphType, <span class="keyword">class</span> graph, <span class="keyword">class</span> edge&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_g_lib_1_1_add_edge.html">   21</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_g_lib_1_1_add_edge.html">AddEdge</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> graph, <span class="keyword">class</span> edge&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html">   27</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_g_lib_1_1_add_edge.html">AddEdge</a>&lt;ADJACENCY_LIST, graph, edge&gt; {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        constexpr <span class="keyword">static</span> <span class="keywordtype">size_t</span> vertex_num = graph::template GetVertexIndex&lt;typename edge::from&gt;();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">using</span> adjacent_vertexes = <span class="keyword">typename</span> TL::TypeAt&lt;typename graph::adjacency_list_, vertex_num&gt;::value;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">using</span> new_adjacent_vertexes = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_add.html">TL::Add&lt;edge, 0, adjacent_vertexes&gt;::result</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">using</span> new_adjacency_list = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_replace.html">TL::Replace&lt;new_adjacent_vertexes, vertex_num, typename graph::adjacency_list_&gt;::result</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_adjacency_list_graph.html">result</a> = <a class="code" href="struct_adjacency_list_graph.html">AdjacencyListGraph&lt;typename graph::vertexes_, new_adjacency_list&gt;</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../../TL/replace.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../../TL/type_list.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../../TL/type_at.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../../TL/index_of.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../graphs/graph_type.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../graphs/adjacency_list_graph.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespace_g_lib.html">   10</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_g_lib.html">GLib</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">template</span>&lt;GraphType, <span class="keyword">class</span> graph, <span class="keyword">class</span> edge&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_g_lib_1_1_add_edge.html">   20</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_g_lib_1_1_add_edge.html">AddEdge</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> graph, <span class="keyword">class</span> edge&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html">   26</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_g_lib_1_1_add_edge.html">AddEdge</a>&lt;<a class="code" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72ad6db70730563977f3408ba2c92f9da04">ADJACENCY_LIST</a>, graph, edge&gt; {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#a429c3334dafcac0fc019ff2a509f5027">   27</a></span>&#160;        constexpr <span class="keyword">static</span> <span class="keywordtype">size_t</span> vertex_num = graph::template GetVertexIndex&lt;typename edge::from&gt;();</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#a812817db07554def6703a9777d09298d">   28</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#a812817db07554def6703a9777d09298d">adjacent_vertexes</a> = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_type_at.html#a217bdb7d48e88b3cbda31b5bb8441610">TL::TypeAt&lt;typename graph::adjacency_list_, vertex_num&gt;::value</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#a3c1d226c22a17e4710ad4070513d3782">   30</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#a3c1d226c22a17e4710ad4070513d3782">new_adjacent_vertexes</a> = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_add.html">TL::Add&lt;edge, 0, adjacent_vertexes&gt;::result</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#aacd2435de358fb5a936c740304b48145">   31</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#aacd2435de358fb5a936c740304b48145">new_adjacency_list</a> = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_replace.html">TL::Replace&lt;new_adjacent_vertexes, vertex_num, typename graph::adjacency_list_&gt;::result</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#af2aac87468e637b96da83fe3fb637c77">   32</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_adjacency_list_graph.html">result</a> = <a class="code" href="struct_adjacency_list_graph.html">AdjacencyListGraph&lt;typename graph::vertexes_, new_adjacency_list&gt;</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    };</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astruct_adjacency_list_graph_html"><div class="ttname"><a href="struct_adjacency_list_graph.html">AdjacencyListGraph</a></div><div class="ttdef"><b>Definition:</b> adjacency_list_graph.h:23</div></div>
-<div class="ttc" id="astruct_t_l_1_1_add_html"><div class="ttname"><a href="struct_t_l_1_1_add.html">TL::Add</a></div><div class="ttdef"><b>Definition:</b> add.h:10</div></div>
-<div class="ttc" id="astruct_t_l_1_1_replace_html"><div class="ttname"><a href="struct_t_l_1_1_replace.html">TL::Replace</a></div><div class="ttdef"><b>Definition:</b> replace.h:14</div></div>
-<div class="ttc" id="astruct_g_lib_1_1_add_edge_html"><div class="ttname"><a href="struct_g_lib_1_1_add_edge.html">GLib::AddEdge</a></div><div class="ttdef"><b>Definition:</b> add_edge.h:21</div></div>
+<div class="ttc" id="anamespace_g_lib_html"><div class="ttname"><a href="namespace_g_lib.html">GLib</a></div><div class="ttdef"><b>Definition:</b> <a href="add__edge_8h_source.html#l00010">add_edge.h:10</a></div></div>
+<div class="ttc" id="astruct_adjacency_list_graph_html"><div class="ttname"><a href="struct_adjacency_list_graph.html">AdjacencyListGraph</a></div><div class="ttdef"><b>Definition:</b> <a href="adjacency__list__graph_8h_source.html#l00024">adjacency_list_graph.h:24</a></div></div>
+<div class="ttc" id="astruct_t_l_1_1_add_html"><div class="ttname"><a href="struct_t_l_1_1_add.html">TL::Add</a></div><div class="ttdef"><b>Definition:</b> <a href="add_8h_source.html#l00010">add.h:10</a></div></div>
+<div class="ttc" id="astruct_t_l_1_1_type_at_html_a217bdb7d48e88b3cbda31b5bb8441610"><div class="ttname"><a href="struct_t_l_1_1_type_at.html#a217bdb7d48e88b3cbda31b5bb8441610">TL::TypeAt::value</a></div><div class="ttdeci">typename TypeAt&lt; typename type_list::Tail, ind - 1 &gt;::value value</div><div class="ttdef"><b>Definition:</b> <a href="type__at_8h_source.html#l00018">type_at.h:18</a></div></div>
+<div class="ttc" id="astruct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_html_aacd2435de358fb5a936c740304b48145"><div class="ttname"><a href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#aacd2435de358fb5a936c740304b48145">GLib::AddEdge&lt; ADJACENCY_LIST, graph, edge &gt;::new_adjacency_list</a></div><div class="ttdeci">typename TL::Replace&lt; new_adjacent_vertexes, vertex_num, typename graph::adjacency_list_ &gt;::result new_adjacency_list</div><div class="ttdef"><b>Definition:</b> <a href="add__edge_8h_source.html#l00031">add_edge.h:31</a></div></div>
+<div class="ttc" id="astruct_t_l_1_1_replace_html"><div class="ttname"><a href="struct_t_l_1_1_replace.html">TL::Replace</a></div><div class="ttdef"><b>Definition:</b> <a href="replace_8h_source.html#l00014">replace.h:14</a></div></div>
+<div class="ttc" id="astruct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_html_a812817db07554def6703a9777d09298d"><div class="ttname"><a href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#a812817db07554def6703a9777d09298d">GLib::AddEdge&lt; ADJACENCY_LIST, graph, edge &gt;::adjacent_vertexes</a></div><div class="ttdeci">typename TL::TypeAt&lt; typename graph::adjacency_list_, vertex_num &gt;::value adjacent_vertexes</div><div class="ttdef"><b>Definition:</b> <a href="add__edge_8h_source.html#l00028">add_edge.h:28</a></div></div>
+<div class="ttc" id="astruct_g_lib_1_1_add_edge_html"><div class="ttname"><a href="struct_g_lib_1_1_add_edge.html">GLib::AddEdge</a></div><div class="ttdef"><b>Definition:</b> <a href="add__edge_8h_source.html#l00020">add_edge.h:20</a></div></div>
+<div class="ttc" id="astruct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4_html_a3c1d226c22a17e4710ad4070513d3782"><div class="ttname"><a href="struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#a3c1d226c22a17e4710ad4070513d3782">GLib::AddEdge&lt; ADJACENCY_LIST, graph, edge &gt;::new_adjacent_vertexes</a></div><div class="ttdeci">typename TL::Add&lt; edge, 0, adjacent_vertexes &gt;::result new_adjacent_vertexes</div><div class="ttdef"><b>Definition:</b> <a href="add__edge_8h_source.html#l00030">add_edge.h:30</a></div></div>
+<div class="ttc" id="agraph__type_8h_html_a0c7c85309652245e03563b127f451f72ad6db70730563977f3408ba2c92f9da04"><div class="ttname"><a href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72ad6db70730563977f3408ba2c92f9da04">ADJACENCY_LIST</a></div><div class="ttdeci">@ ADJACENCY_LIST</div><div class="ttdoc">Graph is represented as an adjacency list (TypeList of TypeLists of edges).</div><div class="ttdef"><b>Definition:</b> <a href="graph__type_8h_source.html#l00013">graph_type.h:13</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

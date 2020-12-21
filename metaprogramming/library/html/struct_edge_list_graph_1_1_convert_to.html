@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compile-Time Graph Library: EdgeListGraph&lt; vertexes, edge_list &gt;::ConvertTo&lt; GraphType &gt; Struct Template Reference</title>
+<title>Compile-Time Graph Library: EdgeListGraph&lt; nodes, edge_list &gt;::ConvertTo&lt; type &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,14 +66,25 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="struct_edge_list_graph_1_1_convert_to-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">EdgeListGraph&lt; vertexes, edge_list &gt;::ConvertTo&lt; GraphType &gt; Struct Template Reference</div>  </div>
+<div class="title">EdgeListGraph&lt; nodes, edge_list &gt;::ConvertTo&lt; type &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="edge__list__graph_8h_source.html">edge_list_graph.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a93c2739131fb2bef591a84499bf2f81a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_edge_list_graph_1_1_convert_to.html#a93c2739131fb2bef591a84499bf2f81a">result</a> = typename <a class="el" href="struct_convert_graph.html">ConvertGraph</a>&lt; <a class="el" href="struct_edge_list_graph.html#a581fd86eec3493867811e0bf8b5fda4a">TYPE</a>, type, <a class="el" href="struct_edge_list_graph.html">EdgeListGraph</a>&lt; <a class="el" href="struct_edge_list_graph.html#ac2e94be06306009b5b66e51489524fec">vertexes_</a>, <a class="el" href="struct_edge_list_graph.html#a8555bbfcc844b3ac7615f7fd7a8f5c7a">edge_list_</a> &gt; &gt;::<a class="el" href="struct_edge_list_graph_1_1_convert_to.html#a93c2739131fb2bef591a84499bf2f81a">result</a></td></tr>
+<tr class="separator:a93c2739131fb2bef591a84499bf2f81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class vertexes, class edge_list&gt;<br />
-template&lt;GraphType&gt;<br />
-struct EdgeListGraph&lt; vertexes, edge_list &gt;::ConvertTo&lt; GraphType &gt;</h3>
+<div class="textblock"><h3>template&lt;class nodes, class edge_list&gt;<br />
+template&lt;GraphType type&gt;<br />
+struct EdgeListGraph&lt; nodes, edge_list &gt;::ConvertTo&lt; type &gt;</h3>
 
 <p>Represents an adapter, which converts one type of a graph into another. Is used as an element in Visitor pattern. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -82,7 +93,30 @@ struct EdgeListGraph&lt; vertexes, edge_list &gt;::ConvertTo&lt; GraphType &gt;<
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Parameter result, resulting graph </dd></dl>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+
+<p class="definition">Definition at line <a class="el" href="edge__list__graph_8h_source.html#l00035">35</a> of file <a class="el" href="edge__list__graph_8h_source.html">edge_list_graph.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a93c2739131fb2bef591a84499bf2f81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c2739131fb2bef591a84499bf2f81a">&#9670;&nbsp;</a></span>result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class nodes , class edge_list &gt; </div>
+<div class="memtemplate">
+template&lt;GraphType type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="struct_edge_list_graph.html">EdgeListGraph</a>&lt; nodes, edge_list &gt;::<a class="el" href="struct_edge_list_graph_1_1_convert_to.html">ConvertTo</a>&lt; type &gt;::<a class="el" href="struct_edge_list_graph_1_1_convert_to.html#a93c2739131fb2bef591a84499bf2f81a">result</a> =  typename <a class="el" href="struct_convert_graph.html">ConvertGraph</a>&lt; <a class="el" href="struct_edge_list_graph.html#a581fd86eec3493867811e0bf8b5fda4a">TYPE</a>, type, <a class="el" href="struct_edge_list_graph.html">EdgeListGraph</a>&lt;<a class="el" href="struct_edge_list_graph.html#ac2e94be06306009b5b66e51489524fec">vertexes_</a>, <a class="el" href="struct_edge_list_graph.html#a8555bbfcc844b3ac7615f7fd7a8f5c7a">edge_list_</a>&gt; &gt;::<a class="el" href="struct_edge_list_graph_1_1_convert_to.html#a93c2739131fb2bef591a84499bf2f81a">result</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="edge__list__graph_8h_source.html#l00036">36</a> of file <a class="el" href="edge__list__graph_8h_source.html">edge_list_graph.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>graph/graphs/<a class="el" href="edge__list__graph_8h_source.html">edge_list_graph.h</a></li>
 </ul>
 </div><!-- contents -->

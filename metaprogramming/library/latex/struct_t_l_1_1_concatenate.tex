@@ -4,11 +4,19 @@
 
 {\ttfamily \#include $<$concatenate.\+h$>$}
 
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_l_1_1_concatenate_1_1_iterate_through_reversed_front}{Iterate\+Through\+Reversed\+Front}}
+\item 
+struct \mbox{\hyperlink{struct_t_l_1_1_concatenate_1_1_iterate_through_reversed_front_3_01_empty_type_list_00_01current_01_4}{Iterate\+Through\+Reversed\+Front$<$ Empty\+Type\+List, current $>$}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{struct_t_l_1_1_concatenate_a6a5d88af5a392b7e59688e054d18d13a}\label{struct_t_l_1_1_concatenate_a6a5d88af5a392b7e59688e054d18d13a}} 
-using {\bfseries result} = \mbox{\hyperlink{struct_t_l_1_1_concatenate}{Concatenate}}$<$ typename \mbox{\hyperlink{struct_t_l_1_1_add}{Add}}$<$ typename back\+::\+Head, \mbox{\hyperlink{struct_t_l_1_1_size}{Size}}$<$ front $>$\+::size, front $>$\+::\mbox{\hyperlink{struct_t_l_1_1_concatenate}{result}}, typename back\+::\+Tail $>$
+using \mbox{\hyperlink{struct_t_l_1_1_concatenate_a2e5d2db9093fb5e175b6a31f43655dd8}{reversed\+\_\+front}} = typename \mbox{\hyperlink{struct_t_l_1_1_reverse}{Reverse}}$<$ front $>$\+::\mbox{\hyperlink{struct_t_l_1_1_concatenate_abb01457b2252c16b78d155b82ea9917a}{result}}
+\item 
+using \mbox{\hyperlink{struct_t_l_1_1_concatenate_abb01457b2252c16b78d155b82ea9917a}{result}} = typename \mbox{\hyperlink{struct_t_l_1_1_concatenate_1_1_iterate_through_reversed_front}{Iterate\+Through\+Reversed\+Front}}$<$ \mbox{\hyperlink{struct_t_l_1_1_concatenate_a2e5d2db9093fb5e175b6a31f43655dd8}{reversed\+\_\+front}}, back $>$\+::\mbox{\hyperlink{struct_t_l_1_1_concatenate_abb01457b2252c16b78d155b82ea9917a}{result}}
 \end{DoxyCompactItemize}
 
 
@@ -28,6 +36,35 @@ Parameter result, Concatenated \mbox{\hyperlink{struct_type_list}{Type\+List}}
 \end{DoxyReturn}
 
 
+Definition at line 17 of file concatenate.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_t_l_1_1_concatenate_abb01457b2252c16b78d155b82ea9917a}\label{struct_t_l_1_1_concatenate_abb01457b2252c16b78d155b82ea9917a}} 
+\index{TL::Concatenate$<$ front, back $>$@{TL::Concatenate$<$ front, back $>$}!result@{result}}
+\index{result@{result}!TL::Concatenate$<$ front, back $>$@{TL::Concatenate$<$ front, back $>$}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily template$<$class front , class back $>$ \\
+using \mbox{\hyperlink{struct_t_l_1_1_concatenate}{T\+L\+::\+Concatenate}}$<$ front, back $>$\+::\mbox{\hyperlink{struct_t_l_1_1_concatenate_abb01457b2252c16b78d155b82ea9917a}{result}} =  typename \mbox{\hyperlink{struct_t_l_1_1_concatenate_1_1_iterate_through_reversed_front}{Iterate\+Through\+Reversed\+Front}}$<$\mbox{\hyperlink{struct_t_l_1_1_concatenate_a2e5d2db9093fb5e175b6a31f43655dd8}{reversed\+\_\+front}}, back$>$\+::\mbox{\hyperlink{struct_t_l_1_1_concatenate_abb01457b2252c16b78d155b82ea9917a}{result}}}
+
+
+
+Definition at line 42 of file concatenate.\+h.
+
+\mbox{\Hypertarget{struct_t_l_1_1_concatenate_a2e5d2db9093fb5e175b6a31f43655dd8}\label{struct_t_l_1_1_concatenate_a2e5d2db9093fb5e175b6a31f43655dd8}} 
+\index{TL::Concatenate$<$ front, back $>$@{TL::Concatenate$<$ front, back $>$}!reversed\_front@{reversed\_front}}
+\index{reversed\_front@{reversed\_front}!TL::Concatenate$<$ front, back $>$@{TL::Concatenate$<$ front, back $>$}}
+\doxysubsubsection{\texorpdfstring{reversed\_front}{reversed\_front}}
+{\footnotesize\ttfamily template$<$class front , class back $>$ \\
+using \mbox{\hyperlink{struct_t_l_1_1_concatenate}{T\+L\+::\+Concatenate}}$<$ front, back $>$\+::\mbox{\hyperlink{struct_t_l_1_1_concatenate_a2e5d2db9093fb5e175b6a31f43655dd8}{reversed\+\_\+front}} =  typename \mbox{\hyperlink{struct_t_l_1_1_reverse}{Reverse}}$<$front$>$\+::\mbox{\hyperlink{struct_t_l_1_1_concatenate_abb01457b2252c16b78d155b82ea9917a}{result}}}
+
+
+
+Definition at line 21 of file concatenate.\+h.
+
+
+
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-T\+L/concatenate.\+h\end{DoxyCompactItemize}
+T\+L/\mbox{\hyperlink{concatenate_8h}{concatenate.\+h}}\end{DoxyCompactItemize}

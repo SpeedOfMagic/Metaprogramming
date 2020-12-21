@@ -5,6 +5,7 @@
 #include "../library/graph/graphs/edge_list_graph.h"
 #include "../library/graph/GLib/get_reached_vertexes.h"
 #include "../library/graph/graphs/convert_to_adjacency_list.h"
+#include "../library/graph/GLib/get_nodes_from_roots.h"
 
 #include "../library/TL/type_list.h"
 
@@ -20,10 +21,13 @@ int main() {
 	using g3 = g2::ConvertTo<POINTER_STRUCTURE>;
 	using g = g3::result;
 
-	using res = GLib::GetReachedVertexes<g, int>::result;
+	using res = typename GLib::GetNodesFromRoots<
+		TypeList<
+			typename GLib::FindNodeByVertex<float, g>::result,
+			typename GLib::FindNodeByVertex<long, g>::result
+		>, g
+	>::result;
 
-	res a;
-	std::cout << TL::Size<res>::size << std::endl;
-
+	res xz;
 	return 0;
 }

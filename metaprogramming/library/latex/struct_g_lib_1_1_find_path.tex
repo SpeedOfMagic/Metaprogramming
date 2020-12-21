@@ -1,0 +1,179 @@
+\hypertarget{struct_g_lib_1_1_find_path}{}\doxysection{G\+Lib\+::Find\+Path$<$ graph\+\_\+raw, start, finish $>$ Struct Template Reference}
+\label{struct_g_lib_1_1_find_path}\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+
+
+{\ttfamily \#include $<$find\+\_\+path.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}
+\item 
+struct \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_3_01_empty_type_list_00_01wanted__node_01_4}{Iterate\+Through\+Edges$<$ Empty\+Type\+List, wanted\+\_\+node $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}} = typename \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ graph\+\_\+raw\+::\+T\+Y\+PE, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71}{P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE}}, graph\+\_\+raw $>$\+::result
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_a9a474d3841ed47ce2b9d13145a2a7bdb}{start\+\_\+node}} = typename \mbox{\hyperlink{struct_g_lib_1_1_find_node_by_vertex}{Find\+Node\+By\+Vertex}}$<$ start, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}} $>$\+::result
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_a7a4a7890a5d463eb44d625bfebf90823}{finish\+\_\+node}} = typename \mbox{\hyperlink{struct_g_lib_1_1_find_node_by_vertex}{Find\+Node\+By\+Vertex}}$<$ finish, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}} $>$\+::result
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_a812314a8ee307dbd1a618eb4f22e8716}{dfs\+\_\+search}} = typename \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}}$<$ \mbox{\hyperlink{struct_g_lib_1_1_find_path_a9a474d3841ed47ce2b9d13145a2a7bdb}{start\+\_\+node}}, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}} $>$\+::result
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_ac0ec20f26181425534f29e8348c1befd}{reversed}} = typename \mbox{\hyperlink{struct_t_l_1_1_reverse}{T\+L\+::\+Reverse}}$<$ \mbox{\hyperlink{struct_g_lib_1_1_find_path_a812314a8ee307dbd1a618eb4f22e8716}{dfs\+\_\+search}} $>$\+::result
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_ac0f251da58d2aa0ebe95ea59f9155600}{iterate\+\_\+through\+\_\+edges}} = \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ \mbox{\hyperlink{struct_g_lib_1_1_find_path_ac0ec20f26181425534f29e8348c1befd}{reversed}}, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a7a4a7890a5d463eb44d625bfebf90823}{finish\+\_\+node}} $>$
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_ad95008f3fcd99b991c1909ca80aec9be}{reversed\+\_\+path}} = typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a3f1e50871128c9e5e3fe68bed2256e92}{iterate\+\_\+through\+\_\+edges\+::path}}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_af8082a520887ac44765731f8e6900319}{reversed\+\_\+weights}} = typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aee8f2212faebf4f009fa042e5eb195f2}{iterate\+\_\+through\+\_\+edges\+::weights}}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_a2151e5c7f64957d38475651c9e20503f}{path}} = typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ start, 0, typename \mbox{\hyperlink{struct_t_l_1_1_reverse}{T\+L\+::\+Reverse}}$<$ \mbox{\hyperlink{struct_g_lib_1_1_find_path_ad95008f3fcd99b991c1909ca80aec9be}{reversed\+\_\+path}} $>$\+::result $>$\+::result
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_a839066fcb89561fc5dd1dd94e767545d}{weights}} = typename \mbox{\hyperlink{struct_t_l_1_1_reverse}{T\+L\+::\+Reverse}}$<$ \mbox{\hyperlink{struct_g_lib_1_1_find_path_af8082a520887ac44765731f8e6900319}{reversed\+\_\+weights}} $>$\+::result
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class graph\+\_\+raw, typename start, typename finish$>$\newline
+struct G\+Lib\+::\+Find\+Path$<$ graph\+\_\+raw, start, finish $>$}
+
+Finds path in graph between vertexes start and finish. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & Template parameter \\
+\hline
+{\em start} & Template parameter \\
+\hline
+{\em finish} & Template parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Two parameters\+: path and weights. \textquotesingle{}\textquotesingle{}path\textquotesingle{}\textquotesingle{} is a \mbox{\hyperlink{struct_type_list}{Type\+List}} of vertexes that make this path. \textquotesingle{}\textquotesingle{}weights\textquotesingle{}\textquotesingle{} is a \mbox{\hyperlink{struct_type_list}{Type\+List}} of weights, that were on the edges in this path. If there\textquotesingle{}s no path, path and weights are Empty\+Type\+List. 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file find\+\_\+path.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_a812314a8ee307dbd1a618eb4f22e8716}\label{struct_g_lib_1_1_find_path_a812314a8ee307dbd1a618eb4f22e8716}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}!dfs\_search@{dfs\_search}}
+\index{dfs\_search@{dfs\_search}!GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+\doxysubsubsection{\texorpdfstring{dfs\_search}{dfs\_search}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_a812314a8ee307dbd1a618eb4f22e8716}{dfs\+\_\+search}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}}$<$\mbox{\hyperlink{struct_g_lib_1_1_find_path_a9a474d3841ed47ce2b9d13145a2a7bdb}{start\+\_\+node}}, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}}$>$\+::result}
+
+
+
+Definition at line 32 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_a7a4a7890a5d463eb44d625bfebf90823}\label{struct_g_lib_1_1_find_path_a7a4a7890a5d463eb44d625bfebf90823}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}!finish\_node@{finish\_node}}
+\index{finish\_node@{finish\_node}!GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+\doxysubsubsection{\texorpdfstring{finish\_node}{finish\_node}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_a7a4a7890a5d463eb44d625bfebf90823}{finish\+\_\+node}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_find_node_by_vertex}{Find\+Node\+By\+Vertex}}$<$finish, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}}$>$\+::result}
+
+
+
+Definition at line 30 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}\label{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}!graph@{graph}}
+\index{graph@{graph}!GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+\doxysubsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}} =  typename \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$graph\+\_\+raw\+::\+T\+Y\+PE, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71}{P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE}}, graph\+\_\+raw$>$\+::result}
+
+
+
+Definition at line 27 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_ac0f251da58d2aa0ebe95ea59f9155600}\label{struct_g_lib_1_1_find_path_ac0f251da58d2aa0ebe95ea59f9155600}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}!iterate\_through\_edges@{iterate\_through\_edges}}
+\index{iterate\_through\_edges@{iterate\_through\_edges}!GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+\doxysubsubsection{\texorpdfstring{iterate\_through\_edges}{iterate\_through\_edges}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_ac0f251da58d2aa0ebe95ea59f9155600}{iterate\+\_\+through\+\_\+edges}} =  \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$\mbox{\hyperlink{struct_g_lib_1_1_find_path_ac0ec20f26181425534f29e8348c1befd}{reversed}}, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a7a4a7890a5d463eb44d625bfebf90823}{finish\+\_\+node}}$>$}
+
+
+
+Definition at line 78 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_a2151e5c7f64957d38475651c9e20503f}\label{struct_g_lib_1_1_find_path_a2151e5c7f64957d38475651c9e20503f}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}!path@{path}}
+\index{path@{path}!GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_a2151e5c7f64957d38475651c9e20503f}{path}} =  typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ start, 0, typename \mbox{\hyperlink{struct_t_l_1_1_reverse}{T\+L\+::\+Reverse}}$<$\mbox{\hyperlink{struct_g_lib_1_1_find_path_ad95008f3fcd99b991c1909ca80aec9be}{reversed\+\_\+path}}$>$\+::result $>$\+::result}
+
+
+
+Definition at line 82 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_ac0ec20f26181425534f29e8348c1befd}\label{struct_g_lib_1_1_find_path_ac0ec20f26181425534f29e8348c1befd}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}!reversed@{reversed}}
+\index{reversed@{reversed}!GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+\doxysubsubsection{\texorpdfstring{reversed}{reversed}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_ac0ec20f26181425534f29e8348c1befd}{reversed}} =  typename \mbox{\hyperlink{struct_t_l_1_1_reverse}{T\+L\+::\+Reverse}}$<$\mbox{\hyperlink{struct_g_lib_1_1_find_path_a812314a8ee307dbd1a618eb4f22e8716}{dfs\+\_\+search}}$>$\+::result}
+
+
+
+Definition at line 33 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_ad95008f3fcd99b991c1909ca80aec9be}\label{struct_g_lib_1_1_find_path_ad95008f3fcd99b991c1909ca80aec9be}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}!reversed\_path@{reversed\_path}}
+\index{reversed\_path@{reversed\_path}!GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+\doxysubsubsection{\texorpdfstring{reversed\_path}{reversed\_path}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_ad95008f3fcd99b991c1909ca80aec9be}{reversed\+\_\+path}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a3f1e50871128c9e5e3fe68bed2256e92}{iterate\+\_\+through\+\_\+edges\+::path}}}
+
+
+
+Definition at line 79 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_af8082a520887ac44765731f8e6900319}\label{struct_g_lib_1_1_find_path_af8082a520887ac44765731f8e6900319}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}!reversed\_weights@{reversed\_weights}}
+\index{reversed\_weights@{reversed\_weights}!GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+\doxysubsubsection{\texorpdfstring{reversed\_weights}{reversed\_weights}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_af8082a520887ac44765731f8e6900319}{reversed\+\_\+weights}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aee8f2212faebf4f009fa042e5eb195f2}{iterate\+\_\+through\+\_\+edges\+::weights}}}
+
+
+
+Definition at line 80 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_a9a474d3841ed47ce2b9d13145a2a7bdb}\label{struct_g_lib_1_1_find_path_a9a474d3841ed47ce2b9d13145a2a7bdb}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}!start\_node@{start\_node}}
+\index{start\_node@{start\_node}!GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+\doxysubsubsection{\texorpdfstring{start\_node}{start\_node}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_a9a474d3841ed47ce2b9d13145a2a7bdb}{start\+\_\+node}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_find_node_by_vertex}{Find\+Node\+By\+Vertex}}$<$start, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}}$>$\+::result}
+
+
+
+Definition at line 29 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_a839066fcb89561fc5dd1dd94e767545d}\label{struct_g_lib_1_1_find_path_a839066fcb89561fc5dd1dd94e767545d}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}!weights@{weights}}
+\index{weights@{weights}!GLib::FindPath$<$ graph\_raw, start, finish $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$}}
+\doxysubsubsection{\texorpdfstring{weights}{weights}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_a839066fcb89561fc5dd1dd94e767545d}{weights}} =  typename \mbox{\hyperlink{struct_t_l_1_1_reverse}{T\+L\+::\+Reverse}}$<$\mbox{\hyperlink{struct_g_lib_1_1_find_path_af8082a520887ac44765731f8e6900319}{reversed\+\_\+weights}}$>$\+::result}
+
+
+
+Definition at line 87 of file find\+\_\+path.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/\+G\+Lib/\mbox{\hyperlink{find__path_8h}{find\+\_\+path.\+h}}\end{DoxyCompactItemize}

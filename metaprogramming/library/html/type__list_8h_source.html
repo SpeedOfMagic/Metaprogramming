@@ -70,22 +70,22 @@ $(function() {
 <div class="title">type_list.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="type__list_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;null_type.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="null__type_8h.html">null_type.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> ...Args&gt;</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_type_list.html">    9</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_type_list.html">TypeList</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_null_type.html">Head</a> = <a class="code" href="struct_null_type.html">NullType</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_type_list.html">Tail</a> = <a class="code" href="struct_type_list.html">TypeList&lt;&gt;</a>; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_type_list.html#a4f18784abdf7cdf40534a24ff6a23cc5">   10</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_null_type.html">Head</a> = <a class="code" href="struct_null_type.html">NullType</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_type_list.html#aed895fd97d8dee4ef5a858dc35e12031">   11</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_type_list.html">Tail</a> = <a class="code" href="struct_type_list.html">TypeList&lt;&gt;</a>; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using</span> <a class="code" href="struct_type_list.html">EmptyTypeList</a> = <a class="code" href="struct_type_list.html">TypeList&lt;&gt;</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="type__list_8h.html#adab3c90d8d4dd18238edb4a3d4931ec0">   18</a></span>&#160;<span class="keyword">using</span> <a class="code" href="struct_type_list.html">EmptyTypeList</a> = <a class="code" href="struct_type_list.html">TypeList&lt;&gt;</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_type_list_3_01_t_01_4.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_type_list.html">TypeList</a>&lt;T&gt; {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">using</span> Head = T;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_type_list.html">Tail</a> = <a class="code" href="struct_type_list.html">EmptyTypeList</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_type_list_3_01_t_01_4.html#a5197d6193eae9c4953203c1eb394c806">   25</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_type_list_3_01_t_01_4.html#a5197d6193eae9c4953203c1eb394c806">Head</a> = T;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_type_list_3_01_t_01_4.html#a8b7c9210f4c72b13ee75ccdab83b901f">   26</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_type_list.html">Tail</a> = <a class="code" href="type__list_8h.html#adab3c90d8d4dd18238edb4a3d4931ec0">EmptyTypeList</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> H, <span class="keyword">typename</span> ...T&gt;</div>
@@ -95,15 +95,18 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> ...Args&gt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">using</span> <a class="code" href="struct_type_list.html">Typelist</a> = <a class="code" href="struct_type_list.html">TypeList</a>&lt;Args...&gt;;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="type__list_8h.html#a3bc3002ea4d7ba9a969ab592510502c8">   44</a></span>&#160;<span class="keyword">using</span> <a class="code" href="struct_type_list.html">Typelist</a> = <a class="code" href="struct_type_list.html">TypeList</a>&lt;Args...&gt;;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_t_l.html">TL</a> {}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespace_t_l_html"><div class="ttname"><a href="namespace_t_l.html">TL</a></div><div class="ttdef"><b>Definition:</b> add.h:5</div></div>
-<div class="ttc" id="astruct_type_list_html"><div class="ttname"><a href="struct_type_list.html">TypeList</a></div><div class="ttdef"><b>Definition:</b> type_list.h:9</div></div>
-<div class="ttc" id="astruct_type_list_3_01_h_00_01_t_8_8_8_01_4_html_a6219621e9ffd55a79c42ef6d3819affc"><div class="ttname"><a href="struct_type_list_3_01_h_00_01_t_8_8_8_01_4.html#a6219621e9ffd55a79c42ef6d3819affc">TypeList&lt; H, T... &gt;::Head</a></div><div class="ttdeci">H Head</div><div class="ttdoc">First type in a type list.</div><div class="ttdef"><b>Definition:</b> type_list.h:36</div></div>
-<div class="ttc" id="astruct_null_type_html"><div class="ttname"><a href="struct_null_type.html">NullType</a></div><div class="ttdef"><b>Definition:</b> null_type.h:7</div></div>
+<div class="ttc" id="anamespace_t_l_html"><div class="ttname"><a href="namespace_t_l.html">TL</a></div><div class="ttdef"><b>Definition:</b> <a href="add_8h_source.html#l00005">add.h:5</a></div></div>
+<div class="ttc" id="anull__type_8h_html"><div class="ttname"><a href="null__type_8h.html">null_type.h</a></div></div>
+<div class="ttc" id="atype__list_8h_html_adab3c90d8d4dd18238edb4a3d4931ec0"><div class="ttname"><a href="type__list_8h.html#adab3c90d8d4dd18238edb4a3d4931ec0">EmptyTypeList</a></div><div class="ttdeci">TypeList&lt;&gt; EmptyTypeList</div><div class="ttdef"><b>Definition:</b> <a href="type__list_8h_source.html#l00018">type_list.h:18</a></div></div>
+<div class="ttc" id="astruct_type_list_html"><div class="ttname"><a href="struct_type_list.html">TypeList</a></div><div class="ttdef"><b>Definition:</b> <a href="type__list_8h_source.html#l00009">type_list.h:9</a></div></div>
+<div class="ttc" id="astruct_type_list_3_01_h_00_01_t_8_8_8_01_4_html_a6219621e9ffd55a79c42ef6d3819affc"><div class="ttname"><a href="struct_type_list_3_01_h_00_01_t_8_8_8_01_4.html#a6219621e9ffd55a79c42ef6d3819affc">TypeList&lt; H, T... &gt;::Head</a></div><div class="ttdeci">H Head</div><div class="ttdoc">First type in a type list.</div><div class="ttdef"><b>Definition:</b> <a href="type__list_8h_source.html#l00036">type_list.h:36</a></div></div>
+<div class="ttc" id="astruct_type_list_3_01_t_01_4_html_a5197d6193eae9c4953203c1eb394c806"><div class="ttname"><a href="struct_type_list_3_01_t_01_4.html#a5197d6193eae9c4953203c1eb394c806">TypeList&lt; T &gt;::Head</a></div><div class="ttdeci">T Head</div><div class="ttdef"><b>Definition:</b> <a href="type__list_8h_source.html#l00025">type_list.h:25</a></div></div>
+<div class="ttc" id="astruct_null_type_html"><div class="ttname"><a href="struct_null_type.html">NullType</a></div><div class="ttdef"><b>Definition:</b> <a href="null__type_8h_source.html#l00007">null_type.h:7</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

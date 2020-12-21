@@ -70,9 +70,9 @@ $(function() {
 <div class="title">add.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="add_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;type_list.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="type__list_8h.html">type_list.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="namespace_t_l.html">    5</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_t_l.html">TL</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> ind, <span class="keyword">class </span>Arg, <span class="keyword">class </span>...Args&gt;</div>
@@ -80,29 +80,32 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> ind, <span class="keyword">class </span>Arg, <span class="keyword">class </span>...Args&gt;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html">   19</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_add.html">Add</a>&lt;T, ind, <a class="code" href="struct_type_list.html">TypeList</a>&lt;Arg, Args...&gt;&gt; {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">using</span> end = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_add.html">Add</a>&lt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html#a08e1236d81c3562f980f7aa3517ba72c">   20</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html#a08e1236d81c3562f980f7aa3517ba72c">end</a> = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_add.html">Add</a>&lt;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            T,</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            ind - 1,</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="struct_type_list.html">TypeList</a>&lt;Args...&gt;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        &gt;::result;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        &gt;<a class="code" href="struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html#a2850748a1c8975c4363f01a9f7ea5ad4">::result</a>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">using</span> result = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_add.html">Add&lt;Arg, 0, end&gt;::result</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html#a2850748a1c8975c4363f01a9f7ea5ad4">   26</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html#a2850748a1c8975c4363f01a9f7ea5ad4">result</a> = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_add.html">Add&lt;Arg, 0, end&gt;::result</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">class </span>Arg, <span class="keyword">class </span>...Args&gt;</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_add_3_01_t_00_010_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html">   33</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_add.html">Add</a>&lt;T, 0, <a class="code" href="struct_type_list.html">TypeList</a>&lt;Arg, Args...&gt;&gt; {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_type_list.html">result</a> = <a class="code" href="struct_type_list.html">TypeList</a>&lt;T, Arg, Args...&gt;;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_add_3_01_t_00_010_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html#a6dce84d08be3904008d52c54d8c16d83">   34</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_type_list.html">result</a> = <a class="code" href="struct_type_list.html">TypeList</a>&lt;T, Arg, Args...&gt;;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">class </span>...Args&gt;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_add_3_01_t_00_010_00_01_type_list_3_01_args_8_8_8_01_4_01_4.html">   41</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_add.html">Add</a>&lt;T, 0, <a class="code" href="struct_type_list.html">TypeList</a>&lt;Args...&gt;&gt; {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_type_list.html">result</a> = <a class="code" href="struct_type_list.html">TypeList</a>&lt;T, Args...&gt;;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_add_3_01_t_00_010_00_01_type_list_3_01_args_8_8_8_01_4_01_4.html#ad9a9b3b7882b01a8d8cda1c4effb1593">   42</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_type_list.html">result</a> = <a class="code" href="struct_type_list.html">TypeList</a>&lt;T, Args...&gt;;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespace_t_l_html"><div class="ttname"><a href="namespace_t_l.html">TL</a></div><div class="ttdef"><b>Definition:</b> add.h:5</div></div>
-<div class="ttc" id="astruct_t_l_1_1_add_html"><div class="ttname"><a href="struct_t_l_1_1_add.html">TL::Add</a></div><div class="ttdef"><b>Definition:</b> add.h:10</div></div>
-<div class="ttc" id="astruct_type_list_html"><div class="ttname"><a href="struct_type_list.html">TypeList</a></div><div class="ttdef"><b>Definition:</b> type_list.h:9</div></div>
+<div class="ttc" id="astruct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4_html_a2850748a1c8975c4363f01a9f7ea5ad4"><div class="ttname"><a href="struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html#a2850748a1c8975c4363f01a9f7ea5ad4">TL::Add&lt; T, ind, TypeList&lt; Arg, Args... &gt; &gt;::result</a></div><div class="ttdeci">typename Add&lt; Arg, 0, end &gt;::result result</div><div class="ttdef"><b>Definition:</b> <a href="add_8h_source.html#l00026">add.h:26</a></div></div>
+<div class="ttc" id="anamespace_t_l_html"><div class="ttname"><a href="namespace_t_l.html">TL</a></div><div class="ttdef"><b>Definition:</b> <a href="add_8h_source.html#l00005">add.h:5</a></div></div>
+<div class="ttc" id="astruct_t_l_1_1_add_html"><div class="ttname"><a href="struct_t_l_1_1_add.html">TL::Add</a></div><div class="ttdef"><b>Definition:</b> <a href="add_8h_source.html#l00010">add.h:10</a></div></div>
+<div class="ttc" id="atype__list_8h_html"><div class="ttname"><a href="type__list_8h.html">type_list.h</a></div></div>
+<div class="ttc" id="astruct_type_list_html"><div class="ttname"><a href="struct_type_list.html">TypeList</a></div><div class="ttdef"><b>Definition:</b> <a href="type__list_8h_source.html#l00009">type_list.h:9</a></div></div>
+<div class="ttc" id="astruct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4_html_a08e1236d81c3562f980f7aa3517ba72c"><div class="ttname"><a href="struct_t_l_1_1_add_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html#a08e1236d81c3562f980f7aa3517ba72c">TL::Add&lt; T, ind, TypeList&lt; Arg, Args... &gt; &gt;::end</a></div><div class="ttdeci">typename Add&lt; T, ind - 1, TypeList&lt; Args... &gt; &gt;::result end</div><div class="ttdef"><b>Definition:</b> <a href="add_8h_source.html#l00020">add.h:24</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

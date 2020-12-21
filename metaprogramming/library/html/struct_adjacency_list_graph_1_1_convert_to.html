@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compile-Time Graph Library: AdjacencyListGraph&lt; vertexes, adjacency_list &gt;::ConvertTo&lt; GraphType &gt; Struct Template Reference</title>
+<title>Compile-Time Graph Library: AdjacencyListGraph&lt; nodes, adjacency_list &gt;::ConvertTo&lt; type &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,14 +66,25 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="struct_adjacency_list_graph_1_1_convert_to-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AdjacencyListGraph&lt; vertexes, adjacency_list &gt;::ConvertTo&lt; GraphType &gt; Struct Template Reference</div>  </div>
+<div class="title">AdjacencyListGraph&lt; nodes, adjacency_list &gt;::ConvertTo&lt; type &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a9c85ac5162b0b75ac423a7d6dbe4aa69"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph_1_1_convert_to.html#a9c85ac5162b0b75ac423a7d6dbe4aa69">result</a> = typename <a class="el" href="struct_convert_graph.html">ConvertGraph</a>&lt; <a class="el" href="struct_adjacency_list_graph.html#ae829f82544f4d3e639a2fa0898dad36e">TYPE</a>, type, <a class="el" href="struct_adjacency_list_graph.html">AdjacencyListGraph</a>&lt; <a class="el" href="struct_adjacency_list_graph.html#ac59092ed124f8bab3c071ef8ab4dfb0e">vertexes_</a>, <a class="el" href="struct_adjacency_list_graph.html#a87fa7495af8bdc339442a890abe34a42">adjacency_list_</a> &gt; &gt;::<a class="el" href="struct_adjacency_list_graph_1_1_convert_to.html#a9c85ac5162b0b75ac423a7d6dbe4aa69">result</a></td></tr>
+<tr class="separator:a9c85ac5162b0b75ac423a7d6dbe4aa69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class vertexes, class adjacency_list&gt;<br />
-template&lt;GraphType&gt;<br />
-struct AdjacencyListGraph&lt; vertexes, adjacency_list &gt;::ConvertTo&lt; GraphType &gt;</h3>
+<div class="textblock"><h3>template&lt;class nodes, class adjacency_list&gt;<br />
+template&lt;GraphType type&gt;<br />
+struct AdjacencyListGraph&lt; nodes, adjacency_list &gt;::ConvertTo&lt; type &gt;</h3>
 
 <p>Represents an adapter, which converts one type of a graph into another. Is used as an element in Visitor pattern. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -82,7 +93,30 @@ struct AdjacencyListGraph&lt; vertexes, adjacency_list &gt;::ConvertTo&lt; Graph
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Parameter result, resulting graph </dd></dl>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+
+<p class="definition">Definition at line <a class="el" href="adjacency__list__graph_8h_source.html#l00063">63</a> of file <a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a9c85ac5162b0b75ac423a7d6dbe4aa69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c85ac5162b0b75ac423a7d6dbe4aa69">&#9670;&nbsp;</a></span>result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class nodes , class adjacency_list &gt; </div>
+<div class="memtemplate">
+template&lt;GraphType type&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="struct_adjacency_list_graph.html">AdjacencyListGraph</a>&lt; nodes, adjacency_list &gt;::<a class="el" href="struct_adjacency_list_graph_1_1_convert_to.html">ConvertTo</a>&lt; type &gt;::<a class="el" href="struct_adjacency_list_graph_1_1_convert_to.html#a9c85ac5162b0b75ac423a7d6dbe4aa69">result</a> =  typename <a class="el" href="struct_convert_graph.html">ConvertGraph</a>&lt; <a class="el" href="struct_adjacency_list_graph.html#ae829f82544f4d3e639a2fa0898dad36e">TYPE</a>, type, <a class="el" href="struct_adjacency_list_graph.html">AdjacencyListGraph</a>&lt;<a class="el" href="struct_adjacency_list_graph.html#ac59092ed124f8bab3c071ef8ab4dfb0e">vertexes_</a>, <a class="el" href="struct_adjacency_list_graph.html#a87fa7495af8bdc339442a890abe34a42">adjacency_list_</a>&gt; &gt;::<a class="el" href="struct_adjacency_list_graph_1_1_convert_to.html#a9c85ac5162b0b75ac423a7d6dbe4aa69">result</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="adjacency__list__graph_8h_source.html#l00064">64</a> of file <a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>graph/graphs/<a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a></li>
 </ul>
 </div><!-- contents -->

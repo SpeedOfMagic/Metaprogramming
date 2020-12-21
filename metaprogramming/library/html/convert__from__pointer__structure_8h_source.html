@@ -70,27 +70,36 @@ $(function() {
 <div class="title">convert_from_pointer_structure.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="convert__from__pointer__structure_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;convert_graph.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="convert__graph_8h.html">convert_graph.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../../TL/type_list.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../../TL/generate_type_lists.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../../TL/size.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../add_edge.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;adjacency_list_graph.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;adjacency_matrix_graph.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;edge_list_graph.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;pointer_structure_graph.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;graph_type.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="adjacency__list__graph_8h.html">adjacency_list_graph.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="adjacency__matrix__graph_8h.html">adjacency_matrix_graph.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="edge__list__graph_8h.html">edge_list_graph.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pointer__structure__graph_8h.html">pointer_structure_graph.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="graph__type_8h.html">graph_type.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> graph&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_convert_graph.html">ConvertGraph</a>&lt;POINTER_STRUCTURE, EDGE_LIST, graph&gt; {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_convert_graph.html">ConvertGraph</a>&lt;<a class="code" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71">POINTER_STRUCTURE</a>, <a class="code" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f">EDGE_LIST</a>, graph&gt; {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    static_assert(<a class="code" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f">EDGE_LIST</a> == graph::TYPE, <span class="stringliteral">&quot;Type of a graph must be equal to passed argument&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astruct_convert_graph_html"><div class="ttname"><a href="struct_convert_graph.html">ConvertGraph</a></div><div class="ttdef"><b>Definition:</b> convert_graph.h:16</div></div>
+<div class="ttc" id="aconvert__graph_8h_html"><div class="ttname"><a href="convert__graph_8h.html">convert_graph.h</a></div></div>
+<div class="ttc" id="apointer__structure__graph_8h_html"><div class="ttname"><a href="pointer__structure__graph_8h.html">pointer_structure_graph.h</a></div></div>
+<div class="ttc" id="aadjacency__matrix__graph_8h_html"><div class="ttname"><a href="adjacency__matrix__graph_8h.html">adjacency_matrix_graph.h</a></div></div>
+<div class="ttc" id="agraph__type_8h_html_a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71"><div class="ttname"><a href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71">POINTER_STRUCTURE</a></div><div class="ttdeci">@ POINTER_STRUCTURE</div><div class="ttdoc">Graph is represented by a pointer structure.</div><div class="ttdef"><b>Definition:</b> <a href="graph__type_8h_source.html#l00016">graph_type.h:15</a></div></div>
+<div class="ttc" id="aadjacency__list__graph_8h_html"><div class="ttname"><a href="adjacency__list__graph_8h.html">adjacency_list_graph.h</a></div></div>
+<div class="ttc" id="agraph__type_8h_html_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f"><div class="ttname"><a href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f">EDGE_LIST</a></div><div class="ttdeci">@ EDGE_LIST</div><div class="ttdoc">Graph is represented by a collection of edges.</div><div class="ttdef"><b>Definition:</b> <a href="graph__type_8h_source.html#l00014">graph_type.h:14</a></div></div>
+<div class="ttc" id="agraph__type_8h_html"><div class="ttname"><a href="graph__type_8h.html">graph_type.h</a></div></div>
+<div class="ttc" id="astruct_convert_graph_html"><div class="ttname"><a href="struct_convert_graph.html">ConvertGraph</a></div><div class="ttdef"><b>Definition:</b> <a href="convert__graph_8h_source.html#l00017">convert_graph.h:17</a></div></div>
+<div class="ttc" id="aedge__list__graph_8h_html"><div class="ttname"><a href="edge__list__graph_8h.html">edge_list_graph.h</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

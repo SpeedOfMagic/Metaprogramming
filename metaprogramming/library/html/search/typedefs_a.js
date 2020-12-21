@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['value_353',['value',['../struct_class.html#a9a374895ce7f031cc358736b66fdf45c',1,'Class::value()'],['../struct_t_l_1_1_type_at.html#a217bdb7d48e88b3cbda31b5bb8441610',1,'TL::TypeAt::value()'],['../struct_t_l_1_1_type_at_3_01type__list_00_010_01_4.html#a88714d0dd1611fd1125a88e40c692157',1,'TL::TypeAt&lt; type_list, 0 &gt;::value()']]],
-  ['vertex_354',['vertex',['../struct_pointer_structure_graph_1_1_node.html#adf807da022e15b4ede2010fdfdf2db6e',1,'PointerStructureGraph::Node']]],
-  ['vertexes_5f_355',['vertexes_',['../struct_adjacency_list_graph.html#a79d0d03a86c0cf36799571934b319d20',1,'AdjacencyListGraph::vertexes_()'],['../struct_adjacency_matrix_graph.html#a8c9fddf14b4e0c9851922e5abd02566b',1,'AdjacencyMatrixGraph::vertexes_()'],['../struct_edge_list_graph.html#a95bef5648cf129798be867eedc92fdee',1,'EdgeListGraph::vertexes_()'],['../struct_pointer_structure_graph.html#a3e713e11b4c11e770535a95e3ec79e3b',1,'PointerStructureGraph::vertexes_()']]],
-  ['vertexes_5fto_5fvisit_356',['vertexes_to_visit',['../struct_pointer_structure_graph_1_1_d_f_s.html#af6e2a2fc5aba13933b65591cd0fb0166',1,'PointerStructureGraph::DFS']]]
+  ['new_5fadjacency_5flist_441',['new_adjacency_list',['../struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#aacd2435de358fb5a936c740304b48145',1,'GLib::AddEdge&lt; ADJACENCY_LIST, graph, edge &gt;']]],
+  ['new_5fadjacent_5fvertexes_442',['new_adjacent_vertexes',['../struct_g_lib_1_1_add_edge_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01graph_00_01edge_01_4.html#a3c1d226c22a17e4710ad4070513d3782',1,'GLib::AddEdge&lt; ADJACENCY_LIST, graph, edge &gt;']]],
+  ['new_5fvisited_443',['new_visited',['../struct_g_lib_1_1_d_f_s_1_1_iterate_through_children.html#a54cebce8598527a91f056c89fedfb950',1,'GLib::DFS::IterateThroughChildren::new_visited()'],['../struct_g_lib_1_1_d_f_s_1_1_iterate_through_children_3_01_empty_type_list_00_01cur__unvisited_01_4.html#a8d33617e792a7e745c7222811c8e4848',1,'GLib::DFS::IterateThroughChildren&lt; EmptyTypeList, cur_unvisited &gt;::new_visited()'],['../struct_g_lib_1_1_d_f_s.html#af4c9d53f39362ff3e66b4cbda7a7a326',1,'GLib::DFS::new_visited()']]],
+  ['nodes_5f_444',['nodes_',['../struct_pointer_structure_graph.html#a407c903b560b99cc3dca16f17d21161f',1,'PointerStructureGraph']]]
 ];

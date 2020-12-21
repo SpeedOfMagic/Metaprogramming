@@ -70,38 +70,54 @@ $(function() {
 <div class="title">vertex_stream.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="vertex__stream_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../TL/type_list.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../class.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../functor_type.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> stream, <span class="keyword">class</span> graph&gt;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_vertex_stream.html">   13</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_vertex_stream.html">VertexStream</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_vertex_stream.html#ae2d1c7fbe69dc23445acf39514ee1ddf">   14</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_vertex_stream.html#ae2d1c7fbe69dc23445acf39514ee1ddf">stream_</a> = stream;  </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Consumer&gt;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_vertex_stream.html#a584aba69154de8dbbdf10b7606cca3b7">   25</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_vertex_stream.html#a584aba69154de8dbbdf10b7606cca3b7">ForEach</a>(Consumer consumer) {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        constexpr <span class="keywordtype">size_t</span> vertex_index = <a class="code" href="struct_t_l_1_1_index_of.html">TL::IndexOf&lt;typename graph::vertexes_, typename stream::Head&gt;::value</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        consumer(<a class="code" href="struct_class.html">Class&lt;graph&gt;</a>(), vertex_index);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="struct_vertex_stream.html">VertexStream&lt;typename stream::Tail, graph&gt;</a>().<a class="code" href="struct_vertex_stream.html#a584aba69154de8dbbdf10b7606cca3b7">ForEach</a>(consumer);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> graph&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_vertex_stream_3_01_empty_type_list_00_01graph_01_4.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_vertex_stream.html">VertexStream</a>&lt;<a class="code" href="struct_type_list.html">EmptyTypeList</a>, graph&gt; {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">using</span> <a class="code" href="struct_type_list.html">stream</a> = <a class="code" href="struct_type_list.html">EmptyTypeList</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Consumer&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_vertex_stream.html#a584aba69154de8dbbdf10b7606cca3b7">ForEach</a>(Consumer consumer) {}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;ranges&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../TL/add.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../TL/contains.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../TL/index_of.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../TL/type_list.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stream_8h.html">stream.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> stream, <span class="keyword">class</span> graph&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_vertex_stream.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_vertex_stream.html">VertexStream</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_vertex_stream.html#a5b1b3bc4d69db332313fcf7a4a02f4f6">   26</a></span>&#160;    <span class="keyword">static</span> std::vector&lt;size_t&gt; <a class="code" href="class_vertex_stream.html#a5b1b3bc4d69db332313fcf7a4a02f4f6">MapVertexesToReversedIndexes</a>() {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::vector&lt;size_t&gt; result = <a class="code" href="class_vertex_stream.html#a5b1b3bc4d69db332313fcf7a4a02f4f6">VertexStream&lt;typename stream::Tail, graph&gt;::MapVertexesToReversedIndexes</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        static_assert(<a class="code" href="struct_t_l_1_1_contains.html">TL::Contains&lt;typename graph::vertexes_, typename stream::Head&gt;::result</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="stringliteral">&quot;Some vertex in stream was not present in the graph&quot;</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        result.push_back(<a class="code" href="struct_t_l_1_1_index_of.html">TL::IndexOf&lt;typename graph::vertexes_, typename stream::Head&gt;::value</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_vertex_stream.html#a0dd3f9c1fd75e30d84ca9dcb4764f189">   38</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_stream.html">Stream&lt;size_t&gt;</a> <a class="code" href="class_vertex_stream.html#a0dd3f9c1fd75e30d84ca9dcb4764f189">MapVertexesToIndexes</a>() {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        std::vector&lt;size_t&gt; result = <a class="code" href="class_vertex_stream.html#a5b1b3bc4d69db332313fcf7a4a02f4f6">MapVertexesToReversedIndexes</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::reverse(result.begin(), result.end());</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_stream.html">Stream&lt;size_t&gt;</a>(std::move(result));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> graph&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_vertex_stream_3_01_empty_type_list_00_01graph_01_4.html">   50</a></span>&#160;<span class="keyword">struct </span><a class="code" href="class_vertex_stream.html">VertexStream</a>&lt;<a class="code" href="struct_type_list.html">EmptyTypeList</a>, graph&gt; {</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_vertex_stream_3_01_empty_type_list_00_01graph_01_4.html#a8c89ca3ef25a0922ded3f54d10ea3d91">   51</a></span>&#160;    <span class="keyword">static</span> std::vector&lt;size_t&gt; <a class="code" href="struct_vertex_stream_3_01_empty_type_list_00_01graph_01_4.html#a8c89ca3ef25a0922ded3f54d10ea3d91">MapVertexesToReversedIndexes</a>() {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> {};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astruct_vertex_stream_html_ae2d1c7fbe69dc23445acf39514ee1ddf"><div class="ttname"><a href="struct_vertex_stream.html#ae2d1c7fbe69dc23445acf39514ee1ddf">VertexStream::stream_</a></div><div class="ttdeci">stream stream_</div><div class="ttdoc">TypeList of vertexes of a graph.</div><div class="ttdef"><b>Definition:</b> vertex_stream.h:14</div></div>
-<div class="ttc" id="astruct_class_html"><div class="ttname"><a href="struct_class.html">Class</a></div><div class="ttdef"><b>Definition:</b> class.h:8</div></div>
-<div class="ttc" id="astruct_vertex_stream_html"><div class="ttname"><a href="struct_vertex_stream.html">VertexStream</a></div><div class="ttdef"><b>Definition:</b> vertex_stream.h:13</div></div>
-<div class="ttc" id="astruct_vertex_stream_html_a584aba69154de8dbbdf10b7606cca3b7"><div class="ttname"><a href="struct_vertex_stream.html#a584aba69154de8dbbdf10b7606cca3b7">VertexStream::ForEach</a></div><div class="ttdeci">void ForEach(Consumer consumer)</div><div class="ttdef"><b>Definition:</b> vertex_stream.h:25</div></div>
-<div class="ttc" id="astruct_t_l_1_1_index_of_html"><div class="ttname"><a href="struct_t_l_1_1_index_of.html">TL::IndexOf</a></div><div class="ttdef"><b>Definition:</b> index_of.h:15</div></div>
-<div class="ttc" id="astruct_type_list_html"><div class="ttname"><a href="struct_type_list.html">TypeList</a></div><div class="ttdef"><b>Definition:</b> type_list.h:9</div></div>
+<div class="ttc" id="aclass_vertex_stream_html"><div class="ttname"><a href="class_vertex_stream.html">VertexStream</a></div><div class="ttdef"><b>Definition:</b> <a href="vertex__stream_8h_source.html#l00019">vertex_stream.h:19</a></div></div>
+<div class="ttc" id="astream_8h_html"><div class="ttname"><a href="stream_8h.html">stream.h</a></div></div>
+<div class="ttc" id="aclass_stream_html"><div class="ttname"><a href="class_stream.html">Stream</a></div><div class="ttdef"><b>Definition:</b> <a href="stream_8h_source.html#l00014">stream.h:14</a></div></div>
+<div class="ttc" id="astruct_t_l_1_1_index_of_html"><div class="ttname"><a href="struct_t_l_1_1_index_of.html">TL::IndexOf</a></div><div class="ttdef"><b>Definition:</b> <a href="index__of_8h_source.html#l00015">index_of.h:15</a></div></div>
+<div class="ttc" id="astruct_type_list_html"><div class="ttname"><a href="struct_type_list.html">TypeList</a></div><div class="ttdef"><b>Definition:</b> <a href="type__list_8h_source.html#l00009">type_list.h:9</a></div></div>
+<div class="ttc" id="astruct_vertex_stream_3_01_empty_type_list_00_01graph_01_4_html_a8c89ca3ef25a0922ded3f54d10ea3d91"><div class="ttname"><a href="struct_vertex_stream_3_01_empty_type_list_00_01graph_01_4.html#a8c89ca3ef25a0922ded3f54d10ea3d91">VertexStream&lt; EmptyTypeList, graph &gt;::MapVertexesToReversedIndexes</a></div><div class="ttdeci">static std::vector&lt; size_t &gt; MapVertexesToReversedIndexes()</div><div class="ttdef"><b>Definition:</b> <a href="vertex__stream_8h_source.html#l00051">vertex_stream.h:51</a></div></div>
+<div class="ttc" id="astruct_t_l_1_1_contains_html"><div class="ttname"><a href="struct_t_l_1_1_contains.html">TL::Contains</a></div><div class="ttdef"><b>Definition:</b> <a href="contains_8h_source.html#l00014">contains.h:14</a></div></div>
+<div class="ttc" id="aclass_vertex_stream_html_a0dd3f9c1fd75e30d84ca9dcb4764f189"><div class="ttname"><a href="class_vertex_stream.html#a0dd3f9c1fd75e30d84ca9dcb4764f189">VertexStream::MapVertexesToIndexes</a></div><div class="ttdeci">static Stream&lt; size_t &gt; MapVertexesToIndexes()</div><div class="ttdef"><b>Definition:</b> <a href="vertex__stream_8h_source.html#l00038">vertex_stream.h:38</a></div></div>
+<div class="ttc" id="aclass_vertex_stream_html_a5b1b3bc4d69db332313fcf7a4a02f4f6"><div class="ttname"><a href="class_vertex_stream.html#a5b1b3bc4d69db332313fcf7a4a02f4f6">VertexStream::MapVertexesToReversedIndexes</a></div><div class="ttdeci">static std::vector&lt; size_t &gt; MapVertexesToReversedIndexes()</div><div class="ttdef"><b>Definition:</b> <a href="vertex__stream_8h_source.html#l00026">vertex_stream.h:26</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['edge_5flist_5f_232',['edge_list_',['../struct_edge_list_graph.html#aa6109991c90966fccc8ec78d46d074ad',1,'EdgeListGraph']]]
+  ['binaryoperation_423',['BinaryOperation',['../namespace_stream_functor_type.html#a67e480df4b3e957cb95651982557cbcf',1,'StreamFunctorType']]]
 ];

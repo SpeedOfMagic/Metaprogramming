@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['head_234',['Head',['../struct_type_list_3_01_h_00_01_t_8_8_8_01_4.html#a6219621e9ffd55a79c42ef6d3819affc',1,'TypeList&lt; H, T... &gt;']]]
+  ['dfs_5fsearch_429',['dfs_search',['../struct_g_lib_1_1_find_path.html#a812314a8ee307dbd1a618eb4f22e8716',1,'GLib::FindPath::dfs_search()'],['../struct_g_lib_1_1_get_reached_vertexes.html#a65810cba6c66e73fcca8b559af4f6169',1,'GLib::GetReachedVertexes::dfs_search()']]]
 ];

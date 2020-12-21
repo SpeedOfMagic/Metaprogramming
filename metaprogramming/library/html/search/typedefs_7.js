@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['value_239',['value',['../struct_class.html#a9a374895ce7f031cc358736b66fdf45c',1,'Class']]],
-  ['vertexes_5f_240',['vertexes_',['../struct_adjacency_list_graph.html#a79d0d03a86c0cf36799571934b319d20',1,'AdjacencyListGraph::vertexes_()'],['../struct_adjacency_matrix_graph.html#a8c9fddf14b4e0c9851922e5abd02566b',1,'AdjacencyMatrixGraph::vertexes_()'],['../struct_edge_list_graph.html#a95bef5648cf129798be867eedc92fdee',1,'EdgeListGraph::vertexes_()'],['../struct_pointer_structure_graph.html#a3e713e11b4c11e770535a95e3ec79e3b',1,'PointerStructureGraph::vertexes_()']]]
+  ['head_437',['Head',['../struct_type_list.html#a4f18784abdf7cdf40534a24ff6a23cc5',1,'TypeList::Head()'],['../struct_type_list_3_01_t_01_4.html#a5197d6193eae9c4953203c1eb394c806',1,'TypeList&lt; T &gt;::Head()'],['../struct_type_list_3_01_h_00_01_t_8_8_8_01_4.html#a6219621e9ffd55a79c42ef6d3819affc',1,'TypeList&lt; H, T... &gt;::Head()']]]
 ];

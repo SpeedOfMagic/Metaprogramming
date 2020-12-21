@@ -10,6 +10,6 @@
  */
 struct Graph {};
 
-/** \example graph_examples.h
+/** \example graph_examples.cpp
 * An example of how graph be created.
 */

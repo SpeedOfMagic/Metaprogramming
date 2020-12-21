@@ -67,6 +67,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="struct_t_l_1_1_concatenate-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -76,11 +77,19 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="concatenate_8h_source.html">concatenate.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_l_1_1_concatenate_1_1_iterate_through_reversed_front.html">IterateThroughReversedFront</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_l_1_1_concatenate_1_1_iterate_through_reversed_front_3_01_empty_type_list_00_01current_01_4.html">IterateThroughReversedFront&lt; EmptyTypeList, current &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6a5d88af5a392b7e59688e054d18d13a"><td class="memItemLeft" align="right" valign="top"><a id="a6a5d88af5a392b7e59688e054d18d13a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>result</b> = <a class="el" href="struct_t_l_1_1_concatenate.html">Concatenate</a>&lt; typename <a class="el" href="struct_t_l_1_1_add.html">Add</a>&lt; typename back::Head, <a class="el" href="struct_t_l_1_1_size.html">Size</a>&lt; front &gt;::size, front &gt;::<a class="el" href="struct_t_l_1_1_concatenate.html">result</a>, typename back::Tail &gt;</td></tr>
-<tr class="separator:a6a5d88af5a392b7e59688e054d18d13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5d2db9093fb5e175b6a31f43655dd8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_l_1_1_concatenate.html#a2e5d2db9093fb5e175b6a31f43655dd8">reversed_front</a> = typename <a class="el" href="struct_t_l_1_1_reverse.html">Reverse</a>&lt; front &gt;::<a class="el" href="struct_t_l_1_1_concatenate.html#abb01457b2252c16b78d155b82ea9917a">result</a></td></tr>
+<tr class="separator:a2e5d2db9093fb5e175b6a31f43655dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb01457b2252c16b78d155b82ea9917a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_l_1_1_concatenate.html#abb01457b2252c16b78d155b82ea9917a">result</a> = typename <a class="el" href="struct_t_l_1_1_concatenate_1_1_iterate_through_reversed_front.html">IterateThroughReversedFront</a>&lt; <a class="el" href="struct_t_l_1_1_concatenate.html#a2e5d2db9093fb5e175b6a31f43655dd8">reversed_front</a>, back &gt;::<a class="el" href="struct_t_l_1_1_concatenate.html#abb01457b2252c16b78d155b82ea9917a">result</a></td></tr>
+<tr class="separator:abb01457b2252c16b78d155b82ea9917a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class front, class back&gt;<br />
@@ -94,7 +103,46 @@ struct TL::Concatenate&lt; front, back &gt;</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Parameter result, Concatenated <a class="el" href="struct_type_list.html">TypeList</a> </dd></dl>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+
+<p class="definition">Definition at line <a class="el" href="concatenate_8h_source.html#l00017">17</a> of file <a class="el" href="concatenate_8h_source.html">concatenate.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="abb01457b2252c16b78d155b82ea9917a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb01457b2252c16b78d155b82ea9917a">&#9670;&nbsp;</a></span>result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class front , class back &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="struct_t_l_1_1_concatenate.html">TL::Concatenate</a>&lt; front, back &gt;::<a class="el" href="struct_t_l_1_1_concatenate.html#abb01457b2252c16b78d155b82ea9917a">result</a> =  typename <a class="el" href="struct_t_l_1_1_concatenate_1_1_iterate_through_reversed_front.html">IterateThroughReversedFront</a>&lt;<a class="el" href="struct_t_l_1_1_concatenate.html#a2e5d2db9093fb5e175b6a31f43655dd8">reversed_front</a>, back&gt;::<a class="el" href="struct_t_l_1_1_concatenate.html#abb01457b2252c16b78d155b82ea9917a">result</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="concatenate_8h_source.html#l00042">42</a> of file <a class="el" href="concatenate_8h_source.html">concatenate.h</a>.</p>
+
+</div>
+</div>
+<a id="a2e5d2db9093fb5e175b6a31f43655dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5d2db9093fb5e175b6a31f43655dd8">&#9670;&nbsp;</a></span>reversed_front</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class front , class back &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="struct_t_l_1_1_concatenate.html">TL::Concatenate</a>&lt; front, back &gt;::<a class="el" href="struct_t_l_1_1_concatenate.html#a2e5d2db9093fb5e175b6a31f43655dd8">reversed_front</a> =  typename <a class="el" href="struct_t_l_1_1_reverse.html">Reverse</a>&lt;front&gt;::<a class="el" href="struct_t_l_1_1_concatenate.html#abb01457b2252c16b78d155b82ea9917a">result</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="concatenate_8h_source.html#l00021">21</a> of file <a class="el" href="concatenate_8h_source.html">concatenate.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>TL/<a class="el" href="concatenate_8h_source.html">concatenate.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compile-Time Graph Library: AdjacencyListGraph&lt; vertexes, adjacency_list &gt; Struct Template Reference</title>
+<title>Compile-Time Graph Library: AdjacencyListGraph&lt; nodes, adjacency_list &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,20 +67,21 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_adjacency_list_graph-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">AdjacencyListGraph&lt; vertexes, adjacency_list &gt; Struct Template Reference</div>  </div>
+<div class="title">AdjacencyListGraph&lt; nodes, adjacency_list &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for AdjacencyListGraph&lt; vertexes, adjacency_list &gt;:</div>
+Inheritance diagram for AdjacencyListGraph&lt; nodes, adjacency_list &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="struct_adjacency_list_graph.png" usemap="#AdjacencyListGraph_3C_20vertexes_2C_20adjacency_5Flist_20_3E_map" alt=""/>
-  <map id="AdjacencyListGraph_3C_20vertexes_2C_20adjacency_5Flist_20_3E_map" name="AdjacencyListGraph_3C_20vertexes_2C_20adjacency_5Flist_20_3E_map">
-<area href="struct_graph.html" alt="Graph" shape="rect" coords="0,0,289,24"/>
+  <img src="struct_adjacency_list_graph.png" usemap="#AdjacencyListGraph_3C_20nodes_2C_20adjacency_5Flist_20_3E_map" alt=""/>
+  <map id="AdjacencyListGraph_3C_20nodes_2C_20adjacency_5Flist_20_3E_map" name="AdjacencyListGraph_3C_20nodes_2C_20adjacency_5Flist_20_3E_map">
+<area href="struct_graph.html" alt="Graph" shape="rect" coords="0,0,275,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -88,51 +89,96 @@ Inheritance diagram for AdjacencyListGraph&lt; vertexes, adjacency_list &gt;:</d
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph_1_1_convert_to.html">ConvertTo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph_1_1_convert_to_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_01_4.html">ConvertTo&lt; POINTER_STRUCTURE &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a79d0d03a86c0cf36799571934b319d20"><td class="memItemLeft" align="right" valign="top"><a id="a79d0d03a86c0cf36799571934b319d20"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph.html#a79d0d03a86c0cf36799571934b319d20">vertexes_</a> = vertexes</td></tr>
-<tr class="memdesc:a79d0d03a86c0cf36799571934b319d20"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_type_list.html">TypeList</a> of vertexes in graph. <br /></td></tr>
-<tr class="separator:a79d0d03a86c0cf36799571934b319d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcfa398be1579aad816f4b2ca657813f"><td class="memItemLeft" align="right" valign="top"><a id="afcfa398be1579aad816f4b2ca657813f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph.html#afcfa398be1579aad816f4b2ca657813f">adjacency_list_</a> = adjacency_list</td></tr>
-<tr class="memdesc:afcfa398be1579aad816f4b2ca657813f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_type_list.html">TypeList</a> of TypeLists of edges, which are grouped by starting vertex. <br /></td></tr>
-<tr class="separator:afcfa398be1579aad816f4b2ca657813f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59092ed124f8bab3c071ef8ab4dfb0e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph.html#ac59092ed124f8bab3c071ef8ab4dfb0e">vertexes_</a> = nodes</td></tr>
+<tr class="memdesc:ac59092ed124f8bab3c071ef8ab4dfb0e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_type_list.html">TypeList</a> of vertexes in graph.  <a href="struct_adjacency_list_graph.html#ac59092ed124f8bab3c071ef8ab4dfb0e">More...</a><br /></td></tr>
+<tr class="separator:ac59092ed124f8bab3c071ef8ab4dfb0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87fa7495af8bdc339442a890abe34a42"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph.html#a87fa7495af8bdc339442a890abe34a42">adjacency_list_</a> = adjacency_list</td></tr>
+<tr class="memdesc:a87fa7495af8bdc339442a890abe34a42"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_type_list.html">TypeList</a> of TypeLists of edges, which are grouped by starting vertex.  <a href="struct_adjacency_list_graph.html#a87fa7495af8bdc339442a890abe34a42">More...</a><br /></td></tr>
+<tr class="separator:a87fa7495af8bdc339442a890abe34a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4cc706bef046232d189b681549012a08"><td class="memTemplParams" colspan="2">template&lt;class edge &gt; </td></tr>
-<tr class="memitem:a4cc706bef046232d189b681549012a08"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph.html#a4cc706bef046232d189b681549012a08">HasEdge</a> ()</td></tr>
-<tr class="separator:a4cc706bef046232d189b681549012a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097e74b3254d9ffb86267fdc4d15f24a"><td class="memTemplParams" colspan="2">template&lt;class edge &gt; </td></tr>
+<tr class="memitem:a097e74b3254d9ffb86267fdc4d15f24a"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph.html#a097e74b3254d9ffb86267fdc4d15f24a">HasEdge</a> ()</td></tr>
+<tr class="separator:a097e74b3254d9ffb86267fdc4d15f24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8819cb8f8a23c6bf3d25ae1d942beb85"><td class="memTemplParams" colspan="2">template&lt;typename vertex &gt; </td></tr>
-<tr class="memitem:a8819cb8f8a23c6bf3d25ae1d942beb85"><td class="memTemplItemLeft" align="right" valign="top">constexpr static size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph.html#a8819cb8f8a23c6bf3d25ae1d942beb85">GetVertexIndex</a> ()</td></tr>
-<tr class="separator:a8819cb8f8a23c6bf3d25ae1d942beb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad31d1ee689ec2fb139c958e4beda099d"><td class="memTemplParams" colspan="2">template&lt;typename vertex &gt; </td></tr>
+<tr class="memitem:ad31d1ee689ec2fb139c958e4beda099d"><td class="memTemplItemLeft" align="right" valign="top">constexpr static size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph.html#ad31d1ee689ec2fb139c958e4beda099d">GetVertexIndex</a> ()</td></tr>
+<tr class="separator:ad31d1ee689ec2fb139c958e4beda099d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae829f82544f4d3e639a2fa0898dad36e"><td class="memItemLeft" align="right" valign="top">constexpr static <a class="el" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72">GraphType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_adjacency_list_graph.html#ae829f82544f4d3e639a2fa0898dad36e">TYPE</a> = <a class="el" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72ad6db70730563977f3408ba2c92f9da04">ADJACENCY_LIST</a></td></tr>
+<tr class="separator:ae829f82544f4d3e639a2fa0898dad36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class vertexes, class adjacency_list&gt;<br />
-struct AdjacencyListGraph&lt; vertexes, adjacency_list &gt;</h3>
+<div class="textblock"><h3>template&lt;class nodes, class adjacency_list&gt;<br />
+struct AdjacencyListGraph&lt; nodes, adjacency_list &gt;</h3>
 
-<p>Represents graph vertexes defined in vertexes_, and edges, which are derived from adjacency_list_ Size of an adjacency list must be equal to amount of vertexes </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Represents graph vertexes defined in vertexes_, and edges, which are derived from adjacency_list_ Size of an adjacency list must be equal to amount of vertexes </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="struct_graph.html">Graph</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vertexes_</td><td><a class="el" href="struct_type_list.html">TypeList</a> of vertexes in graph. </td></tr>
     <tr><td class="paramname">adjacency_list_</td><td>- <a class="el" href="struct_type_list.html">TypeList</a> of TypeLists of edges, which are grouped by starting vertex i.e. edge (from, to, weight) goes to adjacency_list_[from] </td></tr>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8819cb8f8a23c6bf3d25ae1d942beb85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8819cb8f8a23c6bf3d25ae1d942beb85">&#9670;&nbsp;</a></span>GetVertexIndex()</h2>
+
+<p class="definition">Definition at line <a class="el" href="adjacency__list__graph_8h_source.html#l00024">24</a> of file <a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a87fa7495af8bdc339442a890abe34a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87fa7495af8bdc339442a890abe34a42">&#9670;&nbsp;</a></span>adjacency_list_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class vertexes , class adjacency_list &gt; </div>
+template&lt;class nodes , class adjacency_list &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="struct_adjacency_list_graph.html">AdjacencyListGraph</a>&lt; nodes, adjacency_list &gt;::<a class="el" href="struct_adjacency_list_graph.html#a87fa7495af8bdc339442a890abe34a42">adjacency_list_</a> =  adjacency_list</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="struct_type_list.html">TypeList</a> of TypeLists of edges, which are grouped by starting vertex. </p>
+
+<p class="definition">Definition at line <a class="el" href="adjacency__list__graph_8h_source.html#l00028">28</a> of file <a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a>.</p>
+
+</div>
+</div>
+<a id="ac59092ed124f8bab3c071ef8ab4dfb0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac59092ed124f8bab3c071ef8ab4dfb0e">&#9670;&nbsp;</a></span>vertexes_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class nodes , class adjacency_list &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="struct_adjacency_list_graph.html">AdjacencyListGraph</a>&lt; nodes, adjacency_list &gt;::<a class="el" href="struct_adjacency_list_graph.html#ac59092ed124f8bab3c071ef8ab4dfb0e">vertexes_</a> =  nodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="struct_type_list.html">TypeList</a> of vertexes in graph. </p>
+
+<p class="definition">Definition at line <a class="el" href="adjacency__list__graph_8h_source.html#l00027">27</a> of file <a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad31d1ee689ec2fb139c958e4beda099d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31d1ee689ec2fb139c958e4beda099d">&#9670;&nbsp;</a></span>GetVertexIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class nodes , class adjacency_list &gt; </div>
 <div class="memtemplate">
 template&lt;typename vertex &gt; </div>
 <table class="mlabels">
@@ -140,7 +186,7 @@ template&lt;typename vertex &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr static size_t <a class="el" href="struct_adjacency_list_graph.html">AdjacencyListGraph</a>&lt; vertexes, adjacency_list &gt;::GetVertexIndex </td>
+          <td class="memname">constexpr static size_t <a class="el" href="struct_adjacency_list_graph.html">AdjacencyListGraph</a>&lt; nodes, adjacency_list &gt;::GetVertexIndex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -160,15 +206,17 @@ template&lt;typename vertex &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Position of this vertex in vertexes_ <a class="el" href="struct_type_list.html">TypeList</a> </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="adjacency__list__graph_8h_source.html#l00051">51</a> of file <a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a>.</p>
+
 </div>
 </div>
-<a id="a4cc706bef046232d189b681549012a08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cc706bef046232d189b681549012a08">&#9670;&nbsp;</a></span>HasEdge()</h2>
+<a id="a097e74b3254d9ffb86267fdc4d15f24a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a097e74b3254d9ffb86267fdc4d15f24a">&#9670;&nbsp;</a></span>HasEdge()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class vertexes , class adjacency_list &gt; </div>
+template&lt;class nodes , class adjacency_list &gt; </div>
 <div class="memtemplate">
 template&lt;class edge &gt; </div>
 <table class="mlabels">
@@ -176,7 +224,7 @@ template&lt;class edge &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr bool <a class="el" href="struct_adjacency_list_graph.html">AdjacencyListGraph</a>&lt; vertexes, adjacency_list &gt;::HasEdge </td>
+          <td class="memname">constexpr bool <a class="el" href="struct_adjacency_list_graph.html">AdjacencyListGraph</a>&lt; nodes, adjacency_list &gt;::HasEdge </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -195,6 +243,35 @@ template&lt;class edge &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if this edge in the graph, false otherwise </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="adjacency__list__graph_8h_source.html#l00039">39</a> of file <a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae829f82544f4d3e639a2fa0898dad36e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae829f82544f4d3e639a2fa0898dad36e">&#9670;&nbsp;</a></span>TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class nodes , class adjacency_list &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr static <a class="el" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72">GraphType</a> <a class="el" href="struct_adjacency_list_graph.html">AdjacencyListGraph</a>&lt; nodes, adjacency_list &gt;::TYPE = <a class="el" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72ad6db70730563977f3408ba2c92f9da04">ADJACENCY_LIST</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="adjacency__list__graph_8h_source.html#l00025">25</a> of file <a class="el" href="adjacency__list__graph_8h_source.html">adjacency_list_graph.h</a>.</p>
 
 </div>
 </div>

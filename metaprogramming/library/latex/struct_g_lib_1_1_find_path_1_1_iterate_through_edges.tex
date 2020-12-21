@@ -1,0 +1,98 @@
+\hypertarget{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{}\doxysection{G\+Lib\+::Find\+Path$<$ graph\+\_\+raw, start, finish $>$\+::Iterate\+Through\+Edges$<$ cur\+\_\+edges, wanted\+\_\+node $>$ Struct Template Reference}
+\label{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}\index{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}}
+
+
+{\ttfamily \#include $<$find\+\_\+path.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a96254d1ea33040ba7e591040e8c1c3be}{cur\+\_\+edge}} = typename cur\+\_\+edges\+::\+Head
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a3f1e50871128c9e5e3fe68bed2256e92}{path}} = typename std\+::conditional\+\_\+t$<$ \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aef13d63a281b7b9fc9202e0e9a46d6e6}{found}}, typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ typename wanted\+\_\+node\+::vertex, 0, typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ typename cur\+\_\+edges\+::\+Tail, typename \mbox{\hyperlink{struct_g_lib_1_1_find_node_by_vertex}{Find\+Node\+By\+Vertex}}$<$ typename cur\+\_\+edge\+::from, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}} $>$\+::result $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a3f1e50871128c9e5e3fe68bed2256e92}{path}} $>$\+::result, typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ typename cur\+\_\+edges\+::\+Tail, wanted\+\_\+node $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a3f1e50871128c9e5e3fe68bed2256e92}{path}} $>$
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aee8f2212faebf4f009fa042e5eb195f2}{weights}} = typename std\+::conditional\+\_\+t$<$ \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aef13d63a281b7b9fc9202e0e9a46d6e6}{found}}, typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ typename cur\+\_\+edge\+::weight, 0, typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ typename cur\+\_\+edges\+::\+Tail, typename \mbox{\hyperlink{struct_g_lib_1_1_find_node_by_vertex}{Find\+Node\+By\+Vertex}}$<$ typename cur\+\_\+edge\+::from, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}} $>$\+::result $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aee8f2212faebf4f009fa042e5eb195f2}{weights}} $>$\+::result, typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ typename cur\+\_\+edges\+::\+Tail, wanted\+\_\+node $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aee8f2212faebf4f009fa042e5eb195f2}{weights}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+constexpr static bool \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aef13d63a281b7b9fc9202e0e9a46d6e6}{found}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class graph\+\_\+raw, typename start, typename finish$>$\newline
+template$<$class cur\+\_\+edges, class wanted\+\_\+node$>$\newline
+struct G\+Lib\+::\+Find\+Path$<$ graph\+\_\+raw, start, finish $>$\+::\+Iterate\+Through\+Edges$<$ cur\+\_\+edges, wanted\+\_\+node $>$}
+
+
+
+Definition at line 36 of file find\+\_\+path.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a96254d1ea33040ba7e591040e8c1c3be}\label{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a96254d1ea33040ba7e591040e8c1c3be}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}!cur\_edge@{cur\_edge}}
+\index{cur\_edge@{cur\_edge}!GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}}
+\doxysubsubsection{\texorpdfstring{cur\_edge}{cur\_edge}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+template$<$class cur\+\_\+edges , class wanted\+\_\+node $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ cur\+\_\+edges, wanted\+\_\+node $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a96254d1ea33040ba7e591040e8c1c3be}{cur\+\_\+edge}} =  typename cur\+\_\+edges\+::\+Head}
+
+
+
+Definition at line 37 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a3f1e50871128c9e5e3fe68bed2256e92}\label{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a3f1e50871128c9e5e3fe68bed2256e92}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}!path@{path}}
+\index{path@{path}!GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+template$<$class cur\+\_\+edges , class wanted\+\_\+node $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ cur\+\_\+edges, wanted\+\_\+node $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a3f1e50871128c9e5e3fe68bed2256e92}{path}} =  typename std\+::conditional\+\_\+t$<$\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aef13d63a281b7b9fc9202e0e9a46d6e6}{found}}, typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ typename wanted\+\_\+node\+::vertex, 0, typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ typename cur\+\_\+edges\+::\+Tail, typename \mbox{\hyperlink{struct_g_lib_1_1_find_node_by_vertex}{Find\+Node\+By\+Vertex}}$<$ typename cur\+\_\+edge\+::from, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}} $>$\+::result $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a3f1e50871128c9e5e3fe68bed2256e92}{path}} $>$\+::result, typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$typename cur\+\_\+edges\+::\+Tail, wanted\+\_\+node$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_a3f1e50871128c9e5e3fe68bed2256e92}{path}} $>$}
+
+
+
+Definition at line 43 of file find\+\_\+path.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aee8f2212faebf4f009fa042e5eb195f2}\label{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aee8f2212faebf4f009fa042e5eb195f2}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}!weights@{weights}}
+\index{weights@{weights}!GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}}
+\doxysubsubsection{\texorpdfstring{weights}{weights}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+template$<$class cur\+\_\+edges , class wanted\+\_\+node $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ cur\+\_\+edges, wanted\+\_\+node $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aee8f2212faebf4f009fa042e5eb195f2}{weights}} =  typename std\+::conditional\+\_\+t$<$\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aef13d63a281b7b9fc9202e0e9a46d6e6}{found}}, typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ typename cur\+\_\+edge\+::weight, 0, typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ typename cur\+\_\+edges\+::\+Tail, typename \mbox{\hyperlink{struct_g_lib_1_1_find_node_by_vertex}{Find\+Node\+By\+Vertex}}$<$ typename cur\+\_\+edge\+::from, \mbox{\hyperlink{struct_g_lib_1_1_find_path_a959717513a34d1e5eea9749f6d7eaf0b}{graph}} $>$\+::result $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aee8f2212faebf4f009fa042e5eb195f2}{weights}} $>$\+::result, typename \mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$typename cur\+\_\+edges\+::\+Tail, wanted\+\_\+node$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aee8f2212faebf4f009fa042e5eb195f2}{weights}} $>$}
+
+
+
+Definition at line 57 of file find\+\_\+path.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aef13d63a281b7b9fc9202e0e9a46d6e6}\label{struct_g_lib_1_1_find_path_1_1_iterate_through_edges_aef13d63a281b7b9fc9202e0e9a46d6e6}} 
+\index{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}!found@{found}}
+\index{found@{found}!GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$@{GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}}
+\doxysubsubsection{\texorpdfstring{found}{found}}
+{\footnotesize\ttfamily template$<$class graph\+\_\+raw , typename start , typename finish $>$ \\
+template$<$class cur\+\_\+edges , class wanted\+\_\+node $>$ \\
+constexpr static bool \mbox{\hyperlink{struct_g_lib_1_1_find_path}{G\+Lib\+::\+Find\+Path}}$<$ graph\+\_\+raw, start, finish $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_find_path_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ cur\+\_\+edges, wanted\+\_\+node $>$\+::found\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= std::is\_same<}
+\DoxyCodeLine{                \textcolor{keyword}{typename} cur\_edge::to,}
+\DoxyCodeLine{                \textcolor{keyword}{typename} wanted\_node::vertex}
+\DoxyCodeLine{            >::value}
+
+\end{DoxyCode}
+
+
+Definition at line 38 of file find\+\_\+path.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/\+G\+Lib/\mbox{\hyperlink{find__path_8h}{find\+\_\+path.\+h}}\end{DoxyCompactItemize}

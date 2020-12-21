@@ -1,0 +1,70 @@
+\hypertarget{namespace_stream_functor_type}{}\doxysection{Stream\+Functor\+Type Namespace Reference}
+\label{namespace_stream_functor_type}\index{StreamFunctorType@{StreamFunctorType}}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class graph $>$ }\\using \mbox{\hyperlink{namespace_stream_functor_type_a1809e54a9aae6df57ea8b410d1f53360}{Consumer}} = \mbox{\hyperlink{class_functor}{Functor}}$<$ void(size\+\_\+t)$>$
+\item 
+{\footnotesize template$<$class graph $>$ }\\using \mbox{\hyperlink{namespace_stream_functor_type_a4a773a48b6a0f4f014319ea7c7db7cc0}{Predicate}} = \mbox{\hyperlink{class_functor}{Functor}}$<$ bool(size\+\_\+t)$>$
+\item 
+{\footnotesize template$<$class graph , class Result\+Type $>$ }\\using \mbox{\hyperlink{namespace_stream_functor_type_abf2ff9f72f186013f95ebe45ab995643}{Function}} = \mbox{\hyperlink{class_functor}{Functor}}$<$ Result\+Type(size\+\_\+t)$>$
+\item 
+{\footnotesize template$<$class graph , class Result\+Type $>$ }\\using \mbox{\hyperlink{namespace_stream_functor_type_a67e480df4b3e957cb95651982557cbcf}{Binary\+Operation}} = \mbox{\hyperlink{class_functor}{Functor}}$<$ Result\+Type(Result\+Type, size\+\_\+t)$>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents different types of functors for use in \mbox{\hyperlink{class_vertex_stream}{Vertex\+Stream}}. To use it, you need to pass graph as a template parameter and an index of a vertex in this graph as an argument. \begin{DoxySeeAlso}{See also}
+Class 
+
+\mbox{\hyperlink{class_functor}{Functor}} 
+
+Package java.\+util.\+function in Java 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespace_stream_functor_type_a67e480df4b3e957cb95651982557cbcf}\label{namespace_stream_functor_type_a67e480df4b3e957cb95651982557cbcf}} 
+\index{StreamFunctorType@{StreamFunctorType}!BinaryOperation@{BinaryOperation}}
+\index{BinaryOperation@{BinaryOperation}!StreamFunctorType@{StreamFunctorType}}
+\doxysubsubsection{\texorpdfstring{BinaryOperation}{BinaryOperation}}
+{\footnotesize\ttfamily template$<$class graph , class Result\+Type $>$ \\
+using \mbox{\hyperlink{namespace_stream_functor_type_a67e480df4b3e957cb95651982557cbcf}{Stream\+Functor\+Type\+::\+Binary\+Operation}} = typedef \mbox{\hyperlink{class_functor}{Functor}}$<$Result\+Type(Result\+Type, size\+\_\+t)$>$}
+
+
+
+Definition at line 23 of file stream\+\_\+functor\+\_\+type.\+h.
+
+\mbox{\Hypertarget{namespace_stream_functor_type_a1809e54a9aae6df57ea8b410d1f53360}\label{namespace_stream_functor_type_a1809e54a9aae6df57ea8b410d1f53360}} 
+\index{StreamFunctorType@{StreamFunctorType}!Consumer@{Consumer}}
+\index{Consumer@{Consumer}!StreamFunctorType@{StreamFunctorType}}
+\doxysubsubsection{\texorpdfstring{Consumer}{Consumer}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+using \mbox{\hyperlink{namespace_stream_functor_type_a1809e54a9aae6df57ea8b410d1f53360}{Stream\+Functor\+Type\+::\+Consumer}} = typedef \mbox{\hyperlink{class_functor}{Functor}}$<$void(size\+\_\+t)$>$}
+
+
+
+Definition at line 14 of file stream\+\_\+functor\+\_\+type.\+h.
+
+\mbox{\Hypertarget{namespace_stream_functor_type_abf2ff9f72f186013f95ebe45ab995643}\label{namespace_stream_functor_type_abf2ff9f72f186013f95ebe45ab995643}} 
+\index{StreamFunctorType@{StreamFunctorType}!Function@{Function}}
+\index{Function@{Function}!StreamFunctorType@{StreamFunctorType}}
+\doxysubsubsection{\texorpdfstring{Function}{Function}}
+{\footnotesize\ttfamily template$<$class graph , class Result\+Type $>$ \\
+using \mbox{\hyperlink{namespace_stream_functor_type_abf2ff9f72f186013f95ebe45ab995643}{Stream\+Functor\+Type\+::\+Function}} = typedef \mbox{\hyperlink{class_functor}{Functor}}$<$Result\+Type(size\+\_\+t)$>$}
+
+
+
+Definition at line 20 of file stream\+\_\+functor\+\_\+type.\+h.
+
+\mbox{\Hypertarget{namespace_stream_functor_type_a4a773a48b6a0f4f014319ea7c7db7cc0}\label{namespace_stream_functor_type_a4a773a48b6a0f4f014319ea7c7db7cc0}} 
+\index{StreamFunctorType@{StreamFunctorType}!Predicate@{Predicate}}
+\index{Predicate@{Predicate}!StreamFunctorType@{StreamFunctorType}}
+\doxysubsubsection{\texorpdfstring{Predicate}{Predicate}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+using \mbox{\hyperlink{namespace_stream_functor_type_a4a773a48b6a0f4f014319ea7c7db7cc0}{Stream\+Functor\+Type\+::\+Predicate}} = typedef \mbox{\hyperlink{class_functor}{Functor}}$<$bool(size\+\_\+t)$>$}
+
+
+
+Definition at line 17 of file stream\+\_\+functor\+\_\+type.\+h.
+

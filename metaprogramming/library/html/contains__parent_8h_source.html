@@ -70,11 +70,11 @@ $(function() {
 <div class="title">contains_parent.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="contains__parent_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;type_traits&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;type_list.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="type__list_8h.html">type_list.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_t_l.html">TL</a> {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> type_list, <span class="keyword">typename</span> T&gt;</div>
@@ -86,7 +86,7 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> type_list, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_check_contains_parent_3_01type__list_00_01_t_00_01false_01_4.html">   22</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_check_contains_parent.html">CheckContainsParent</a>&lt;type_list, T, false&gt; {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    constexpr <span class="keyword">static</span> <span class="keywordtype">bool</span> result = <a class="code" href="struct_t_l_1_1_contains_parent.html">TL::ContainsParent</a>&lt;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_check_contains_parent_3_01type__list_00_01_t_00_01false_01_4.html#a91bf261e2e6b5241196ba3a405123e6c">   23</a></span>&#160;    constexpr <span class="keyword">static</span> <span class="keywordtype">bool</span> result = <a class="code" href="struct_t_l_1_1_contains_parent.html">TL::ContainsParent</a>&lt;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">typename</span> type_list::Tail,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        T</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    &gt;::result;</div>
@@ -94,29 +94,31 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> type_list, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_check_contains_parent_3_01type__list_00_01_t_00_01true_01_4.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_check_contains_parent.html">CheckContainsParent</a>&lt;type_list, T, true&gt; {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    constexpr <span class="keyword">static</span> <span class="keywordtype">bool</span> result = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_check_contains_parent_3_01type__list_00_01_t_00_01true_01_4.html#a6559d81b7d1deebf257df159ff909466">   31</a></span>&#160;    constexpr <span class="keyword">static</span> <span class="keywordtype">bool</span> result = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_t_l.html">TL</a> {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> type_list, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_contains_parent.html">   36</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_contains_parent.html">ContainsParent</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        constexpr <span class="keyword">static</span> <span class="keywordtype">bool</span> result = <a class="code" href="struct_check_contains_parent.html">CheckContainsParent</a>&lt;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_contains_parent.html#aefa5a66d957fdcc3d7d0aba4f9988ee4">   37</a></span>&#160;        constexpr <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="struct_t_l_1_1_contains_parent.html#aefa5a66d957fdcc3d7d0aba4f9988ee4">result</a> = <a class="code" href="struct_check_contains_parent.html">CheckContainsParent</a>&lt;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            type_list,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            T,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            std::is_base_of&lt;typename type_list::Head, T&gt;::value</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        &gt;::result;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        &gt;<a class="code" href="struct_t_l_1_1_contains_parent.html#aefa5a66d957fdcc3d7d0aba4f9988ee4">::result</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_contains_parent_3_01_empty_type_list_00_01_t_01_4.html">   45</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_t_l_1_1_contains_parent.html">ContainsParent</a>&lt;<a class="code" href="struct_type_list.html">EmptyTypeList</a>, T&gt; {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        constexpr <span class="keyword">static</span> <span class="keywordtype">bool</span> result = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct_t_l_1_1_contains_parent_3_01_empty_type_list_00_01_t_01_4.html#afa02084095bbce4a23566997f913130c">   46</a></span>&#160;        constexpr <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="struct_t_l_1_1_contains_parent.html#aefa5a66d957fdcc3d7d0aba4f9988ee4">result</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astruct_t_l_1_1_contains_parent_html"><div class="ttname"><a href="struct_t_l_1_1_contains_parent.html">TL::ContainsParent</a></div><div class="ttdef"><b>Definition:</b> contains_parent.h:36</div></div>
-<div class="ttc" id="astruct_check_contains_parent_html"><div class="ttname"><a href="struct_check_contains_parent.html">CheckContainsParent</a></div><div class="ttdef"><b>Definition:</b> contains_parent.h:19</div></div>
-<div class="ttc" id="anamespace_t_l_html"><div class="ttname"><a href="namespace_t_l.html">TL</a></div><div class="ttdef"><b>Definition:</b> add.h:5</div></div>
-<div class="ttc" id="astruct_type_list_html"><div class="ttname"><a href="struct_type_list.html">TypeList</a></div><div class="ttdef"><b>Definition:</b> type_list.h:9</div></div>
+<div class="ttc" id="astruct_t_l_1_1_contains_parent_html"><div class="ttname"><a href="struct_t_l_1_1_contains_parent.html">TL::ContainsParent</a></div><div class="ttdef"><b>Definition:</b> <a href="contains__parent_8h_source.html#l00036">contains_parent.h:36</a></div></div>
+<div class="ttc" id="astruct_check_contains_parent_html"><div class="ttname"><a href="struct_check_contains_parent.html">CheckContainsParent</a></div><div class="ttdef"><b>Definition:</b> <a href="contains__parent_8h_source.html#l00019">contains_parent.h:19</a></div></div>
+<div class="ttc" id="anamespace_t_l_html"><div class="ttname"><a href="namespace_t_l.html">TL</a></div><div class="ttdef"><b>Definition:</b> <a href="add_8h_source.html#l00005">add.h:5</a></div></div>
+<div class="ttc" id="astruct_t_l_1_1_contains_parent_html_aefa5a66d957fdcc3d7d0aba4f9988ee4"><div class="ttname"><a href="struct_t_l_1_1_contains_parent.html#aefa5a66d957fdcc3d7d0aba4f9988ee4">TL::ContainsParent::result</a></div><div class="ttdeci">constexpr static bool result</div><div class="ttdef"><b>Definition:</b> <a href="contains__parent_8h_source.html#l00037">contains_parent.h:37</a></div></div>
+<div class="ttc" id="atype__list_8h_html"><div class="ttname"><a href="type__list_8h.html">type_list.h</a></div></div>
+<div class="ttc" id="astruct_type_list_html"><div class="ttname"><a href="struct_type_list.html">TypeList</a></div><div class="ttdef"><b>Definition:</b> <a href="type__list_8h_source.html#l00009">type_list.h:9</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

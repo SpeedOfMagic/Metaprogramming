@@ -1,0 +1,98 @@
+\hypertarget{struct_g_lib_1_1_d_f_s}{}\doxysection{G\+Lib\+::D\+FS$<$ cur\+\_\+node, graph, visited\+\_\+nodes $>$ Struct Template Reference}
+\label{struct_g_lib_1_1_d_f_s}\index{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$@{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}}
+
+
+{\ttfamily \#include $<$dfs.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_1_1_iterate_through_children}{Iterate\+Through\+Children}}
+\item 
+struct \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_1_1_iterate_through_children_3_01_empty_type_list_00_01cur__unvisited_01_4}{Iterate\+Through\+Children$<$ Empty\+Type\+List, cur\+\_\+unvisited $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_ae1f39b53d3890e6d215707e713d91baf}{upd\+\_\+visited}} = typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ cur\+\_\+node, 0, visited\+\_\+nodes $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_d_f_s_a19e62ce19b0a537bc3b97b08def80ca3}{result}}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_a7b8ee1736df19fdeb2b8059b864d4481}{iterate\+\_\+through\+\_\+children}} = \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_1_1_iterate_through_children}{Iterate\+Through\+Children}}$<$ typename cur\+\_\+node\+::children, \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_ae1f39b53d3890e6d215707e713d91baf}{upd\+\_\+visited}} $>$
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_af4c9d53f39362ff3e66b4cbda7a7a326}{new\+\_\+visited}} = typename \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_1_1_iterate_through_children_a54cebce8598527a91f056c89fedfb950}{iterate\+\_\+through\+\_\+children\+::new\+\_\+visited}}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_a19e62ce19b0a537bc3b97b08def80ca3}{result}} = typename \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_1_1_iterate_through_children_a0382953a4f2e892413a18a54cd74aa91}{iterate\+\_\+through\+\_\+children\+::result}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class cur\+\_\+node, class graph, class visited\+\_\+nodes = Empty\+Type\+List$>$\newline
+struct G\+Lib\+::\+D\+F\+S$<$ cur\+\_\+node, graph, visited\+\_\+nodes $>$}
+
+Performs Depth-\/\+First Search, starting from passed vertex. It doesn\textquotesingle{}t visit vertexes that have been visited already. It returns visited edges in chronological order, from which it\textquotesingle{}s easy to deduce \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}}. It\textquotesingle{}s more versatile than one may think) Also a variation of Composite pattern. 
+\begin{DoxyParams}{Parameters}
+{\em cur\+\_\+nod} & Template parameter, starting node in \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}}. \\
+\hline
+{\em graph} & \mbox{\hyperlink{struct_graph}{Graph}}, where \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}} should be performed. \\
+\hline
+{\em visited\+\_\+nodes} & Optional template parameter, nodes that are not allowed to be visited. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parameter result, \mbox{\hyperlink{struct_type_list}{Type\+List}} of visited edges in chronological order. Also returns parameter new\+\_\+visited as a side effect, which is a \mbox{\hyperlink{struct_type_list}{Type\+List}} of visited nodes. 
+\end{DoxyReturn}
+
+
+Definition at line 22 of file dfs.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_g_lib_1_1_d_f_s_a7b8ee1736df19fdeb2b8059b864d4481}\label{struct_g_lib_1_1_d_f_s_a7b8ee1736df19fdeb2b8059b864d4481}} 
+\index{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$@{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}!iterate\_through\_children@{iterate\_through\_children}}
+\index{iterate\_through\_children@{iterate\_through\_children}!GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$@{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}}
+\doxysubsubsection{\texorpdfstring{iterate\_through\_children}{iterate\_through\_children}}
+{\footnotesize\ttfamily template$<$class cur\+\_\+node , class graph , class visited\+\_\+nodes  = Empty\+Type\+List$>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{G\+Lib\+::\+D\+FS}}$<$ cur\+\_\+node, graph, visited\+\_\+nodes $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_d_f_s_a7b8ee1736df19fdeb2b8059b864d4481}{iterate\+\_\+through\+\_\+children}} =  \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_1_1_iterate_through_children}{Iterate\+Through\+Children}}$<$ typename cur\+\_\+node\+::children, \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_ae1f39b53d3890e6d215707e713d91baf}{upd\+\_\+visited}} $>$}
+
+
+
+Definition at line 67 of file dfs.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_d_f_s_af4c9d53f39362ff3e66b4cbda7a7a326}\label{struct_g_lib_1_1_d_f_s_af4c9d53f39362ff3e66b4cbda7a7a326}} 
+\index{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$@{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}!new\_visited@{new\_visited}}
+\index{new\_visited@{new\_visited}!GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$@{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}}
+\doxysubsubsection{\texorpdfstring{new\_visited}{new\_visited}}
+{\footnotesize\ttfamily template$<$class cur\+\_\+node , class graph , class visited\+\_\+nodes  = Empty\+Type\+List$>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{G\+Lib\+::\+D\+FS}}$<$ cur\+\_\+node, graph, visited\+\_\+nodes $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_d_f_s_af4c9d53f39362ff3e66b4cbda7a7a326}{new\+\_\+visited}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_1_1_iterate_through_children_a54cebce8598527a91f056c89fedfb950}{iterate\+\_\+through\+\_\+children\+::new\+\_\+visited}}}
+
+
+
+Definition at line 71 of file dfs.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_d_f_s_a19e62ce19b0a537bc3b97b08def80ca3}\label{struct_g_lib_1_1_d_f_s_a19e62ce19b0a537bc3b97b08def80ca3}} 
+\index{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$@{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}!result@{result}}
+\index{result@{result}!GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$@{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily template$<$class cur\+\_\+node , class graph , class visited\+\_\+nodes  = Empty\+Type\+List$>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{G\+Lib\+::\+D\+FS}}$<$ cur\+\_\+node, graph, visited\+\_\+nodes $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_d_f_s_a19e62ce19b0a537bc3b97b08def80ca3}{result}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_d_f_s_1_1_iterate_through_children_a0382953a4f2e892413a18a54cd74aa91}{iterate\+\_\+through\+\_\+children\+::result}}}
+
+
+
+Definition at line 72 of file dfs.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_d_f_s_ae1f39b53d3890e6d215707e713d91baf}\label{struct_g_lib_1_1_d_f_s_ae1f39b53d3890e6d215707e713d91baf}} 
+\index{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$@{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}!upd\_visited@{upd\_visited}}
+\index{upd\_visited@{upd\_visited}!GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$@{GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}}
+\doxysubsubsection{\texorpdfstring{upd\_visited}{upd\_visited}}
+{\footnotesize\ttfamily template$<$class cur\+\_\+node , class graph , class visited\+\_\+nodes  = Empty\+Type\+List$>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{G\+Lib\+::\+D\+FS}}$<$ cur\+\_\+node, graph, visited\+\_\+nodes $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_d_f_s_ae1f39b53d3890e6d215707e713d91baf}{upd\+\_\+visited}} =  typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$cur\+\_\+node, 0, visited\+\_\+nodes$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_d_f_s_a19e62ce19b0a537bc3b97b08def80ca3}{result}}}
+
+
+
+Definition at line 25 of file dfs.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/\+G\+Lib/\mbox{\hyperlink{dfs_8h}{dfs.\+h}}\end{DoxyCompactItemize}

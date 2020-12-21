@@ -72,6 +72,10 @@ namespace GLib {
 		using result = typename iterate_through_children::result;
 	};
 }
-/** \example get_visited_vertexes.h
+/** \example get_reached_vertexes.h
+* An example of how to use DFS.
+*/
+
+/** \example get_nodes_from_roots.h
 * An example of how to use DFS.
 */

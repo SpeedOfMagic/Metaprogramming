@@ -1,0 +1,151 @@
+\hypertarget{class_stream}{}\doxysection{Stream$<$ T $>$ Class Template Reference}
+\label{class_stream}\index{Stream$<$ T $>$@{Stream$<$ T $>$}}
+
+
+{\ttfamily \#include $<$stream.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stream_aeafbf525aad5502ac6780afd702c8043}{Stream}} (std\+::vector$<$ T $>$ stream)
+\item 
+{\footnotesize template$<$class Consumer $>$ }\\void \mbox{\hyperlink{class_stream_a2f0bfd8ac8161a6b3c2a7eb6df3de8b6}{For\+Each}} (Consumer consumer)
+\item 
+{\footnotesize template$<$class Predicate $>$ }\\\mbox{\hyperlink{class_stream}{Stream}} \& \mbox{\hyperlink{class_stream_aee1698aa4019a59f9b96369939234e46}{Filter}} (Predicate predicate)
+\item 
+{\footnotesize template$<$class New\+Type , class Function $>$ }\\\mbox{\hyperlink{class_stream}{Stream}}$<$ New\+Type $>$ \mbox{\hyperlink{class_stream_a07ff643b49e7bc9e6d14e8f53b1ceec0}{Map}} (Function function)
+\item 
+{\footnotesize template$<$class New\+Type , class Binary\+Operation $>$ }\\New\+Type \mbox{\hyperlink{class_stream_a87b33906b557ffdcbf164c8cea86aed2}{Reduce}} (Binary\+Operation binary\+\_\+operation, New\+Type default\+\_\+value)
+\item 
+std\+::vector$<$ T $>$ \mbox{\hyperlink{class_stream_a40517a0df50360b4034468345cdc44c4}{Collect}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Stream$<$ T $>$}
+
+Represents an analogue of std\+::ranges. Unlike std\+::ranges, this class is compatible with earlier standards. It was made specifically for indexes of vertexes, but it can be used for other purposes. If this is a stream of indexes of vertexes, then it\textquotesingle{}s recommended to use functors in Functor\+Stream\+Type. \begin{DoxySeeAlso}{See also}
+Functor\+Stream\+Type 
+
+java.\+util.\+stream.\+Stream 
+\end{DoxySeeAlso}
+
+
+Definition at line 14 of file stream.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stream_aeafbf525aad5502ac6780afd702c8043}\label{class_stream_aeafbf525aad5502ac6780afd702c8043}} 
+\index{Stream$<$ T $>$@{Stream$<$ T $>$}!Stream@{Stream}}
+\index{Stream@{Stream}!Stream$<$ T $>$@{Stream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Stream()}{Stream()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_stream}{Stream}}$<$ T $>$\+::\mbox{\hyperlink{class_stream}{Stream}} (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line 19 of file stream.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stream_a40517a0df50360b4034468345cdc44c4}\label{class_stream_a40517a0df50360b4034468345cdc44c4}} 
+\index{Stream$<$ T $>$@{Stream$<$ T $>$}!Collect@{Collect}}
+\index{Collect@{Collect}!Stream$<$ T $>$@{Stream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Collect()}{Collect()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$T$>$ \mbox{\hyperlink{class_stream}{Stream}}$<$ T $>$\+::Collect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Collects stream into a vector. \begin{DoxyReturn}{Returns}
+Contents of a stream in a vector. 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file stream.\+h.
+
+\mbox{\Hypertarget{class_stream_aee1698aa4019a59f9b96369939234e46}\label{class_stream_aee1698aa4019a59f9b96369939234e46}} 
+\index{Stream$<$ T $>$@{Stream$<$ T $>$}!Filter@{Filter}}
+\index{Filter@{Filter}!Stream$<$ T $>$@{Stream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Filter()}{Filter()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$class Predicate $>$ \\
+\mbox{\hyperlink{class_stream}{Stream}}\& \mbox{\hyperlink{class_stream}{Stream}}$<$ T $>$\+::Filter (\begin{DoxyParamCaption}\item[{Predicate}]{predicate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes elements from stream where predicate returns false. 
+\begin{DoxyParams}{Parameters}
+{\em predicate} & Predicate, that takes object and returns true or false. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+This stream, after modification. 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file stream.\+h.
+
+\mbox{\Hypertarget{class_stream_a2f0bfd8ac8161a6b3c2a7eb6df3de8b6}\label{class_stream_a2f0bfd8ac8161a6b3c2a7eb6df3de8b6}} 
+\index{Stream$<$ T $>$@{Stream$<$ T $>$}!ForEach@{ForEach}}
+\index{ForEach@{ForEach}!Stream$<$ T $>$@{Stream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ForEach()}{ForEach()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$class Consumer $>$ \\
+void \mbox{\hyperlink{class_stream}{Stream}}$<$ T $>$\+::For\+Each (\begin{DoxyParamCaption}\item[{Consumer}]{consumer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Performs passed action on every index in stream. 
+\begin{DoxyParams}{Parameters}
+{\em consumer} & Consumer, that takes object and performs an action. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 26 of file stream.\+h.
+
+\mbox{\Hypertarget{class_stream_a07ff643b49e7bc9e6d14e8f53b1ceec0}\label{class_stream_a07ff643b49e7bc9e6d14e8f53b1ceec0}} 
+\index{Stream$<$ T $>$@{Stream$<$ T $>$}!Map@{Map}}
+\index{Map@{Map}!Stream$<$ T $>$@{Stream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Map()}{Map()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$class New\+Type , class Function $>$ \\
+\mbox{\hyperlink{class_stream}{Stream}}$<$New\+Type$>$ \mbox{\hyperlink{class_stream}{Stream}}$<$ T $>$\+::Map (\begin{DoxyParamCaption}\item[{Function}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Converts every object into another one. 
+\begin{DoxyParams}{Parameters}
+{\em function} & Function, that takes object and returns another object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New stream, after modification. 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file stream.\+h.
+
+\mbox{\Hypertarget{class_stream_a87b33906b557ffdcbf164c8cea86aed2}\label{class_stream_a87b33906b557ffdcbf164c8cea86aed2}} 
+\index{Stream$<$ T $>$@{Stream$<$ T $>$}!Reduce@{Reduce}}
+\index{Reduce@{Reduce}!Stream$<$ T $>$@{Stream$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Reduce()}{Reduce()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$class New\+Type , class Binary\+Operation $>$ \\
+New\+Type \mbox{\hyperlink{class_stream}{Stream}}$<$ T $>$\+::Reduce (\begin{DoxyParamCaption}\item[{Binary\+Operation}]{binary\+\_\+operation,  }\item[{New\+Type}]{default\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds up all objects by using specific Binary\+Operation. 
+\begin{DoxyParams}{Parameters}
+{\em binary\+\_\+operation} & Binary\+Operation, that takes result and current object, and returns result. \\
+\hline
+{\em default\+\_\+value} & Starting result of binary\+\_\+operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Final result of binary\+\_\+operation 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file stream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/\mbox{\hyperlink{stream_8h}{stream.\+h}}\end{DoxyCompactItemize}

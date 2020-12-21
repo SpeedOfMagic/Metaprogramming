@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['type_5fat_2eh_321',['type_at.h',['../type__at_8h.html',1,'']]],
-  ['type_5flist_2eh_322',['type_list.h',['../type__list_8h.html',1,'']]]
+  ['remove_2eh_387',['remove.h',['../remove_8h.html',1,'']]],
+  ['replace_2eh_388',['replace.h',['../replace_8h.html',1,'']]],
+  ['reverse_2eh_389',['reverse.h',['../reverse_8h.html',1,'']]]
 ];

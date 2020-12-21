@@ -66,13 +66,11 @@ $(function() {
 <div class="title">ConvertGraph&lt; From, To, graph &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="convert__graph_8h_source.html">convert_graph.h</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;GraphType From, GraphType To, class graph&gt;<br />
 struct ConvertGraph&lt; From, To, graph &gt;</h3>
 
-<p>An adapter to convert graph of type From to type To. Defined separate from its realizations in order to avoid cycle dependency. Is used as a visitor in Visitor pattern. </p><dl class="section see"><dt>See also</dt><dd>GraphType </dd></dl>
+<p>An adapter to convert graph of type From to type To. Defined separate from its realizations in order to avoid cycle dependency. Before convertion, don't forget to include file of a required implementation. Is used as a visitor in Visitor pattern. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72">GraphType</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">From</td><td>Template parameter </td></tr>
@@ -82,6 +80,8 @@ struct ConvertGraph&lt; From, To, graph &gt;</h3>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Parameter result, resulting graph. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="convert__graph_8h_source.html#l00017">17</a> of file <a class="el" href="convert__graph_8h_source.html">convert_graph.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>graph/graphs/<a class="el" href="convert__graph_8h_source.html">convert_graph.h</a></li>
 </ul>

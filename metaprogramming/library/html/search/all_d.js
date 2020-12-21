@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['remove_97',['Remove',['../struct_t_l_1_1_remove.html',1,'TL']]],
-  ['remove_3c_20emptytypelist_2c_20t_20_3e_98',['Remove&lt; EmptyTypeList, T &gt;',['../struct_t_l_1_1_remove_3_01_empty_type_list_00_01_t_01_4.html',1,'TL']]],
-  ['remove_3c_20type_5flist_2c_20typename_20type_5flist_3a_3ahead_20_3e_99',['Remove&lt; type_list, typename type_list::Head &gt;',['../struct_t_l_1_1_remove_3_01type__list_00_01typename_01type__list_1_1_head_01_4.html',1,'TL']]],
-  ['removeall_100',['RemoveAll',['../struct_t_l_1_1_remove_all.html',1,'TL']]],
-  ['removeall_3c_20type_5flist_2c_20typename_20type_5flist_3a_3ahead_20_3e_101',['RemoveAll&lt; type_list, typename type_list::Head &gt;',['../struct_t_l_1_1_remove_all_3_01type__list_00_01typename_01type__list_1_1_head_01_4.html',1,'TL']]],
-  ['replace_102',['Replace',['../struct_t_l_1_1_replace.html',1,'TL']]],
-  ['replace_3c_20t_2c_200_2c_20typelist_3c_20arg_2c_20args_2e_2e_2e_20_3e_20_3e_103',['Replace&lt; T, 0, TypeList&lt; Arg, Args... &gt; &gt;',['../struct_t_l_1_1_replace_3_01_t_00_010_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html',1,'TL']]],
-  ['replace_3c_20t_2c_20ind_2c_20typelist_3c_20arg_2c_20args_2e_2e_2e_20_3e_20_3e_104',['Replace&lt; T, ind, TypeList&lt; Arg, Args... &gt; &gt;',['../struct_t_l_1_1_replace_3_01_t_00_01ind_00_01_type_list_3_01_arg_00_01_args_8_8_8_01_4_01_4.html',1,'TL']]]
+  ['path_174',['path',['../struct_g_lib_1_1_find_path_1_1_iterate_through_edges.html#a3f1e50871128c9e5e3fe68bed2256e92',1,'GLib::FindPath::IterateThroughEdges::path()'],['../struct_g_lib_1_1_find_path_1_1_iterate_through_edges_3_01_empty_type_list_00_01wanted__node_01_4.html#ae94bf375392ccf9532848d71f301a5e6',1,'GLib::FindPath::IterateThroughEdges&lt; EmptyTypeList, wanted_node &gt;::path()'],['../struct_g_lib_1_1_find_path.html#a2151e5c7f64957d38475651c9e20503f',1,'GLib::FindPath::path()']]],
+  ['pointer_5fstructure_175',['POINTER_STRUCTURE',['../graph__type_8h.html#a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71',1,'graph_type.h']]],
+  ['pointer_5fstructure_5fgraph_2eh_176',['pointer_structure_graph.h',['../pointer__structure__graph_8h.html',1,'']]],
+  ['pointer_5fstructure_5fnode_2eh_177',['pointer_structure_node.h',['../pointer__structure__node_8h.html',1,'']]],
+  ['pointerstructuregraph_178',['PointerStructureGraph',['../struct_pointer_structure_graph.html',1,'']]],
+  ['pointerstructurenode_179',['PointerStructureNode',['../struct_pointer_structure_node.html',1,'']]],
+  ['predicate_180',['Predicate',['../namespace_stream_functor_type.html#a4a773a48b6a0f4f014319ea7c7db7cc0',1,'StreamFunctorType']]]
 ];

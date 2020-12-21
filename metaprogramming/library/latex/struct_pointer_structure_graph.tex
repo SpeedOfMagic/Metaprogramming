@@ -1,10 +1,10 @@
-\hypertarget{struct_pointer_structure_graph}{}\doxysection{Pointer\+Structure\+Graph$<$ vertexes $>$ Struct Template Reference}
-\label{struct_pointer_structure_graph}\index{PointerStructureGraph$<$ vertexes $>$@{PointerStructureGraph$<$ vertexes $>$}}
+\hypertarget{struct_pointer_structure_graph}{}\doxysection{Pointer\+Structure\+Graph$<$ nodes $>$ Struct Template Reference}
+\label{struct_pointer_structure_graph}\index{PointerStructureGraph$<$ nodes $>$@{PointerStructureGraph$<$ nodes $>$}}
 
 
 {\ttfamily \#include $<$pointer\+\_\+structure\+\_\+graph.\+h$>$}
 
-Inheritance diagram for Pointer\+Structure\+Graph$<$ vertexes $>$\+:\begin{figure}[H]
+Inheritance diagram for Pointer\+Structure\+Graph$<$ nodes $>$\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{struct_pointer_structure_graph}
@@ -13,29 +13,67 @@ Inheritance diagram for Pointer\+Structure\+Graph$<$ vertexes $>$\+:\begin{figur
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \mbox{\hyperlink{struct_pointer_structure_graph_1_1_d_f_s}{D\+FS}}
-\item 
-struct \mbox{\hyperlink{struct_pointer_structure_graph_1_1_node}{Node}}
+struct \mbox{\hyperlink{struct_pointer_structure_graph_1_1_convert_to}{Convert\+To}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{struct_pointer_structure_graph_a3e713e11b4c11e770535a95e3ec79e3b}\label{struct_pointer_structure_graph_a3e713e11b4c11e770535a95e3ec79e3b}} 
-using \mbox{\hyperlink{struct_pointer_structure_graph_a3e713e11b4c11e770535a95e3ec79e3b}{vertexes\+\_\+}} = vertexes
+using \mbox{\hyperlink{struct_pointer_structure_graph_a407c903b560b99cc3dca16f17d21161f}{nodes\+\_\+}} = nodes
 \begin{DoxyCompactList}\small\item\em All accounted vertexes in this graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+constexpr static \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72}{Graph\+Type}} \mbox{\hyperlink{struct_pointer_structure_graph_a45818ce5da3491a71f9a8a6219aa111a}{T\+Y\+PE}} = \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71}{P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\subsubsection*{template$<$class vertexes$>$\newline
-struct Pointer\+Structure\+Graph$<$ vertexes $>$}
+\subsubsection*{template$<$class nodes$>$\newline
+struct Pointer\+Structure\+Graph$<$ nodes $>$}
 
-Represents graph as a structure with pointers Every vertex must contain \mbox{\hyperlink{struct_type_list}{Type\+List}} \textquotesingle{}\textquotesingle{}children\textquotesingle{}\textquotesingle{}, which is a \mbox{\hyperlink{struct_type_list}{Type\+List}} of Edges, showing who can be reached from this vertex. 
+Represents graph as a structure with pointers Every vertex must be contained within node. Node must have a \mbox{\hyperlink{struct_type_list}{Type\+List}} \textquotesingle{}\textquotesingle{}children\textquotesingle{}\textquotesingle{}, which is a \mbox{\hyperlink{struct_type_list}{Type\+List}} of Edges, showing who can be reached from this vertex. Also node must have a field \textquotesingle{}\textquotesingle{}vertex\textquotesingle{}\textquotesingle{} $\sim$--- the vertex this node contains. 
 \begin{DoxyParams}{Parameters}
 {\em vertexes} & Template parameter, vertexes in this graph \\
 \hline
 \end{DoxyParams}
 
 
+Definition at line 21 of file pointer\+\_\+structure\+\_\+graph.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_pointer_structure_graph_a407c903b560b99cc3dca16f17d21161f}\label{struct_pointer_structure_graph_a407c903b560b99cc3dca16f17d21161f}} 
+\index{PointerStructureGraph$<$ nodes $>$@{PointerStructureGraph$<$ nodes $>$}!nodes\_@{nodes\_}}
+\index{nodes\_@{nodes\_}!PointerStructureGraph$<$ nodes $>$@{PointerStructureGraph$<$ nodes $>$}}
+\doxysubsubsection{\texorpdfstring{nodes\_}{nodes\_}}
+{\footnotesize\ttfamily template$<$class nodes $>$ \\
+using \mbox{\hyperlink{struct_pointer_structure_graph}{Pointer\+Structure\+Graph}}$<$ nodes $>$\+::\mbox{\hyperlink{struct_pointer_structure_graph_a407c903b560b99cc3dca16f17d21161f}{nodes\+\_\+}} =  nodes}
+
+
+
+All accounted vertexes in this graph. 
+
+
+
+Definition at line 25 of file pointer\+\_\+structure\+\_\+graph.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_pointer_structure_graph_a45818ce5da3491a71f9a8a6219aa111a}\label{struct_pointer_structure_graph_a45818ce5da3491a71f9a8a6219aa111a}} 
+\index{PointerStructureGraph$<$ nodes $>$@{PointerStructureGraph$<$ nodes $>$}!TYPE@{TYPE}}
+\index{TYPE@{TYPE}!PointerStructureGraph$<$ nodes $>$@{PointerStructureGraph$<$ nodes $>$}}
+\doxysubsubsection{\texorpdfstring{TYPE}{TYPE}}
+{\footnotesize\ttfamily template$<$class nodes $>$ \\
+constexpr static \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72}{Graph\+Type}} \mbox{\hyperlink{struct_pointer_structure_graph}{Pointer\+Structure\+Graph}}$<$ nodes $>$\+::T\+Y\+PE = \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71}{P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Definition at line 22 of file pointer\+\_\+structure\+\_\+graph.\+h.
+
+
+
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-graph/graphs/pointer\+\_\+structure\+\_\+graph.\+h\end{DoxyCompactItemize}
+graph/graphs/\mbox{\hyperlink{pointer__structure__graph_8h}{pointer\+\_\+structure\+\_\+graph.\+h}}\end{DoxyCompactItemize}

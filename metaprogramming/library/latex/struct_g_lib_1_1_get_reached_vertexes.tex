@@ -1,0 +1,86 @@
+\hypertarget{struct_g_lib_1_1_get_reached_vertexes}{}\doxysection{G\+Lib\+::Get\+Reached\+Vertexes$<$ graph, start $>$ Struct Template Reference}
+\label{struct_g_lib_1_1_get_reached_vertexes}\index{GLib::GetReachedVertexes$<$ graph, start $>$@{GLib::GetReachedVertexes$<$ graph, start $>$}}
+
+
+{\ttfamily \#include $<$get\+\_\+reached\+\_\+vertexes.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}
+\item 
+struct \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_1_1_iterate_through_edges_3_01_empty_type_list_01_4}{Iterate\+Through\+Edges$<$ Empty\+Type\+List $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_a64afcc138305cd560ab75c62c20bb7d1}{start\+\_\+node}} = typename \mbox{\hyperlink{struct_g_lib_1_1_find_node_by_vertex}{Find\+Node\+By\+Vertex}}$<$ start, graph $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}{result}}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_a65810cba6c66e73fcca8b559af4f6169}{dfs\+\_\+search}} = typename \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}}$<$ \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_a64afcc138305cd560ab75c62c20bb7d1}{start\+\_\+node}}, graph $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}{result}}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}{result}} = typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ start, 0, typename \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$ \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_a65810cba6c66e73fcca8b559af4f6169}{dfs\+\_\+search}} $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}{result}} $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}{result}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class graph, typename start$>$\newline
+struct G\+Lib\+::\+Get\+Reached\+Vertexes$<$ graph, start $>$}
+
+Gets all vertexes that can be reached from vertex start. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & Template parameter, graph to process \\
+\hline
+{\em start} & Template parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parameter result, all vertexes that are reached from start. 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file get\+\_\+reached\+\_\+vertexes.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_g_lib_1_1_get_reached_vertexes_a65810cba6c66e73fcca8b559af4f6169}\label{struct_g_lib_1_1_get_reached_vertexes_a65810cba6c66e73fcca8b559af4f6169}} 
+\index{GLib::GetReachedVertexes$<$ graph, start $>$@{GLib::GetReachedVertexes$<$ graph, start $>$}!dfs\_search@{dfs\_search}}
+\index{dfs\_search@{dfs\_search}!GLib::GetReachedVertexes$<$ graph, start $>$@{GLib::GetReachedVertexes$<$ graph, start $>$}}
+\doxysubsubsection{\texorpdfstring{dfs\_search}{dfs\_search}}
+{\footnotesize\ttfamily template$<$class graph , typename start $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes}{G\+Lib\+::\+Get\+Reached\+Vertexes}}$<$ graph, start $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_a65810cba6c66e73fcca8b559af4f6169}{dfs\+\_\+search}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}}$<$\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_a64afcc138305cd560ab75c62c20bb7d1}{start\+\_\+node}}, graph$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}{result}}}
+
+
+
+Definition at line 27 of file get\+\_\+reached\+\_\+vertexes.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}\label{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}} 
+\index{GLib::GetReachedVertexes$<$ graph, start $>$@{GLib::GetReachedVertexes$<$ graph, start $>$}!result@{result}}
+\index{result@{result}!GLib::GetReachedVertexes$<$ graph, start $>$@{GLib::GetReachedVertexes$<$ graph, start $>$}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily template$<$class graph , typename start $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes}{G\+Lib\+::\+Get\+Reached\+Vertexes}}$<$ graph, start $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}{result}} =  typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ start, 0, typename \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_1_1_iterate_through_edges}{Iterate\+Through\+Edges}}$<$\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_a65810cba6c66e73fcca8b559af4f6169}{dfs\+\_\+search}}$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}{result}} $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}{result}}}
+
+
+
+Definition at line 46 of file get\+\_\+reached\+\_\+vertexes.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_get_reached_vertexes_a64afcc138305cd560ab75c62c20bb7d1}\label{struct_g_lib_1_1_get_reached_vertexes_a64afcc138305cd560ab75c62c20bb7d1}} 
+\index{GLib::GetReachedVertexes$<$ graph, start $>$@{GLib::GetReachedVertexes$<$ graph, start $>$}!start\_node@{start\_node}}
+\index{start\_node@{start\_node}!GLib::GetReachedVertexes$<$ graph, start $>$@{GLib::GetReachedVertexes$<$ graph, start $>$}}
+\doxysubsubsection{\texorpdfstring{start\_node}{start\_node}}
+{\footnotesize\ttfamily template$<$class graph , typename start $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes}{G\+Lib\+::\+Get\+Reached\+Vertexes}}$<$ graph, start $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_a64afcc138305cd560ab75c62c20bb7d1}{start\+\_\+node}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_find_node_by_vertex}{Find\+Node\+By\+Vertex}}$<$start, graph$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_reached_vertexes_ae55c10b6d3433bc0abd58d122243f43c}{result}}}
+
+
+
+Definition at line 25 of file get\+\_\+reached\+\_\+vertexes.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/\+G\+Lib/\mbox{\hyperlink{get__reached__vertexes_8h}{get\+\_\+reached\+\_\+vertexes.\+h}}\end{DoxyCompactItemize}

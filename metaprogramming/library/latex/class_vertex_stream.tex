@@ -1,0 +1,66 @@
+\hypertarget{class_vertex_stream}{}\doxysection{Vertex\+Stream$<$ stream, graph $>$ Class Template Reference}
+\label{class_vertex_stream}\index{VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}}
+
+
+{\ttfamily \#include $<$vertex\+\_\+stream.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{class_vertex_stream_a5b1b3bc4d69db332313fcf7a4a02f4f6}{Map\+Vertexes\+To\+Reversed\+Indexes}} ()
+\item 
+static \mbox{\hyperlink{class_stream}{Stream}}$<$ size\+\_\+t $>$ \mbox{\hyperlink{class_vertex_stream_a0dd3f9c1fd75e30d84ca9dcb4764f189}{Map\+Vertexes\+To\+Indexes}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class stream, class graph$>$\newline
+class Vertex\+Stream$<$ stream, graph $>$}
+
+Represents a stream of vertexes of a graph 
+\begin{DoxyParams}{Parameters}
+{\em stream} & Template parameter, \mbox{\hyperlink{struct_type_list}{Type\+List}} of vertexes of a graph \\
+\hline
+{\em graph} & Template parameter \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 19 of file vertex\+\_\+stream.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vertex_stream_a0dd3f9c1fd75e30d84ca9dcb4764f189}\label{class_vertex_stream_a0dd3f9c1fd75e30d84ca9dcb4764f189}} 
+\index{VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}!MapVertexesToIndexes@{MapVertexesToIndexes}}
+\index{MapVertexesToIndexes@{MapVertexesToIndexes}!VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}}
+\doxysubsubsection{\texorpdfstring{MapVertexesToIndexes()}{MapVertexesToIndexes()}}
+{\footnotesize\ttfamily template$<$class stream , class graph $>$ \\
+static \mbox{\hyperlink{class_stream}{Stream}}$<$size\+\_\+t$>$ \mbox{\hyperlink{class_vertex_stream}{Vertex\+Stream}}$<$ stream, graph $>$\+::Map\+Vertexes\+To\+Indexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Converts given stream into vector of indexes of vertexes. \begin{DoxyReturn}{Returns}
+Vector of indexes of vertexes 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file vertex\+\_\+stream.\+h.
+
+\mbox{\Hypertarget{class_vertex_stream_a5b1b3bc4d69db332313fcf7a4a02f4f6}\label{class_vertex_stream_a5b1b3bc4d69db332313fcf7a4a02f4f6}} 
+\index{VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}!MapVertexesToReversedIndexes@{MapVertexesToReversedIndexes}}
+\index{MapVertexesToReversedIndexes@{MapVertexesToReversedIndexes}!VertexStream$<$ stream, graph $>$@{VertexStream$<$ stream, graph $>$}}
+\doxysubsubsection{\texorpdfstring{MapVertexesToReversedIndexes()}{MapVertexesToReversedIndexes()}}
+{\footnotesize\ttfamily template$<$class stream , class graph $>$ \\
+static std\+::vector$<$size\+\_\+t$>$ \mbox{\hyperlink{class_vertex_stream}{Vertex\+Stream}}$<$ stream, graph $>$\+::Map\+Vertexes\+To\+Reversed\+Indexes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Converts given stream into reversed vector of indexes of vertexes. Also it\textquotesingle{}s based on a variation of \char`\"{}\+Chain of a responsibility\char`\"{} pattern \begin{DoxyReturn}{Returns}
+Vector of reversed indexes of vertexes 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file vertex\+\_\+stream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/\mbox{\hyperlink{vertex__stream_8h}{vertex\+\_\+stream.\+h}}\end{DoxyCompactItemize}
