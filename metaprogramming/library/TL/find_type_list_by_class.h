@@ -34,7 +34,7 @@ namespace TL {
 	template<typename T, class type_list, class ...type_lists>
 	struct FindTypeListByClass {
 		using result = typename CheckFindTypeListByClass<
-			TL::Contains<type_list, T>::result,
+			TL::Contains<type_list, T>::value,
 			T,
 			type_list,
 			type_lists...

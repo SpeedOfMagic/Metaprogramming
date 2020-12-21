@@ -29,6 +29,7 @@ struct ConvertGraph<POINTER_STRUCTURE, EDGE_LIST, graph> {
 	struct IterateThroughNodes {
 		using tail_call = IterateThroughNodes<typename cur_nodes::Tail>;
 		using cur_node = typename cur_nodes::Head;
+		static_assert(TL::Contains<typename graph::nodes_, cur_node>::value, "asdsd");
 
 		using vertexes = typename TL::Add<
 			typename cur_node::vertex,
@@ -42,6 +43,7 @@ struct ConvertGraph<POINTER_STRUCTURE, EDGE_LIST, graph> {
 		>::result;
 	};
 
+	template<>
 	struct IterateThroughNodes<EmptyTypeList> {
 		using vertexes = EmptyTypeList;
 		using edges = EmptyTypeList;
@@ -77,7 +79,7 @@ struct ConvertGraph<ADJACENCY_MATRIX, EDGE_LIST, graph> {
 			col
 		>::value;
 		using weight = std::conditional_t<
-			std::is_same<Objects::Boolean<true>, cell>,
+			std::is_same<Objects::Boolean<true>, cell>::value,
 			NullType,
 			cell
 		>;
@@ -85,16 +87,17 @@ struct ConvertGraph<ADJACENCY_MATRIX, EDGE_LIST, graph> {
 		using tail_result = typename IterateThroughMatrix<cur_index - 1>::result;
 
 		using result = std::conditional_t<
-			std::is_same<cell, Objects::Boolean<false>>,
+			std::is_same<Objects::Boolean<false>, cell>::value,
+			tail_result,
 			typename TL::Add<
 				Edge<from, to, weight>,
 				0,
 				tail_result
-			>::result,
-			tail_result
+			>::result
 		>;
 	};
 
+	template<>
 	struct IterateThroughMatrix<-1> {
 		using result = EmptyTypeList;
 	};

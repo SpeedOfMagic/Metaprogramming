@@ -13,7 +13,7 @@ namespace TL {
 	 * @param T Typename to add to a specific position in TypeList
 	 * @param ind Number of this position
 	 * @param TypeList<Arg, Args...> This TypeList
-	 * @result Parameter result, new type list with typename added to position ind
+	 * @value Parameter value, new type list with typename added to position ind
 	 */
 	template<typename T, size_t ind, class Arg, class ...Args>
 	struct Add<T, ind, TypeList<Arg, Args...>> {

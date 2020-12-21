@@ -2,6 +2,8 @@
 
 #include <cstdint>
 
+#include "is_type_list.h"
+
 #include "type_list.h"
 
 namespace TL {
@@ -13,6 +15,7 @@ namespace TL {
 	 */
 	template<class type_list, typename T>
 	struct IndexOf {
+		static_assert(IsTypeList<type_list>::value, "First passed parameter must be a TypeList");
 		constexpr static int value = 1 + IndexOf<typename type_list::Tail, T>::value;
 	};
 
@@ -21,6 +24,7 @@ namespace TL {
 	 */
 	template<class type_list>
 	struct IndexOf<type_list, typename type_list::Head> {
+		static_assert(IsTypeList<type_list>::value, "First passed parameter must be a TypeList");
 		constexpr static int value = 0;
 	};
 

@@ -17,7 +17,7 @@
  * Every vertex must be contained within node. Node must have a TypeList ''children'', 
  * which is a TypeList of Edges, showing who can be reached from this vertex.
  * Also node must have a field ''vertex'' ~--- the vertex this node contains.
- * @param vertexes Template parameter, vertexes in this graph
+ * @param nodes Template parameter, nodes in this graph
  */
 template<class nodes>
 struct PointerStructureGraph : public Graph {

@@ -21,8 +21,8 @@ struct ConvertGraph<EDGE_LIST, ADJACENCY_MATRIX, graph> {
 
 		using from = typename cur_edge::from;
 		using to = typename cur_edge::to;
-		static_assert(TL::Contains<vertexes, from>::result, "Every vertex must be in graph");
-		static_assert(TL::Contains<vertexes, to>::result, "Every vertex must be in graph");
+		static_assert(TL::Contains<vertexes, from>::value, "Every vertex must be in graph");
+		static_assert(TL::Contains<vertexes, to>::value, "Every vertex must be in graph");
 
 		constexpr static size_t from_ind = TL::IndexOf<vertexes, typename cur_edge::from>::value;
 		constexpr static size_t to_ind = TL::IndexOf<vertexes, typename cur_edge::to>::value;

@@ -13,10 +13,10 @@
 #include "../library/TL/type_list.h"
 
 int main() {
-	using vertexes = TypeList<char, short, int, long, long long, float, double>;
+	using vertexes = TypeList<short, float, double>;//TypeList<char, short, int, long, long long, float, double>;
 	using edges = TypeList<
-		Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
-		Edge<short, float>, Edge<float, double>, Edge<int, double>
+		//Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
+		Edge<short, float>, Edge<float, double>//, Edge<int, double>
 	>;
 
 	using v = TypeList<int, short, char>;

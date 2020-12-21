@@ -49,7 +49,7 @@ struct AdjacencyListGraph : public Graph {
 	 */
 	template<typename vertex>
 	constexpr static size_t GetVertexIndex() {
-		static_assert(TL::Contains<vertexes_, vertex>::result, "Graph doesn't contain vertex from");
+		static_assert(TL::Contains<vertexes_, vertex>::value, "Graph doesn't contain vertex from");
 		return TL::IndexOf<vertexes_, vertex>::value;
 	}
 
