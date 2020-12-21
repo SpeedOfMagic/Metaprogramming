@@ -1,6 +1,5 @@
 #pragma once
 
-#include "../../TL/is_null_type.h"
 #include "../../TL/fill_type_list_with_object.h"
 #include "../../TL/index_of.h"
 
@@ -28,7 +27,7 @@ struct ConvertGraph<EDGE_LIST, ADJACENCY_MATRIX, graph> {
 		constexpr static size_t to_ind = TL::IndexOf<vertexes, typename cur_edge::to>::value;
 
 		using new_weight = std::conditional_t<
-			TL::IsNullType<typename cur_edge::weight>::value,
+			std::is_same_v<NullType, typename cur_edge::weight>,
 			Objects::Boolean<true>,
 			typename cur_edge::weight
 		>;
