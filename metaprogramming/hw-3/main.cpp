@@ -4,7 +4,9 @@
 #include "../library/graph/edge.h"
 #include "../library/graph/graphs/edge_list_graph.h"
 #include "../library/graph/GLib/get_reached_vertexes.h"
-#include "../library/graph/graphs/convert_to_adjacency_list.h"
+#include "../library/graph/convert/convert_to_adjacency_list.h"
+#include "../library/graph/convert/convert_to_adjacency_matrix.h"
+#include "../library/graph/convert/convert_to_pointer_structure.h"
 #include "../library/graph/GLib/get_nodes_from_roots.h"
 
 #include "../library/TL/type_list.h"
@@ -15,6 +17,13 @@ int main() {
 		Edge<char, short>, Edge<short, int>, Edge<int, long>, Edge<long, long long>,
 		Edge<short, float>, Edge<float, double>, Edge<int, double>
 	>;
+
+	using v = TypeList<int, short, char>;
+	using e = TypeList<
+		Edge<char, short>, Edge<short, int>, Edge<int, char>
+	>;
+	using G = EdgeListGraph<v, e>;
+	using GG = typename ConvertGraph<EDGE_LIST, ADJACENCY_MATRIX, G>::result;
 
 	using g1 = EdgeListGraph<vertexes, edges>::ConvertTo<ADJACENCY_LIST>;
 	using g2 = g1::result;
@@ -29,5 +38,7 @@ int main() {
 	>::result;
 
 	res xz;
+	GG xx;
+
 	return 0;
 }

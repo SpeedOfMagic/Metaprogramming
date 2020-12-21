@@ -10,7 +10,15 @@
 using Objects::Boolean;
 
 int main() {
-	using vertexes = TypeList<char, int, float, double>;  // Default vertexes
+	/* Graph looks like this:
+	   ----> int ----|
+	  /             \|/
+	char --------> double
+	  \             /|\
+	   ---> float ---|
+	*/
+
+	using vertexes = TypeList<char, int, float, double>;
 
 	// Adjacency list
 	{

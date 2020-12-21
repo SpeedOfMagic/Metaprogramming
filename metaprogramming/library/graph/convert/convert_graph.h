@@ -1,6 +1,6 @@
 #pragma once
 
-#include "graph_type.h"
+#include "../graphs/graph_type.h"
 
 /**
 * An adapter to convert graph of type From to type To.

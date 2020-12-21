@@ -3,19 +3,19 @@
 #include "convert_graph.h"
 
 #include "../../TL/add.h"
-#include "../../TL/generate_type_lists.h"
+#include "../../TL/fill_type_list_with_object.h"
 #include "../../TL/size.h"
 #include "../../TL/type_list.h"
 
 #include "../GLib/add_edge.h"
 
-#include "adjacency_list_graph.h"
-#include "adjacency_matrix_graph.h"
-#include "edge_list_graph.h"
-#include "pointer_structure_graph.h"
-#include "pointer_structure_node.h"
+#include "../graphs/adjacency_list_graph.h"
+#include "../graphs/adjacency_matrix_graph.h"
+#include "../graphs/edge_list_graph.h"
+#include "../graphs/pointer_structure_graph.h"
+#include "../graphs/pointer_structure_node.h"
 
-#include "graph_type.h"
+#include "../graphs/graph_type.h"
 
 /**
  * @see ConvertGraph

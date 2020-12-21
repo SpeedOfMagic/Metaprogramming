@@ -3,10 +3,10 @@
 #include "graph.h"
 
 #include "../../TL/is_type_list.h"
-#include "../../TL/generate_type_lists.h"
+#include "../../TL/fill_type_list_with_object.h"
 #include "../GLib/add_edge.h"
 
-#include "convert_graph.h"
+#include "../convert/convert_graph.h"
 
 /**
  * Represents graph as a list of edges.

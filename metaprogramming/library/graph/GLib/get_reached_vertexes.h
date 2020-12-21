@@ -5,9 +5,6 @@
 #include "find_node_by_vertex.h"
 #include "dfs.h"
 
-#include "../graphs/convert_graph.h"
-#include "../graphs/convert_to_pointer_structure.h"
-
 namespace GLib {
 	/**
 	* Gets all vertexes that can be reached from vertex start.

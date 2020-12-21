@@ -10,6 +10,8 @@
 
 #include "pointer_structure_node.h"
 
+#include "../convert/convert_graph.h"
+
 /** 
  * Represents graph as a structure with pointers
  * Every vertex must be contained within node. Node must have a TypeList ''children'', 
