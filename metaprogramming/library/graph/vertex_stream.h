@@ -1,8 +1,14 @@
 #pragma once
 
+#include <ranges>
+#include <vector>
+
+#include "../TL/add.h"
+#include "../TL/contains.h"
+#include "../TL/index_of.h"
 #include "../TL/type_list.h"
-#include "../class.h"
-#include "../functor_type.h"
+
+#include "stream.h"
 
 /**
  * Represents a stream of vertexes of a graph
@@ -10,23 +16,31 @@
  * @param graph Template parameter
 */
 template<class stream, class graph>
-struct VertexStream {
-	using stream_ = stream;  //!< TypeList of vertexes of a graph
+class VertexStream {
+public:
+	/**
+	* Converts given stream into reversed vector of indexes of vertexes.
+	* Also it's based on a variation of "Chain of a responsibility" pattern
+	* @returns Vector of reversed indexes of vertexes
+	*/
+	static std::vector<size_t> MapVertexesToReversedIndexes() {
+		std::vector<size_t> result = VertexStream<typename stream::Tail, graph>::MapVertexesToReversedIndexes();
+		static_assert(TL::Contains<typename graph::vertexes_, typename stream::Head>::result,
+			"Some vertex in stream was not present in the graph");
+		result.push_back(TL::IndexOf<typename graph::vertexes_, typename stream::Head>::value);
+		return result;
+	}
 
 	/**
-	 * Calls consumer on every vertex in a stream
-	 * It's recommended that this object must be of type FunctorTypes::Consumer
-	 * Also it's based on a variation of "Chain of a responsibility" pattern
-	 * @param consumer Consumer, that accepts Class object of a graph and index of a current vertex
-	 * @see FunctorType#Consumer
-	 * @see Class
+	* Converts given stream into vector of indexes of vertexes.
+	* @returns Vector of indexes of vertexes
 	*/
-	template<class Consumer>
-	void ForEach(Consumer consumer) {
-		constexpr size_t vertex_index = TL::IndexOf<typename graph::vertexes_, typename stream::Head>::value;
-		consumer(Class<graph>(), vertex_index);
-		VertexStream<typename stream::Tail, graph>().ForEach(consumer);
+	static Stream<size_t> MapVertexesToIndexes() {
+		std::vector<size_t> result = MapVertexesToReversedIndexes();
+		std::reverse(result.begin(), result.end());
+		return Stream<size_t>(std::move(result));
 	}
+
 };
 
 /**
@@ -34,8 +48,11 @@ struct VertexStream {
  */
 template<class graph>
 struct VertexStream<EmptyTypeList, graph> {
-	using stream = EmptyTypeList;
-
-	template<class Consumer>
-	void ForEach(Consumer consumer) {}
+	static std::vector<size_t> MapVertexesToReversedIndexes() {
+		return {};
+	}
 };
+
+/** \example vertex_stream_example.cpp
+* An example of how to use VertexStream.
+*/

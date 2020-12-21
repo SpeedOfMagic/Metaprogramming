@@ -4,14 +4,15 @@
 
 #include "../../TL/is_type_list.h"
 #include "../../TL/generate_type_lists.h"
-#include "../add_edge.h"
+#include "../GLib/add_edge.h"
 
 #include "convert_graph.h"
 
 /**
  * Represents graph as an adjacency matrix.
- * If element in row i, column j is NullType, then there's no edge between them.
- * Otherwise it should be a corresponding Edge.
+ * Element in row i, column j must be Objects::Boolean. 
+ * If it's Boolean<false>, then there's no edge between them. Otherwise there is.
+ * @see Objects::Boolean
  * @see Graph
  * @see Edge
  * @param vertexes Template parameter, vertexes of a graph

@@ -9,3 +9,7 @@
  * Also it should be noted that preexisting implementations are built in compile-time, and it's recommended to follow this rule.
  */
 struct Graph {};
+
+/** \example graph_examples.h
+* An example of how graph be created.
+*/

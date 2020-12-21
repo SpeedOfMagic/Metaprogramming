@@ -1,12 +1,11 @@
 #pragma once
 
-#include "../TL/add.h"
-#include "../TL/replace.h"
-#include "../TL/type_list.h"
-#include "../TL/type_at.h"
-#include "../TL/index_of.h"
-#include "graphs/graph_type.h"
-#include "graphs/adjacency_list_graph.h"
+#include "../../TL/replace.h"
+#include "../../TL/type_list.h"
+#include "../../TL/type_at.h"
+#include "../../TL/index_of.h"
+#include "../graphs/graph_type.h"
+#include "../graphs/adjacency_list_graph.h"
 
 namespace GLib {
 	/** Returns new graph with added edge

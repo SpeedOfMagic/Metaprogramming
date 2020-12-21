@@ -4,7 +4,7 @@
 
 #include "../../TL/is_type_list.h"
 #include "../../TL/generate_type_lists.h"
-#include "../add_edge.h"
+#include "../GLib/add_edge.h"
 
 #include "convert_graph.h"
 

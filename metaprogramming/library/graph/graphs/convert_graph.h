@@ -14,7 +14,7 @@
 * @returns Parameter result, resulting graph.
 */
 template<GraphType From, GraphType To, class graph>
-struct ConvertGraph {};
+struct ConvertGraph;
 
 template<GraphType type, class graph>
 struct ConvertGraph<type, type, graph> {

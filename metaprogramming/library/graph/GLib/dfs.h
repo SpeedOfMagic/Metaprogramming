@@ -1,8 +1,8 @@
 #pragma once
 
-#include "../TL/contains.h"
+#include "../../TL/contains.h"
 
-#include "graphs/pointer_structure_graph.h"
+#include "../graphs/pointer_structure_graph.h"
 
 namespace GLib {
 	/**
@@ -15,6 +15,8 @@ namespace GLib {
 	 * @param graph Graph, where DFS should be performed.
 	 * @param visited_nodes Optional template parameter, nodes that are not allowed to be visited.
 	 * @returns Parameter result, TypeList of visited edges in chronological order.
+	 *			Also returns parameter new_visited as a side effect,
+	 *			which is a TypeList of visited nodes.
 	*/
 	template<class cur_node, class graph, class visited_nodes = EmptyTypeList>
 	struct DFS {
@@ -70,3 +72,6 @@ namespace GLib {
 		using result = typename iterate_through_children::result;
 	};
 }
+/** \example get_visited_vertexes.h
+* An example of how to use DFS.
+*/

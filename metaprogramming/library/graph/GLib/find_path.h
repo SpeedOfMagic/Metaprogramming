@@ -2,20 +2,19 @@
 
 #include <type_traits>
 
-#include "../TL/concatenate.h"
-#include "../TL/reverse.h"
+#include "../../TL/concatenate.h"
+#include "../../TL/reverse.h"
 
 #include "find_node_by_vertex.h"
 #include "dfs.h"
 
-#include "graphs/convert_graph.h"
-#include "graphs/convert_from_adjacency_list.h"
-#include "graphs/convert_from_edge_list.h"
-#include "graphs/convert_from_pointer_structure.h"
+#include "../graphs/convert_graph.h"
+#include "../graphs/convert_to_pointer_structure.h"
 
 namespace GLib {
 	/**
 	* Finds path in graph between vertexes start and finish.
+	* @see DFS
 	* @param graph Template parameter
 	* @param start Template parameter
 	* @param finish Template parameter

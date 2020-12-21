@@ -1,8 +1,6 @@
 #pragma once
 
-#include "../TL/type_list.h"
-
-#include "graphs/pointer_structure_graph.h"
+#include "../graphs/pointer_structure_graph.h"
 
 namespace GLib {
 	/**

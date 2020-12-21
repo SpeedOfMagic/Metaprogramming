@@ -6,7 +6,7 @@
 #include "../../TL/is_type_list.h"
 #include "../../TL/remove.h"
 
-#include "../find_node_by_vertex.h"
+#include "../GLib/find_node_by_vertex.h"
 
 #include "pointer_structure_node.h"
 
