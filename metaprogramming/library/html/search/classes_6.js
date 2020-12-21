@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['generatetypelists_286',['GenerateTypeLists',['../struct_t_l_1_1_generate_type_lists.html',1,'TL']]],
-  ['generatetypelists_3c_200_20_3e_287',['GenerateTypeLists&lt; 0 &gt;',['../struct_t_l_1_1_generate_type_lists_3_010_01_4.html',1,'TL']]],
-  ['getreachedvertexes_288',['GetReachedVertexes',['../struct_g_lib_1_1_get_reached_vertexes.html',1,'GLib']]],
-  ['graph_289',['Graph',['../struct_graph.html',1,'']]]
+  ['getnodesfromroots_310',['GetNodesFromRoots',['../struct_g_lib_1_1_get_nodes_from_roots.html',1,'GLib']]],
+  ['getnodesfromroots_3c_20emptytypelist_2c_20graph_20_3e_311',['GetNodesFromRoots&lt; EmptyTypeList, graph &gt;',['../struct_g_lib_1_1_get_nodes_from_roots_3_01_empty_type_list_00_01graph_01_4.html',1,'GLib']]],
+  ['getreachedvertexes_312',['GetReachedVertexes',['../struct_g_lib_1_1_get_reached_vertexes.html',1,'GLib']]],
+  ['graph_313',['Graph',['../struct_graph.html',1,'']]]
 ];

@@ -1,0 +1,84 @@
+\hypertarget{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes}{}\doxysection{Convert\+Graph$<$ P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE, E\+D\+G\+E\+\_\+\+L\+I\+ST, graph $>$\+::Iterate\+Through\+Nodes$<$ cur\+\_\+nodes $>$ Struct Template Reference}
+\label{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes}\index{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$@{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}}
+
+
+{\ttfamily \#include $<$convert\+\_\+to\+\_\+edge\+\_\+list.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_aac39b02a348e049ec8a6bd313f61ddb0}{tail\+\_\+call}} = Iterate\+Through\+Nodes$<$ typename cur\+\_\+nodes\+::\+Tail $>$
+\item 
+using \mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_ac2aa86c3f3ec11fbde88ba7a67bc2004}{cur\+\_\+node}} = typename cur\+\_\+nodes\+::\+Head
+\item 
+using \mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_abf7a9efa7bb0fa05ee61d6ab27637592}{vertexes}} = typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ typename cur\+\_\+node\+::vertex, 0, typename tail\+\_\+call\+::vertexes $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_a7d483406a882692fc51693f6a539f266}{result}}
+\item 
+using \mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_a519ec9aa01bc0ff0ddb9e577850e687c}{edges}} = typename \mbox{\hyperlink{struct_t_l_1_1_concatenate}{T\+L\+::\+Concatenate}}$<$ typename cur\+\_\+node\+::children, typename tail\+\_\+call\+::edges $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_a7d483406a882692fc51693f6a539f266}{result}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class graph$>$\newline
+template$<$class cur\+\_\+nodes$>$\newline
+struct Convert\+Graph$<$ P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+R\+E, E\+D\+G\+E\+\_\+\+L\+I\+S\+T, graph $>$\+::\+Iterate\+Through\+Nodes$<$ cur\+\_\+nodes $>$}
+
+
+
+Definition at line 29 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_ac2aa86c3f3ec11fbde88ba7a67bc2004}\label{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_ac2aa86c3f3ec11fbde88ba7a67bc2004}} 
+\index{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$@{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}!cur\_node@{cur\_node}}
+\index{cur\_node@{cur\_node}!ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$@{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}}
+\doxysubsubsection{\texorpdfstring{cur\_node}{cur\_node}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$class cur\+\_\+nodes $>$ \\
+using \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71}{P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Nodes$<$ cur\+\_\+nodes $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_ac2aa86c3f3ec11fbde88ba7a67bc2004}{cur\+\_\+node}} =  typename cur\+\_\+nodes\+::\+Head}
+
+
+
+Definition at line 31 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+\mbox{\Hypertarget{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_a519ec9aa01bc0ff0ddb9e577850e687c}\label{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_a519ec9aa01bc0ff0ddb9e577850e687c}} 
+\index{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$@{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}!edges@{edges}}
+\index{edges@{edges}!ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$@{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}}
+\doxysubsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$class cur\+\_\+nodes $>$ \\
+using \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71}{P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Nodes$<$ cur\+\_\+nodes $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_a519ec9aa01bc0ff0ddb9e577850e687c}{edges}} =  typename \mbox{\hyperlink{struct_t_l_1_1_concatenate}{T\+L\+::\+Concatenate}}$<$ typename cur\+\_\+node\+::children, typename tail\+\_\+call\+::edges $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_a7d483406a882692fc51693f6a539f266}{result}}}
+
+
+
+Definition at line 40 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+\mbox{\Hypertarget{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_aac39b02a348e049ec8a6bd313f61ddb0}\label{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_aac39b02a348e049ec8a6bd313f61ddb0}} 
+\index{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$@{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}!tail\_call@{tail\_call}}
+\index{tail\_call@{tail\_call}!ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$@{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}}
+\doxysubsubsection{\texorpdfstring{tail\_call}{tail\_call}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$class cur\+\_\+nodes $>$ \\
+using \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71}{P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Nodes$<$ cur\+\_\+nodes $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_aac39b02a348e049ec8a6bd313f61ddb0}{tail\+\_\+call}} =  Iterate\+Through\+Nodes$<$typename cur\+\_\+nodes\+::\+Tail$>$}
+
+
+
+Definition at line 30 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+\mbox{\Hypertarget{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_abf7a9efa7bb0fa05ee61d6ab27637592}\label{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_abf7a9efa7bb0fa05ee61d6ab27637592}} 
+\index{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$@{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}!vertexes@{vertexes}}
+\index{vertexes@{vertexes}!ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$@{ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}}
+\doxysubsubsection{\texorpdfstring{vertexes}{vertexes}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$class cur\+\_\+nodes $>$ \\
+using \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71}{P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+T\+R\+U\+C\+T\+U\+RE}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Nodes$<$ cur\+\_\+nodes $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_nodes_abf7a9efa7bb0fa05ee61d6ab27637592}{vertexes}} =  typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ typename cur\+\_\+node\+::vertex, 0, typename tail\+\_\+call\+::vertexes $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_a7d483406a882692fc51693f6a539f266}{result}}}
+
+
+
+Definition at line 34 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/convert/\mbox{\hyperlink{convert__to__edge__list_8h}{convert\+\_\+to\+\_\+edge\+\_\+list.\+h}}\end{DoxyCompactItemize}

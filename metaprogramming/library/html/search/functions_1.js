@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['collect_398',['Collect',['../class_stream.html#a40517a0df50360b4034468345cdc44c4',1,'Stream']]]
+  ['getvertexindex_425',['GetVertexIndex',['../struct_adjacency_list_graph.html#ad31d1ee689ec2fb139c958e4beda099d',1,'AdjacencyListGraph']]]
 ];

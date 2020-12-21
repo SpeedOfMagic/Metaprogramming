@@ -1,5 +1,5 @@
-\hypertarget{struct_adjacency_matrix_graph}{}\doxysection{Adjacency\+Matrix\+Graph$<$ nodes, matrix $>$ Struct Template Reference}
-\label{struct_adjacency_matrix_graph}\index{AdjacencyMatrixGraph$<$ nodes, matrix $>$@{AdjacencyMatrixGraph$<$ nodes, matrix $>$}}
+\hypertarget{struct_adjacency_matrix_graph}{}\doxysection{Adjacency\+Matrix\+Graph$<$ vertexes, matrix $>$ Struct Template Reference}
+\label{struct_adjacency_matrix_graph}\index{AdjacencyMatrixGraph$<$ vertexes, matrix $>$@{AdjacencyMatrixGraph$<$ vertexes, matrix $>$}}
 
 
 {\ttfamily \#include $<$adjacency\+\_\+matrix\+\_\+graph.\+h$>$}
@@ -12,22 +12,22 @@ struct \mbox{\hyperlink{struct_adjacency_matrix_graph_1_1_convert_to}{Convert\+T
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-using \mbox{\hyperlink{struct_adjacency_matrix_graph_a014532fa67d9a41740db2fa8fb498d2e}{vertexes\+\_\+}} = nodes
+using \mbox{\hyperlink{struct_adjacency_matrix_graph_a8c9fddf14b4e0c9851922e5abd02566b}{vertexes\+\_\+}} = vertexes
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_type_list}{Type\+List}} of vertexes in graph. \end{DoxyCompactList}\item 
-using \mbox{\hyperlink{struct_adjacency_matrix_graph_a0721c731872d6ccef6c542442f0cbfc3}{matrix\+\_\+}} = matrix
+using \mbox{\hyperlink{struct_adjacency_matrix_graph_ad14fbe2aeb79b4a4cdd38e19bb9f87e9}{matrix\+\_\+}} = matrix
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_type_list}{Type\+List}} of Type\+Lists of Edges. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-constexpr static \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72}{Graph\+Type}} \mbox{\hyperlink{struct_adjacency_matrix_graph_a48566802137cc61e1c4d2c02236f5fae}{T\+Y\+PE}} = \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}
+constexpr static \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72}{Graph\+Type}} \mbox{\hyperlink{struct_adjacency_matrix_graph_adedffb5ae7f5446059b03b822c36bd52}{T\+Y\+PE}} = \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\subsubsection*{template$<$class nodes, class matrix$>$\newline
-struct Adjacency\+Matrix\+Graph$<$ nodes, matrix $>$}
+\subsubsection*{template$<$class vertexes, class matrix$>$\newline
+struct Adjacency\+Matrix\+Graph$<$ vertexes, matrix $>$}
 
-Represents graph as an adjacency matrix. Element in row i, column j must be \mbox{\hyperlink{struct_objects_1_1_boolean}{Objects\+::\+Boolean}}. If it\textquotesingle{}s Boolean$<$false$>$, then there\textquotesingle{}s no edge between them. Otherwise there is. \begin{DoxySeeAlso}{See also}
+Represents graph as an adjacency matrix. Element in row i, column j must be \mbox{\hyperlink{struct_objects_1_1_boolean}{Objects\+::\+Boolean}}. If it\textquotesingle{}s Boolean$<$false$>$, then there\textquotesingle{}s no edge between them. Otherwise there is. If element is Boolean$<$true$>$, then the weight is \mbox{\hyperlink{struct_null_type}{Null\+Type}}. Otherwise it\textquotesingle{}s equal to this element. If you wish to have Boolean as a weight, then consider wrapping it in some other class. \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{struct_objects_1_1_boolean}{Objects\+::\+Boolean}} 
 
 \mbox{\hyperlink{struct_graph}{Graph}} 
@@ -46,17 +46,17 @@ Parameter result, resulting graph
 \end{DoxyReturn}
 
 
-Definition at line 23 of file adjacency\+\_\+matrix\+\_\+graph.\+h.
+Definition at line 25 of file adjacency\+\_\+matrix\+\_\+graph.\+h.
 
 
 
 \doxysubsection{Member Typedef Documentation}
-\mbox{\Hypertarget{struct_adjacency_matrix_graph_a0721c731872d6ccef6c542442f0cbfc3}\label{struct_adjacency_matrix_graph_a0721c731872d6ccef6c542442f0cbfc3}} 
-\index{AdjacencyMatrixGraph$<$ nodes, matrix $>$@{AdjacencyMatrixGraph$<$ nodes, matrix $>$}!matrix\_@{matrix\_}}
-\index{matrix\_@{matrix\_}!AdjacencyMatrixGraph$<$ nodes, matrix $>$@{AdjacencyMatrixGraph$<$ nodes, matrix $>$}}
+\mbox{\Hypertarget{struct_adjacency_matrix_graph_ad14fbe2aeb79b4a4cdd38e19bb9f87e9}\label{struct_adjacency_matrix_graph_ad14fbe2aeb79b4a4cdd38e19bb9f87e9}} 
+\index{AdjacencyMatrixGraph$<$ vertexes, matrix $>$@{AdjacencyMatrixGraph$<$ vertexes, matrix $>$}!matrix\_@{matrix\_}}
+\index{matrix\_@{matrix\_}!AdjacencyMatrixGraph$<$ vertexes, matrix $>$@{AdjacencyMatrixGraph$<$ vertexes, matrix $>$}}
 \doxysubsubsection{\texorpdfstring{matrix\_}{matrix\_}}
-{\footnotesize\ttfamily template$<$class nodes , class matrix $>$ \\
-using \mbox{\hyperlink{struct_adjacency_matrix_graph}{Adjacency\+Matrix\+Graph}}$<$ nodes, matrix $>$\+::\mbox{\hyperlink{struct_adjacency_matrix_graph_a0721c731872d6ccef6c542442f0cbfc3}{matrix\+\_\+}} =  matrix}
+{\footnotesize\ttfamily template$<$class vertexes , class matrix $>$ \\
+using \mbox{\hyperlink{struct_adjacency_matrix_graph}{Adjacency\+Matrix\+Graph}}$<$ vertexes, matrix $>$\+::\mbox{\hyperlink{struct_adjacency_matrix_graph_ad14fbe2aeb79b4a4cdd38e19bb9f87e9}{matrix\+\_\+}} =  matrix}
 
 
 
@@ -64,14 +64,14 @@ using \mbox{\hyperlink{struct_adjacency_matrix_graph}{Adjacency\+Matrix\+Graph}}
 
 
 
-Definition at line 28 of file adjacency\+\_\+matrix\+\_\+graph.\+h.
+Definition at line 30 of file adjacency\+\_\+matrix\+\_\+graph.\+h.
 
-\mbox{\Hypertarget{struct_adjacency_matrix_graph_a014532fa67d9a41740db2fa8fb498d2e}\label{struct_adjacency_matrix_graph_a014532fa67d9a41740db2fa8fb498d2e}} 
-\index{AdjacencyMatrixGraph$<$ nodes, matrix $>$@{AdjacencyMatrixGraph$<$ nodes, matrix $>$}!vertexes\_@{vertexes\_}}
-\index{vertexes\_@{vertexes\_}!AdjacencyMatrixGraph$<$ nodes, matrix $>$@{AdjacencyMatrixGraph$<$ nodes, matrix $>$}}
+\mbox{\Hypertarget{struct_adjacency_matrix_graph_a8c9fddf14b4e0c9851922e5abd02566b}\label{struct_adjacency_matrix_graph_a8c9fddf14b4e0c9851922e5abd02566b}} 
+\index{AdjacencyMatrixGraph$<$ vertexes, matrix $>$@{AdjacencyMatrixGraph$<$ vertexes, matrix $>$}!vertexes\_@{vertexes\_}}
+\index{vertexes\_@{vertexes\_}!AdjacencyMatrixGraph$<$ vertexes, matrix $>$@{AdjacencyMatrixGraph$<$ vertexes, matrix $>$}}
 \doxysubsubsection{\texorpdfstring{vertexes\_}{vertexes\_}}
-{\footnotesize\ttfamily template$<$class nodes , class matrix $>$ \\
-using \mbox{\hyperlink{struct_adjacency_matrix_graph}{Adjacency\+Matrix\+Graph}}$<$ nodes, matrix $>$\+::\mbox{\hyperlink{struct_adjacency_matrix_graph_a014532fa67d9a41740db2fa8fb498d2e}{vertexes\+\_\+}} =  nodes}
+{\footnotesize\ttfamily template$<$class vertexes , class matrix $>$ \\
+using \mbox{\hyperlink{struct_adjacency_matrix_graph}{Adjacency\+Matrix\+Graph}}$<$ vertexes, matrix $>$\+::\mbox{\hyperlink{struct_adjacency_matrix_graph_a8c9fddf14b4e0c9851922e5abd02566b}{vertexes\+\_\+}} =  vertexes}
 
 
 
@@ -79,21 +79,21 @@ using \mbox{\hyperlink{struct_adjacency_matrix_graph}{Adjacency\+Matrix\+Graph}}
 
 
 
-Definition at line 27 of file adjacency\+\_\+matrix\+\_\+graph.\+h.
+Definition at line 29 of file adjacency\+\_\+matrix\+\_\+graph.\+h.
 
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{struct_adjacency_matrix_graph_a48566802137cc61e1c4d2c02236f5fae}\label{struct_adjacency_matrix_graph_a48566802137cc61e1c4d2c02236f5fae}} 
-\index{AdjacencyMatrixGraph$<$ nodes, matrix $>$@{AdjacencyMatrixGraph$<$ nodes, matrix $>$}!TYPE@{TYPE}}
-\index{TYPE@{TYPE}!AdjacencyMatrixGraph$<$ nodes, matrix $>$@{AdjacencyMatrixGraph$<$ nodes, matrix $>$}}
+\mbox{\Hypertarget{struct_adjacency_matrix_graph_adedffb5ae7f5446059b03b822c36bd52}\label{struct_adjacency_matrix_graph_adedffb5ae7f5446059b03b822c36bd52}} 
+\index{AdjacencyMatrixGraph$<$ vertexes, matrix $>$@{AdjacencyMatrixGraph$<$ vertexes, matrix $>$}!TYPE@{TYPE}}
+\index{TYPE@{TYPE}!AdjacencyMatrixGraph$<$ vertexes, matrix $>$@{AdjacencyMatrixGraph$<$ vertexes, matrix $>$}}
 \doxysubsubsection{\texorpdfstring{TYPE}{TYPE}}
-{\footnotesize\ttfamily template$<$class nodes , class matrix $>$ \\
-constexpr static \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72}{Graph\+Type}} \mbox{\hyperlink{struct_adjacency_matrix_graph}{Adjacency\+Matrix\+Graph}}$<$ nodes, matrix $>$\+::T\+Y\+PE = \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+{\footnotesize\ttfamily template$<$class vertexes , class matrix $>$ \\
+constexpr static \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72}{Graph\+Type}} \mbox{\hyperlink{struct_adjacency_matrix_graph}{Adjacency\+Matrix\+Graph}}$<$ vertexes, matrix $>$\+::T\+Y\+PE = \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
 
 
 
-Definition at line 24 of file adjacency\+\_\+matrix\+\_\+graph.\+h.
+Definition at line 26 of file adjacency\+\_\+matrix\+\_\+graph.\+h.
 
 
 

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['head_437',['Head',['../struct_type_list.html#a4f18784abdf7cdf40534a24ff6a23cc5',1,'TypeList::Head()'],['../struct_type_list_3_01_t_01_4.html#a5197d6193eae9c4953203c1eb394c806',1,'TypeList&lt; T &gt;::Head()'],['../struct_type_list_3_01_h_00_01_t_8_8_8_01_4.html#a6219621e9ffd55a79c42ef6d3819affc',1,'TypeList&lt; H, T... &gt;::Head()']]]
+  ['iterate_5fresult_462',['iterate_result',['../struct_convert_graph_3_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4.html#ae42f1f63528ed374d28a926ba5bef046',1,'ConvertGraph&lt; POINTER_STRUCTURE, EDGE_LIST, graph &gt;']]],
+  ['iterate_5fthrough_5fchildren_463',['iterate_through_children',['../struct_g_lib_1_1_d_f_s.html#a7b8ee1736df19fdeb2b8059b864d4481',1,'GLib::DFS']]],
+  ['iterate_5fthrough_5fedges_464',['iterate_through_edges',['../struct_g_lib_1_1_find_path.html#ac0f251da58d2aa0ebe95ea59f9155600',1,'GLib::FindPath']]]
 ];

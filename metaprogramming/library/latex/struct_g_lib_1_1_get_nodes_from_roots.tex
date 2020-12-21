@@ -1,0 +1,74 @@
+\hypertarget{struct_g_lib_1_1_get_nodes_from_roots}{}\doxysection{G\+Lib\+::Get\+Nodes\+From\+Roots$<$ nodes, graph $>$ Struct Template Reference}
+\label{struct_g_lib_1_1_get_nodes_from_roots}\index{GLib::GetNodesFromRoots$<$ nodes, graph $>$@{GLib::GetNodesFromRoots$<$ nodes, graph $>$}}
+
+
+{\ttfamily \#include $<$get\+\_\+nodes\+\_\+from\+\_\+roots.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a7fb5aa5adf71ee2bca7890b47914454e}{tail\+\_\+result}} = typename \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots}{Get\+Nodes\+From\+Roots}}$<$ typename nodes\+::\+Tail, graph $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a17936a3209a2148c8d2b5b88b285852a}{result}}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a4c217eac44af40a61d7e2710d76b51f3}{new\+\_\+visited}} = typename \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}}$<$ typename nodes\+::\+Head, graph, \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a7fb5aa5adf71ee2bca7890b47914454e}{tail\+\_\+result}} $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a4c217eac44af40a61d7e2710d76b51f3}{new\+\_\+visited}}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a17936a3209a2148c8d2b5b88b285852a}{result}} = typename \mbox{\hyperlink{struct_t_l_1_1_concatenate}{T\+L\+::\+Concatenate}}$<$ \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a4c217eac44af40a61d7e2710d76b51f3}{new\+\_\+visited}}, \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a7fb5aa5adf71ee2bca7890b47914454e}{tail\+\_\+result}} $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a17936a3209a2148c8d2b5b88b285852a}{result}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class nodes, class graph$>$\newline
+struct G\+Lib\+::\+Get\+Nodes\+From\+Roots$<$ nodes, graph $>$}
+
+Gets all nodes that can be reached from roots. It\textquotesingle{}s a good way to get full structure of a graph without entering every node. 
+\begin{DoxyParams}{Parameters}
+{\em nodes} & Template parameter, initial nodes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parameter result, nodes for bui 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file get\+\_\+nodes\+\_\+from\+\_\+roots.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_g_lib_1_1_get_nodes_from_roots_a4c217eac44af40a61d7e2710d76b51f3}\label{struct_g_lib_1_1_get_nodes_from_roots_a4c217eac44af40a61d7e2710d76b51f3}} 
+\index{GLib::GetNodesFromRoots$<$ nodes, graph $>$@{GLib::GetNodesFromRoots$<$ nodes, graph $>$}!new\_visited@{new\_visited}}
+\index{new\_visited@{new\_visited}!GLib::GetNodesFromRoots$<$ nodes, graph $>$@{GLib::GetNodesFromRoots$<$ nodes, graph $>$}}
+\doxysubsubsection{\texorpdfstring{new\_visited}{new\_visited}}
+{\footnotesize\ttfamily template$<$class nodes , class graph $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots}{G\+Lib\+::\+Get\+Nodes\+From\+Roots}}$<$ nodes, graph $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a4c217eac44af40a61d7e2710d76b51f3}{new\+\_\+visited}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_d_f_s}{D\+FS}}$<$ typename nodes\+::\+Head, graph, \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a7fb5aa5adf71ee2bca7890b47914454e}{tail\+\_\+result}} $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a4c217eac44af40a61d7e2710d76b51f3}{new\+\_\+visited}}}
+
+
+
+Definition at line 16 of file get\+\_\+nodes\+\_\+from\+\_\+roots.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_get_nodes_from_roots_a17936a3209a2148c8d2b5b88b285852a}\label{struct_g_lib_1_1_get_nodes_from_roots_a17936a3209a2148c8d2b5b88b285852a}} 
+\index{GLib::GetNodesFromRoots$<$ nodes, graph $>$@{GLib::GetNodesFromRoots$<$ nodes, graph $>$}!result@{result}}
+\index{result@{result}!GLib::GetNodesFromRoots$<$ nodes, graph $>$@{GLib::GetNodesFromRoots$<$ nodes, graph $>$}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily template$<$class nodes , class graph $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots}{G\+Lib\+::\+Get\+Nodes\+From\+Roots}}$<$ nodes, graph $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a17936a3209a2148c8d2b5b88b285852a}{result}} =  typename \mbox{\hyperlink{struct_t_l_1_1_concatenate}{T\+L\+::\+Concatenate}}$<$\mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a4c217eac44af40a61d7e2710d76b51f3}{new\+\_\+visited}}, \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a7fb5aa5adf71ee2bca7890b47914454e}{tail\+\_\+result}}$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a17936a3209a2148c8d2b5b88b285852a}{result}}}
+
+
+
+Definition at line 22 of file get\+\_\+nodes\+\_\+from\+\_\+roots.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_get_nodes_from_roots_a7fb5aa5adf71ee2bca7890b47914454e}\label{struct_g_lib_1_1_get_nodes_from_roots_a7fb5aa5adf71ee2bca7890b47914454e}} 
+\index{GLib::GetNodesFromRoots$<$ nodes, graph $>$@{GLib::GetNodesFromRoots$<$ nodes, graph $>$}!tail\_result@{tail\_result}}
+\index{tail\_result@{tail\_result}!GLib::GetNodesFromRoots$<$ nodes, graph $>$@{GLib::GetNodesFromRoots$<$ nodes, graph $>$}}
+\doxysubsubsection{\texorpdfstring{tail\_result}{tail\_result}}
+{\footnotesize\ttfamily template$<$class nodes , class graph $>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots}{G\+Lib\+::\+Get\+Nodes\+From\+Roots}}$<$ nodes, graph $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a7fb5aa5adf71ee2bca7890b47914454e}{tail\+\_\+result}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots}{Get\+Nodes\+From\+Roots}}$<$typename nodes\+::\+Tail, graph$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_get_nodes_from_roots_a17936a3209a2148c8d2b5b88b285852a}{result}}}
+
+
+
+Definition at line 14 of file get\+\_\+nodes\+\_\+from\+\_\+roots.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/\+G\+Lib/\mbox{\hyperlink{get__nodes__from__roots_8h}{get\+\_\+nodes\+\_\+from\+\_\+roots.\+h}}\end{DoxyCompactItemize}

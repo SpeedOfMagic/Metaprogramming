@@ -13,5 +13,5 @@
 template<int id, class graph, typename vertex>
 struct ProcessVertex;
 /** \example vertex_stream_example.cpp
-* An example of how to use ForEach and ProcessVertex.
+* An example of how to use ProcessVertex.
 */

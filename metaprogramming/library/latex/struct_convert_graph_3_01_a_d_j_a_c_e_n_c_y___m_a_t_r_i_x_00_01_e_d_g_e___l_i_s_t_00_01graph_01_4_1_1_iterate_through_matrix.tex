@@ -1,0 +1,146 @@
+\hypertarget{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix}{}\doxysection{Convert\+Graph$<$ A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX, E\+D\+G\+E\+\_\+\+L\+I\+ST, graph $>$\+::Iterate\+Through\+Matrix$<$ cur\+\_\+index $>$ Struct Template Reference}
+\label{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix}\index{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}}
+
+
+{\ttfamily \#include $<$convert\+\_\+to\+\_\+edge\+\_\+list.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a4d3aec65c4d0d42b7ae88cc47c6fdfb3}{from}} = typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$ \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_a30a80aacdcd1eb85194c21b3ff78d616}{vertexes}}, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ab0dda5433c7fbf66732bb9f5aa3f8a80}{row}} $>$\+::value
+\item 
+using \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a93bdcc9118a55869ba15f780056c47a7}{to}} = typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$ \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_a30a80aacdcd1eb85194c21b3ff78d616}{vertexes}}, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a8a5a19b537f141b213ad9885aa511582}{col}} $>$\+::value
+\item 
+using \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a777b847db142882aa4edd9b2b0e48d01}{cell}} = typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$ typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$ typename graph\+::matrix\+\_\+, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ab0dda5433c7fbf66732bb9f5aa3f8a80}{row}} $>$\+::value, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a8a5a19b537f141b213ad9885aa511582}{col}} $>$\+::value
+\item 
+using \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ad319f1a5368cb8031d8553c161e864ed}{weight}} = std\+::conditional\+\_\+t$<$ std\+::is\+\_\+same$<$ \mbox{\hyperlink{struct_objects_1_1_boolean}{Objects\+::\+Boolean}}$<$ true $>$, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a777b847db142882aa4edd9b2b0e48d01}{cell}} $>$\+::value, \mbox{\hyperlink{struct_null_type}{Null\+Type}}, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a777b847db142882aa4edd9b2b0e48d01}{cell}} $>$
+\item 
+using \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a7d1b2650494d934c731be22aa7460157}{tail\+\_\+result}} = typename Iterate\+Through\+Matrix$<$ cur\+\_\+index -\/ 1 $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a33cc1b5a7013d797e2ae55104ec354ea}{result}}
+\item 
+using \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a33cc1b5a7013d797e2ae55104ec354ea}{result}} = std\+::conditional\+\_\+t$<$ std\+::is\+\_\+same$<$ \mbox{\hyperlink{struct_objects_1_1_boolean}{Objects\+::\+Boolean}}$<$ false $>$, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a777b847db142882aa4edd9b2b0e48d01}{cell}} $>$\+::value, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a7d1b2650494d934c731be22aa7460157}{tail\+\_\+result}}, typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ \mbox{\hyperlink{struct_edge}{Edge}}$<$ \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a4d3aec65c4d0d42b7ae88cc47c6fdfb3}{from}}, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a93bdcc9118a55869ba15f780056c47a7}{to}}, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ad319f1a5368cb8031d8553c161e864ed}{weight}} $>$, 0, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a7d1b2650494d934c731be22aa7460157}{tail\+\_\+result}} $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a33cc1b5a7013d797e2ae55104ec354ea}{result}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+constexpr static int \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ab0dda5433c7fbf66732bb9f5aa3f8a80}{row}} = cur\+\_\+index / \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_af37677685f8763d7ed4d3aa3913a8557}{n}}
+\item 
+constexpr static int \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a8a5a19b537f141b213ad9885aa511582}{col}} = cur\+\_\+index \% \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_af37677685f8763d7ed4d3aa3913a8557}{n}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class graph$>$\newline
+template$<$int cur\+\_\+index$>$\newline
+struct Convert\+Graph$<$ A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+I\+X, E\+D\+G\+E\+\_\+\+L\+I\+S\+T, graph $>$\+::\+Iterate\+Through\+Matrix$<$ cur\+\_\+index $>$}
+
+
+
+Definition at line 71 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a777b847db142882aa4edd9b2b0e48d01}\label{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a777b847db142882aa4edd9b2b0e48d01}} 
+\index{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}!cell@{cell}}
+\index{cell@{cell}!ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}}
+\doxysubsubsection{\texorpdfstring{cell}{cell}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$int cur\+\_\+index$>$ \\
+using \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Matrix$<$ cur\+\_\+index $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a777b847db142882aa4edd9b2b0e48d01}{cell}} =  typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$ typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$typename graph\+::matrix\+\_\+, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ab0dda5433c7fbf66732bb9f5aa3f8a80}{row}}$>$\+::value, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a8a5a19b537f141b213ad9885aa511582}{col}} $>$\+::value}
+
+
+
+Definition at line 77 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+\mbox{\Hypertarget{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a4d3aec65c4d0d42b7ae88cc47c6fdfb3}\label{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a4d3aec65c4d0d42b7ae88cc47c6fdfb3}} 
+\index{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}!from@{from}}
+\index{from@{from}!ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}}
+\doxysubsubsection{\texorpdfstring{from}{from}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$int cur\+\_\+index$>$ \\
+using \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Matrix$<$ cur\+\_\+index $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a4d3aec65c4d0d42b7ae88cc47c6fdfb3}{from}} =  typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_a30a80aacdcd1eb85194c21b3ff78d616}{vertexes}}, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ab0dda5433c7fbf66732bb9f5aa3f8a80}{row}}$>$\+::value}
+
+
+
+Definition at line 74 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+\mbox{\Hypertarget{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a33cc1b5a7013d797e2ae55104ec354ea}\label{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a33cc1b5a7013d797e2ae55104ec354ea}} 
+\index{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}!result@{result}}
+\index{result@{result}!ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$int cur\+\_\+index$>$ \\
+using \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Matrix$<$ cur\+\_\+index $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a33cc1b5a7013d797e2ae55104ec354ea}{result}} =  std\+::conditional\+\_\+t$<$ std\+::is\+\_\+same$<$\mbox{\hyperlink{struct_objects_1_1_boolean}{Objects\+::\+Boolean}}$<$false$>$, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a777b847db142882aa4edd9b2b0e48d01}{cell}}$>$\+::value, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a7d1b2650494d934c731be22aa7460157}{tail\+\_\+result}}, typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ \mbox{\hyperlink{struct_edge}{Edge}}$<$\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a4d3aec65c4d0d42b7ae88cc47c6fdfb3}{from}}, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a93bdcc9118a55869ba15f780056c47a7}{to}}, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ad319f1a5368cb8031d8553c161e864ed}{weight}}$>$, 0, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a7d1b2650494d934c731be22aa7460157}{tail\+\_\+result}} $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a33cc1b5a7013d797e2ae55104ec354ea}{result}} $>$}
+
+
+
+Definition at line 89 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+\mbox{\Hypertarget{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a7d1b2650494d934c731be22aa7460157}\label{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a7d1b2650494d934c731be22aa7460157}} 
+\index{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}!tail\_result@{tail\_result}}
+\index{tail\_result@{tail\_result}!ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}}
+\doxysubsubsection{\texorpdfstring{tail\_result}{tail\_result}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$int cur\+\_\+index$>$ \\
+using \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Matrix$<$ cur\+\_\+index $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a7d1b2650494d934c731be22aa7460157}{tail\+\_\+result}} =  typename Iterate\+Through\+Matrix$<$cur\+\_\+index -\/ 1$>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a33cc1b5a7013d797e2ae55104ec354ea}{result}}}
+
+
+
+Definition at line 87 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+\mbox{\Hypertarget{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a93bdcc9118a55869ba15f780056c47a7}\label{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a93bdcc9118a55869ba15f780056c47a7}} 
+\index{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}!to@{to}}
+\index{to@{to}!ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}}
+\doxysubsubsection{\texorpdfstring{to}{to}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$int cur\+\_\+index$>$ \\
+using \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Matrix$<$ cur\+\_\+index $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a93bdcc9118a55869ba15f780056c47a7}{to}} =  typename \mbox{\hyperlink{struct_t_l_1_1_type_at}{T\+L\+::\+Type\+At}}$<$\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_a30a80aacdcd1eb85194c21b3ff78d616}{vertexes}}, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a8a5a19b537f141b213ad9885aa511582}{col}}$>$\+::value}
+
+
+
+Definition at line 75 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+\mbox{\Hypertarget{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ad319f1a5368cb8031d8553c161e864ed}\label{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ad319f1a5368cb8031d8553c161e864ed}} 
+\index{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}!weight@{weight}}
+\index{weight@{weight}!ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$int cur\+\_\+index$>$ \\
+using \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Matrix$<$ cur\+\_\+index $>$\+::\mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ad319f1a5368cb8031d8553c161e864ed}{weight}} =  std\+::conditional\+\_\+t$<$ std\+::is\+\_\+same$<$\mbox{\hyperlink{struct_objects_1_1_boolean}{Objects\+::\+Boolean}}$<$true$>$, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a777b847db142882aa4edd9b2b0e48d01}{cell}}$>$\+::value, \mbox{\hyperlink{struct_null_type}{Null\+Type}}, \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a777b847db142882aa4edd9b2b0e48d01}{cell}} $>$}
+
+
+
+Definition at line 81 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a8a5a19b537f141b213ad9885aa511582}\label{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_a8a5a19b537f141b213ad9885aa511582}} 
+\index{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}!col@{col}}
+\index{col@{col}!ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}}
+\doxysubsubsection{\texorpdfstring{col}{col}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$int cur\+\_\+index$>$ \\
+constexpr static int \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Matrix$<$ cur\+\_\+index $>$\+::col = cur\+\_\+index \% \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_af37677685f8763d7ed4d3aa3913a8557}{n}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line 72 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+\mbox{\Hypertarget{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ab0dda5433c7fbf66732bb9f5aa3f8a80}\label{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_1_1_iterate_through_matrix_ab0dda5433c7fbf66732bb9f5aa3f8a80}} 
+\index{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}!row@{row}}
+\index{row@{row}!ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$@{ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}}
+\doxysubsubsection{\texorpdfstring{row}{row}}
+{\footnotesize\ttfamily template$<$class graph $>$ \\
+template$<$int cur\+\_\+index$>$ \\
+constexpr static int \mbox{\hyperlink{struct_convert_graph}{Convert\+Graph}}$<$ \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a098ad9242d3b9f3eb275da4c366212ae}{A\+D\+J\+A\+C\+E\+N\+C\+Y\+\_\+\+M\+A\+T\+R\+IX}}, \mbox{\hyperlink{graph__type_8h_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f}{E\+D\+G\+E\+\_\+\+L\+I\+ST}}, graph $>$\+::Iterate\+Through\+Matrix$<$ cur\+\_\+index $>$\+::row = cur\+\_\+index / \mbox{\hyperlink{struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___m_a_t_r_i_x_00_01_e_d_g_e___l_i_s_t_00_01graph_01_4_af37677685f8763d7ed4d3aa3913a8557}{n}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+Definition at line 72 of file convert\+\_\+to\+\_\+edge\+\_\+list.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/convert/\mbox{\hyperlink{convert__to__edge__list_8h}{convert\+\_\+to\+\_\+edge\+\_\+list.\+h}}\end{DoxyCompactItemize}

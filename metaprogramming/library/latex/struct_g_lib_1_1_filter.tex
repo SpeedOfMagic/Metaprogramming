@@ -1,0 +1,68 @@
+\hypertarget{struct_g_lib_1_1_filter}{}\doxysection{G\+Lib\+::Filter$<$ id, graph, vertexes $>$ Struct Template Reference}
+\label{struct_g_lib_1_1_filter}\index{GLib::Filter$<$ id, graph, vertexes $>$@{GLib::Filter$<$ id, graph, vertexes $>$}}
+
+
+{\ttfamily \#include $<$filter.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_filter_addd12a4e2fa2f43177db955224f4a14b}{tail\+\_\+result}} = typename \mbox{\hyperlink{struct_g_lib_1_1_filter}{Filter}}$<$ id, graph, typename vertexes\+::\+Tail $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_filter_a53051f4b1bbec8855814e28e7bedb4cb}{result}}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_filter_a53051f4b1bbec8855814e28e7bedb4cb}{result}} = std\+::conditional\+\_\+t$<$ \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}}$<$ id, graph, typename vertexes\+::\+Head $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_filter_a53051f4b1bbec8855814e28e7bedb4cb}{result}}, typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ typename vertexes\+::\+Head, 0, \mbox{\hyperlink{struct_g_lib_1_1_filter_addd12a4e2fa2f43177db955224f4a14b}{tail\+\_\+result}} $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_filter_a53051f4b1bbec8855814e28e7bedb4cb}{result}}, \mbox{\hyperlink{struct_g_lib_1_1_filter_addd12a4e2fa2f43177db955224f4a14b}{tail\+\_\+result}} $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$int id, class graph, class vertexes = typename graph\+::vertexes\+\_\+$>$\newline
+struct G\+Lib\+::\+Filter$<$ id, graph, vertexes $>$}
+
+Leaves only vertexes that return true when called with \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}}. \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}} must have constexpr static parameter called \textquotesingle{}\textquotesingle{}result\textquotesingle{}\textquotesingle{} that can be casted to bool. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Template parameter, integer, which \mbox{\hyperlink{struct_g_lib_1_1_for_each}{For\+Each}} uses to access specific \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}} implementation. \\
+\hline
+{\em graph} & Template parameter, graph, where vertexes are located. \\
+\hline
+{\em vertexes} & Optional template parameter, vertexes to process. Is equal to graph\textquotesingle{}s vertexes by default. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parameter result, \mbox{\hyperlink{struct_type_list}{Type\+List}} of vertexes which return true on \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}}. 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file filter.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_g_lib_1_1_filter_a53051f4b1bbec8855814e28e7bedb4cb}\label{struct_g_lib_1_1_filter_a53051f4b1bbec8855814e28e7bedb4cb}} 
+\index{GLib::Filter$<$ id, graph, vertexes $>$@{GLib::Filter$<$ id, graph, vertexes $>$}!result@{result}}
+\index{result@{result}!GLib::Filter$<$ id, graph, vertexes $>$@{GLib::Filter$<$ id, graph, vertexes $>$}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily template$<$int id, class graph , class vertexes  = typename graph\+::vertexes\+\_\+$>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_filter}{G\+Lib\+::\+Filter}}$<$ id, graph, vertexes $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_filter_a53051f4b1bbec8855814e28e7bedb4cb}{result}} =  std\+::conditional\+\_\+t$<$ \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}}$<$id, graph, typename vertexes\+::\+Head$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_filter_a53051f4b1bbec8855814e28e7bedb4cb}{result}}, typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$typename vertexes\+::\+Head, 0, \mbox{\hyperlink{struct_g_lib_1_1_filter_addd12a4e2fa2f43177db955224f4a14b}{tail\+\_\+result}}$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_filter_a53051f4b1bbec8855814e28e7bedb4cb}{result}}, \mbox{\hyperlink{struct_g_lib_1_1_filter_addd12a4e2fa2f43177db955224f4a14b}{tail\+\_\+result}} $>$}
+
+
+
+Definition at line 23 of file filter.\+h.
+
+\mbox{\Hypertarget{struct_g_lib_1_1_filter_addd12a4e2fa2f43177db955224f4a14b}\label{struct_g_lib_1_1_filter_addd12a4e2fa2f43177db955224f4a14b}} 
+\index{GLib::Filter$<$ id, graph, vertexes $>$@{GLib::Filter$<$ id, graph, vertexes $>$}!tail\_result@{tail\_result}}
+\index{tail\_result@{tail\_result}!GLib::Filter$<$ id, graph, vertexes $>$@{GLib::Filter$<$ id, graph, vertexes $>$}}
+\doxysubsubsection{\texorpdfstring{tail\_result}{tail\_result}}
+{\footnotesize\ttfamily template$<$int id, class graph , class vertexes  = typename graph\+::vertexes\+\_\+$>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_filter}{G\+Lib\+::\+Filter}}$<$ id, graph, vertexes $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_filter_addd12a4e2fa2f43177db955224f4a14b}{tail\+\_\+result}} =  typename \mbox{\hyperlink{struct_g_lib_1_1_filter}{Filter}}$<$id, graph, typename vertexes\+::\+Tail$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_filter_a53051f4b1bbec8855814e28e7bedb4cb}{result}}}
+
+
+
+Definition at line 21 of file filter.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/\+G\+Lib/\mbox{\hyperlink{filter_8h}{filter.\+h}}\end{DoxyCompactItemize}

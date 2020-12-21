@@ -24,6 +24,7 @@ struct EdgeListGraph {
 	static_assert(TL::IsTypeList<edge_list>::value, "Edge list is not a TypeList");
 	using vertexes_ = nodes;  //!< TypeList of vertexes in graph.
 	using edge_list_ = edge_list;  //!< TypeList of edges
+	using edges_ = edge_list_;
 
 	/**
 	* Represents an adapter, which converts one type of a graph into another.

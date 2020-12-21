@@ -3,6 +3,7 @@
 #include "../../TL/fill_type_list_with_object.h"
 #include "../../TL/index_of.h"
 
+#include "../class.h"
 #include "../graphs/adjacency_matrix_graph.h"
 #include "../objects.h"
 
@@ -27,9 +28,17 @@ struct ConvertGraph<EDGE_LIST, ADJACENCY_MATRIX, graph> {
 		constexpr static size_t to_ind = TL::IndexOf<vertexes, typename cur_edge::to>::value;
 
 		using new_weight = std::conditional_t<
-			std::is_same_v<NullType, typename cur_edge::weight>,
-			Objects::Boolean<true>,
-			typename cur_edge::weight
+			std::is_same_v<NullType, typename cur_edge::weight>,  // If weight is NullType
+			Objects::Boolean<true>,  // Then it becomes Boolean<true>
+			std::conditional_t<
+				std::is_same_v<Objects::Boolean<false>, typename cur_edge::weight>,  // If weight is Boolean
+				Class<Objects::Boolean<false>>,  // Then it's a Class<Boolean>
+				std::conditional_t<
+					std::is_same_v<Objects::Boolean<true>, typename cur_edge::weight>,
+					Class<Objects::Boolean<true>>,
+					typename cur_edge::weight
+				>
+			>
 		>;
 
 		using tail_result = typename IterateThroughEdges<typename cur_edges::Tail>::result;

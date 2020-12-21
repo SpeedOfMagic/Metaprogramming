@@ -1,836 +1,965 @@
 \begin{theindex}
 
-  \item {Add1}
-    \subitem {vertex\_stream\_example.cpp}, \hyperpage{130}
   \item {added}
     \subitem {TL::Concatenate$<$ front, back $>$::IterateThroughReversedFront$<$ elements, current $>$}, 
-		\hyperpage{98}
+		\hyperpage{114}
   \item {ADJACENCY\_LIST}
-    \subitem {graph\_type.h}, \hyperpage{137}
+    \subitem {graph\_type.h}, \hyperpage{151}
   \item {adjacency\_list}
     \subitem {ConvertGraph$<$ EDGE\_LIST, POINTER\_STRUCTURE, graph $>$}, 
-		\hyperpage{52}
+		\hyperpage{54}
   \item {adjacency\_list\_}
     \subitem {AdjacencyListGraph$<$ nodes, adjacency\_list $>$}, 
-		\hyperpage{24}
+		\hyperpage{21}
   \item {ADJACENCY\_MATRIX}
-    \subitem {graph\_type.h}, \hyperpage{137}
+    \subitem {graph\_type.h}, \hyperpage{151}
   \item {AdjacencyListGraph$<$ nodes, adjacency\_list $>$}, 
-		\hyperpage{22}
-    \subitem {adjacency\_list\_}, \hyperpage{24}
-    \subitem {GetVertexIndex}, \hyperpage{24}
-    \subitem {HasEdge}, \hyperpage{24}
-    \subitem {TYPE}, \hyperpage{25}
-    \subitem {vertexes\_}, \hyperpage{24}
+		\hyperpage{20}
+    \subitem {adjacency\_list\_}, \hyperpage{21}
+    \subitem {GetVertexIndex}, \hyperpage{22}
+    \subitem {HasEdge}, \hyperpage{22}
+    \subitem {TYPE}, \hyperpage{23}
+    \subitem {vertexes\_}, \hyperpage{21}
   \item {AdjacencyListGraph$<$ nodes, adjacency\_list $>$::ConvertTo$<$ type $>$}, 
 		\hyperpage{56}
     \subitem {result}, \hyperpage{57}
-  \item {AdjacencyMatrixGraph$<$ nodes, matrix $>$}, \hyperpage{25}
-    \subitem {matrix\_}, \hyperpage{26}
-    \subitem {TYPE}, \hyperpage{27}
-    \subitem {vertexes\_}, \hyperpage{26}
-  \item {AdjacencyMatrixGraph$<$ nodes, matrix $>$::ConvertTo$<$ type $>$}, 
+  \item {AdjacencyMatrixGraph$<$ vertexes, matrix $>$}, \hyperpage{23}
+    \subitem {matrix\_}, \hyperpage{24}
+    \subitem {TYPE}, \hyperpage{25}
+    \subitem {vertexes\_}, \hyperpage{24}
+  \item {AdjacencyMatrixGraph$<$ vertexes, matrix $>$::ConvertTo$<$ type $>$}, 
 		\hyperpage{57}
     \subitem {result}, \hyperpage{58}
   \item {adjacent\_vertexes}
     \subitem {GLib::AddEdge$<$ ADJACENCY\_LIST, graph, edge $>$}, 
-		\hyperpage{21}
+		\hyperpage{19}
 
   \indexspace
 
-  \item {BinaryOperation}
-    \subitem {StreamFunctorType}, \hyperpage{14}
-
-  \indexspace
-
+  \item {cell}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}, 
+		\hyperpage{107}
   \item {CheckContainsConstructibleParent$<$ type\_list, T, false $>$}, 
-		\hyperpage{28}
-    \subitem {result}, \hyperpage{29}
+		\hyperpage{26}
+    \subitem {result}, \hyperpage{26}
   \item {CheckContainsConstructibleParent$<$ type\_list, T, is\_parent $>$}, 
-		\hyperpage{28}
+		\hyperpage{26}
   \item {CheckContainsConstructibleParent$<$ type\_list, T, true $>$}, 
+		\hyperpage{27}
+    \subitem {result}, \hyperpage{27}
+  \item {CheckContainsParent$<$ type\_list, T, false $>$}, 
+		\hyperpage{28}
+    \subitem {result}, \hyperpage{28}
+  \item {CheckContainsParent$<$ type\_list, T, is\_parent $>$}, 
+		\hyperpage{28}
+  \item {CheckContainsParent$<$ type\_list, T, true $>$}, 
 		\hyperpage{29}
     \subitem {result}, \hyperpage{29}
-  \item {CheckContainsParent$<$ type\_list, T, false $>$}, 
+  \item {CheckFindParentTypeList$<$ contains\_class, T, type\_list, type\_lists $>$}, 
+		\hyperpage{29}
+    \subitem {result}, \hyperpage{30}
+  \item {CheckFindParentTypeList$<$ false, T, type\_list, type\_lists... $>$}, 
 		\hyperpage{30}
-    \subitem {result}, \hyperpage{31}
-  \item {CheckContainsParent$<$ type\_list, T, is\_parent $>$}, 
-		\hyperpage{30}
-  \item {CheckContainsParent$<$ type\_list, T, true $>$}, 
+    \subitem {result}, \hyperpage{30}
+  \item {CheckFindParentTypeList$<$ true, T, type\_list, type\_lists... $>$}, 
 		\hyperpage{31}
     \subitem {result}, \hyperpage{31}
-  \item {CheckFindParentTypeList$<$ contains\_class, T, type\_list, type\_lists $>$}, 
+  \item {CheckFindTypeListByClass$<$ contains\_class, T, type\_list, type\_lists $>$}, 
 		\hyperpage{32}
     \subitem {result}, \hyperpage{32}
-  \item {CheckFindParentTypeList$<$ false, T, type\_list, type\_lists... $>$}, 
+  \item {CheckFindTypeListByClass$<$ false, T, type\_list, type\_lists... $>$}, 
+		\hyperpage{32}
+    \subitem {result}, \hyperpage{33}
+  \item {CheckFindTypeListByClass$<$ true, T, type\_list, type\_lists... $>$}, 
 		\hyperpage{33}
     \subitem {result}, \hyperpage{33}
-  \item {CheckFindParentTypeList$<$ true, T, type\_list, type\_lists... $>$}, 
-		\hyperpage{33}
-    \subitem {result}, \hyperpage{34}
-  \item {CheckFindTypeListByClass$<$ contains\_class, T, type\_list, type\_lists $>$}, 
+  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, false $>$}, 
 		\hyperpage{34}
-    \subitem {result}, \hyperpage{34}
-  \item {CheckFindTypeListByClass$<$ false, T, type\_list, type\_lists... $>$}, 
+    \subitem {result}, \hyperpage{35}
+  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
+		\hyperpage{34}
+  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, true $>$}, 
 		\hyperpage{35}
     \subitem {result}, \hyperpage{35}
-  \item {CheckFindTypeListByClass$<$ true, T, type\_list, type\_lists... $>$}, 
-		\hyperpage{36}
+  \item {CheckIsBaseOf$<$ false, parent, derived $>$}, \hyperpage{36}
     \subitem {result}, \hyperpage{36}
-  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, false $>$}, 
-		\hyperpage{37}
-    \subitem {result}, \hyperpage{37}
-  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
+  \item {CheckIsBaseOf$<$ has\_parent, parent, derived $>$}, 
 		\hyperpage{36}
-  \item {CheckHasDerivedAndConstructible$<$ type\_list, T, true $>$}, 
+  \item {CheckIsBaseOf$<$ true, parent, derived $>$}, \hyperpage{37}
+    \subitem {result}, \hyperpage{37}
+  \item {CheckMostDerived$<$ type\_list, T, false $>$}, \hyperpage{38}
+    \subitem {result}, \hyperpage{38}
+  \item {CheckMostDerived$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
 		\hyperpage{37}
     \subitem {result}, \hyperpage{38}
-  \item {CheckIsBaseOf$<$ false, parent, derived $>$}, \hyperpage{38}
+  \item {CheckMostDerived$<$ type\_list, T, true $>$}, \hyperpage{39}
     \subitem {result}, \hyperpage{39}
-  \item {CheckIsBaseOf$<$ has\_parent, parent, derived $>$}, 
-		\hyperpage{38}
-  \item {CheckIsBaseOf$<$ true, parent, derived $>$}, \hyperpage{39}
-    \subitem {result}, \hyperpage{39}
-  \item {CheckMostDerived$<$ type\_list, T, false $>$}, \hyperpage{41}
-    \subitem {result}, \hyperpage{41}
-  \item {CheckMostDerived$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
+  \item {CheckMostDerivedAndConstructible$<$ type\_list, T, false $>$}, 
 		\hyperpage{40}
     \subitem {result}, \hyperpage{40}
-  \item {CheckMostDerived$<$ type\_list, T, true $>$}, \hyperpage{41}
-    \subitem {result}, \hyperpage{42}
-  \item {CheckMostDerivedAndConstructible$<$ type\_list, T, false $>$}, 
-		\hyperpage{42}
-    \subitem {result}, \hyperpage{43}
   \item {CheckMostDerivedAndConstructible$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
-		\hyperpage{42}
+		\hyperpage{40}
   \item {CheckMostDerivedAndConstructible$<$ type\_list, T, true $>$}, 
-		\hyperpage{43}
-    \subitem {result}, \hyperpage{43}
+		\hyperpage{41}
+    \subitem {result}, \hyperpage{41}
   \item {children}
     \subitem {PointerStructureNode$<$ vertex\_, children\_ $>$}, 
-		\hyperpage{108}
-  \item {Collect}
-    \subitem {Stream$<$ T $>$}, \hyperpage{119}
-  \item {Consumer}
-    \subitem {StreamFunctorType}, \hyperpage{14}
+		\hyperpage{125}
+  \item {Class$<$ value\_ $>$}, \hyperpage{41}
+    \subitem {value}, \hyperpage{42}
+  \item {col}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}, 
+		\hyperpage{109}
   \item {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$}, 
-		\hyperpage{50}
-    \subitem {result}, \hyperpage{50}
+		\hyperpage{48}
+    \subitem {result}, \hyperpage{49}
   \item {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$::MakePointerStructureGraph$<$ current\_vertexes, current\_adjacency\_list $>$}, 
-		\hyperpage{99}
-    \subitem {result}, \hyperpage{100}
-    \subitem {type\_list\_without\_first}, \hyperpage{100}
+		\hyperpage{116}
+    \subitem {result}, \hyperpage{116}
+    \subitem {type\_list\_without\_first}, \hyperpage{116}
   \item {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$::MakePointerStructureGraph$<$ EmptyTypeList, EmptyTypeList $>$}, 
-		\hyperpage{100}
-    \subitem {result}, \hyperpage{101}
+		\hyperpage{117}
+    \subitem {result}, \hyperpage{117}
+  \item {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$}, 
+		\hyperpage{49}
+    \subitem {edges}, \hyperpage{50}
+    \subitem {n}, \hyperpage{51}
+    \subitem {result}, \hyperpage{50}
+    \subitem {vertexes}, \hyperpage{50}
+  \item {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}, 
+		\hyperpage{107}
+    \subitem {cell}, \hyperpage{107}
+    \subitem {col}, \hyperpage{109}
+    \subitem {from}, \hyperpage{107}
+    \subitem {result}, \hyperpage{108}
+    \subitem {row}, \hyperpage{109}
+    \subitem {tail\_result}, \hyperpage{108}
+    \subitem {to}, \hyperpage{108}
+    \subitem {weight}, \hyperpage{108}
+  \item {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$-\/1 $>$}, 
+		\hyperpage{109}
+    \subitem {result}, \hyperpage{110}
   \item {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$}, 
 		\hyperpage{51}
-    \subitem {result}, \hyperpage{51, 52}
+    \subitem {result}, \hyperpage{51}
   \item {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$::IterateThroughEdges$<$ edge\_list $>$}, 
-		\hyperpage{90}
-    \subitem {result}, \hyperpage{91}
+		\hyperpage{100}
+    \subitem {result}, \hyperpage{100}
   \item {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$::IterateThroughEdges$<$ EmptyTypeList $>$}, 
-		\hyperpage{92}
-    \subitem {result}, \hyperpage{92, 93}
-  \item {ConvertGraph$<$ EDGE\_LIST, POINTER\_STRUCTURE, graph $>$}, 
+		\hyperpage{103}
+    \subitem {result}, \hyperpage{104}
+  \item {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$}, 
 		\hyperpage{52}
-    \subitem {adjacency\_list}, \hyperpage{52}
+    \subitem {matrix}, \hyperpage{52}
     \subitem {result}, \hyperpage{53}
-  \item {ConvertGraph$<$ From, To, graph $>$}, \hyperpage{49}
-  \item {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$}, 
+    \subitem {vertexes}, \hyperpage{53}
+  \item {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
+		\hyperpage{95}
+    \subitem {cur\_edge}, \hyperpage{96}
+    \subitem {from}, \hyperpage{96}
+    \subitem {from\_ind}, \hyperpage{97}
+    \subitem {new\_weight}, \hyperpage{96}
+    \subitem {result}, \hyperpage{97}
+    \subitem {tail\_result}, \hyperpage{97}
+    \subitem {to}, \hyperpage{97}
+    \subitem {to\_ind}, \hyperpage{98}
+  \item {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ EmptyTypeList $>$}, 
+		\hyperpage{103}
+    \subitem {result}, \hyperpage{103}
+  \item {ConvertGraph$<$ EDGE\_LIST, POINTER\_STRUCTURE, graph $>$}, 
 		\hyperpage{53}
-  \item {ConvertGraph$<$ type, type, graph $>$}, \hyperpage{53}
+    \subitem {adjacency\_list}, \hyperpage{54}
     \subitem {result}, \hyperpage{54}
+  \item {ConvertGraph$<$ From, To, graph $>$}, \hyperpage{48}
+  \item {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$}, 
+		\hyperpage{54}
+    \subitem {iterate\_result}, \hyperpage{55}
+    \subitem {result}, \hyperpage{55}
+  \item {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
+		\hyperpage{111}
+    \subitem {cur\_node}, \hyperpage{111}
+    \subitem {edges}, \hyperpage{111}
+    \subitem {tail\_call}, \hyperpage{112}
+    \subitem {vertexes}, \hyperpage{112}
+  \item {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ EmptyTypeList $>$}, 
+		\hyperpage{113}
+    \subitem {edges}, \hyperpage{113}
+    \subitem {vertexes}, \hyperpage{114}
+  \item {ConvertGraph$<$ type, type, graph $>$}, \hyperpage{55}
+    \subitem {result}, \hyperpage{56}
   \item {cur\_child}
     \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ cur\_children, cur\_visited $>$}, 
-		\hyperpage{85}
+		\hyperpage{93}
   \item {cur\_edge}
-    \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ cur\_children, cur\_visited $>$}, 
-		\hyperpage{85}
-    \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}, 
-		\hyperpage{88}
-    \subitem {GLib::GetReachedVertexes$<$ graph, start $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
-		\hyperpage{90}
-  \item {cur\_node}
-    \subitem {GLib::FindNodeByVertex$<$ vertex, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
 		\hyperpage{96}
+    \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ cur\_children, cur\_visited $>$}, 
+		\hyperpage{93}
+    \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}, 
+		\hyperpage{99}
+    \subitem {GLib::GetReachedVertexes$<$ graph, start $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
+		\hyperpage{101}
+  \item {cur\_node}
+    \subitem {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
+		\hyperpage{111}
+    \subitem {GLib::FindNodeByVertex$<$ vertex, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
+		\hyperpage{110}
 
   \indexspace
 
-  \item {Debug/CodeAnalysisResultManifest.txt}, \hyperpage{129}
-  \item {Debug/library.vcxproj.FileListAbsolute.txt}, \hyperpage{129}
+  \item {Debug/CodeAnalysisResultManifest.txt}, \hyperpage{143}
+  \item {Debug/library.vcxproj.FileListAbsolute.txt}, \hyperpage{143}
   \item {dfs\_search}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{67}
+		\hyperpage{73}
     \subitem {GLib::GetReachedVertexes$<$ graph, start $>$}, 
-		\hyperpage{75}
+		\hyperpage{83}
 
   \indexspace
 
-  \item {Edge$<$ from\_, to\_, weight\_ $>$}, \hyperpage{60}
-    \subitem {from}, \hyperpage{60}
-    \subitem {to}, \hyperpage{61}
-    \subitem {weight}, \hyperpage{61}
+  \item {Edge$<$ from\_, to\_, weight\_ $>$}, \hyperpage{62}
+    \subitem {from}, \hyperpage{62}
+    \subitem {to}, \hyperpage{63}
+    \subitem {weight}, \hyperpage{63}
+  \item {edge\_count}
+    \subitem {ProcessVertex$<$ 34, graph, vertex $>$}, \hyperpage{126}
   \item {EDGE\_LIST}
-    \subitem {graph\_type.h}, \hyperpage{137}
+    \subitem {graph\_type.h}, \hyperpage{151}
   \item {edge\_list\_}
-    \subitem {EdgeListGraph$<$ nodes, edge\_list $>$}, \hyperpage{62}
-  \item {EdgeListGraph$<$ nodes, edge\_list $>$}, \hyperpage{61}
-    \subitem {edge\_list\_}, \hyperpage{62}
-    \subitem {TYPE}, \hyperpage{63}
-    \subitem {vertexes\_}, \hyperpage{62}
+    \subitem {EdgeListGraph$<$ nodes, edge\_list $>$}, \hyperpage{64}
+  \item {EdgeListGraph$<$ nodes, edge\_list $>$}, \hyperpage{63}
+    \subitem {edge\_list\_}, \hyperpage{64}
+    \subitem {edges\_}, \hyperpage{64}
+    \subitem {TYPE}, \hyperpage{65}
+    \subitem {vertexes\_}, \hyperpage{64}
   \item {EdgeListGraph$<$ nodes, edge\_list $>$::ConvertTo$<$ type $>$}, 
-		\hyperpage{54}
-    \subitem {result}, \hyperpage{55}
+		\hyperpage{58}
+    \subitem {result}, \hyperpage{59}
+  \item {edges}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$}, 
+		\hyperpage{50}
+    \subitem {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
+		\hyperpage{111}
+    \subitem {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ EmptyTypeList $>$}, 
+		\hyperpage{113}
+  \item {edges\_}
+    \subitem {EdgeListGraph$<$ nodes, edge\_list $>$}, \hyperpage{64}
   \item {EmptyTypeList}
-    \subitem {type\_list.h}, \hyperpage{147}
+    \subitem {type\_list.h}, \hyperpage{160}
   \item {end}
     \subitem {TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{19}
+		\hyperpage{17}
     \subitem {TL::Replace$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{115}
+		\hyperpage{133}
 
   \indexspace
 
-  \item {Filter}
-    \subitem {Stream$<$ T $>$}, \hyperpage{119}
   \item {finish\_node}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{67}
-  \item {ForEach}
-    \subitem {Stream$<$ T $>$}, \hyperpage{119}
+		\hyperpage{73}
   \item {found}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}, 
-		\hyperpage{89}
+		\hyperpage{100}
   \item {from}
-    \subitem {Edge$<$ from\_, to\_, weight\_ $>$}, \hyperpage{60}
-  \item {Function}
-    \subitem {StreamFunctorType}, \hyperpage{14}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}, 
+		\hyperpage{107}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
+		\hyperpage{96}
+    \subitem {Edge$<$ from\_, to\_, weight\_ $>$}, \hyperpage{62}
+  \item {from\_ind}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
+		\hyperpage{97}
   \item {Functor}
-    \subitem {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{71}
-  \item {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{70}
-    \subitem {Functor}, \hyperpage{71}
-    \subitem {operator()}, \hyperpage{72}
-    \subitem {operator=}, \hyperpage{72}
-  \item {Functor$<$ ResultType, ArgTypes $>$}, \hyperpage{70}
-  \item {functor.h}, \hyperpage{129}
+    \subitem {Functor$<$ ResultType(ArgTypes...)$>$}, 
+		\hyperpage{78, 79}
+  \item {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{78}
+    \subitem {Functor}, \hyperpage{78, 79}
+    \subitem {operator()}, \hyperpage{79}
+    \subitem {operator=}, \hyperpage{79}
+  \item {Functor$<$ ResultType, ArgTypes $>$}, \hyperpage{77}
+  \item {functor.h}, \hyperpage{143}
 
   \indexspace
 
   \item {GetVertexIndex}
     \subitem {AdjacencyListGraph$<$ nodes, adjacency\_list $>$}, 
-		\hyperpage{24}
+		\hyperpage{22}
   \item {GLib}, \hyperpage{13}
   \item {GLib::AddEdge$<$ ADJACENCY\_LIST, graph, edge $>$}, 
-		\hyperpage{20}
-    \subitem {adjacent\_vertexes}, \hyperpage{21}
-    \subitem {new\_adjacency\_list}, \hyperpage{21}
-    \subitem {new\_adjacent\_vertexes}, \hyperpage{21}
-    \subitem {result}, \hyperpage{22}
-    \subitem {vertex\_num}, \hyperpage{22}
-  \item {GLib::AddEdge$<$ GraphType, graph, edge $>$}, \hyperpage{20}
+		\hyperpage{18}
+    \subitem {adjacent\_vertexes}, \hyperpage{19}
+    \subitem {new\_adjacency\_list}, \hyperpage{19}
+    \subitem {new\_adjacent\_vertexes}, \hyperpage{19}
+    \subitem {result}, \hyperpage{19}
+    \subitem {vertex\_num}, \hyperpage{20}
+  \item {GLib::AddEdge$<$ GraphType, graph, edge $>$}, \hyperpage{18}
   \item {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}, 
-		\hyperpage{58}
-    \subitem {iterate\_through\_children}, \hyperpage{59}
-    \subitem {new\_visited}, \hyperpage{59}
-    \subitem {result}, \hyperpage{59}
-    \subitem {upd\_visited}, \hyperpage{59}
+		\hyperpage{60}
+    \subitem {iterate\_through\_children}, \hyperpage{61}
+    \subitem {new\_visited}, \hyperpage{61}
+    \subitem {result}, \hyperpage{61}
+    \subitem {upd\_visited}, \hyperpage{61}
   \item {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ cur\_children, cur\_visited $>$}, 
-		\hyperpage{85}
-    \subitem {cur\_child}, \hyperpage{85}
-    \subitem {cur\_edge}, \hyperpage{85}
-    \subitem {new\_visited}, \hyperpage{86}
-    \subitem {result}, \hyperpage{86}
-  \item {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ EmptyTypeList, cur\_unvisited $>$}, 
-		\hyperpage{86}
-    \subitem {new\_visited}, \hyperpage{87}
-    \subitem {result}, \hyperpage{87}
-  \item {GLib::FindNodeByVertex$<$ vertex, EmptyTypeList $>$}, 
-		\hyperpage{64}
-    \subitem {result}, \hyperpage{64}
-  \item {GLib::FindNodeByVertex$<$ vertex, graph $>$}, \hyperpage{63}
-    \subitem {result}, \hyperpage{64}
-  \item {GLib::FindNodeByVertex$<$ vertex, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
-		\hyperpage{96}
-    \subitem {cur\_node}, \hyperpage{96}
-    \subitem {result}, \hyperpage{96}
-  \item {GLib::FindNodeByVertex$<$ vertex, graph $>$::IterateThroughNodes$<$ EmptyTypeList $>$}, 
-		\hyperpage{97}
-    \subitem {result}, \hyperpage{97}
-  \item {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{66}
-    \subitem {dfs\_search}, \hyperpage{67}
-    \subitem {finish\_node}, \hyperpage{67}
-    \subitem {graph}, \hyperpage{67}
-    \subitem {iterate\_through\_edges}, \hyperpage{67}
-    \subitem {path}, \hyperpage{68}
-    \subitem {reversed}, \hyperpage{68}
-    \subitem {reversed\_path}, \hyperpage{68}
-    \subitem {reversed\_weights}, \hyperpage{68}
-    \subitem {start\_node}, \hyperpage{68}
-    \subitem {weights}, \hyperpage{69}
-  \item {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}, 
-		\hyperpage{87}
-    \subitem {cur\_edge}, \hyperpage{88}
-    \subitem {found}, \hyperpage{89}
-    \subitem {path}, \hyperpage{88}
-    \subitem {weights}, \hyperpage{88}
-  \item {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ EmptyTypeList, wanted\_node $>$}, 
 		\hyperpage{93}
-    \subitem {path}, \hyperpage{93}
-    \subitem {weights}, \hyperpage{94}
-  \item {GLib::GetReachedVertexes$<$ graph, start $>$}, \hyperpage{74}
-    \subitem {dfs\_search}, \hyperpage{75}
-    \subitem {result}, \hyperpage{75}
-    \subitem {start\_node}, \hyperpage{75}
+    \subitem {cur\_child}, \hyperpage{93}
+    \subitem {cur\_edge}, \hyperpage{93}
+    \subitem {new\_visited}, \hyperpage{94}
+    \subitem {result}, \hyperpage{94}
+  \item {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ EmptyTypeList, cur\_unvisited $>$}, 
+		\hyperpage{94}
+    \subitem {new\_visited}, \hyperpage{95}
+    \subitem {result}, \hyperpage{95}
+  \item {GLib::Filter$<$ id, graph, EmptyTypeList $>$}, \hyperpage{68}
+    \subitem {result}, \hyperpage{69}
+  \item {GLib::Filter$<$ id, graph, vertexes $>$}, \hyperpage{67}
+    \subitem {result}, \hyperpage{68}
+    \subitem {tail\_result}, \hyperpage{68}
+  \item {GLib::FindNodeByVertex$<$ vertex, EmptyTypeList $>$}, 
+		\hyperpage{70}
+    \subitem {result}, \hyperpage{70}
+  \item {GLib::FindNodeByVertex$<$ vertex, graph $>$}, \hyperpage{69}
+    \subitem {result}, \hyperpage{70}
+  \item {GLib::FindNodeByVertex$<$ vertex, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
+		\hyperpage{110}
+    \subitem {cur\_node}, \hyperpage{110}
+    \subitem {result}, \hyperpage{110}
+  \item {GLib::FindNodeByVertex$<$ vertex, graph $>$::IterateThroughNodes$<$ EmptyTypeList $>$}, 
+		\hyperpage{112}
+    \subitem {result}, \hyperpage{113}
+  \item {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
+		\hyperpage{72}
+    \subitem {dfs\_search}, \hyperpage{73}
+    \subitem {finish\_node}, \hyperpage{73}
+    \subitem {graph}, \hyperpage{73}
+    \subitem {iterate\_through\_edges}, \hyperpage{73}
+    \subitem {path}, \hyperpage{73}
+    \subitem {reversed}, \hyperpage{73}
+    \subitem {reversed\_path}, \hyperpage{74}
+    \subitem {reversed\_weights}, \hyperpage{74}
+    \subitem {start\_node}, \hyperpage{74}
+    \subitem {weights}, \hyperpage{74}
+  \item {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}, 
+		\hyperpage{98}
+    \subitem {cur\_edge}, \hyperpage{99}
+    \subitem {found}, \hyperpage{100}
+    \subitem {path}, \hyperpage{99}
+    \subitem {weights}, \hyperpage{99}
+  \item {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ EmptyTypeList, wanted\_node $>$}, 
+		\hyperpage{104}
+    \subitem {path}, \hyperpage{104}
+    \subitem {weights}, \hyperpage{105}
+  \item {GLib::ForEach$<$ id, graph, EmptyTypeList $>$}, \hyperpage{77}
+    \subitem {result}, \hyperpage{77}
+  \item {GLib::ForEach$<$ id, graph, vertexes $>$}, \hyperpage{76}
+    \subitem {result}, \hyperpage{76}
+  \item {GLib::GetNodesFromRoots$<$ EmptyTypeList, graph $>$}, 
+		\hyperpage{81}
+    \subitem {result}, \hyperpage{81}
+  \item {GLib::GetNodesFromRoots$<$ nodes, graph $>$}, \hyperpage{80}
+    \subitem {new\_visited}, \hyperpage{80}
+    \subitem {result}, \hyperpage{80}
+    \subitem {tail\_result}, \hyperpage{81}
+  \item {GLib::GetReachedVertexes$<$ graph, start $>$}, \hyperpage{82}
+    \subitem {dfs\_search}, \hyperpage{83}
+    \subitem {result}, \hyperpage{83}
+    \subitem {start\_node}, \hyperpage{83}
   \item {GLib::GetReachedVertexes$<$ graph, start $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
-		\hyperpage{89}
-    \subitem {cur\_edge}, \hyperpage{90}
-    \subitem {result}, \hyperpage{90}
+		\hyperpage{101}
+    \subitem {cur\_edge}, \hyperpage{101}
+    \subitem {result}, \hyperpage{101}
   \item {GLib::GetReachedVertexes$<$ graph, start $>$::IterateThroughEdges$<$ EmptyTypeList $>$}, 
-		\hyperpage{91}
-    \subitem {result}, \hyperpage{92}
-  \item {Graph}, \hyperpage{75}
+		\hyperpage{102}
+    \subitem {result}, \hyperpage{102}
+  \item {Graph}, \hyperpage{83}
   \item {graph}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{67}
-  \item {graph/edge.h}, \hyperpage{129}
-  \item {graph/examples/graph\_examples.cpp}, \hyperpage{129}
-  \item {graph/examples/vertex\_stream\_example.cpp}, \hyperpage{130}
-  \item {graph/GLib/add\_edge.h}, \hyperpage{131}
-  \item {graph/GLib/dfs.h}, \hyperpage{131}
-  \item {graph/GLib/find\_node\_by\_vertex.h}, \hyperpage{132}
-  \item {graph/GLib/find\_path.h}, \hyperpage{132}
-  \item {graph/GLib/get\_reached\_vertexes.h}, \hyperpage{133}
-  \item {graph/GLib/map\_indexes\_to\_vertexes.h}, \hyperpage{133}
-  \item {graph/graphs/adjacency\_list\_graph.h}, \hyperpage{133}
-  \item {graph/graphs/adjacency\_matrix\_graph.h}, \hyperpage{133}
-  \item {graph/graphs/convert\_from\_edge\_list.h}, \hyperpage{134}
-  \item {graph/graphs/convert\_from\_pointer\_structure.h}, 
-		\hyperpage{134}
-  \item {graph/graphs/convert\_graph.h}, \hyperpage{134}
-  \item {graph/graphs/convert\_to\_adjacency\_list.h}, \hyperpage{135}
-  \item {graph/graphs/convert\_to\_pointer\_structure.h}, 
-		\hyperpage{135}
-  \item {graph/graphs/edge\_list\_graph.h}, \hyperpage{136}
-  \item {graph/graphs/graph.h}, \hyperpage{136}
-  \item {graph/graphs/graph\_type.h}, \hyperpage{136}
-  \item {graph/graphs/pointer\_structure\_graph.h}, \hyperpage{137}
-  \item {graph/graphs/pointer\_structure\_node.h}, \hyperpage{137}
-  \item {graph/objects.h}, \hyperpage{137}
-  \item {graph/stream.h}, \hyperpage{138}
-  \item {graph/stream\_functor\_type.h}, \hyperpage{138}
-  \item {graph/vertex\_stream.h}, \hyperpage{138}
+		\hyperpage{73}
+  \item {graph/class.h}, \hyperpage{143}
+  \item {graph/convert/convert\_graph.h}, \hyperpage{143}
+  \item {graph/convert/convert\_to\_adjacency\_list.h}, \hyperpage{144}
+  \item {graph/convert/convert\_to\_adjacency\_matrix.h}, 
+		\hyperpage{144}
+  \item {graph/convert/convert\_to\_edge\_list.h}, \hyperpage{144}
+  \item {graph/convert/convert\_to\_pointer\_structure.h}, 
+		\hyperpage{145}
+  \item {graph/edge.h}, \hyperpage{145}
+  \item {graph/examples/graph\_examples.cpp}, \hyperpage{145}
+  \item {graph/examples/vertex\_stream\_example.cpp}, \hyperpage{146}
+  \item {graph/GLib/add\_edge.h}, \hyperpage{147}
+  \item {graph/GLib/dfs.h}, \hyperpage{147}
+  \item {graph/GLib/filter.h}, \hyperpage{147}
+  \item {graph/GLib/find\_node\_by\_vertex.h}, \hyperpage{148}
+  \item {graph/GLib/find\_path.h}, \hyperpage{148}
+  \item {graph/GLib/for\_each.h}, \hyperpage{148}
+  \item {graph/GLib/get\_nodes\_from\_roots.h}, \hyperpage{149}
+  \item {graph/GLib/get\_reached\_vertexes.h}, \hyperpage{149}
+  \item {graph/GLib/map\_indexes\_to\_vertexes.h}, \hyperpage{150}
+  \item {graph/graphs/adjacency\_list\_graph.h}, \hyperpage{150}
+  \item {graph/graphs/adjacency\_matrix\_graph.h}, \hyperpage{150}
+  \item {graph/graphs/edge\_list\_graph.h}, \hyperpage{150}
+  \item {graph/graphs/graph.h}, \hyperpage{151}
+  \item {graph/graphs/graph\_type.h}, \hyperpage{151}
+  \item {graph/graphs/pointer\_structure\_graph.h}, \hyperpage{151}
+  \item {graph/graphs/pointer\_structure\_node.h}, \hyperpage{152}
+  \item {graph/objects.h}, \hyperpage{152}
+  \item {graph/process\_vertex.h}, \hyperpage{152}
   \item {graph\_examples.cpp}
-    \subitem {main}, \hyperpage{130}
+    \subitem {main}, \hyperpage{146}
   \item {graph\_type.h}
-    \subitem {ADJACENCY\_LIST}, \hyperpage{137}
-    \subitem {ADJACENCY\_MATRIX}, \hyperpage{137}
-    \subitem {EDGE\_LIST}, \hyperpage{137}
-    \subitem {GraphType}, \hyperpage{136}
-    \subitem {POINTER\_STRUCTURE}, \hyperpage{137}
+    \subitem {ADJACENCY\_LIST}, \hyperpage{151}
+    \subitem {ADJACENCY\_MATRIX}, \hyperpage{151}
+    \subitem {EDGE\_LIST}, \hyperpage{151}
+    \subitem {GraphType}, \hyperpage{151}
+    \subitem {POINTER\_STRUCTURE}, \hyperpage{151}
   \item {GraphType}
-    \subitem {graph\_type.h}, \hyperpage{136}
+    \subitem {graph\_type.h}, \hyperpage{151}
 
   \indexspace
 
   \item {HasEdge}
     \subitem {AdjacencyListGraph$<$ nodes, adjacency\_list $>$}, 
-		\hyperpage{24}
+		\hyperpage{22}
   \item {Head}
-    \subitem {TypeList$<$ Args $>$}, \hyperpage{123}
-    \subitem {TypeList$<$ H, T... $>$}, \hyperpage{124}
-    \subitem {TypeList$<$ T $>$}, \hyperpage{125}
+    \subitem {TypeList$<$ Args $>$}, \hyperpage{139}
+    \subitem {TypeList$<$ H, T... $>$}, \hyperpage{140}
+    \subitem {TypeList$<$ T $>$}, \hyperpage{141}
 
   \indexspace
 
-  \item {IsAmongFirst3}
-    \subitem {vertex\_stream\_example.cpp}, \hyperpage{130}
+  \item {iterate\_result}
+    \subitem {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$}, 
+		\hyperpage{55}
   \item {iterate\_through\_children}
     \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}, 
-		\hyperpage{59}
+		\hyperpage{61}
   \item {iterate\_through\_edges}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{67}
+		\hyperpage{73}
 
   \indexspace
 
   \item {main}
-    \subitem {graph\_examples.cpp}, \hyperpage{130}
-    \subitem {vertex\_stream\_example.cpp}, \hyperpage{131}
-  \item {Map}
-    \subitem {Stream$<$ T $>$}, \hyperpage{120}
-  \item {MapVertexesToIndexes}
-    \subitem {VertexStream$<$ stream, graph $>$}, \hyperpage{126}
-  \item {MapVertexesToReversedIndexes}
-    \subitem {VertexStream$<$ EmptyTypeList, graph $>$}, 
-		\hyperpage{127}
-    \subitem {VertexStream$<$ stream, graph $>$}, \hyperpage{126}
+    \subitem {graph\_examples.cpp}, \hyperpage{146}
+    \subitem {vertex\_stream\_example.cpp}, \hyperpage{146}
+  \item {matrix}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$}, 
+		\hyperpage{52}
   \item {matrix\_}
-    \subitem {AdjacencyMatrixGraph$<$ nodes, matrix $>$}, 
-		\hyperpage{26}
+    \subitem {AdjacencyMatrixGraph$<$ vertexes, matrix $>$}, 
+		\hyperpage{24}
 
   \indexspace
 
+  \item {n}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$}, 
+		\hyperpage{51}
   \item {new\_adjacency\_list}
     \subitem {GLib::AddEdge$<$ ADJACENCY\_LIST, graph, edge $>$}, 
-		\hyperpage{21}
+		\hyperpage{19}
   \item {new\_adjacent\_vertexes}
     \subitem {GLib::AddEdge$<$ ADJACENCY\_LIST, graph, edge $>$}, 
-		\hyperpage{21}
+		\hyperpage{19}
   \item {new\_visited}
     \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}, 
-		\hyperpage{59}
+		\hyperpage{61}
     \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ cur\_children, cur\_visited $>$}, 
-		\hyperpage{86}
+		\hyperpage{94}
     \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ EmptyTypeList, cur\_unvisited $>$}, 
-		\hyperpage{87}
+		\hyperpage{95}
+    \subitem {GLib::GetNodesFromRoots$<$ nodes, graph $>$}, 
+		\hyperpage{80}
+  \item {new\_weight}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
+		\hyperpage{96}
   \item {nodes\_}
-    \subitem {PointerStructureGraph$<$ nodes $>$}, \hyperpage{107}
-  \item {NullType}, \hyperpage{106}
+    \subitem {PointerStructureGraph$<$ nodes $>$}, \hyperpage{124}
+  \item {NullType}, \hyperpage{122}
+  \item {number}
+    \subitem {ProcessVertex$<$ 34, graph, vertex $>$}, \hyperpage{126}
 
   \indexspace
 
   \item {Objects}, \hyperpage{13}
-  \item {Objects::Boolean$<$ boolean $>$}, \hyperpage{27}
-    \subitem {value}, \hyperpage{27}
-  \item {Objects::Integer$<$ integer $>$}, \hyperpage{80}
-    \subitem {value}, \hyperpage{80}
+  \item {Objects::Boolean$<$ boolean $>$}, \hyperpage{25}
+    \subitem {value}, \hyperpage{25}
+  \item {Objects::Integer$<$ integer $>$}, \hyperpage{88}
+    \subitem {value}, \hyperpage{88}
   \item {operator()}
-    \subitem {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{72}
+    \subitem {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{79}
   \item {operator=}
-    \subitem {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{72}
+    \subitem {Functor$<$ ResultType(ArgTypes...)$>$}, \hyperpage{79}
 
   \indexspace
 
   \item {path}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{68}
+		\hyperpage{73}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}, 
-		\hyperpage{88}
+		\hyperpage{99}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ EmptyTypeList, wanted\_node $>$}, 
-		\hyperpage{93}
+		\hyperpage{104}
   \item {POINTER\_STRUCTURE}
-    \subitem {graph\_type.h}, \hyperpage{137}
-  \item {PointerStructureGraph$<$ nodes $>$}, \hyperpage{106}
-    \subitem {nodes\_}, \hyperpage{107}
-    \subitem {TYPE}, \hyperpage{107}
+    \subitem {graph\_type.h}, \hyperpage{151}
+  \item {PointerStructureGraph$<$ nodes $>$}, \hyperpage{123}
+    \subitem {nodes\_}, \hyperpage{124}
+    \subitem {TYPE}, \hyperpage{124}
   \item {PointerStructureGraph$<$ nodes $>$::ConvertTo$<$ type $>$}, 
-		\hyperpage{55}
-    \subitem {result}, \hyperpage{56}
+		\hyperpage{59}
+    \subitem {result}, \hyperpage{60}
   \item {PointerStructureNode$<$ vertex\_, children\_ $>$}, 
-		\hyperpage{108}
-    \subitem {children}, \hyperpage{108}
-    \subitem {vertex}, \hyperpage{109}
-  \item {Predicate}
-    \subitem {StreamFunctorType}, \hyperpage{14}
+		\hyperpage{124}
+    \subitem {children}, \hyperpage{125}
+    \subitem {vertex}, \hyperpage{125}
+  \item {ProcessVertex$<$ 34, graph, vertex $>$}, \hyperpage{126}
+    \subitem {edge\_count}, \hyperpage{126}
+    \subitem {number}, \hyperpage{126}
+    \subitem {result}, \hyperpage{127}
+  \item {ProcessVertex$<$ 42, graph, vertex $>$}, \hyperpage{127}
+    \subitem {result}, \hyperpage{127}
+  \item {ProcessVertex$<$ id, graph, vertex $>$}, \hyperpage{125}
 
   \indexspace
 
-  \item {Reduce}
-    \subitem {Stream$<$ T $>$}, \hyperpage{120}
   \item {result}
     \subitem {AdjacencyListGraph$<$ nodes, adjacency\_list $>$::ConvertTo$<$ type $>$}, 
 		\hyperpage{57}
-    \subitem {AdjacencyMatrixGraph$<$ nodes, matrix $>$::ConvertTo$<$ type $>$}, 
+    \subitem {AdjacencyMatrixGraph$<$ vertexes, matrix $>$::ConvertTo$<$ type $>$}, 
 		\hyperpage{58}
     \subitem {CheckContainsConstructibleParent$<$ type\_list, T, false $>$}, 
-		\hyperpage{29}
+		\hyperpage{26}
     \subitem {CheckContainsConstructibleParent$<$ type\_list, T, true $>$}, 
-		\hyperpage{29}
+		\hyperpage{27}
     \subitem {CheckContainsParent$<$ type\_list, T, false $>$}, 
-		\hyperpage{31}
+		\hyperpage{28}
     \subitem {CheckContainsParent$<$ type\_list, T, true $>$}, 
-		\hyperpage{31}
+		\hyperpage{29}
     \subitem {CheckFindParentTypeList$<$ contains\_class, T, type\_list, type\_lists $>$}, 
-		\hyperpage{32}
+		\hyperpage{30}
     \subitem {CheckFindParentTypeList$<$ false, T, type\_list, type\_lists... $>$}, 
-		\hyperpage{33}
+		\hyperpage{30}
     \subitem {CheckFindParentTypeList$<$ true, T, type\_list, type\_lists... $>$}, 
-		\hyperpage{34}
+		\hyperpage{31}
     \subitem {CheckFindTypeListByClass$<$ contains\_class, T, type\_list, type\_lists $>$}, 
-		\hyperpage{34}
+		\hyperpage{32}
     \subitem {CheckFindTypeListByClass$<$ false, T, type\_list, type\_lists... $>$}, 
-		\hyperpage{35}
+		\hyperpage{33}
     \subitem {CheckFindTypeListByClass$<$ true, T, type\_list, type\_lists... $>$}, 
-		\hyperpage{36}
+		\hyperpage{33}
     \subitem {CheckHasDerivedAndConstructible$<$ type\_list, T, false $>$}, 
-		\hyperpage{37}
+		\hyperpage{35}
     \subitem {CheckHasDerivedAndConstructible$<$ type\_list, T, true $>$}, 
-		\hyperpage{38}
+		\hyperpage{35}
     \subitem {CheckIsBaseOf$<$ false, parent, derived $>$}, 
-		\hyperpage{39}
+		\hyperpage{36}
     \subitem {CheckIsBaseOf$<$ true, parent, derived $>$}, 
-		\hyperpage{39}
+		\hyperpage{37}
     \subitem {CheckMostDerived$<$ type\_list, T, false $>$}, 
-		\hyperpage{41}
+		\hyperpage{38}
     \subitem {CheckMostDerived$<$ type\_list, T, is\_head\_parent\_of\_T $>$}, 
-		\hyperpage{40}
+		\hyperpage{38}
     \subitem {CheckMostDerived$<$ type\_list, T, true $>$}, 
-		\hyperpage{42}
+		\hyperpage{39}
     \subitem {CheckMostDerivedAndConstructible$<$ type\_list, T, false $>$}, 
-		\hyperpage{43}
+		\hyperpage{40}
     \subitem {CheckMostDerivedAndConstructible$<$ type\_list, T, true $>$}, 
-		\hyperpage{43}
+		\hyperpage{41}
     \subitem {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$}, 
-		\hyperpage{50}
-    \subitem {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$::MakePointerStructureGraph$<$ current\_vertexes, current\_adjacency\_list $>$}, 
-		\hyperpage{100}
-    \subitem {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$::MakePointerStructureGraph$<$ EmptyTypeList, EmptyTypeList $>$}, 
-		\hyperpage{101}
-    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$}, 
-		\hyperpage{51, 52}
-    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$::IterateThroughEdges$<$ edge\_list $>$}, 
-		\hyperpage{91}
-    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$::IterateThroughEdges$<$ EmptyTypeList $>$}, 
-		\hyperpage{92, 93}
-    \subitem {ConvertGraph$<$ EDGE\_LIST, POINTER\_STRUCTURE, graph $>$}, 
-		\hyperpage{53}
-    \subitem {ConvertGraph$<$ type, type, graph $>$}, \hyperpage{54}
-    \subitem {EdgeListGraph$<$ nodes, edge\_list $>$::ConvertTo$<$ type $>$}, 
-		\hyperpage{55}
-    \subitem {GLib::AddEdge$<$ ADJACENCY\_LIST, graph, edge $>$}, 
-		\hyperpage{22}
-    \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}, 
-		\hyperpage{59}
-    \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ cur\_children, cur\_visited $>$}, 
-		\hyperpage{86}
-    \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ EmptyTypeList, cur\_unvisited $>$}, 
-		\hyperpage{87}
-    \subitem {GLib::FindNodeByVertex$<$ vertex, EmptyTypeList $>$}, 
-		\hyperpage{64}
-    \subitem {GLib::FindNodeByVertex$<$ vertex, graph $>$}, 
-		\hyperpage{64}
-    \subitem {GLib::FindNodeByVertex$<$ vertex, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
-		\hyperpage{96}
-    \subitem {GLib::FindNodeByVertex$<$ vertex, graph $>$::IterateThroughNodes$<$ EmptyTypeList $>$}, 
-		\hyperpage{97}
-    \subitem {GLib::GetReachedVertexes$<$ graph, start $>$}, 
-		\hyperpage{75}
-    \subitem {GLib::GetReachedVertexes$<$ graph, start $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
-		\hyperpage{90}
-    \subitem {GLib::GetReachedVertexes$<$ graph, start $>$::IterateThroughEdges$<$ EmptyTypeList $>$}, 
-		\hyperpage{92}
-    \subitem {PointerStructureGraph$<$ nodes $>$::ConvertTo$<$ type $>$}, 
-		\hyperpage{56}
-    \subitem {TL::Add$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{18}
-    \subitem {TL::Add$<$ T, 0, TypeList$<$ Args... $>$ $>$}, 
-		\hyperpage{18}
-    \subitem {TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{19}
-    \subitem {TL::Concatenate$<$ front, back $>$}, \hyperpage{44}
-    \subitem {TL::Concatenate$<$ front, back $>$::IterateThroughReversedFront$<$ elements, current $>$}, 
-		\hyperpage{98}
-    \subitem {TL::Concatenate$<$ front, back $>$::IterateThroughReversedFront$<$ EmptyTypeList, current $>$}, 
-		\hyperpage{99}
-    \subitem {TL::Contains$<$ type\_list, T $>$}, \hyperpage{46}
-    \subitem {TL::ContainsConstructibleParent$<$ EmptyTypeList, T $>$}, 
-		\hyperpage{47}
-    \subitem {TL::ContainsConstructibleParent$<$ type\_list, T $>$}, 
-		\hyperpage{46}
-    \subitem {TL::ContainsParent$<$ EmptyTypeList, T $>$}, 
 		\hyperpage{49}
-    \subitem {TL::ContainsParent$<$ type\_list, T $>$}, \hyperpage{48}
-    \subitem {TL::FindParentTypeList$<$ T, type\_list, type\_lists $>$}, 
-		\hyperpage{65}
-    \subitem {TL::FindTypeListByClass$<$ T, type\_list, type\_lists $>$}, 
-		\hyperpage{70}
-    \subitem {TL::GenerateTypeLists$<$ 0 $>$}, \hyperpage{73}
-    \subitem {TL::GenerateTypeLists$<$ n $>$}, \hyperpage{73}
-    \subitem {TL::HasDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
-		\hyperpage{77}
-    \subitem {TL::HasDerivedAndConstructible$<$ type\_list, T $>$}, 
-		\hyperpage{76}
-    \subitem {TL::IsBaseOf$<$ EmptyTypeList, derived $>$}, 
-		\hyperpage{82}
-    \subitem {TL::IsBaseOf$<$ EmptyTypeList, EmptyTypeList $>$}, 
-		\hyperpage{83}
-    \subitem {TL::IsBaseOf$<$ parent, derived $>$}, \hyperpage{81}
-    \subitem {TL::IsBaseOf$<$ parent, EmptyTypeList $>$}, 
-		\hyperpage{83}
-    \subitem {TL::MostDerived$<$ EmptyTypeList, T $>$}, \hyperpage{102}
-    \subitem {TL::MostDerived$<$ type\_list, T $>$}, \hyperpage{101}
-    \subitem {TL::MostDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
+    \subitem {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$::MakePointerStructureGraph$<$ current\_vertexes, current\_adjacency\_list $>$}, 
+		\hyperpage{116}
+    \subitem {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$::MakePointerStructureGraph$<$ EmptyTypeList, EmptyTypeList $>$}, 
+		\hyperpage{117}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$}, 
+		\hyperpage{50}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}, 
+		\hyperpage{108}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$-\/1 $>$}, 
+		\hyperpage{110}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$}, 
+		\hyperpage{51}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$::IterateThroughEdges$<$ edge\_list $>$}, 
+		\hyperpage{100}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_LIST, graph $>$::IterateThroughEdges$<$ EmptyTypeList $>$}, 
 		\hyperpage{104}
-    \subitem {TL::MostDerivedAndConstructible$<$ type\_list, T $>$}, 
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$}, 
+		\hyperpage{53}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
+		\hyperpage{97}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ EmptyTypeList $>$}, 
 		\hyperpage{103}
-    \subitem {TL::NoDuplicates$<$ EmptyTypeList $>$}, \hyperpage{106}
-    \subitem {TL::NoDuplicates$<$ type\_list $>$}, \hyperpage{105}
-    \subitem {TL::Remove$<$ EmptyTypeList, T $>$}, \hyperpage{110}
-    \subitem {TL::Remove$<$ type\_list, T $>$}, \hyperpage{110}
-    \subitem {TL::Remove$<$ type\_list, typename type\_list::Head $>$}, 
-		\hyperpage{111}
-    \subitem {TL::RemoveAll$<$ type\_list, T $>$}, \hyperpage{112}
-    \subitem {TL::RemoveAll$<$ type\_list, typename type\_list::Head $>$}, 
-		\hyperpage{113}
-    \subitem {TL::Replace$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{114}
-    \subitem {TL::Replace$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{115}
-    \subitem {TL::Reverse$<$ type\_list $>$}, \hyperpage{116}
-    \subitem {TL::Reverse$<$ type\_list $>$::IterateThroughElements$<$ cur\_type\_list, cur\_result $>$}, 
+    \subitem {ConvertGraph$<$ EDGE\_LIST, POINTER\_STRUCTURE, graph $>$}, 
+		\hyperpage{54}
+    \subitem {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$}, 
+		\hyperpage{55}
+    \subitem {ConvertGraph$<$ type, type, graph $>$}, \hyperpage{56}
+    \subitem {EdgeListGraph$<$ nodes, edge\_list $>$::ConvertTo$<$ type $>$}, 
+		\hyperpage{59}
+    \subitem {GLib::AddEdge$<$ ADJACENCY\_LIST, graph, edge $>$}, 
+		\hyperpage{19}
+    \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}, 
+		\hyperpage{61}
+    \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ cur\_children, cur\_visited $>$}, 
 		\hyperpage{94}
-    \subitem {TL::Reverse$<$ type\_list $>$::IterateThroughElements$<$ EmptyTypeList, cur\_result $>$}, 
+    \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$::IterateThroughChildren$<$ EmptyTypeList, cur\_unvisited $>$}, 
 		\hyperpage{95}
+    \subitem {GLib::Filter$<$ id, graph, EmptyTypeList $>$}, 
+		\hyperpage{69}
+    \subitem {GLib::Filter$<$ id, graph, vertexes $>$}, \hyperpage{68}
+    \subitem {GLib::FindNodeByVertex$<$ vertex, EmptyTypeList $>$}, 
+		\hyperpage{70}
+    \subitem {GLib::FindNodeByVertex$<$ vertex, graph $>$}, 
+		\hyperpage{70}
+    \subitem {GLib::FindNodeByVertex$<$ vertex, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
+		\hyperpage{110}
+    \subitem {GLib::FindNodeByVertex$<$ vertex, graph $>$::IterateThroughNodes$<$ EmptyTypeList $>$}, 
+		\hyperpage{113}
+    \subitem {GLib::ForEach$<$ id, graph, EmptyTypeList $>$}, 
+		\hyperpage{77}
+    \subitem {GLib::ForEach$<$ id, graph, vertexes $>$}, \hyperpage{76}
+    \subitem {GLib::GetNodesFromRoots$<$ EmptyTypeList, graph $>$}, 
+		\hyperpage{81}
+    \subitem {GLib::GetNodesFromRoots$<$ nodes, graph $>$}, 
+		\hyperpage{80}
+    \subitem {GLib::GetReachedVertexes$<$ graph, start $>$}, 
+		\hyperpage{83}
+    \subitem {GLib::GetReachedVertexes$<$ graph, start $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
+		\hyperpage{101}
+    \subitem {GLib::GetReachedVertexes$<$ graph, start $>$::IterateThroughEdges$<$ EmptyTypeList $>$}, 
+		\hyperpage{102}
+    \subitem {PointerStructureGraph$<$ nodes $>$::ConvertTo$<$ type $>$}, 
+		\hyperpage{60}
+    \subitem {ProcessVertex$<$ 34, graph, vertex $>$}, \hyperpage{127}
+    \subitem {ProcessVertex$<$ 42, graph, vertex $>$}, \hyperpage{127}
+    \subitem {TL::Add$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{16}
+    \subitem {TL::Add$<$ T, 0, TypeList$<$ Args... $>$ $>$}, 
+		\hyperpage{16}
+    \subitem {TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{17}
+    \subitem {TL::Concatenate$<$ front, back $>$}, \hyperpage{43}
+    \subitem {TL::Concatenate$<$ front, back $>$::IterateThroughReversedFront$<$ elements, current $>$}, 
+		\hyperpage{115}
+    \subitem {TL::Concatenate$<$ front, back $>$::IterateThroughReversedFront$<$ EmptyTypeList, current $>$}, 
+		\hyperpage{115}
+    \subitem {TL::ContainsConstructibleParent$<$ EmptyTypeList, T $>$}, 
+		\hyperpage{46}
+    \subitem {TL::ContainsConstructibleParent$<$ type\_list, T $>$}, 
+		\hyperpage{45}
+    \subitem {TL::ContainsParent$<$ EmptyTypeList, T $>$}, 
+		\hyperpage{47}
+    \subitem {TL::ContainsParent$<$ type\_list, T $>$}, \hyperpage{46}
+    \subitem {TL::FillTypeListWithObject$<$ obj, 0 $>$}, \hyperpage{66}
+    \subitem {TL::FillTypeListWithObject$<$ obj, n $>$}, \hyperpage{66}
+    \subitem {TL::FindParentTypeList$<$ T, type\_list, type\_lists $>$}, 
+		\hyperpage{71}
+    \subitem {TL::FindTypeListByClass$<$ T, type\_list, type\_lists $>$}, 
+		\hyperpage{75}
+    \subitem {TL::HasDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
+		\hyperpage{85}
+    \subitem {TL::HasDerivedAndConstructible$<$ type\_list, T $>$}, 
+		\hyperpage{84}
+    \subitem {TL::IsBaseOf$<$ EmptyTypeList, derived $>$}, 
+		\hyperpage{90}
+    \subitem {TL::IsBaseOf$<$ EmptyTypeList, EmptyTypeList $>$}, 
+		\hyperpage{91}
+    \subitem {TL::IsBaseOf$<$ parent, derived $>$}, \hyperpage{89}
+    \subitem {TL::IsBaseOf$<$ parent, EmptyTypeList $>$}, 
+		\hyperpage{91}
+    \subitem {TL::MostDerived$<$ EmptyTypeList, T $>$}, \hyperpage{119}
+    \subitem {TL::MostDerived$<$ type\_list, T $>$}, \hyperpage{118}
+    \subitem {TL::MostDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
+		\hyperpage{121}
+    \subitem {TL::MostDerivedAndConstructible$<$ type\_list, T $>$}, 
+		\hyperpage{120}
+    \subitem {TL::NoDuplicates$<$ EmptyTypeList $>$}, \hyperpage{122}
+    \subitem {TL::NoDuplicates$<$ type\_list $>$}, \hyperpage{121}
+    \subitem {TL::Remove$<$ EmptyTypeList, T $>$}, \hyperpage{129}
+    \subitem {TL::Remove$<$ type\_list, T $>$}, \hyperpage{128}
+    \subitem {TL::Remove$<$ type\_list, typename type\_list::Head $>$}, 
+		\hyperpage{130}
+    \subitem {TL::RemoveAll$<$ type\_list, T $>$}, \hyperpage{130}
+    \subitem {TL::RemoveAll$<$ type\_list, typename type\_list::Head $>$}, 
+		\hyperpage{131}
+    \subitem {TL::Replace$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{133}
+    \subitem {TL::Replace$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{134}
+    \subitem {TL::Reverse$<$ type\_list $>$}, \hyperpage{135}
+    \subitem {TL::Reverse$<$ type\_list $>$::IterateThroughElements$<$ cur\_type\_list, cur\_result $>$}, 
+		\hyperpage{105}
+    \subitem {TL::Reverse$<$ type\_list $>$::IterateThroughElements$<$ EmptyTypeList, cur\_result $>$}, 
+		\hyperpage{106}
   \item {reversed}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{68}
+		\hyperpage{73}
   \item {reversed\_front}
-    \subitem {TL::Concatenate$<$ front, back $>$}, \hyperpage{45}
+    \subitem {TL::Concatenate$<$ front, back $>$}, \hyperpage{43}
   \item {reversed\_path}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{68}
+		\hyperpage{74}
   \item {reversed\_weights}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{68}
+		\hyperpage{74}
+  \item {row}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}, 
+		\hyperpage{109}
 
   \indexspace
 
   \item {size}
-    \subitem {TL::Size$<$ EmptyTypeList $>$}, \hyperpage{117}
-    \subitem {TL::Size$<$ type\_list $>$}, \hyperpage{117}
+    \subitem {TL::Size$<$ EmptyTypeList $>$}, \hyperpage{136}
+    \subitem {TL::Size$<$ type\_list $>$}, \hyperpage{136}
   \item {start\_node}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{68}
+		\hyperpage{74}
     \subitem {GLib::GetReachedVertexes$<$ graph, start $>$}, 
-		\hyperpage{75}
-  \item {Stream}
-    \subitem {Stream$<$ T $>$}, \hyperpage{118}
-  \item {Stream$<$ T $>$}, \hyperpage{118}
-    \subitem {Collect}, \hyperpage{119}
-    \subitem {Filter}, \hyperpage{119}
-    \subitem {ForEach}, \hyperpage{119}
-    \subitem {Map}, \hyperpage{120}
-    \subitem {Reduce}, \hyperpage{120}
-    \subitem {Stream}, \hyperpage{118}
-  \item {StreamFunctorType}, \hyperpage{13}
-    \subitem {BinaryOperation}, \hyperpage{14}
-    \subitem {Consumer}, \hyperpage{14}
-    \subitem {Function}, \hyperpage{14}
-    \subitem {Predicate}, \hyperpage{14}
+		\hyperpage{83}
 
   \indexspace
 
   \item {Tail}
-    \subitem {TypeList$<$ Args $>$}, \hyperpage{123}
-    \subitem {TypeList$<$ H, T... $>$}, \hyperpage{124}
-    \subitem {TypeList$<$ T $>$}, \hyperpage{125}
-  \item {TL}, \hyperpage{15}
-  \item {TL/add.h}, \hyperpage{139}
-  \item {TL/concatenate.h}, \hyperpage{139}
-  \item {TL/contains.h}, \hyperpage{139}
-  \item {TL/contains\_constructible\_parent.h}, \hyperpage{140}
-  \item {TL/contains\_parent.h}, \hyperpage{140}
-  \item {TL/find\_parent\_type\_list.h}, \hyperpage{140}
-  \item {TL/find\_type\_list\_by\_class.h}, \hyperpage{141}
-  \item {TL/generate\_type\_lists.h}, \hyperpage{141}
-  \item {TL/has\_derived\_and\_constructible.h}, \hyperpage{142}
-  \item {TL/index\_of.h}, \hyperpage{142}
-  \item {TL/is\_base\_of.h}, \hyperpage{142}
-  \item {TL/is\_type\_list.h}, \hyperpage{143}
-  \item {TL/most\_derived.h}, \hyperpage{143}
-  \item {TL/most\_derived\_and\_constructible.h}, \hyperpage{144}
-  \item {TL/no\_duplicates.h}, \hyperpage{144}
-  \item {TL/null\_type.h}, \hyperpage{144}
-  \item {TL/remove.h}, \hyperpage{144}
-  \item {TL/replace.h}, \hyperpage{145}
-  \item {TL/reverse.h}, \hyperpage{145}
-  \item {TL/size.h}, \hyperpage{146}
-  \item {TL/type\_at.h}, \hyperpage{146}
-  \item {TL/type\_list.h}, \hyperpage{146}
-  \item {TL::Add$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{17}
-    \subitem {result}, \hyperpage{18}
-  \item {TL::Add$<$ T, 0, TypeList$<$ Args... $>$ $>$}, \hyperpage{18}
-    \subitem {result}, \hyperpage{18}
-  \item {TL::Add$<$ T, ind, Arg, Args $>$}, \hyperpage{17}
-  \item {TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{19}
-    \subitem {end}, \hyperpage{19}
-    \subitem {result}, \hyperpage{19}
-  \item {TL::Concatenate$<$ front, back $>$}, \hyperpage{44}
-    \subitem {result}, \hyperpage{44}
-    \subitem {reversed\_front}, \hyperpage{45}
-  \item {TL::Concatenate$<$ front, back $>$::IterateThroughReversedFront$<$ elements, current $>$}, 
-		\hyperpage{97}
-    \subitem {added}, \hyperpage{98}
-    \subitem {result}, \hyperpage{98}
-  \item {TL::Concatenate$<$ front, back $>$::IterateThroughReversedFront$<$ EmptyTypeList, current $>$}, 
-		\hyperpage{98}
-    \subitem {result}, \hyperpage{99}
-  \item {TL::Contains$<$ type\_list, T $>$}, \hyperpage{45}
-    \subitem {result}, \hyperpage{46}
-  \item {TL::ContainsConstructibleParent$<$ EmptyTypeList, T $>$}, 
-		\hyperpage{47}
-    \subitem {result}, \hyperpage{47}
-  \item {TL::ContainsConstructibleParent$<$ type\_list, T $>$}, 
-		\hyperpage{46}
-    \subitem {result}, \hyperpage{46}
-  \item {TL::ContainsParent$<$ EmptyTypeList, T $>$}, \hyperpage{49}
-    \subitem {result}, \hyperpage{49}
-  \item {TL::ContainsParent$<$ type\_list, T $>$}, \hyperpage{48}
-    \subitem {result}, \hyperpage{48}
-  \item {TL::FindParentTypeList$<$ T, type\_list, type\_lists $>$}, 
-		\hyperpage{65}
-    \subitem {result}, \hyperpage{65}
-  \item {TL::FindTypeListByClass$<$ T, type\_list, type\_lists $>$}, 
-		\hyperpage{69}
-    \subitem {result}, \hyperpage{70}
-  \item {TL::GenerateTypeLists$<$ 0 $>$}, \hyperpage{73}
-    \subitem {result}, \hyperpage{73}
-  \item {TL::GenerateTypeLists$<$ n $>$}, \hyperpage{72}
-    \subitem {result}, \hyperpage{73}
-  \item {TL::HasDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
-		\hyperpage{77}
-    \subitem {result}, \hyperpage{77}
-  \item {TL::HasDerivedAndConstructible$<$ type\_list, T $>$}, 
-		\hyperpage{76}
-    \subitem {result}, \hyperpage{76}
-  \item {TL::IndexOf$<$ EmptyTypeList, T $>$}, \hyperpage{78}
-    \subitem {value}, \hyperpage{79}
-  \item {TL::IndexOf$<$ type\_list, T $>$}, \hyperpage{78}
-    \subitem {value}, \hyperpage{78}
-  \item {TL::IndexOf$<$ type\_list, typename type\_list::Head $>$}, 
-		\hyperpage{79}
-    \subitem {value}, \hyperpage{80}
-  \item {TL::IsBaseOf$<$ EmptyTypeList, derived $>$}, \hyperpage{82}
-    \subitem {result}, \hyperpage{82}
-  \item {TL::IsBaseOf$<$ EmptyTypeList, EmptyTypeList $>$}, 
-		\hyperpage{82}
-    \subitem {result}, \hyperpage{83}
-  \item {TL::IsBaseOf$<$ parent, derived $>$}, \hyperpage{81}
-    \subitem {result}, \hyperpage{81}
-  \item {TL::IsBaseOf$<$ parent, EmptyTypeList $>$}, \hyperpage{83}
-    \subitem {result}, \hyperpage{83}
-  \item {TL::IsTypeList$<$ T $>$}, \hyperpage{84}
-  \item {TL::IsTypeList$<$ TypeList$<$ Args... $>$ $>$}, \hyperpage{84}
-  \item {TL::MostDerived$<$ EmptyTypeList, T $>$}, \hyperpage{102}
-    \subitem {result}, \hyperpage{102}
-  \item {TL::MostDerived$<$ type\_list, T $>$}, \hyperpage{101}
-    \subitem {result}, \hyperpage{101}
-  \item {TL::MostDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
-		\hyperpage{104}
-    \subitem {result}, \hyperpage{104}
-  \item {TL::MostDerivedAndConstructible$<$ type\_list, T $>$}, 
-		\hyperpage{103}
-    \subitem {result}, \hyperpage{103}
-  \item {TL::NoDuplicates$<$ EmptyTypeList $>$}, \hyperpage{105}
-    \subitem {result}, \hyperpage{106}
-  \item {TL::NoDuplicates$<$ type\_list $>$}, \hyperpage{104}
-    \subitem {result}, \hyperpage{105}
-  \item {TL::Remove$<$ EmptyTypeList, T $>$}, \hyperpage{110}
-    \subitem {result}, \hyperpage{110}
-  \item {TL::Remove$<$ type\_list, T $>$}, \hyperpage{109}
-    \subitem {result}, \hyperpage{110}
-  \item {TL::Remove$<$ type\_list, typename type\_list::Head $>$}, 
-		\hyperpage{111}
-    \subitem {result}, \hyperpage{111}
-  \item {TL::RemoveAll$<$ type\_list, T $>$}, \hyperpage{111}
-    \subitem {result}, \hyperpage{112}
-  \item {TL::RemoveAll$<$ type\_list, typename type\_list::Head $>$}, 
+    \subitem {TypeList$<$ Args $>$}, \hyperpage{139}
+    \subitem {TypeList$<$ H, T... $>$}, \hyperpage{140}
+    \subitem {TypeList$<$ T $>$}, \hyperpage{141}
+  \item {tail\_call}
+    \subitem {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
 		\hyperpage{112}
-    \subitem {result}, \hyperpage{113}
-  \item {TL::Replace$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
-		\hyperpage{113}
-    \subitem {result}, \hyperpage{114}
-  \item {TL::Replace$<$ T, ind, Arg, Args $>$}, \hyperpage{113}
-  \item {TL::Replace$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
+  \item {tail\_result}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}, 
+		\hyperpage{108}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
+		\hyperpage{97}
+    \subitem {GLib::Filter$<$ id, graph, vertexes $>$}, \hyperpage{68}
+    \subitem {GLib::GetNodesFromRoots$<$ nodes, graph $>$}, 
+		\hyperpage{81}
+  \item {TL}, \hyperpage{14}
+  \item {TL/add.h}, \hyperpage{152}
+  \item {TL/concatenate.h}, \hyperpage{153}
+  \item {TL/contains.h}, \hyperpage{153}
+  \item {TL/contains\_constructible\_parent.h}, \hyperpage{153}
+  \item {TL/contains\_parent.h}, \hyperpage{154}
+  \item {TL/fill\_type\_list\_with\_object.h}, \hyperpage{154}
+  \item {TL/find\_parent\_type\_list.h}, \hyperpage{155}
+  \item {TL/find\_type\_list\_by\_class.h}, \hyperpage{155}
+  \item {TL/has\_derived\_and\_constructible.h}, \hyperpage{155}
+  \item {TL/index\_of.h}, \hyperpage{156}
+  \item {TL/is\_base\_of.h}, \hyperpage{156}
+  \item {TL/is\_type\_list.h}, \hyperpage{156}
+  \item {TL/most\_derived.h}, \hyperpage{157}
+  \item {TL/most\_derived\_and\_constructible.h}, \hyperpage{157}
+  \item {TL/no\_duplicates.h}, \hyperpage{158}
+  \item {TL/null\_type.h}, \hyperpage{158}
+  \item {TL/remove.h}, \hyperpage{158}
+  \item {TL/replace.h}, \hyperpage{158}
+  \item {TL/reverse.h}, \hyperpage{159}
+  \item {TL/size.h}, \hyperpage{159}
+  \item {TL/type\_at.h}, \hyperpage{159}
+  \item {TL/type\_list.h}, \hyperpage{160}
+  \item {TL::Add$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{15}
+    \subitem {result}, \hyperpage{16}
+  \item {TL::Add$<$ T, 0, TypeList$<$ Args... $>$ $>$}, \hyperpage{16}
+    \subitem {result}, \hyperpage{16}
+  \item {TL::Add$<$ T, ind, Arg, Args $>$}, \hyperpage{15}
+  \item {TL::Add$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{17}
+    \subitem {end}, \hyperpage{17}
+    \subitem {result}, \hyperpage{17}
+  \item {TL::Concatenate$<$ front, back $>$}, \hyperpage{42}
+    \subitem {result}, \hyperpage{43}
+    \subitem {reversed\_front}, \hyperpage{43}
+  \item {TL::Concatenate$<$ front, back $>$::IterateThroughReversedFront$<$ elements, current $>$}, 
 		\hyperpage{114}
-    \subitem {end}, \hyperpage{115}
+    \subitem {added}, \hyperpage{114}
     \subitem {result}, \hyperpage{115}
-  \item {TL::Reverse$<$ type\_list $>$}, \hyperpage{115}
-    \subitem {result}, \hyperpage{116}
+  \item {TL::Concatenate$<$ front, back $>$::IterateThroughReversedFront$<$ EmptyTypeList, current $>$}, 
+		\hyperpage{115}
+    \subitem {result}, \hyperpage{115}
+  \item {TL::Contains$<$ type\_list, T $>$}, \hyperpage{43}
+    \subitem {value}, \hyperpage{44}
+  \item {TL::ContainsConstructibleParent$<$ EmptyTypeList, T $>$}, 
+		\hyperpage{45}
+    \subitem {result}, \hyperpage{46}
+  \item {TL::ContainsConstructibleParent$<$ type\_list, T $>$}, 
+		\hyperpage{44}
+    \subitem {result}, \hyperpage{45}
+  \item {TL::ContainsParent$<$ EmptyTypeList, T $>$}, \hyperpage{47}
+    \subitem {result}, \hyperpage{47}
+  \item {TL::ContainsParent$<$ type\_list, T $>$}, \hyperpage{46}
+    \subitem {result}, \hyperpage{46}
+  \item {TL::FillTypeListWithObject$<$ obj, 0 $>$}, \hyperpage{66}
+    \subitem {result}, \hyperpage{66}
+  \item {TL::FillTypeListWithObject$<$ obj, n $>$}, \hyperpage{65}
+    \subitem {result}, \hyperpage{66}
+  \item {TL::FindParentTypeList$<$ T, type\_list, type\_lists $>$}, 
+		\hyperpage{71}
+    \subitem {result}, \hyperpage{71}
+  \item {TL::FindTypeListByClass$<$ T, type\_list, type\_lists $>$}, 
+		\hyperpage{75}
+    \subitem {result}, \hyperpage{75}
+  \item {TL::HasDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
+		\hyperpage{85}
+    \subitem {result}, \hyperpage{85}
+  \item {TL::HasDerivedAndConstructible$<$ type\_list, T $>$}, 
+		\hyperpage{84}
+    \subitem {result}, \hyperpage{84}
+  \item {TL::IndexOf$<$ EmptyTypeList, T $>$}, \hyperpage{86}
+    \subitem {value}, \hyperpage{87}
+  \item {TL::IndexOf$<$ type\_list, T $>$}, \hyperpage{86}
+    \subitem {value}, \hyperpage{86}
+  \item {TL::IndexOf$<$ type\_list, typename type\_list::Head $>$}, 
+		\hyperpage{87}
+    \subitem {value}, \hyperpage{88}
+  \item {TL::IsBaseOf$<$ EmptyTypeList, derived $>$}, \hyperpage{90}
+    \subitem {result}, \hyperpage{90}
+  \item {TL::IsBaseOf$<$ EmptyTypeList, EmptyTypeList $>$}, 
+		\hyperpage{90}
+    \subitem {result}, \hyperpage{91}
+  \item {TL::IsBaseOf$<$ parent, derived $>$}, \hyperpage{89}
+    \subitem {result}, \hyperpage{89}
+  \item {TL::IsBaseOf$<$ parent, EmptyTypeList $>$}, \hyperpage{91}
+    \subitem {result}, \hyperpage{91}
+  \item {TL::IsTypeList$<$ T $>$}, \hyperpage{92}
+  \item {TL::IsTypeList$<$ TypeList$<$ Args... $>$ $>$}, \hyperpage{92}
+  \item {TL::MostDerived$<$ EmptyTypeList, T $>$}, \hyperpage{118}
+    \subitem {result}, \hyperpage{119}
+  \item {TL::MostDerived$<$ type\_list, T $>$}, \hyperpage{118}
+    \subitem {result}, \hyperpage{118}
+  \item {TL::MostDerivedAndConstructible$<$ EmptyTypeList, T $>$}, 
+		\hyperpage{120}
+    \subitem {result}, \hyperpage{121}
+  \item {TL::MostDerivedAndConstructible$<$ type\_list, T $>$}, 
+		\hyperpage{119}
+    \subitem {result}, \hyperpage{120}
+  \item {TL::NoDuplicates$<$ EmptyTypeList $>$}, \hyperpage{122}
+    \subitem {result}, \hyperpage{122}
+  \item {TL::NoDuplicates$<$ type\_list $>$}, \hyperpage{121}
+    \subitem {result}, \hyperpage{121}
+  \item {TL::Remove$<$ EmptyTypeList, T $>$}, \hyperpage{128}
+    \subitem {result}, \hyperpage{129}
+  \item {TL::Remove$<$ type\_list, T $>$}, \hyperpage{128}
+    \subitem {result}, \hyperpage{128}
+  \item {TL::Remove$<$ type\_list, typename type\_list::Head $>$}, 
+		\hyperpage{129}
+    \subitem {result}, \hyperpage{130}
+  \item {TL::RemoveAll$<$ type\_list, T $>$}, \hyperpage{130}
+    \subitem {result}, \hyperpage{130}
+  \item {TL::RemoveAll$<$ type\_list, typename type\_list::Head $>$}, 
+		\hyperpage{131}
+    \subitem {result}, \hyperpage{131}
+  \item {TL::Replace$<$ T, 0, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{132}
+    \subitem {result}, \hyperpage{133}
+  \item {TL::Replace$<$ T, ind, Arg, Args $>$}, \hyperpage{132}
+  \item {TL::Replace$<$ T, ind, TypeList$<$ Arg, Args... $>$ $>$}, 
+		\hyperpage{133}
+    \subitem {end}, \hyperpage{133}
+    \subitem {result}, \hyperpage{134}
+  \item {TL::Reverse$<$ type\_list $>$}, \hyperpage{134}
+    \subitem {result}, \hyperpage{135}
   \item {TL::Reverse$<$ type\_list $>$::IterateThroughElements$<$ cur\_type\_list, cur\_result $>$}, 
-		\hyperpage{94}
-    \subitem {result}, \hyperpage{94}
+		\hyperpage{105}
+    \subitem {result}, \hyperpage{105}
   \item {TL::Reverse$<$ type\_list $>$::IterateThroughElements$<$ EmptyTypeList, cur\_result $>$}, 
-		\hyperpage{95}
-    \subitem {result}, \hyperpage{95}
-  \item {TL::Size$<$ EmptyTypeList $>$}, \hyperpage{117}
-    \subitem {size}, \hyperpage{117}
-  \item {TL::Size$<$ type\_list $>$}, \hyperpage{116}
-    \subitem {size}, \hyperpage{117}
-  \item {TL::TypeAt$<$ type\_list, 0 $>$}, \hyperpage{122}
-    \subitem {value}, \hyperpage{122}
-  \item {TL::TypeAt$<$ type\_list, ind $>$}, \hyperpage{121}
-    \subitem {value}, \hyperpage{121}
+		\hyperpage{106}
+    \subitem {result}, \hyperpage{106}
+  \item {TL::Size$<$ EmptyTypeList $>$}, \hyperpage{136}
+    \subitem {size}, \hyperpage{136}
+  \item {TL::Size$<$ type\_list $>$}, \hyperpage{135}
+    \subitem {size}, \hyperpage{136}
+  \item {TL::TypeAt$<$ type\_list, 0 $>$}, \hyperpage{137}
+    \subitem {value}, \hyperpage{138}
+  \item {TL::TypeAt$<$ type\_list, ind $>$}, \hyperpage{137}
+    \subitem {value}, \hyperpage{137}
   \item {to}
-    \subitem {Edge$<$ from\_, to\_, weight\_ $>$}, \hyperpage{61}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}, 
+		\hyperpage{108}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
+		\hyperpage{97}
+    \subitem {Edge$<$ from\_, to\_, weight\_ $>$}, \hyperpage{63}
+  \item {to\_ind}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$::IterateThroughEdges$<$ cur\_edges $>$}, 
+		\hyperpage{98}
   \item {TYPE}
     \subitem {AdjacencyListGraph$<$ nodes, adjacency\_list $>$}, 
+		\hyperpage{23}
+    \subitem {AdjacencyMatrixGraph$<$ vertexes, matrix $>$}, 
 		\hyperpage{25}
-    \subitem {AdjacencyMatrixGraph$<$ nodes, matrix $>$}, 
-		\hyperpage{27}
-    \subitem {EdgeListGraph$<$ nodes, edge\_list $>$}, \hyperpage{63}
-    \subitem {PointerStructureGraph$<$ nodes $>$}, \hyperpage{107}
+    \subitem {EdgeListGraph$<$ nodes, edge\_list $>$}, \hyperpage{65}
+    \subitem {PointerStructureGraph$<$ nodes $>$}, \hyperpage{124}
   \item {type\_list.h}
-    \subitem {EmptyTypeList}, \hyperpage{147}
-    \subitem {Typelist}, \hyperpage{147}
+    \subitem {EmptyTypeList}, \hyperpage{160}
+    \subitem {Typelist}, \hyperpage{160}
   \item {type\_list\_without\_first}
     \subitem {ConvertGraph$<$ ADJACENCY\_LIST, POINTER\_STRUCTURE, graph $>$::MakePointerStructureGraph$<$ current\_vertexes, current\_adjacency\_list $>$}, 
-		\hyperpage{100}
+		\hyperpage{116}
   \item {Typelist}
-    \subitem {type\_list.h}, \hyperpage{147}
-  \item {TypeList$<$ Args $>$}, \hyperpage{123}
-    \subitem {Head}, \hyperpage{123}
-    \subitem {Tail}, \hyperpage{123}
-  \item {TypeList$<$ H, T... $>$}, \hyperpage{124}
-    \subitem {Head}, \hyperpage{124}
-    \subitem {Tail}, \hyperpage{124}
-  \item {TypeList$<$ T $>$}, \hyperpage{125}
-    \subitem {Head}, \hyperpage{125}
-    \subitem {Tail}, \hyperpage{125}
+    \subitem {type\_list.h}, \hyperpage{160}
+  \item {TypeList$<$ Args $>$}, \hyperpage{138}
+    \subitem {Head}, \hyperpage{139}
+    \subitem {Tail}, \hyperpage{139}
+  \item {TypeList$<$ H, T... $>$}, \hyperpage{139}
+    \subitem {Head}, \hyperpage{140}
+    \subitem {Tail}, \hyperpage{140}
+  \item {TypeList$<$ T $>$}, \hyperpage{140}
+    \subitem {Head}, \hyperpage{141}
+    \subitem {Tail}, \hyperpage{141}
 
   \indexspace
 
   \item {upd\_visited}
     \subitem {GLib::DFS$<$ cur\_node, graph, visited\_nodes $>$}, 
-		\hyperpage{59}
+		\hyperpage{61}
 
   \indexspace
 
   \item {value}
-    \subitem {Objects::Boolean$<$ boolean $>$}, \hyperpage{27}
-    \subitem {Objects::Integer$<$ integer $>$}, \hyperpage{80}
-    \subitem {TL::IndexOf$<$ EmptyTypeList, T $>$}, \hyperpage{79}
-    \subitem {TL::IndexOf$<$ type\_list, T $>$}, \hyperpage{78}
+    \subitem {Class$<$ value\_ $>$}, \hyperpage{42}
+    \subitem {Objects::Boolean$<$ boolean $>$}, \hyperpage{25}
+    \subitem {Objects::Integer$<$ integer $>$}, \hyperpage{88}
+    \subitem {TL::Contains$<$ type\_list, T $>$}, \hyperpage{44}
+    \subitem {TL::IndexOf$<$ EmptyTypeList, T $>$}, \hyperpage{87}
+    \subitem {TL::IndexOf$<$ type\_list, T $>$}, \hyperpage{86}
     \subitem {TL::IndexOf$<$ type\_list, typename type\_list::Head $>$}, 
-		\hyperpage{80}
-    \subitem {TL::TypeAt$<$ type\_list, 0 $>$}, \hyperpage{122}
-    \subitem {TL::TypeAt$<$ type\_list, ind $>$}, \hyperpage{121}
+		\hyperpage{88}
+    \subitem {TL::TypeAt$<$ type\_list, 0 $>$}, \hyperpage{138}
+    \subitem {TL::TypeAt$<$ type\_list, ind $>$}, \hyperpage{137}
   \item {vertex}
     \subitem {PointerStructureNode$<$ vertex\_, children\_ $>$}, 
-		\hyperpage{109}
+		\hyperpage{125}
   \item {vertex\_num}
     \subitem {GLib::AddEdge$<$ ADJACENCY\_LIST, graph, edge $>$}, 
-		\hyperpage{22}
+		\hyperpage{20}
   \item {vertex\_stream\_example.cpp}
-    \subitem {Add1}, \hyperpage{130}
-    \subitem {IsAmongFirst3}, \hyperpage{130}
-    \subitem {main}, \hyperpage{131}
+    \subitem {main}, \hyperpage{146}
+  \item {vertexes}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$}, 
+		\hyperpage{50}
+    \subitem {ConvertGraph$<$ EDGE\_LIST, ADJACENCY\_MATRIX, graph $>$}, 
+		\hyperpage{53}
+    \subitem {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ cur\_nodes $>$}, 
+		\hyperpage{112}
+    \subitem {ConvertGraph$<$ POINTER\_STRUCTURE, EDGE\_LIST, graph $>$::IterateThroughNodes$<$ EmptyTypeList $>$}, 
+		\hyperpage{114}
   \item {vertexes\_}
     \subitem {AdjacencyListGraph$<$ nodes, adjacency\_list $>$}, 
+		\hyperpage{21}
+    \subitem {AdjacencyMatrixGraph$<$ vertexes, matrix $>$}, 
 		\hyperpage{24}
-    \subitem {AdjacencyMatrixGraph$<$ nodes, matrix $>$}, 
-		\hyperpage{26}
-    \subitem {EdgeListGraph$<$ nodes, edge\_list $>$}, \hyperpage{62}
-  \item {VertexStream$<$ EmptyTypeList, graph $>$}, \hyperpage{127}
-    \subitem {MapVertexesToReversedIndexes}, \hyperpage{127}
-  \item {VertexStream$<$ stream, graph $>$}, \hyperpage{126}
-    \subitem {MapVertexesToIndexes}, \hyperpage{126}
-    \subitem {MapVertexesToReversedIndexes}, \hyperpage{126}
+    \subitem {EdgeListGraph$<$ nodes, edge\_list $>$}, \hyperpage{64}
 
   \indexspace
 
   \item {weight}
-    \subitem {Edge$<$ from\_, to\_, weight\_ $>$}, \hyperpage{61}
+    \subitem {ConvertGraph$<$ ADJACENCY\_MATRIX, EDGE\_LIST, graph $>$::IterateThroughMatrix$<$ cur\_index $>$}, 
+		\hyperpage{108}
+    \subitem {Edge$<$ from\_, to\_, weight\_ $>$}, \hyperpage{63}
   \item {weights}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$}, 
-		\hyperpage{69}
+		\hyperpage{74}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ cur\_edges, wanted\_node $>$}, 
-		\hyperpage{88}
+		\hyperpage{99}
     \subitem {GLib::FindPath$<$ graph\_raw, start, finish $>$::IterateThroughEdges$<$ EmptyTypeList, wanted\_node $>$}, 
-		\hyperpage{94}
+		\hyperpage{105}
 
 \end{theindex}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Compile-Time Graph Library: graph/graphs/convert_to_pointer_structure.h Source File</title>
+<title>Compile-Time Graph Library: graph/convert/convert_to_pointer_structure.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_12552d7fa429bf94a2e32e5cf39f7e69.html">graph</a></li><li class="navelem"><a class="el" href="dir_412d48fcc1192713611991db15f01461.html">graphs</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_12552d7fa429bf94a2e32e5cf39f7e69.html">graph</a></li><li class="navelem"><a class="el" href="dir_e71848cad05c096193f116cd21f0c444.html">convert</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,19 +75,19 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="convert__graph_8h.html">convert_graph.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../../TL/add.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../../TL/generate_type_lists.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../../TL/fill_type_list_with_object.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../../TL/size.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../TL/type_list.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../GLib/add_edge.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="adjacency__list__graph_8h.html">adjacency_list_graph.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="adjacency__matrix__graph_8h.html">adjacency_matrix_graph.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="edge__list__graph_8h.html">edge_list_graph.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pointer__structure__graph_8h.html">pointer_structure_graph.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pointer__structure__node_8h.html">pointer_structure_node.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../graphs/adjacency_list_graph.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../graphs/adjacency_matrix_graph.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../graphs/edge_list_graph.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;../graphs/pointer_structure_graph.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;../graphs/pointer_structure_node.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="graph__type_8h.html">graph_type.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../graphs/graph_type.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> graph&gt;</div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01graph_01_4.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_convert_graph.html">ConvertGraph</a>&lt;<a class="code" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72ad6db70730563977f3408ba2c92f9da04">ADJACENCY_LIST</a>, <a class="code" href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71">POINTER_STRUCTURE</a>, graph&gt; {</div>
@@ -102,8 +102,8 @@ $(function() {
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_0073ae0679f6c92a166dfbd1563d09e342.html#a70833f8fe235d8c55d5dc174b53902af">   34</a></span>&#160;        <span class="keyword">using</span> <a class="code" href="struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_0073ae0679f6c92a166dfbd1563d09e342.html#a70833f8fe235d8c55d5dc174b53902af">result</a> = <span class="keyword">typename</span> <a class="code" href="struct_t_l_1_1_add.html">TL::Add</a>&lt;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="struct_pointer_structure_node.html">PointerStructureNode</a>&lt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">typename</span> current_vertexes::Head,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keyword">typename</span> current_adjacency_list::Head</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keyword">typename</span> current_vertexes::Head,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keyword">typename</span> current_adjacency_list::Head</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            &gt;,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            0,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_0073ae0679f6c92a166dfbd1563d09e342.html#afe26e656b0d2b49175539ba427f07f6d">type_list_without_first</a></div>
@@ -135,20 +135,14 @@ $(function() {
 <div class="ttc" id="astruct_t_l_1_1_add_html"><div class="ttname"><a href="struct_t_l_1_1_add.html">TL::Add</a></div><div class="ttdef"><b>Definition:</b> <a href="add_8h_source.html#l00010">add.h:10</a></div></div>
 <div class="ttc" id="astruct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_0073ae0679f6c92a166dfbd1563d09e342_html_a70833f8fe235d8c55d5dc174b53902af"><div class="ttname"><a href="struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_0073ae0679f6c92a166dfbd1563d09e342.html#a70833f8fe235d8c55d5dc174b53902af">ConvertGraph&lt; ADJACENCY_LIST, POINTER_STRUCTURE, graph &gt;::MakePointerStructureGraph::result</a></div><div class="ttdeci">typename TL::Add&lt; PointerStructureNode&lt; typename current_vertexes::Head, typename current_adjacency_list::Head &gt;, 0, type_list_without_first &gt;::result result</div><div class="ttdef"><b>Definition:</b> <a href="convert__to__pointer__structure_8h_source.html#l00034">convert_to_pointer_structure.h:41</a></div></div>
 <div class="ttc" id="aconvert__graph_8h_html"><div class="ttname"><a href="convert__graph_8h.html">convert_graph.h</a></div></div>
-<div class="ttc" id="apointer__structure__graph_8h_html"><div class="ttname"><a href="pointer__structure__graph_8h.html">pointer_structure_graph.h</a></div></div>
 <div class="ttc" id="astruct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_0073ae0679f6c92a166dfbd1563d09e342_html_afe26e656b0d2b49175539ba427f07f6d"><div class="ttname"><a href="struct_convert_graph_3_01_a_d_j_a_c_e_n_c_y___l_i_s_t_00_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_0073ae0679f6c92a166dfbd1563d09e342.html#afe26e656b0d2b49175539ba427f07f6d">ConvertGraph&lt; ADJACENCY_LIST, POINTER_STRUCTURE, graph &gt;::MakePointerStructureGraph::type_list_without_first</a></div><div class="ttdeci">typename MakePointerStructureGraph&lt; typename current_vertexes::Tail, typename current_adjacency_list::Tail &gt;::result type_list_without_first</div><div class="ttdef"><b>Definition:</b> <a href="convert__to__pointer__structure_8h_source.html#l00029">convert_to_pointer_structure.h:32</a></div></div>
-<div class="ttc" id="aadjacency__matrix__graph_8h_html"><div class="ttname"><a href="adjacency__matrix__graph_8h.html">adjacency_matrix_graph.h</a></div></div>
 <div class="ttc" id="atype__list_8h_html_adab3c90d8d4dd18238edb4a3d4931ec0"><div class="ttname"><a href="type__list_8h.html#adab3c90d8d4dd18238edb4a3d4931ec0">EmptyTypeList</a></div><div class="ttdeci">TypeList&lt;&gt; EmptyTypeList</div><div class="ttdef"><b>Definition:</b> <a href="type__list_8h_source.html#l00018">type_list.h:18</a></div></div>
 <div class="ttc" id="astruct_type_list_html"><div class="ttname"><a href="struct_type_list.html">TypeList</a></div><div class="ttdef"><b>Definition:</b> <a href="type__list_8h_source.html#l00009">type_list.h:9</a></div></div>
-<div class="ttc" id="astruct_pointer_structure_graph_html"><div class="ttname"><a href="struct_pointer_structure_graph.html">PointerStructureGraph</a></div><div class="ttdef"><b>Definition:</b> <a href="pointer__structure__graph_8h_source.html#l00021">pointer_structure_graph.h:21</a></div></div>
+<div class="ttc" id="astruct_pointer_structure_graph_html"><div class="ttname"><a href="struct_pointer_structure_graph.html">PointerStructureGraph</a></div><div class="ttdef"><b>Definition:</b> <a href="pointer__structure__graph_8h_source.html#l00023">pointer_structure_graph.h:23</a></div></div>
 <div class="ttc" id="agraph__type_8h_html_a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71"><div class="ttname"><a href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72acb591aadf2534e97fb6948eb797d9a71">POINTER_STRUCTURE</a></div><div class="ttdeci">@ POINTER_STRUCTURE</div><div class="ttdoc">Graph is represented by a pointer structure.</div><div class="ttdef"><b>Definition:</b> <a href="graph__type_8h_source.html#l00016">graph_type.h:15</a></div></div>
-<div class="ttc" id="aadjacency__list__graph_8h_html"><div class="ttname"><a href="adjacency__list__graph_8h.html">adjacency_list_graph.h</a></div></div>
 <div class="ttc" id="agraph__type_8h_html_a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f"><div class="ttname"><a href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72a8fca36d8eb7d0fb828b3e850541c700f">EDGE_LIST</a></div><div class="ttdeci">@ EDGE_LIST</div><div class="ttdoc">Graph is represented by a collection of edges.</div><div class="ttdef"><b>Definition:</b> <a href="graph__type_8h_source.html#l00014">graph_type.h:14</a></div></div>
-<div class="ttc" id="agraph__type_8h_html"><div class="ttname"><a href="graph__type_8h.html">graph_type.h</a></div></div>
 <div class="ttc" id="astruct_convert_graph_html"><div class="ttname"><a href="struct_convert_graph.html">ConvertGraph</a></div><div class="ttdef"><b>Definition:</b> <a href="convert__graph_8h_source.html#l00017">convert_graph.h:17</a></div></div>
 <div class="ttc" id="astruct_convert_graph_3_01_e_d_g_e___l_i_s_t_00_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01graph_01_4_html_a54f43c8060bdd31f875dced17d216318"><div class="ttname"><a href="struct_convert_graph_3_01_e_d_g_e___l_i_s_t_00_01_p_o_i_n_t_e_r___s_t_r_u_c_t_u_r_e_00_01graph_01_4.html#a54f43c8060bdd31f875dced17d216318">ConvertGraph&lt; EDGE_LIST, POINTER_STRUCTURE, graph &gt;::adjacency_list</a></div><div class="ttdeci">typename ConvertGraph&lt; EDGE_LIST, ADJACENCY_LIST, graph &gt;::result adjacency_list</div><div class="ttdef"><b>Definition:</b> <a href="convert__to__pointer__structure_8h_source.html#l00063">convert_to_pointer_structure.h:63</a></div></div>
-<div class="ttc" id="apointer__structure__node_8h_html"><div class="ttname"><a href="pointer__structure__node_8h.html">pointer_structure_node.h</a></div></div>
-<div class="ttc" id="aedge__list__graph_8h_html"><div class="ttname"><a href="edge__list__graph_8h.html">edge_list_graph.h</a></div></div>
 <div class="ttc" id="agraph__type_8h_html_a0c7c85309652245e03563b127f451f72ad6db70730563977f3408ba2c92f9da04"><div class="ttname"><a href="graph__type_8h.html#a0c7c85309652245e03563b127f451f72ad6db70730563977f3408ba2c92f9da04">ADJACENCY_LIST</a></div><div class="ttdeci">@ ADJACENCY_LIST</div><div class="ttdoc">Graph is represented as an adjacency list (TypeList of TypeLists of edges).</div><div class="ttdef"><b>Definition:</b> <a href="graph__type_8h_source.html#l00013">graph_type.h:13</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,55 @@
+\hypertarget{struct_g_lib_1_1_for_each}{}\doxysection{G\+Lib\+::For\+Each$<$ id, graph, vertexes $>$ Struct Template Reference}
+\label{struct_g_lib_1_1_for_each}\index{GLib::ForEach$<$ id, graph, vertexes $>$@{GLib::ForEach$<$ id, graph, vertexes $>$}}
+
+
+{\ttfamily \#include $<$for\+\_\+each.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{struct_g_lib_1_1_for_each_a68c1faee88bedeb1f241225e527db9da}{result}} = typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}}$<$ id, graph, typename vertexes\+::\+Head $>$, 0, typename \mbox{\hyperlink{struct_g_lib_1_1_for_each}{For\+Each}}$<$ id, graph, typename vertexes\+::\+Tail $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_for_each_a68c1faee88bedeb1f241225e527db9da}{result}} $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_for_each_a68c1faee88bedeb1f241225e527db9da}{result}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$int id, class graph, class vertexes = typename graph\+::vertexes\+\_\+$>$\newline
+struct G\+Lib\+::\+For\+Each$<$ id, graph, vertexes $>$}
+
+Processes each vertex by using \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Template parameter, integer, which \mbox{\hyperlink{struct_g_lib_1_1_for_each}{For\+Each}} uses to access specific \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}} implementation. \\
+\hline
+{\em graph} & Template parameter, graph, where vertexes are located. \\
+\hline
+{\em vertexes} & Optional template parameter, vertexes to process. Is equal to graph\textquotesingle{}s vertexes by default. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Parameter result, \mbox{\hyperlink{struct_type_list}{Type\+List}} of \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}}, applied to each vertex. 
+\end{DoxyReturn}
+
+
+Definition at line 17 of file for\+\_\+each.\+h.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{struct_g_lib_1_1_for_each_a68c1faee88bedeb1f241225e527db9da}\label{struct_g_lib_1_1_for_each_a68c1faee88bedeb1f241225e527db9da}} 
+\index{GLib::ForEach$<$ id, graph, vertexes $>$@{GLib::ForEach$<$ id, graph, vertexes $>$}!result@{result}}
+\index{result@{result}!GLib::ForEach$<$ id, graph, vertexes $>$@{GLib::ForEach$<$ id, graph, vertexes $>$}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily template$<$int id, class graph , class vertexes  = typename graph\+::vertexes\+\_\+$>$ \\
+using \mbox{\hyperlink{struct_g_lib_1_1_for_each}{G\+Lib\+::\+For\+Each}}$<$ id, graph, vertexes $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_for_each_a68c1faee88bedeb1f241225e527db9da}{result}} =  typename \mbox{\hyperlink{struct_t_l_1_1_add}{T\+L\+::\+Add}}$<$ \mbox{\hyperlink{struct_process_vertex}{Process\+Vertex}}$<$id, graph, typename vertexes\+::\+Head$>$, 0, typename \mbox{\hyperlink{struct_g_lib_1_1_for_each}{For\+Each}}$<$id, graph, typename vertexes\+::\+Tail$>$\+::\mbox{\hyperlink{struct_g_lib_1_1_for_each_a68c1faee88bedeb1f241225e527db9da}{result}} $>$\+::\mbox{\hyperlink{struct_g_lib_1_1_for_each_a68c1faee88bedeb1f241225e527db9da}{result}}}
+
+
+
+Definition at line 18 of file for\+\_\+each.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+graph/\+G\+Lib/\mbox{\hyperlink{for__each_8h}{for\+\_\+each.\+h}}\end{DoxyCompactItemize}

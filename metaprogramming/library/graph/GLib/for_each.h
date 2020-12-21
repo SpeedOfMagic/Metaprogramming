@@ -10,7 +10,7 @@ namespace GLib {
 	* @see ProcessVertex
 	* @param id Template parameter, integer, which ForEach uses to access specific ProcessVertex implementation.
 	* @param graph Template parameter, graph, where vertexes are located.
-	* @param vertexes Optional template parameter, vertexes processor. Is equal to graph's vertexes by default.
+	* @param vertexes Optional template parameter, vertexes to process. Is equal to graph's vertexes by default.
 	* @returns Parameter result, TypeList of ProcessVertex, applied to each vertex.
 	*/
 	template<int id, class graph, class vertexes = typename graph::vertexes_>
@@ -31,5 +31,5 @@ namespace GLib {
 	};
 }
 /** \example vertex_stream_example.cpp
-* An example of how to use ForEach and ProcessVertex.
+* An example of how to use ForEach.
 */
