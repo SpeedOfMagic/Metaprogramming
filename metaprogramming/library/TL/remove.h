@@ -1,3 +1,5 @@
+#pragma once
+
 #include "type_list.h"
 
 namespace TL {

@@ -6,6 +6,7 @@
 #include "../library/graph/GLib/get_reached_vertexes.h"
 #include "../library/graph/convert/convert_to_adjacency_list.h"
 #include "../library/graph/convert/convert_to_adjacency_matrix.h"
+#include "../library/graph/convert/convert_to_edge_list.h"
 #include "../library/graph/convert/convert_to_pointer_structure.h"
 #include "../library/graph/GLib/get_nodes_from_roots.h"
 
@@ -29,16 +30,11 @@ int main() {
 	using g2 = g1::result;
 	using g3 = g2::ConvertTo<POINTER_STRUCTURE>;
 	using g = g3::result;
+	using gg = typename ConvertGraph<POINTER_STRUCTURE, EDGE_LIST, g>::result;
+	using ggg = typename ConvertGraph<ADJACENCY_MATRIX, EDGE_LIST, GG>::result;
 
-	using res = typename GLib::GetNodesFromRoots<
-		TypeList<
-			typename GLib::FindNodeByVertex<float, g>::result,
-			typename GLib::FindNodeByVertex<long, g>::result
-		>, g
-	>::result;
-
-	res xz;
-	GG xx;
+	gg go;
+	ggg ggo;
 
 	return 0;
 }

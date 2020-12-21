@@ -56,5 +56,6 @@ struct ConvertGraph<EDGE_LIST, ADJACENCY_MATRIX, graph> {
 		>::result;
 	};
 
-	using result = typename IterateThroughEdges<typename graph::edge_list_>::result;
+	using matrix = typename IterateThroughEdges<typename graph::edge_list_>::result;
+	using result = AdjacencyMatrixGraph<vertexes, matrix>;
 };
